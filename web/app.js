@@ -16,7 +16,7 @@ import { createARLink } from './ar.js';
 import { HOUSE, applyHouseStyle, inkResize } from './house.js';
 // lessons rebuilt as code in the house style (web/lesson/): the old film player hands over to the lesson engine
 const CODE_LESSONS = new Set([
-  '401', '402', '403', '404', '405', '406', '407', '408', '409', '410', '411', '412', '413', '414', '415', '501',
+  '401', '402', '403', '404', '405', '406', '407', '408', '409', '410', '411', '412', '413', '414', '415', '501', '502',
   ...Array.from({length:19},(_,i)=>String(701+i)),
   '801', '802', '803', '804', '805', '806', '807', '808', '809', '810', '811', '812', '813', '814', '815', '816', '817'
 ]);

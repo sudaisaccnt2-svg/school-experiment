@@ -52,3 +52,17 @@ export function glassBall(R, color = 0x9fc4ff) {
   g.add(body, rim); g.userData.rim = rim; return g;
 }
 export { V };
+
+/** a sealed plastic bag with three onions inside (bottom at y 0): onions = purple-red bulbs with a pointed top and
+ *  thin stripes; the bag = a clear, slightly crinkled skin round them, twisted at the neck and tied. */
+export function onionBag(s = 1) {
+  const g = new THREE.Group();
+  const prof = []; for (let i = 0; i <= 20; i++) { const u = i / 20, a = u * Math.PI; prof.push(new THREE.Vector2(Math.max(0.002, Math.sin(a) * (1 - 0.55 * u * u) * 0.05), -Math.cos(a) * 0.045 + 0.045 + (u > 0.8 ? (u - 0.8) * 0.12 : 0))); }
+  const onM = new THREE.MeshPhysicalMaterial({ color: 0x9a3352, roughness: 0.35, clearcoat: 0.6, sheen: 0.5, sheenColor: new THREE.Color(0xffc0d0) });
+  [[-0.045, 0, 0.02, 0.2], [0.05, 0, -0.01, -0.3], [0.0, 0.07, 0.0, 0.6]].forEach(([x, y, z, r]) => { const o = K.solid(new THREE.LatheGeometry(prof, 24), onM); o.position.set(x, y + 0.002, z); o.rotation.z = r * 0.3; o.rotation.y = r; g.add(o); });
+  const bp = []; for (let i = 0; i <= 26; i++) { const u = i / 26; const r = u < 0.75 ? Math.sin(Math.min(1, u / 0.75) * Math.PI * 0.5 + 0.0001) * 0.11 * (1 - 0.25 * Math.max(0, (u - 0.45) / 0.3) ** 2) : 0.11 * 0.75 * (1 - (u - 0.75) / 0.25) * 0.4 + 0.008; bp.push(new THREE.Vector2(Math.max(0.004, r * (1 + 0.04 * Math.sin(i * 2.3))), u * 0.26)); }
+  const bag = new THREE.Mesh(new THREE.LatheGeometry(bp, 40), new THREE.MeshPhysicalMaterial({ color: 0xeef4fa, transparent: true, opacity: 0.22, roughness: 0.15, clearcoat: 1, side: THREE.DoubleSide, depthWrite: false }));
+  bag.renderOrder = 6; g.add(bag);
+  const tie = K.solid(new THREE.TorusGeometry(0.014, 0.004, 8, 20), K.M.matte(0xd8b040)); tie.rotation.x = Math.PI / 2; tie.position.y = 0.205; g.add(tie);
+  g.scale.setScalar(s); return g;
+}
