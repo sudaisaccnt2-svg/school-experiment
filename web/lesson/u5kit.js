@@ -247,3 +247,32 @@ export function vpJar(liquid = 0x3d9ee6, r = 0.085, h = 0.3, level = 0.4) {
   g.userData = { lid, gauge: gg, setLevel, cloud: { update: (t, k) => cloud.userData.update(t, 0.02 + (h - 0.03) * level, h - 0.02, r - 0.02, k) }, h };
   return g;
 }
+
+/** a pressure cooker (bottom at y 0): a steel pot with a black handle, a locked lid and a weight valve on top that
+ *  rattles; userData.update(t, k): k 0..1 = how hard it is steaming (the valve lifts and steam puffs out) */
+export function cooker() {
+  const g = new THREE.Group(), steel = K.M.metal(0xc8ccd2, 0.25);
+  const prof = [[0, 0], [0.12, 0], [0.125, 0.01], [0.125, 0.16], [0.13, 0.165], [0.118, 0.165], [0.118, 0.012], [0, 0.012]].map(([x, y]) => new THREE.Vector2(x, y));
+  g.add(K.solid(new THREE.LatheGeometry(prof, 48), steel));
+  const lid = K.solid(new THREE.CylinderGeometry(0.135, 0.135, 0.014, 48), steel); lid.position.y = 0.175; g.add(lid);
+  const dome = K.solid(new THREE.SphereGeometry(0.12, 40, 12, 0, Math.PI * 2, 0, 0.5), steel); dome.position.y = 0.152; g.add(dome);
+  const handle = K.solid(new THREE.BoxGeometry(0.16, 0.022, 0.03), K.M.matte(0x1c1e22, 0.6)); handle.position.set(0.2, 0.15, 0); g.add(handle);
+  const stem = K.solid(new THREE.CylinderGeometry(0.008, 0.008, 0.03, 12), steel); stem.position.y = 0.205; g.add(stem);
+  const valve = K.solid(new THREE.CylinderGeometry(0.018, 0.022, 0.03, 16), K.M.matte(0x2a2e36, 0.5)); g.add(valve);
+  const steam = K.smoke(8, 0xffffff); steam.position.y = 0.24; steam.scale.setScalar(0.12); g.add(steam);
+  g.userData.update = (t, k) => { valve.position.y = 0.232 + 0.008 * k * Math.abs(Math.sin(t * 23)); steam.visible = k > 0.02; steam.userData.update(t, k); };
+  g.userData.update(0, 0); return g;
+}
+/** Torricelli's barometer (bottom at y 0): a dish of mercury and a long glass tube, closed at the top, standing in it;
+ *  the silver column inside stands `col` high (760 mm), empty space (a vacuum) above it. userData.set(k) 0..1 fills it. */
+export function barometer(len = 0.9, col = 0.74) {
+  const g = new THREE.Group(), hg = K.M.metal(0xe2e6ec, 0.22);   // silver, not a full mirror (a mirror reads black in the studio)
+  g.add(K.dish(0.1));
+  const pool = K.solid(new THREE.CylinderGeometry(0.075, 0.075, 0.012, 32), hg, { outline: false }); pool.position.y = 0.019; g.add(pool);
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.016, 0.016, len, 20, 1, true), K.M.glass()); tube.position.y = 0.02 + len / 2; tube.renderOrder = 5; g.add(tube);
+  const capTop = new THREE.Mesh(new THREE.SphereGeometry(0.016, 20, 10, 0, Math.PI * 2, 0, Math.PI / 2), K.M.glass()); capTop.position.y = 0.02 + len; capTop.renderOrder = 5; g.add(capTop);
+  const column = K.solid(new THREE.CylinderGeometry(0.0125, 0.0125, 1, 16).translate(0, 0.5, 0), hg, { outline: false }); column.position.y = 0.028; g.add(column);
+  const stand = K.solid(new THREE.BoxGeometry(0.03, len, 0.012), K.M.matte(0x5a4632, 0.7)); stand.position.set(-0.05, 0.02 + len / 2, -0.03); g.add(stand);
+  for (let k = 0; k <= 8; k++) { const tk = new THREE.Mesh(new THREE.BoxGeometry(k % 4 ? 0.012 : 0.022, 0.002, 0.002), new THREE.MeshBasicMaterial({ color: 0xf2efe6 })); tk.position.set(-0.034, 0.028 + col * k / 8, -0.02); g.add(tk); }
+  g.userData.set = (k) => { column.scale.y = Math.max(1e-3, col * k); }; g.userData.set(1); g.userData.top = 0.028 + col; return g;
+}
