@@ -174,3 +174,36 @@ export function penWriter(nb, pen, items, rest, nbPos) {
     pen.position.copy(p); pen.rotation.set(-0.35 * (1 - lie) - (Math.PI / 2 - 0.02) * lie, 0.4 * lie, -0.25 * (1 - lie)); if (lie > 0.5) pen.position.y = rest.y;
   };
 }
+
+/** a conical glass flask (bottom at y 0) with a balloon pulled over its neck; userData.set(k): 0 = a limp balloon,
+ *  1 = blown up by the warm air. */
+export function flaskBalloon(color = 0xd8364a, s = 1) {
+  const g = new THREE.Group(), r = 0.09, h = 0.2, n = 0.022;
+  const prof = [[0, 0], [r, 0], [r + 0.004, 0.008], [n + 0.004, h * 0.78], [n + 0.004, h], [n - 0.002, h], [n - 0.002, h * 0.78 + 0.004], [r - 0.004, 0.012], [0, 0.006]].map(([x, y]) => new THREE.Vector2(x, y));
+  const glass = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), K.M.glass()); glass.renderOrder = 5; g.add(glass);
+  const bal = new THREE.Group(); bal.position.y = h - 0.03; g.add(bal);
+  const bp = (k) => { const p = []; for (let i = 0; i <= 24; i++) { const u = i / 24; const w = Math.max(0, (u - 0.15) / 0.85), R = k * 0.105 * Math.sqrt(Math.max(0, Math.sin(Math.PI * w))) + 0.026 * (1 - u) ** 3; p.push(new THREE.Vector2(Math.max(0.002, u < 0.15 ? n + 0.006 : Math.max(n * (1 - w), R) + 0.02 * (1 - k) * Math.sin(u * 9)), u * (0.05 + 0.2 * k))); } return p; };
+  const mat = new THREE.MeshPhysicalMaterial({ color, roughness: 0.25, clearcoat: 1, side: THREE.DoubleSide });
+  const mesh = new THREE.Mesh(new THREE.LatheGeometry(bp(0), 36), mat); mesh.castShadow = true; bal.add(mesh);
+  let last = -1;
+  g.userData.set = (k) => { const q = Math.round(k * 40) / 40; if (q === last) return; last = q; mesh.geometry.dispose(); mesh.geometry = new THREE.LatheGeometry(bp(Math.max(0.02, q)), 36); mesh.rotation.z = 0.25 * (1 - q); };
+  g.userData.set(0); g.scale.setScalar(s); return g;
+}
+
+/** Fig. 5.7: the Charles's-law rig on a tripod: a glass cylinder with a metal base (heat goes in from below), a free
+ *  piston with a weight on top (the pressure stays the same), a thermometer clipped beside it. Bottom of the tripod at
+ *  y 0; userData.set(h, T°C) = gas column height (0.05 … 0.42) and the thermometer reading; .floor = the cylinder floor y. */
+export function charlesRig() {
+  const g = new THREE.Group(), R = 0.08, F = 0.36, HMAX = 0.46;
+  g.add(K.tripod(F - 0.012));
+  const base = K.solid(new THREE.CylinderGeometry(R + 0.012, R + 0.012, 0.016, 40), K.M.metal(0x8a6a48, 0.35)); base.position.y = F - 0.004; g.add(base);
+  const glass = new THREE.Mesh(new THREE.CylinderGeometry(R, R, HMAX, 40, 1, true), K.M.glass()); glass.position.y = F + 0.006 + HMAX / 2; glass.renderOrder = 5; g.add(glass);
+  for (let k = 1; k <= 7; k++) { const tk = new THREE.Mesh(new THREE.BoxGeometry(k % 2 ? 0.02 : 0.034, 0.003, 0.002), new THREE.MeshBasicMaterial({ color: 0xe8eef6 })); tk.position.set(-R * 0.5, F + 0.01 + (HMAX - 0.04) * k / 8, R + 0.003); g.add(tk); }
+  const gasM = new THREE.MeshStandardMaterial({ color: 0x7fb6ff, transparent: true, opacity: 0.22, depthWrite: false });
+  const gas = new THREE.Mesh(new THREE.CylinderGeometry(R - 0.006, R - 0.006, 1, 32).translate(0, 0.5, 0), gasM); gas.position.y = F + 0.012; gas.renderOrder = 4; g.add(gas);
+  const piston = K.solid(new THREE.CylinderGeometry(R - 0.004, R - 0.004, 0.026, 40), K.M.matte(0x2a2e36, 0.6)); g.add(piston);
+  const wt = weight(0.045, 0.045); g.add(wt);
+  const th = K.thermometer(0.5, 200); th.position.set(R + 0.07, F - 0.1, 0.02); g.add(th);
+  g.userData.set = (h, c) => { gas.scale.y = Math.max(1e-3, h); piston.position.y = F + 0.012 + h + 0.013 + 0.001; wt.position.y = piston.position.y + 0.013 + 0.001; th.userData.set(c); };
+  g.userData.floor = F + 0.012; g.userData.th = th; g.userData.set(0.15, 27); return g;
+}
