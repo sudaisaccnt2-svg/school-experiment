@@ -62,10 +62,14 @@ export function volFlask(r = 0.075, color = 0x3d9ee6) {
   const prof = [[0, 0], [r * 0.7, 0], [r, r * 0.6], [r, r * 1.1], [n + 0.003, nb], [n + 0.003, top], [n - 0.002, top], [n - 0.002, nb + 0.003], [r - 0.004, r * 1.1], [r - 0.004, r * 0.6], [r * 0.7 - 0.003, 0.006], [0, 0.006]].map(([x, y]) => new THREE.Vector2(x, y));
   const glass = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), K.M.glass()); glass.renderOrder = 5; g.add(glass);
   const mark = new THREE.Mesh(new THREE.TorusGeometry(n + 0.0045, 0.0012, 4, 30), new THREE.MeshBasicMaterial({ color: 0xffffff })); mark.rotation.x = Math.PI / 2; mark.position.y = nb + 0.1; g.add(mark);
-  const lm = new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: 0.5, roughness: 0.05, depthWrite: false });
-  const bulb = new THREE.Mesh(new THREE.SphereGeometry(r - 0.007, 32, 20), lm); bulb.scale.y = 0.95; bulb.position.y = r * 0.82; bulb.renderOrder = 4; g.add(bulb);
-  const neck = new THREE.Mesh(new THREE.CylinderGeometry(n - 0.004, n - 0.004, 1, 16).translate(0, 0.5, 0), lm); neck.position.y = nb - 0.01; neck.renderOrder = 4; g.add(neck);
-  g.userData.setLevel = (k) => { bulb.visible = k > 0.01; bulb.scale.set(1, 0.95 * Math.min(1, k * 1.6), 1); bulb.position.y = r * 0.82 - (r * 0.82) * (1 - Math.min(1, k * 1.6)) * 0.9; neck.visible = k > 0.62; neck.scale.y = Math.max(1e-3, (k - 0.62) / 0.38 * 0.11); };
+  const lm = new THREE.MeshPhysicalMaterial({ color: new THREE.Color(color).multiplyScalar(0.8), transparent: true, opacity: 0.62, roughness: 0.05, depthWrite: false, side: THREE.DoubleSide });
+  // the liquid follows the glass inside (a lathe rebuilt for each level), its floor 6 mm above the glass floor
+  const rIn = (y) => { const w = y < r * 0.6 ? r * 0.7 + (r - r * 0.7) * (y / (r * 0.6)) : y < r * 1.1 ? r : y < nb ? r + (n - r) * ((y - r * 1.1) / (nb - r * 1.1)) : n; return Math.max(0.003, w - 0.008); };
+  const liq = new THREE.Mesh(new THREE.BufferGeometry(), lm); liq.renderOrder = 4; g.add(liq);
+  let lastK = -1;
+  g.userData.setLevel = (k) => { const q = Math.round(Math.max(0, Math.min(1, k)) * 40) / 40; if (q === lastK) return; lastK = q; liq.visible = q > 0.01; if (!liq.visible) return;
+    const y0 = 0.012, y1 = y0 + q * (nb + 0.1 - y0), pts = [new THREE.Vector2(0.0005, y0)]; for (let i = 0; i <= 24; i++) { const y = y0 + (y1 - y0) * i / 24; pts.push(new THREE.Vector2(rIn(y), y)); } pts.push(new THREE.Vector2(0.0005, y1));
+    liq.geometry.dispose(); liq.geometry = new THREE.LatheGeometry(pts, 32); };
   g.userData.mat = lm; g.userData.mark = nb + 0.1; g.userData.setLevel(0); return g;
 }
 
