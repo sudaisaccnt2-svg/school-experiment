@@ -358,3 +358,36 @@ export function sulphurDish(n = 7) {
   g.userData.set = (k) => { rh.forEach((o) => { o.visible = k < 0.98; o.scale.setScalar(Math.max(1e-3, 1 - k)); o.scale.y *= 1.3; }); nd.forEach((q) => { q.visible = k > 0.02; q.scale.set(1, 1, Math.max(1e-3, k)); }); };
   g.userData.set(0); return g;
 }
+
+/** carbon atoms + sticks between neighbours at bondLen (no letters: one element) */
+export function carbonNet(pts, bondLen, r = 0.08, color = 0x3a3e4c) {
+  const g = new THREE.Group(), am = K.M.gloss(color), sm = K.M.gloss(0xb8bec8);
+  pts.forEach((p) => { const b = K.solid(new THREE.SphereGeometry(r, 18, 12), am); b.position.copy(p); g.add(b); });
+  for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) { const d = pts[i].distanceTo(pts[j]); if (Math.abs(d - bondLen) < bondLen * 0.06) { const a = pts[i], b = pts[j], dir = b.clone().sub(a), m = K.solid(new THREE.CylinderGeometry(r * 0.26, r * 0.26, d - 2 * r * 0.7, 10, 1, true), sm, { outline: false }); m.position.copy(a).lerp(b, 0.5); m.quaternion.setFromUnitVectors(V(0, 1, 0), dir.normalize()); g.add(m); } }
+  return g;
+}
+/** the 60 corners of a buckyball (C60), bond length 2 * s */
+export function c60Points(s = 0.1) {
+  const f = (1 + Math.sqrt(5)) / 2, base = [[0, 1, 3 * f], [1, 2 + f, 2 * f], [f, 2, 2 * f + 1]], out = [];
+  const cyc = ([a, b, c]) => [[a, b, c], [b, c, a], [c, a, b]];
+  base.forEach((v) => cyc(v).forEach(([a, b, c]) => { for (const sa of [1, -1]) for (const sb of [1, -1]) for (const sc of [1, -1]) { const p = V(a * sa, b * sb, c * sc).multiplyScalar(s); if (!out.some((q) => q.distanceTo(p) < 1e-4)) out.push(p); } }));
+  return out;
+}
+/** a football (bottom at y 0): white with twelve black pentagons */
+export function football(r = 0.09) {
+  const g = new THREE.Group(), ball = K.solid(new THREE.SphereGeometry(r, 40, 28), new THREE.MeshPhysicalMaterial({ color: 0xf6f6f2, roughness: 0.45, clearcoat: 0.4 })); g.add(ball);
+  const f = (1 + Math.sqrt(5)) / 2, ico = [[0, 1, f], [0, -1, f], [0, 1, -f], [0, -1, -f], [1, f, 0], [-1, f, 0], [1, -f, 0], [-1, -f, 0], [f, 0, 1], [-f, 0, 1], [f, 0, -1], [-f, 0, -1]];
+  const pm = new THREE.MeshStandardMaterial({ color: 0x15161a, roughness: 0.5 });
+  ico.forEach((v) => { const d = V(...v).normalize(), p = new THREE.Mesh(new THREE.CircleGeometry(r * 0.32, 5), pm); p.position.copy(d).multiplyScalar(r + 0.002); p.lookAt(d.clone().multiplyScalar(2 * r)); g.add(p); });
+  ball.position.y = 0; g.children.forEach((c) => (c.position.y += r)); return g;
+}
+/** a bulb tester (bottom at y 0): a battery and a bulb on a board, two clips with a gap where a sample is laid across;
+ *  userData.set(k) lights the bulb (0..1); userData.gap = local point of the gap (lay the sample here) */
+export function tester() {
+  const g = new THREE.Group(), board = K.solid(new THREE.BoxGeometry(0.42, 0.016, 0.2), K.M.matte(0x5a4632, 0.7)); board.position.y = 0.008; g.add(board);
+  const bat = K.battery(); bat.scale.setScalar(0.22); bat.position.set(-0.12, 0.016, -0.04); g.add(bat);
+  const blb = K.bulb(); blb.scale.setScalar(0.26); blb.position.set(0.12, 0.016, -0.04); blb.userData.set(0); g.add(blb);
+  const clips = [-0.05, 0.05].map((x) => { const c = K.solid(new THREE.BoxGeometry(0.02, 0.03, 0.03), K.M.metal(0xc8a050, 0.3)); c.position.set(x, 0.016 + 0.015, 0.05); g.add(c); return c; });
+  g.add(K.wire([[-0.12, 0.05, -0.02], [-0.08, 0.04, 0.03], [-0.05, 0.04, 0.05]], 0xb8442f, 0.004), K.wire([[0.05, 0.04, 0.05], [0.09, 0.04, 0.02], [0.12, 0.05, -0.02]], 0xb8442f, 0.004));
+  g.userData.set = (k) => blb.userData.set(k); g.userData.gap = V(0, 0.016 + 0.03 + 0.002, 0.05); return g;
+}

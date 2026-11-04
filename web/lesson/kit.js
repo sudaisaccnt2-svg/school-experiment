@@ -213,7 +213,7 @@ export function pulses(curve, n = 8, color = 0xffd27a) {
 export function battery() {
   const grp = new THREE.Group();
   const body = solid(new THREE.CylinderGeometry(0.22, 0.22, 0.8, 40), M.gloss(0x24314f)); body.position.y = 0.4;
-  const band = solid(new THREE.CylinderGeometry(0.225, 0.225, 0.2, 40), M.metal(0xc89a52, 0.35), { outline: false }); band.position.y = 0.69;   // top 0.79, under the body top 0.8 (never the same plane)
+  const band = solid(new THREE.CylinderGeometry(0.232, 0.232, 0.2, 40), M.metal(0xc89a52, 0.35), { outline: false }); band.position.y = 0.69;   // top 0.79, under the body top 0.8 (never the same plane)
   const nub = solid(new THREE.CylinderGeometry(0.07, 0.07, 0.07, 24), M.metal(0xd8dde4, 0.3)); nub.position.y = 0.835;
   const plus = label('+', 0.22, '#ffd27a'); plus.position.set(0, 1.0, 0.0);
   grp.add(body, band, nub, plus); return grp;
