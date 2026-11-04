@@ -336,3 +336,25 @@ export function sortBins(U, names, cards, { x = 0, y = 1.15, t0 = 0, dt = 1.1, g
     tiles.forEach(({ tl, slot, t0: s }) => { const u = K.span(t, s, s + 0.6); tl.visible = t > s - 0.4; tl.position.copy(t < s ? top : K.arc(top, slot, 0.2, K.easeIn(u))); tl.scale.setScalar(Math.max(1e-4, K.back(K.span(t, s - 0.4, s)))); });
   };
 }
+
+/** a cut diamond on a small dark stand (bottom at y 0) */
+export function diamondGem(s = 0.05) {
+  const g = new THREE.Group(), st = K.solid(new THREE.CylinderGeometry(0.035, 0.045, 0.03, 24), K.M.matte(0x1c1e24, 0.5)); st.position.y = 0.015; g.add(st);
+  const geo = new THREE.CylinderGeometry(s * 0.6, s, s * 0.35, 8, 1).translate(0, s * 0.175, 0), pav = new THREE.ConeGeometry(s, s * 0.9, 8).rotateX(Math.PI).translate(0, -s * 0.45, 0);
+  const m = new THREE.MeshPhysicalMaterial({ color: 0xffffff, roughness: 0.0, transmission: 1, thickness: 0.05, ior: 2.4, clearcoat: 1, flatShading: true });
+  const top = K.solid(geo.toNonIndexed(), m), bot = K.solid(pav.toNonIndexed(), m); top.geometry.computeVertexNormals(); bot.geometry.computeVertexNormals();
+  const gem = new THREE.Group(); gem.add(top, bot); gem.position.y = 0.03 + s * 0.9 + 0.002; g.add(gem); g.userData.gem = gem; return g;
+}
+/** sulphur crystals in a dish: chunky yellow rhombic (orthorhombic) octahedra that can turn into long thin monoclinic
+ *  needles: userData.set(k) 0 = rhombic, 1 = monoclinic (bottom at y 0) */
+export function sulphurDish(n = 7) {
+  const g = new THREE.Group(); g.add(K.dish(0.1));
+  const m = new THREE.MeshPhysicalMaterial({ color: 0xf2d23a, roughness: 0.3, clearcoat: 0.6, flatShading: true }), m2 = new THREE.MeshPhysicalMaterial({ color: 0xe8c430, roughness: 0.25, clearcoat: 0.8 });
+  const rh = [], nd = [];
+  for (let i = 0; i < n; i++) {
+    const a = i * 2.2, r = 0.015 + 0.04 * rnd(i, 1), o = K.solid(new THREE.OctahedronGeometry(0.018 + 0.006 * rnd(i, 2)).toNonIndexed(), m); o.scale.set(1, 1.3, 0.8); o.position.set(Math.cos(a) * r, 0.034, Math.sin(a) * r); o.rotation.y = a; g.add(o); rh.push(o);
+    const nn = K.solid(new THREE.BoxGeometry(0.008, 0.008, 0.07 + 0.02 * rnd(i, 3)), m2); nn.position.set(Math.cos(a) * r * 0.8, 0.02 + 0.003 * i, Math.sin(a) * r * 0.8); nn.rotation.set(0.15, a, 0); g.add(nn); nd.push(nn);
+  }
+  g.userData.set = (k) => { rh.forEach((o) => { o.visible = k < 0.98; o.scale.setScalar(Math.max(1e-3, 1 - k)); o.scale.y *= 1.3; }); nd.forEach((q) => { q.visible = k > 0.02; q.scale.set(1, 1, Math.max(1e-3, k)); }); };
+  g.userData.set(0); return g;
+}
