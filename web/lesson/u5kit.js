@@ -276,3 +276,22 @@ export function barometer(len = 0.9, col = 0.74) {
   for (let k = 0; k <= 8; k++) { const tk = new THREE.Mesh(new THREE.BoxGeometry(k % 4 ? 0.012 : 0.022, 0.002, 0.002), new THREE.MeshBasicMaterial({ color: 0xf2efe6 })); tk.position.set(-0.034, 0.028 + col * k / 8, -0.02); g.add(tk); }
   g.userData.set = (k) => { column.scale.y = Math.max(1e-3, col * k); }; g.userData.set(1); g.userData.top = 0.028 + col; return g;
 }
+
+/** a conical flask (bottom at y 0) with water to `fill` of its body; userData.top = the water surface height */
+export function conicalFlask(r = 0.1, h = 0.26, fill = 0.55, color = 0x3d9ee6) {
+  const g = new THREE.Group(), n = 0.024, body = h * 0.78;
+  const prof = [[0, 0], [r, 0], [r + 0.004, 0.008], [n + 0.004, body], [n + 0.004, h], [n - 0.002, h], [n - 0.002, body + 0.004], [r - 0.004, 0.012], [0, 0.006]].map(([x, y]) => new THREE.Vector2(x, y));
+  const glass = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), K.M.glass()); glass.renderOrder = 5; g.add(glass);
+  const yT = body * fill, rT = r - (r - n) * fill - 0.01;
+  const w = new THREE.Mesh(new THREE.CylinderGeometry(rT, r - 0.012, yT - 0.014, 40), new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: 0.45, roughness: 0.05, clearcoat: 1, depthWrite: false }));
+  w.position.y = 0.014 + (yT - 0.014) / 2; w.renderOrder = 4; g.add(w);
+  g.userData.top = yT; g.userData.rAt = (y) => r - (r - n) * Math.min(1, y / body) - 0.012; return g;
+}
+/** a glass dropper with a rubber bulb (tip at y 0, pointing down) */
+export function dropper(len = 0.16) {
+  const g = new THREE.Group();
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.004, len, 16, 1, true), K.M.glass()); tube.position.y = len / 2; tube.renderOrder = 5; g.add(tube);
+  const ink = K.solid(new THREE.CylinderGeometry(0.0055, 0.003, len * 0.5, 12), K.M.gloss(0x1f3fa8), { outline: false }); ink.position.y = len * 0.26; g.add(ink);
+  const bulb = K.solid(new THREE.SphereGeometry(0.018, 20, 14), K.M.matte(0x2a2e36, 0.5)); bulb.scale.y = 1.5; bulb.position.y = len + 0.02; g.add(bulb);
+  return g;
+}
