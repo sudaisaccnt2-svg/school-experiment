@@ -94,7 +94,7 @@ export default {
     {
       U.stage((t) => t < VD - 0.05 || t >= E0 - 0.05); ST.bake(U.root, 'hook', HKX + 0.04, 2.6, 1.0);
       const salt = add(K.rockSalt(0.22), SAX, 0, 0);
-      add(K.beaker(0.14, 0.32), WGX, 0, 0); const wl = add(K.liquid(0.135, 0.23, 0x3d9ee6, 0.55), WGX, 0.052, 0);
+      add(K.labBeaker(0.14, 0.32), WGX, 0, 0); const wl = add(K.liquid(0.135, 0.23, 0x3d9ee6, 0.55), WGX, 0.052, 0);
       const cu = add(K.ribbonCoil(0.1, 8, M.metal(0xc8743a, 0.28)), CUX, 0, 0);
       const am = add(K.glassBottle(1.35), AMX, 0, 0);
       const jar = add(K.gasJar(0x9ee030, 0.14, 0.5), CJX, 0, 0); jar.userData.gas.opacity = 0.1; const wisp = K.gasCloud(0x9ee030, 10); jar.add(wisp);
@@ -222,7 +222,7 @@ export default {
     {
       U.stage((t) => t >= B0 - 0.05 && t < BD - 0.05); ST.bake(U.root, 'water', ELX, 1.5, 0.85);
       const BKX = ELX - 0.05, BTX = ELX + 0.48, RL = [-0.06, 0.06];
-      add(K.beaker(0.15, 0.3), BKX, 0, 0); const wl = add(K.liquid(0.145, 0.22, 0x3d9ee6, 0.55), BKX, 0.052, 0);
+      add(K.labBeaker(0.15, 0.3), BKX, 0, 0); const wl = add(K.liquid(0.145, 0.22, 0x3d9ee6, 0.55), BKX, 0.052, 0);
       const rods = RL.map((dx) => add(K.solid(new THREE.CylinderGeometry(0.012, 0.012, 0.36, 16), M.matte(0x22252b, 0.55)), BKX + dx, 0.24, 0));
       const bat = add(K.battery(), BTX, 0, 0); bat.scale.setScalar(0.42);
       const TOPY = 0.42 * 0.835 + 0.018;

@@ -74,11 +74,11 @@ export default {
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX + 0.03, 2.6, 0.8);
       const fl = add(U5.conicalFlask(0.1, 0.26, 0.4, 0x1438b0), FLX, 0, 0), fw = fl.children[1], flM = fw.material, deep = new THREE.Color(0x1438b0), pale = new THREE.Color(0x2f6ae0); flM.opacity = 0.8;
-      const wb = add(new THREE.Group(), WBX, 0, 0); wb.add(K.beaker(0.07, 0.18)); const wl = K.liquid(0.065, 0.12, 0x3d9ee6, 0.45); wl.position.y = 0.012; wb.add(wl);
+      const wb = add(new THREE.Group(), WBX, 0, 0); wb.add(K.labBeaker(0.07, 0.18)); const wl = K.liquid(0.065, 0.12, 0x3d9ee6, 0.45); wl.position.y = 0.012; wb.add(wl);
       const st = add(U6.stream(0x7fb6ff));
       const sc = add(U6.digitalScale(), SCX, 0, 0); const sug = add(U6.crystalHeap(0.035, 40), SCX - 0.12, 0, 0.1);
       const pile = add(U6.crystalHeap(0.03, 30), SCX, sc.userData.top, 0);
-      const bks = [BAX, BBX].map((x) => { add(K.beaker(0.08, 0.2), x, 0, 0); add(K.liquid(0.075, 0.13, 0x3d9ee6, 0.4), x, 0.012, 0); const h = add(U6.crystalHeap(0.035, 30), x, 0.014, 0); h.userData.set(0); return h; });
+      const bks = [BAX, BBX].map((x) => { add(K.labBeaker(0.08, 0.2), x, 0, 0); add(K.liquid(0.075, 0.13, 0x3d9ee6, 0.4), x, 0.012, 0); const h = add(U6.crystalHeap(0.035, 30), x, 0.014, 0); h.userData.set(0); return h; });
       add(K.reagentBottle(0xe6eef6, 0.24, 0.06, '0.1 M NaCl'), STX, 0, 0);
       const ls = [['a blue solution (copper sulphate)', '#9fc4ff', FLX, 0.42, 0.08], ['water', '#9fd2ff', WBX, 0.3, 0.1], ['a scale and sugar', '#ffffff', SCX, 0.2, 0.12], ['two beakers: 100 cm³ water each', '#ffffff', (BAX + BBX) / 2, 0.34, 0.1], ['a bottle marked 0.1 M', '#ffffff', STX, 0.4, 0.08]].map(([s, c, x, y, z]) => tag(s, 0.042, c, x, y, z));
       const lPale = tag('more water: the blue gets paler', 0.045, '#9fc4ff', FLX, 0.42, 0.08);

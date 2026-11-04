@@ -127,7 +127,7 @@ export default {
     {
       U.stage((t) => t >= CD0 - 0.05 && t < IND - 0.05); ST.bake(U.root, 'cond', CDX, 1.6, 0.85);
       const BX = [CDX - 0.35, CDX + 0.35];
-      BX.forEach((x) => { add(K.beaker(0.13, 0.26), x, 0, 0); add(K.liquid(0.125, 0.18, 0x3d9ee6, 0.55), x, 0.052, 0); });
+      BX.forEach((x) => { add(K.labBeaker(0.13, 0.26), x, 0, 0); add(K.liquid(0.125, 0.18, 0x3d9ee6, 0.55), x, 0.052, 0); });
       const rigs = BX.map((x) => circuit(x, 0.7));
       const lW = grp(tag('salt water', 0.045, '#ffffff', BX[0], 0.33, 0.12), 'w'), lG = grp(tag('sugar water', 0.045, '#9fc8ff', BX[1], 0.33, 0.12), 'w');
       const lOn = tag('bulb lights: ions carry the current ✓', 0.04, '#ffd27a', CDX, 0.98, 0.05), lOff = tag('stays off: no ions, a non-electrolyte ✓', 0.04, '#ffffff', CDX, 0.98, 0.05);
@@ -157,7 +157,7 @@ export default {
     {
       U.stage((t) => t >= DS0 - 0.05 && t < MT0 - 0.05); ST.bake(U.root, 'diss', DSX, 1.7, 0.8);
       const BX = [DSX - 0.55, DSX, DSX + 0.55];
-      BX.forEach((x) => add(K.beaker(0.12, 0.24), x, 0, 0));
+      BX.forEach((x) => add(K.labBeaker(0.12, 0.24), x, 0, 0));
       const liq = [add(K.liquid(0.115, 0.16, 0x3d9ee6, 0.55), BX[0], 0.052, 0), add(K.liquid(0.115, 0.16, 0x3d9ee6, 0.55), BX[1], 0.052, 0), add(K.liquid(0.115, 0.16, 0xe9eef2, 0.35), BX[2], 0.052, 0)];
       const cube = add(sugarCubes(1)); const oilL = add(K.liquid(0.112, 0.04, 0xe0a83a, 0.8), BX[1], 0.216, 0), oilB = add(K.liquid(0.112, 0.001, 0xe0a83a, 0.45), BX[2], 0.052, 0);
       const drops = [1, 2].map((k) => add(K.solid(new THREE.SphereGeometry(0.02, 14, 10), M.liquid(0xe0a83a, 0.85), { outline: false })));

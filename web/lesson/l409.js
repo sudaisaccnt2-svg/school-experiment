@@ -83,7 +83,7 @@ export default {
       const HOOK = U.stage((t) => t < DV - 0.05 || t >= BACK - 0.05); ST.bake(HOOK, 'hook', HKX + 0.1, 1.6, 0.9);
       const stand = add(K.stand(0.62, 0.26), STX - 0.22, 0, -0.05); void stand;
       const bur = add(K.burette(0.42), STX, 0.62, 0);
-      add(K.beaker(0.12, 0.2), STX, 0, 0); const bl = add(K.liquid(0.115, 0.08, 0x3d9ee6, 0.55), STX, 0.052, 0);
+      add(K.labBeaker(0.12, 0.2), STX, 0, 0); const bl = add(K.liquid(0.115, 0.08, 0x3d9ee6, 0.55), STX, 0.052, 0);
       const cloth = add(K.woolCloth(0.16, 0.12), CLX, 0, 0.08), comb = add(K.comb(0.16));
       const streamM = new THREE.MeshPhysicalMaterial({ color: 0x7cc8ff, roughness: 0.05, transparent: true, opacity: 0.9, clearcoat: 1, emissive: 0x1a4a7a, emissiveIntensity: 0.25 }); let streamMesh = null, lastBend = -1;
       const setStream = (b) => {

@@ -74,7 +74,7 @@ export default {
     // ================================================================ BENCH · a glass and dishes of water, a hot plate, a dish of alcohol
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX - 0.12, 3.0, 0.8);
-      add(K.beaker(0.06, 0.28), GLX, 0, 0); const gl = add(K.liquid(0.055, 0.2, 0x3d9ee6, 0.55), GLX, 0.052, 0);
+      add(K.labBeaker(0.06, 0.28), GLX, 0, 0); const gl = add(K.liquid(0.055, 0.2, 0x3d9ee6, 0.55), GLX, 0.052, 0);
       const dish = (x, y = 0, c = 0x3d9ee6, op = 0.6) => { add(K.dish(0.13), x, y, 0); return add(U5.dishWater(0.13, c, op), x, y, 0); };
       const d1 = dish(D1X), d2 = dish(D2X), hp = add(K.hotPlate(), HPX, 0, 0), d2w = dish(HPX, 0.105), d3 = dish(W3X), a3 = dish(A3X, 0, 0xe8f0f8, 0.4);
       const vap = (x, y) => { const v = add(K.gasCloud(0xffffff, 8), x, y + 0.02, 0); return v; };

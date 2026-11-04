@@ -85,7 +85,7 @@ export default {
       add(U5.saltCrystals(0, 0.02), NAX, 0, 0); const salt = add(U6.crystalHeap(0.04, 50, 0xfafaf6), NAX, 0.012, 0);
       const sc = add(U6.digitalScale(), SCX, 0, 0), top = sc.userData.top, pile = add(U6.crystalHeap(0.03, 30, 0xfafaf6), SCX, top, 0); pile.userData.set(0);
       const fl = add(U6.volFlask(0.085), FLX, 0, 0);
-      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.beaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
+      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.labBeaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
       const st = add(U6.stream(0x3d9ee6)), pour = U6.pourer(jug, V(JGX, 0, 0), null, V(FLX, 0.35, 0), V(-0.055, 0.15, 0), st, { dur: 1.8 });
       add(K.reagentBottle(0xf0f4f8, 0.22, 0.055, 'CH₃OH'), MEX, 0, 0);
       const nb = add(K.notebook(0.52, 0.38), NBX, 0, 0.32), pen = add(K.pencil(0.22)), write = U5.penWriter(nb, pen, PAGE, V(NBX + 0.32, 0.01, 0.42), nb.position);

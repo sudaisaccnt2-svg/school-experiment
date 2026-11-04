@@ -75,7 +75,7 @@ export default {
       const block = add(K.solid(new THREE.BoxGeometry(0.2, 0.16, 0.2), M.metal(0xa8aeb6, 0.32)), SBX, 0.08, 0);
       const wt = add(U5.weight(0.08, 0.09), SBX + 0.26, 0, 0.04);
       const brn = add(K.burner(), BKX, 0, 0); fires.push(brn.userData.flame); brn.userData.flame.scale.setScalar(0.45);
-      add(K.tripod(0.56), BKX, 0, 0); add(K.beaker(0.11, 0.22), BKX, 0.56, 0); const bw = add(K.liquid(0.105, 0.04, 0x3d9ee6, 0.55), BKX, 0.612, 0);
+      add(K.tripod(0.56), BKX, 0, 0); add(K.labBeaker(0.11, 0.22), BKX, 0.56, 0); const bw = add(K.liquid(0.105, 0.04, 0x3d9ee6, 0.55), BKX, 0.612, 0);
       const iceM = new THREE.MeshPhysicalMaterial({ color: 0xe8f6ff, roughness: 0.08, transmission: 0.6, thickness: 0.05, transparent: true, opacity: 0.88, clearcoat: 1 });
       const ice = [[-0.04, -0.03, 0.3], [0.04, 0.0, -0.4], [-0.01, 0.045, 0.9]].map(([x, z, r]) => { const c = add(K.solid(new THREE.BoxGeometry(0.06, 0.05, 0.06), iceM), BKX + x, 0.652 + 0.006 * [-0.04, 0.04, -0.01].indexOf(x), z); c.rotation.y = r; return c; });
       const th = add(K.thermometer(0.42, 100), BKX + 0.06, 0.6, 0.03); th.rotation.z = -0.12;

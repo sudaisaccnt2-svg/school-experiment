@@ -136,7 +136,7 @@ export default {
     {
       stage((t) => t < F0 - 0.05 || (t >= B0 - 0.05 && t < HD - 0.05) || (t >= W0 - 0.05 && t < SD - 0.05) || (t >= WB - 0.05 && t < WD - 0.05) || t >= T.end - 0.05);
       ST.bake(U.root, 'hook', HKX, 2.2, 1.0);
-      add(K.beaker(0.13, 0.3), WGX, 0, 0); const wl = add(K.liquid(0.125, 0.22, 0x3d9ee6, 0.55), WGX, 0.052, 0);
+      add(K.labBeaker(0.13, 0.3), WGX, 0, 0); const wl = add(K.liquid(0.125, 0.22, 0x3d9ee6, 0.55), WGX, 0.052, 0);
       const sh = add(K.saltShaker(0.26, 0.06), SSX, 0, 0); sh.userData.fill(0);
       const jar = add(K.gasJar(0xeef4ff, 0.14, 0.5), HJX, 0, 0); jar.userData.gas.opacity = 0.05;
       const wisp = K.gasCloud(0xf4f8ff, 10); jar.add(wisp);
@@ -153,8 +153,8 @@ export default {
       stage((t) => t >= F0 - 0.05 && t < H0 - 0.05); ST.bake(U.root, 'flow', FLX, 1.8, 0.9);
       const UX = FLX - 0.42, LX = FLX + 0.42, BLK = 0.34;
       add(K.solid(new THREE.BoxGeometry(0.34, BLK, 0.3), M.matte(0x8c8a86, 0.85)), UX, BLK / 2, 0);
-      add(K.beaker(0.14, 0.3), UX, BLK + 0.002, 0); const up = add(K.liquid(0.135, 1, 0x3d9ee6, 0.55), UX, BLK + 0.052, 0);
-      add(K.beaker(0.14, 0.3), LX, 0, 0); const lo = add(K.liquid(0.135, 1, 0x3d9ee6, 0.55), LX, 0.052, 0);
+      add(K.labBeaker(0.14, 0.3), UX, BLK + 0.002, 0); const up = add(K.liquid(0.135, 1, 0x3d9ee6, 0.55), UX, BLK + 0.052, 0);
+      add(K.labBeaker(0.14, 0.3), LX, 0, 0); const lo = add(K.liquid(0.135, 1, 0x3d9ee6, 0.55), LX, 0.052, 0);
       const path = [[UX + 0.18, BLK + 0.09], [UX + 0.3, BLK + 0.08], [FLX + 0.05, 0.4], [LX - 0.1, 0.39], [LX - 0.02, 0.37], [LX, 0.34]].map(([x, y]) => V(x, y, 0));
       const curve = new THREE.CatmullRomCurve3(path), glassT = new THREE.Mesh(new THREE.TubeGeometry(curve, 64, 0.016, 10), M.glass()); glassT.renderOrder = 5; U.root.add(glassT);
       const inT = new THREE.Mesh(new THREE.TubeGeometry(curve, 64, 0.009, 8), M.liquid(0x3d9ee6, 0.8)); inT.renderOrder = 4; U.root.add(inT);
@@ -181,7 +181,7 @@ export default {
     {
       stage((t) => t >= H0 - 0.05 && t < E0 - 0.05); ST.bake(U.root, 'heat', HTX, 1.4, 0.9);
       const CX = HTX - 0.08;
-      add(K.beaker(0.13, 0.24), CX, 0, 0); add(K.liquid(0.125, 0.18, 0x9a4e1a, 0.78), CX, 0.052, 0);
+      add(K.labBeaker(0.13, 0.24), CX, 0, 0); add(K.liquid(0.125, 0.18, 0x9a4e1a, 0.78), CX, 0.052, 0);
       const th = add(K.thermometer(0.46, 100), CX + 0.05, 0.07, 0.02); th.rotation.z = -0.12;
       const steam = add(K.smoke(10, 0xffffff), CX - 0.02, 0.26, 0); steam.scale.setScalar(0.16);
       const lHot = tag('hot tea: 80 °C', 0.05, '#ffb08a', CX - 0.05, 0.62, 0.1);

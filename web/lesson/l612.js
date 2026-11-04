@@ -82,7 +82,7 @@ export default {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', -0.02, 2.8, 0.85);
       // MIX: three beakers with a small bottle of the liquid that is poured in
       const base = [WATER, CCL, WATER], top = [BENZ, BENZ, ALC], miscible = [false, true, true], names = [['benzene', 'water'], ['benzene', 'CCl₄'], ['alcohol', 'water']];
-      const bk = B.map((x, i) => { add(K.beaker(0.06, 0.18), x, 0, 0); const l = add(K.liquid(0.055, 0.07, base[i], base[i] === WATER ? 0.58 : 0.4), x, 0.012, 0); const up = add(K.liquid(0.055, 0.05, top[i], 0.62), x, 0.012 + 0.07 + 0.004, 0); up.visible = false; return { l, up }; });
+      const bk = B.map((x, i) => { add(K.labBeaker(0.06, 0.18), x, 0, 0); const l = add(K.liquid(0.055, 0.07, base[i], base[i] === WATER ? 0.58 : 0.4), x, 0.012, 0); const up = add(K.liquid(0.055, 0.05, top[i], 0.62), x, 0.012 + 0.07 + 0.004, 0); up.visible = false; return { l, up }; });
       const bt = B.map((x, i) => { const g = add(new THREE.Group(), x + 0.1, 0, -0.16); g.add(K.reagentBottle(top[i], 0.16, 0.04, names[i][0])); return g; });
       const stm = add(U6.stream(BENZ)), pours = B.map((x, i) => U6.pourer(bt[i], V(x + 0.1, 0, -0.16), null, V(x, 0.33, 0), V(-0.016, 0.16, 0), stm, { dur: 1.0, tilt: 2.0 }));
       // SODA

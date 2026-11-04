@@ -92,6 +92,13 @@ export function beaker(r = 0.62, h = 1.55) {
     .map(([x, y]) => new THREE.Vector2(x, y));
   const g = new THREE.Mesh(new THREE.LatheGeometry(prof, 64), M.glass()); g.renderOrder = 5; return g;
 }
+/** a small lab beaker whose glass is scaled for its size (kit.beaker's rim was made for big ones and flares at small
+ *  sizes): thin walls, a small pouring lip, inner floor at y 0.008 (a liquid at y 0.012 sits clear of it) */
+export function labBeaker(r = 0.06, h = 0.16) {
+  const w = Math.max(0.004, r * 0.08), prof = [[0, 0], [r, 0], [r + w, w], [r + w, h], [r + w * 2.2, h + w * 1.2], [r + w * 2.4, h + w * 1.8], [r + w * 1.4, h + w * 1.8], [r + 0.001, h + 0.002], [r + 0.001, 0.008], [0, 0.008]]
+    .map(([x, y]) => new THREE.Vector2(x, y));
+  const g = new THREE.Mesh(new THREE.LatheGeometry(prof, 48), M.glass()); g.renderOrder = 5; return g;
+}
 export function liquid(r, h, color, o = 0.5) {
   const grp = new THREE.Group();
   const body = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 64, 1, true), M.liquid(color, o)); body.position.y = h / 2;   // open top: the surface disc is the only top (no two surfaces in one place → no flicker)

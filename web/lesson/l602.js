@@ -74,12 +74,12 @@ export default {
     // ================================================================ BENCH
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX + 0.3, 3.0, 0.8);
-      const bk = add(new THREE.Group(), BKX, 0, 0); bk.add(K.beaker(0.1, 0.22)); const lq = K.liquid(0.095, 0.15, 0x3d9ee6, 0.5); lq.position.y = 0.012; bk.add(lq);
+      const bk = add(new THREE.Group(), BKX, 0, 0); bk.add(K.labBeaker(0.1, 0.22)); const lq = K.liquid(0.095, 0.15, 0x3d9ee6, 0.5); lq.position.y = 0.012; bk.add(lq);
       const heap = U6.crystalHeap(0.045, 50); heap.position.y = 0.014; bk.add(heap);
       add(U5.saltCrystals(0, 0.02), SDX, 0, 0); const sug = add(U6.crystalHeap(0.045, 60), SDX, 0.012, 0), sp = add(K.spoon(0.22), SDX + 0.06, 0.03, 0.04); sp.rotation.z = Math.PI / 2 - 0.3;
       const rod = add(U6.stirRod(0.3), BKX + 0.18, 0, 0.06); rod.rotation.z = 0.3;
       const hp = add(K.hotPlate(), HPX, 0, 0), glow = add(K.glowSprite(0xff5a2a, 0.26), HPX, 0.11, 0);
-      const beak = TX.map((x, i) => { add(K.beaker(0.08, 0.18), x, 0, 0); add(K.liquid(0.075, 0.12, 0x3d9ee6, 0.5), x, 0.012, 0); return x; });
+      const beak = TX.map((x, i) => { add(K.labBeaker(0.08, 0.18), x, 0, 0); add(K.liquid(0.075, 0.12, 0x3d9ee6, 0.5), x, 0.012, 0); return x; });
       const crys = TX.map((x) => add(K.solid(new THREE.BoxGeometry(0.018, 0.018, 0.018), new THREE.MeshPhysicalMaterial({ color: 0xf6f6f2, roughness: 0.15, transmission: 0.3, thickness: 0.02 })), x, 0.4, 0));
       const needles = Array.from({ length: 9 }, (_, i) => { const n = add(K.solid(new THREE.BoxGeometry(0.006, 0.006, 0.05), new THREE.MeshPhysicalMaterial({ color: 0xf6f6f2, roughness: 0.2 })), TX[2], 0.022, 0); n.rotation.set(0.6 * Math.sin(i), i * 0.7, 0.5 * Math.cos(i)); return n; });
       add(U5.saltCrystals(5, 0.016), CDX, 0, 0); const tg = add(K.tongs(0.3), CDX, 0.012, 0.02);

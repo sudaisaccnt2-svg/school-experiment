@@ -79,7 +79,7 @@ export default {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX, 1.8, 1.0);
       const sb = add(new THREE.Group(), SBX, 0, 0); sb.add(K.reagentBottle(0xcfe4ff, 0.24, 0.065, '2.5 M stock'));
       const c1 = add(U6.gradCylinder(100), C1X, 0, 0), c2 = add(U6.gradCylinder(500, 0.05, 0.42), C2X, 0, 0);
-      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.beaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
+      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.labBeaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
       const st = add(U6.stream(0xcfe4ff)), st2 = add(U6.stream(0x3d9ee6));
       const nb = add(K.notebook(0.52, 0.38), NBX, 0, 0.32), pen = add(K.pencil(0.22)), write = U5.penWriter(nb, pen, PAGE, V(NBX + 0.32, 0.01, 0.42), nb.position);
       const pS = U6.pourer(sb, V(SBX, 0, 0), null, V(C1X, 0.37, 0), V(0.02, 0.24, 0), st, { dur: 1.2, tilt: 2.0, side: -1 });

@@ -78,15 +78,15 @@ export default {
     // ================================================================ BENCH
     {
       U.stage((t) => !dark(t)); STD.bake(U.root, 'hook', HKX + 0.12, 3.0, 0.8);
-      add(K.beaker(0.1, 0.22), SBX, 0, 0); add(K.liquid(0.095, 0.15, 0x3d9ee6, 0.5), SBX, 0.012, 0); const heap = add(U6.crystalHeap(0.04, 50), SBX, 0.014, 0); heap.visible = false;
+      add(K.labBeaker(0.1, 0.22), SBX, 0, 0); add(K.liquid(0.095, 0.15, 0x3d9ee6, 0.5), SBX, 0.012, 0); const heap = add(U6.crystalHeap(0.04, 50), SBX, 0.014, 0); heap.visible = false;
       add(U5.saltCrystals(0, 0.02), SDX, 0, 0); const sug = add(U6.crystalHeap(0.04, 50), SDX, 0.012, 0), sp = add(K.spoon(0.22), SDX + 0.06, 0.03, 0.04); sp.rotation.z = Math.PI / 2 - 0.3; const rod = add(U6.stirRod(0.3), SBX + 0.2, 0, 0.05); rod.rotation.z = 0.3;
-      add(K.beaker(0.08, 0.2), SLX, 0, 0); add(K.liquid(0.075, 0.13, 0x3d9ee6, 0.5), SLX, 0.012, 0); const salt = add(U6.crystalHeap(0.035, 40), SLX, 0.014, 0);
+      add(K.labBeaker(0.08, 0.2), SLX, 0, 0); add(K.liquid(0.075, 0.13, 0x3d9ee6, 0.5), SLX, 0.012, 0); const salt = add(U6.crystalHeap(0.035, 40), SLX, 0.014, 0);
       const bot = add(K.glassBottle(1.2), DKX, 0, 0), fizz = add(K.bubbles(14, V(0, 0.04, 0), 0.2, 0.04, 0.008), DKX, 0, 0);
       const brn = add(K.burner(), TPX, 0, 0); fires.push(brn.userData.flame); brn.userData.flame.scale.setScalar(0.45); add(K.tripod(0.56), TPX, 0, 0);
       const gz = add(K.solid(new THREE.BoxGeometry(0.34, 0.006, 0.2), M.metal(0x8d939b, 0.4)), TPX, 0.565, 0);
       const dA = add(K.dish(0.07), TPX - 0.08, 0.568, 0), dB = add(K.dish(0.07), TPX + 0.08, 0.568, 0), wA = add(U5.dishWater(0.07), TPX - 0.08, 0.568, 0), wB = add(U5.dishWater(0.07, 0x6fb0e6), TPX + 0.08, 0.568, 0);
       const crust = add(U6.crystalHeap(0.035, 40), TPX + 0.08, 0.582, 0); crust.userData.set(0);
-      add(U6.brassKey(1.2), KYX, 0, 0); add(K.beaker(0.07, 0.18), SWX, 0, 0); add(K.liquid(0.065, 0.12, 0x2f9c8c, 0.55), SWX, 0.012, 0); add(K.balloon(0xcfe4ff, 0.08), BLX, 0, 0);
+      add(U6.brassKey(1.2), KYX, 0, 0); add(K.labBeaker(0.07, 0.18), SWX, 0, 0); add(K.liquid(0.065, 0.12, 0x2f9c8c, 0.55), SWX, 0.012, 0); add(K.balloon(0xcfe4ff, 0.08), BLX, 0, 0);
       const ls = [['water and sugar', '#ffffff', P_SB[0], 0.36, 0.1], ['salt and water', '#ffffff', SLX, 0.34, 0.1], ['a soft drink', '#9fe0b0', DKX, 0.46, 0.1], ['two dishes over a burner', '#ffffff', TPX, 0.82, 0.08], ['a brass key, sea water, air', '#ffffff', (KYX + BLX) / 2, 0.66, 0.08]].map(([s, c, x, y, z]) => tag(s, 0.042, c, x, y, z));
       const lW = tag('the sugar disappears… where?', 0.045, '#ffd27a', SBX, 0.4, 0.1);
       const lA = [grp(tag('made in water: an aqueous solution', 0.04, '#ffd27a', SLX, 0.4, 0.1), 'aq'), grp(tag('water dissolves so much: the universal solvent ✓', 0.038, '#ffd27a', SLX, 0.34, 0.1), 'aq')];

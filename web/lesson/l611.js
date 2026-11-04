@@ -80,11 +80,11 @@ export default {
     // ================================================================ BENCH
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', 0, 2.4, 0.8);
-      const beaker = (x, c, op = 0.58) => { add(K.beaker(0.06, 0.16), x, 0, 0); const l = add(K.liquid(0.055, 0.1, c, op), x, 0.012, 0); return l; };
+      const beaker = (x, c, op = 0.58) => { add(K.labBeaker(0.06, 0.16), x, 0, 0); const l = add(K.liquid(0.055, 0.1, c, op), x, 0.012, 0); return l; };
       const heapIn = (x, c = 0xfafaf4) => { const h = add(U6.crystalHeap(0.04, 45, c), x, 0.014, 0); h.userData.set(0); return h; };
       const dish = (x, c) => { add(U5.saltCrystals(0, 0.02), x, 0, -0.2); return add(U6.crystalHeap(0.035, 40, c), x, 0.012, -0.2); };
       // A: water + NaNO₃ / water + AgCl
-      beaker(SX[0] - D, WATER); beaker(SX[0] + D, WATER); const hA1 = heapIn(SX[0] - D), hA2 = heapIn(SX[0] + D, 0xf2f2ee); const dA1 = dish(SX[0] - 0.08), dA2 = dish(SX[0] + 0.08, 0xf2f2ee);
+      beaker(SX[0] - D, WATER); beaker(SX[0] + D, WATER); const hA1 = heapIn(SX[0] - D), hA2 = heapIn(SX[0] + D, 0xf2f2ee); const dA1 = dish(SX[0] - 0.12), dA2 = dish(SX[0] + 0.12, 0xf2f2ee);
       // B: water + LiCl / benzene + LiCl
       beaker(SX[1] - D, WATER); beaker(SX[1] + D, BENZ, 0.45); const hB1 = heapIn(SX[1] - D), hB2 = heapIn(SX[1] + D); const dB = dish(SX[1], 0xfafaf4);
       // C: benzene / water, a bottle of gasoline
@@ -105,7 +105,7 @@ export default {
       const add2 = (t, t0, from, to, h, dissolve, d) => { const a = ease(span(t, t0, t0 + 0.9)); if (t > t0 && t < t0 + 0.9) { carry.visible = true; carry.position.copy(K.arc(from, to, 0.12, a)); } h.userData.set(t > t0 + 0.9 ? (dissolve ? 1 - ease(span(t, t0 + 1.4, t0 + 3.6)) : 1) : 0); d.userData.set(t > t0 ? 0.7 : 1); };
       beats.push((t) => {
         carry.visible = false;
-        add2(t, A0 + 1.6, V(SX[0] - 0.08, 0.02, -0.2), V(SX[0] - D, 0.2, 0), hA1, true, dA1); add2(t, A0 + 2.6, V(SX[0] + 0.08, 0.02, -0.2), V(SX[0] + D, 0.2, 0), hA2, false, dA2);
+        add2(t, A0 + 1.6, V(SX[0] - 0.12, 0.02, -0.2), V(SX[0] - D, 0.2, 0), hA1, true, dA1); add2(t, A0 + 2.6, V(SX[0] + 0.12, 0.02, -0.2), V(SX[0] + D, 0.2, 0), hA2, false, dA2);
         add2(t, B0 + 1.6, V(SX[1], 0.02, -0.2), V(SX[1] - D, 0.2, 0), hB1, true, dB); add2(t, B0 + 2.6, V(SX[1], 0.02, -0.2), V(SX[1] + D, 0.2, 0), hB2, false, dB);
         const f1 = t > C0 + 1.0 ? (t < C0 + 4.4 ? p1(t, C0 + 1.0) : 1) : 0, f2 = t > C0 + 4.4 ? p2(t, C0 + 4.4) : 0;
         lC1.traverse((o) => { if (o.material?.color) o.material.color.set(BENZ).lerp(new THREE.Color(GAS), 0.45 * f1); });

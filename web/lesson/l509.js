@@ -84,9 +84,9 @@ export default {
       const ink = (x) => { const c = add(K.gasCloud(0x1f3fa8, 14), x, 0.014, 0); return c; }, c1 = ink(F1X), c2 = ink(F2X);
       const drop = add(K.solid(new THREE.SphereGeometry(0.008, 12, 8), M.gloss(0x1f3fa8), { outline: false }));
       const oilM = new THREE.MeshPhysicalMaterial({ color: 0xd8a640, transparent: true, opacity: 0.55, roughness: 0.05, clearcoat: 1, depthWrite: false });
-      const oil = (x) => { add(K.beaker(0.06, 0.34), x, 0, 0); const o = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.28, 32), oilM); o.position.set(x, 0.012 + 0.14, 0); o.renderOrder = 4; U.root.add(o); return add(K.solid(new THREE.SphereGeometry(0.014, 16, 12), M.metal(0xc8ccd2, 0.25)), x, 0.38, 0); };
+      const oil = (x) => { add(K.labBeaker(0.06, 0.34), x, 0, 0); const o = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.28, 32), oilM); o.position.set(x, 0.012 + 0.14, 0); o.renderOrder = 4; U.root.add(o); return add(K.solid(new THREE.SphereGeometry(0.014, 16, 12), M.metal(0xc8ccd2, 0.25)), x, 0.38, 0); };
       const b1 = oil(O1X), b2 = oil(O2X), st2 = add(K.smoke(6, 0xffffff), O2X, 0.36, 0); st2.scale.setScalar(0.07);
-      add(K.beaker(0.06, 0.32), CYX, 0, 0); const wtr = add(K.liquid(0.055, 0.16, 0x3d9ee6, 0.55), CYX, 0.012, 0);
+      add(K.labBeaker(0.06, 0.32), CYX, 0, 0); const wtr = add(K.liquid(0.055, 0.16, 0x3d9ee6, 0.55), CYX, 0.012, 0);
       const olv = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.07, 32), oilM); olv.position.set(CYX, 0.012 + 0.16 + 0.003 + 0.035, 0); olv.renderOrder = 4; U.root.add(olv);
       const bj = add(K.gasJar(0xa8452c, 0.1, 0.34), BJX, 0, 0); bj.userData.gas.opacity = 0; bj.children[1].visible = false;
       const brl = add(K.solid(new THREE.CylinderGeometry(0.07, 0.07, 0.012, 24), new THREE.MeshPhysicalMaterial({ color: 0x7a1e10, roughness: 0.1, clearcoat: 1 }), { outline: false }), BJX, 0.036, 0);

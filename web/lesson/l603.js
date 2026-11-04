@@ -78,10 +78,10 @@ export default {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX - 0.13, 2.9, 0.8);
       const bal = add(K.balloon(0xcfe4ff, 0.12), BLX, 0, 0);
       add(U5.candle(), CDX, 0, 0); const smk = add(K.smoke(8, 0x8a8a8a), CDX, 0.2, 0); smk.scale.setScalar(0.1);
-      add(K.hotPlate(), FGX, 0, 0); add(K.beaker(0.08, 0.16), FGX, 0.105, -0.01); add(K.liquid(0.075, 0.08, 0x3d9ee6, 0.5), FGX, 0.117, -0.01); const mist = add(K.smoke(10, 0xffffff), FGX, 0.3, -0.01); mist.scale.setScalar(0.12);
+      add(K.hotPlate(), FGX, 0, 0); add(K.labBeaker(0.08, 0.16), FGX, 0.105, -0.01); add(K.liquid(0.075, 0.08, 0x3d9ee6, 0.5), FGX, 0.117, -0.01); const mist = add(K.smoke(10, 0xffffff), FGX, 0.3, -0.01); mist.scale.setScalar(0.12);
       add(K.glassBottle(1.2), SDX, 0, 0); const fizz = add(K.bubbles(16, V(0, 0.04, 0), 0.2, 0.04, 0.008), SDX, 0, 0);
       add(K.reagentBottle(0xf0f4f8, 0.24, 0.06, 'alcohol'), ALX, 0, 0);
-      add(K.beaker(0.08, 0.18), SWX, 0, 0); add(K.liquid(0.075, 0.12, 0x2f9c8c, 0.55), SWX, 0.012, 0);
+      add(K.labBeaker(0.08, 0.18), SWX, 0, 0); add(K.liquid(0.075, 0.12, 0x2f9c8c, 0.55), SWX, 0.012, 0);
       const ls = [['a balloon of air', '#cfe4ff', BLX, 0.86, 0.05], ['a candle just blown out', '#ffffff', CDX, 0.32, 0.1], ['warm water: mist', '#ffffff', FGX, 0.42, 0.08], ['a soft drink', '#9fe0b0', SDX, 0.42, 0.1], ['alcohol', '#ffffff', ALX, 0.34, 0.1], ['sea water', '#8fe0d0', SWX, 0.3, 0.1]].map(([s, c, x, y, z]) => tag(s, 0.045, c, x, y, z));
       const lG = [grp(tag('solvent: a gas', 0.05, '#cfe4ff', (BLX + FGX) / 2, 0.66, 0.08), 'end'), grp(tag('solvent: a liquid', 0.05, '#9fd2ff', (SDX + SWX) / 2, 0.62, 0.08), 'end')];
       beats.push((t) => {

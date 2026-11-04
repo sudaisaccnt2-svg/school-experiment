@@ -85,7 +85,7 @@ export default {
       add(U5.saltCrystals(0, 0.02), PLX - 0.2, 0, 0.18); const pel = add(U6.crystalHeap(0.04, 50, 0xfafaf4), PLX - 0.2, 0.012, 0.18);
       const pile = add(U6.crystalHeap(0.035, 40, 0xfafaf4), SCX, top, 0);
       const fl = FX.map((x) => add(U6.volFlask(0.075), x, 0, 0));
-      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.beaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
+      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.labBeaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
       const st = add(U6.stream(0x3d9ee6)), st2 = add(U6.stream(0x3d9ee6));
       const nb = add(K.notebook(0.5, 0.36), NB0.x, 0, NB0.z), pen = add(K.pencil(0.22)), write = U5.penWriter(nb, pen, PAGE, V(NBX + 0.3, 0.01, NB0.z + 0.1), nb.position);
       const lipR = V(0.055, 0.15, 0), mouth = (x) => V(x, 0.33, 0);

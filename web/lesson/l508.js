@@ -103,7 +103,7 @@ export default {
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX + 0.06, 3.0, 0.85);
       const brn = add(K.burner(), BKX, 0, 0); fires.push(brn.userData.flame); brn.userData.flame.scale.setScalar(0.45);
-      add(K.tripod(0.56), BKX, 0, 0); add(K.beaker(0.11, 0.22), BKX, 0.56, 0); const bw = add(K.liquid(0.105, 0.14, 0x3d9ee6, 0.55), BKX, 0.612, 0);
+      add(K.tripod(0.56), BKX, 0, 0); add(K.labBeaker(0.11, 0.22), BKX, 0.56, 0); const bw = add(K.liquid(0.105, 0.14, 0x3d9ee6, 0.55), BKX, 0.612, 0);
       const boil = add(K.bubbles(16, V(0, 0.02, 0), 0.14, 0.12, 0.013), BKX, 0.612, 0), steam = add(K.smoke(10, 0xffffff), BKX, 0.8, 0); steam.scale.setScalar(0.16);
       const th = add(K.thermometer(0.42, 120), BKX + 0.05, 0.6, 0.02); th.rotation.z = -0.12;
       const nb = add(K.notebook(0.62, 0.44), NBX, 0, -0.03), pen = add(K.pencil(0.24)), write = U5.penWriter(nb, pen, PAGE, V(NBX + 0.36, 0.01, 0.2), nb.position);

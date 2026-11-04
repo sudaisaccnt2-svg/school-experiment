@@ -75,9 +75,9 @@ export default {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX + 0.2, 2.6, 0.85);
       add(K.dish(0.12), ICX, 0, 0);
       const ice = add(K.solid(new THREE.BoxGeometry(0.09, 0.08, 0.09), new THREE.MeshPhysicalMaterial({ color: 0xe8f6ff, roughness: 0.08, transmission: 0.6, thickness: 0.05, transparent: true, opacity: 0.85, clearcoat: 1 })), ICX, 0.055, 0); ice.rotation.y = 0.5;
-      add(K.beaker(0.11, 0.26), WGX, 0, 0); const wl = add(K.liquid(0.105, 0.18, 0x3d9ee6, 0.55), WGX, 0.052, 0);
+      add(K.labBeaker(0.11, 0.26), WGX, 0, 0); const wl = add(K.liquid(0.105, 0.18, 0x3d9ee6, 0.55), WGX, 0.052, 0);
       const brn = add(K.burner(), BRX, 0, 0); fires.push(brn.userData.flame); brn.userData.flame.scale.setScalar(0.45);
-      add(K.tripod(0.56), BRX, 0, 0); add(K.beaker(0.1, 0.18), BRX, 0.56, 0); const bw = add(K.liquid(0.095, 0.1, 0x3d9ee6, 0.55), BRX, 0.612, 0);
+      add(K.tripod(0.56), BRX, 0, 0); add(K.labBeaker(0.1, 0.18), BRX, 0.56, 0); const bw = add(K.liquid(0.095, 0.1, 0x3d9ee6, 0.55), BRX, 0.612, 0);
       const boil = add(K.bubbles(14, V(0, 0.02, 0), 0.1, 0.1, 0.011), BRX, 0.612, 0), steam = add(K.smoke(10, 0xffffff), BRX, 0.76, 0); steam.scale.setScalar(0.16);
       const pts = []; for (let i = 0; i <= 24; i++) { const u = i / 24; pts.push([-0.2 + 0.4 * u, 0.22 + 0.08 * Math.sin(u * Math.PI * 3)]); }
       const sign = add(K.neonSign(pts, 0xff5a2a), NEX, 0, 0);

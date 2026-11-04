@@ -93,7 +93,7 @@ export default {
     // ================================================================ HOOK / PAPER · a glass of water, a notebook, a pencil
     {
       U.stage((t) => t < WD - 0.05 || t >= PB - 0.05); ST.bake(U.root, 'hook', HKX, 2.0, 0.9);
-      add(K.beaker(0.13, 0.3), WGX, 0, 0); const wl = add(K.liquid(0.125, 0.22, 0x3d9ee6, 0.55), WGX, 0.052, 0);
+      add(K.labBeaker(0.13, 0.3), WGX, 0, 0); const wl = add(K.liquid(0.125, 0.22, 0x3d9ee6, 0.55), WGX, 0.052, 0);
       const nb = add(K.notebook(0.62, 0.44), NBX, 0, 0), pen = add(K.pencil(0.24));
       const lW = tag('water', 0.05, '#9fd2ff', WGX, 0.42, 0.08), lN = grp(tag('a notebook and a pencil', 0.05, '#ffffff', NBX + 0.12, 0.2, 0.25), 'nb');
       const res = [['water: Lewis structure ✓', 0.27, 0.36, P0 + 3.2, H2S - 0.2], ['H₂S ✓', 0.69, 0.36, H2S + 6.7, NH3 - 0.2], ['NH₃ ✓', 0.27, 0.66, NH3 + 7.5, CNT - 0.2]].map(([s, u, v, a, b]) => ({ l: tag(s, 0.05, '#ffd27a', 0, 0, 0), u, v, a, b }));

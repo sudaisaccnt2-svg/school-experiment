@@ -66,12 +66,12 @@ export default {
       STD.bake(U.root, 'hook', HKX - 0.05, 1.9, 0.8);
       const jar = add(new THREE.Group(), JRX, 0, 0); jar.add(K.reagentBottle(0, 0.2, 0.065, 'CuSO₄·5H₂O')); const cs = U6.crystalHeap(0.05, 50, 0x2f6ff0); cs.position.y = 0.015; jar.add(cs);
       const sc = add(U6.digitalScale(), SCX, 0, 0), top = sc.userData.top;
-      const wb = add(new THREE.Group(), SCX, top + 0.002, 0); wb.add(K.beaker(0.055, 0.13)); const wl = K.liquid(0.05, 0.08, BLUE, 0.6); wl.position.y = 0.012; wb.add(wl); wl.visible = false;
+      const wb = add(new THREE.Group(), SCX, top + 0.002, 0); wb.add(K.labBeaker(0.055, 0.13)); const wl = K.liquid(0.05, 0.08, BLUE, 0.6); wl.position.y = 0.012; wb.add(wl); wl.visible = false;
       const wc = U6.crystalHeap(0.04, 40, 0x2f6ff0); wc.position.y = 0.014; wb.add(wc); wc.userData.set(0);
       const fl = add(U6.volFlask(0.095, BLUE), FLX, 0, 0);
       const fprof = [[0.015, 0], [0.015, 0.06], [0.07, 0.14], [0.076, 0.15], [0.07, 0.15], [0.009, 0.062], [0.009, 0]].map(([x, y]) => new THREE.Vector2(x, y));
       const fn = add(new THREE.Mesh(new THREE.LatheGeometry(fprof, 32), K.M.glass()), FLX, 0.33, 0); fn.renderOrder = 5;
-      const jug = add(new THREE.Group(), WBX, 0, 0); jug.add(K.beaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
+      const jug = add(new THREE.Group(), WBX, 0, 0); jug.add(K.labBeaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
       const dr = add(U5.dropper(0.14), DRX, 0.01, 0.06); dr.rotation.z = Math.PI / 2;
       const stp = add(K.solid(new THREE.CylinderGeometry(0.02, 0.016, 0.03, 20), K.M.glass()), DRX - 0.12, 0.015, 0.1);
       const drop = add(K.solid(new THREE.SphereGeometry(0.006, 10, 8), M.gloss(0x3d9ee6), { outline: false }));

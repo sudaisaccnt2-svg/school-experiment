@@ -110,7 +110,7 @@ export default {
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX, 2.3, 0.8);
       add(K.saltHeap(0.1, 300), SAX, 0, 0.02);
-      add(K.beaker(0.11, 0.28), WAX, 0, 0); const wl = add(K.liquid(0.105, 0.2, 0x3d9ee6, 0.55), WAX, 0.052, 0);
+      add(K.labBeaker(0.11, 0.28), WAX, 0, 0); const wl = add(K.liquid(0.105, 0.2, 0x3d9ee6, 0.55), WAX, 0.052, 0);
       add(K.balloon(0x9fc8ff, 0.12), BAX, 0, 0);
       add(K.reagentBottle(0xe6eef6, 0.34, 0.085, 'NH₃'), AMX, 0, 0);
       add(K.ribbonCoil(0.07, 7, M.metal(0xc8743a, 0.28)), CUX, 0, 0);

@@ -78,12 +78,12 @@ export default {
     {
       U.stage((t) => !dark(t)); ST.bake(U.root, 'hook', HKX - 0.03, 2.8, 0.85);
       const sc = add(U6.digitalScale(), SCX, 0, 0), top = sc.userData.top, sc2 = add(U6.digitalScale(), SC2X, 0, 0);
-      const beakerOn = (x, c = 0x3d9ee6) => { const b = add(new THREE.Group(), x, top + 0.002, 0); b.add(K.beaker(0.07, 0.17)); const l = K.liquid(0.065, 0.12, c, 0.45); l.position.y = 0.012; b.add(l); l.visible = false; return l; };
+      const beakerOn = (x, c = 0x3d9ee6) => { const b = add(new THREE.Group(), x, top + 0.002, 0); b.add(K.labBeaker(0.07, 0.17)); const l = K.liquid(0.065, 0.12, c, 0.45); l.position.y = 0.012; b.add(l); l.visible = false; return l; };
       const bl = beakerOn(SCX), bl2 = beakerOn(SC2X, 0xa8d0f8);
       const bs = U6.crystalHeap(0.03, 30); bs.position.set(SCX, top + 0.014, 0); U.root.add(bs); bs.visible = false;
       add(U5.saltCrystals(0, 0.02), SGX, 0, 0); const sug = add(U6.crystalHeap(0.035, 40), SGX, 0.012, 0);
       add(U5.saltCrystals(0, 0.02), NAX, 0, 0); const salt = add(U6.crystalHeap(0.035, 40, 0xfafaf6), NAX, 0.012, 0);
-      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.beaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
+      const jug = add(new THREE.Group(), JGX, 0, 0); jug.add(K.labBeaker(0.05, 0.15)); const jl = K.liquid(0.045, 0.11, 0x3d9ee6, 0.45); jl.position.y = 0.012; jug.add(jl);
       const cy = add(U6.gradCylinder(100), CYX, 0, 0), cy2 = add(U6.gradCylinder(100), C2X, 0, 0);
       const al = add(new THREE.Group(), ALX, 0, 0); al.add(K.reagentBottle(0xf0f4f8, 0.22, 0.055, 'alcohol'));
       const st1 = add(U6.stream(0x3d9ee6)), st2 = add(U6.stream(0xe8f0ff));
