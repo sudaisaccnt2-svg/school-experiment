@@ -21,6 +21,7 @@ const DATA = [
 const RULER = shuffle(DATA).slice(0, 9), NUMS = shuffle(DATA).slice(0, 12), MEM = shuffle(DATA);
 
 function round(g, k, R, mode) {
+  const exp = mode === 'explore'; if (exp) mode = 'ruler';
   const G = new THREE.Group(); G.position.y = 1.35; g.stage.root.add(G);
   if (typeof R.model === 'string') {
     const m = molecule(G, R.model, { scale: 1.3 }); let tt = 0; m.g.rotation.x = 0.2;
@@ -38,15 +39,17 @@ function round(g, k, R, mode) {
     g.stage.tag(`<b>${R.a} ${EN[R.a].toFixed(1)}   ·   ${R.b} ${EN[R.b].toFixed(1)}</b>`, ru.g, [0, 0.62, 0], 'big gold');
     if (mode === 'ruler') { ru.marker(R.d); g.stage.tag(`<b>${R.d.toFixed(1)}</b>`, ru.g, [ru.X(R.d), -0.62, 0], 'big'); }
   }
+  if (exp) { g.goal(`${R.f}: ${KINDS[R.kind]}`, k); g.stage.tag(`<b>${KINDS[R.kind]}</b>`, ru.g, [ru.X(R.d), -1.15, 0], 'big green'); g.setTap(() => g.right(k, true, why, 0, false)); return; }   // 🔍 Explore: shown, nothing to get wrong
   g.goal('Which kind of bond?', k);
   choose(g, k, KINDS, KINDS[R.kind], { w: 3.0, size: 0.4, y: -2.05, why, onReveal: () => ru && mode !== 'ruler' && ru.marker(R.d) });
 }
 
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: DATA.length, run: (k, g) => round(g, k, DATA[k], 'explore') },
   { key: 'ruler', icon: '📏', name: 'Ruler', n: RULER.length, run: (k, g) => round(g, k, RULER[k], 'ruler') },
   { key: 'nums', icon: '🧮', name: 'Numbers', n: NUMS.length, run: (k, g) => round(g, k, NUMS[k], 'nums') },
   { key: 'mem', icon: '🧠', name: 'Memory', n: MEM.length, run: (k, g) => round(g, k, MEM[k], 'mem') },
 ];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'bondsort', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.2, 0] });
+  return runGame({ stage, ui, level, id: 'bondsort', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.2, 0], excite: true });
 }

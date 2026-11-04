@@ -22,8 +22,8 @@
 //         two H₂O, their bonds break, H₂ + H₂ + O₂ leave "its bonds are broken ✓" · ✓ form, change, break.
 //  END    the first table: each thing gets its bond type on it, one at a time: salt "ionic", water "covalent",
 //         ammonia "dative (co-ordinate)", copper "metallic" · "Four types of bond ✓" · ✓.
-// Game (🎮 Bond Sorter, docs/COVERAGE_U4.md): the definitions (valence shell, bonding / non-bonding electrons, chemical
-//   bond), sigma vs pi, the four types.
+// Game (🎮 Bond Reasons › Words + Facts, docs/COVERAGE_U4.md): the definitions (valence shell, bonding / non-bonding
+//   electrons, chemical bond), sigma vs pi, the four types.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -14,7 +14,7 @@
 //  ACT    back to the table: Activity 4.3: three bins (ionic · covalent · metallic) and ten things from home as cards:
 //         salt, sugar, water, copper wire, spoon, baking soda, foil, plastic bottle, chalk, cooking oil · ✓.
 //  END    the ring: "Metal ions in a sea of electrons ✓".
-// Game (🎮 Bond Sorter, docs/COVERAGE_U4.md): Al, Ag, Cu, Pt examples, electron gas theory, more home substances.
+// Game (🎮 Bond Reasons › Facts: Al, Ag, Cu, Pt, electron gas theory; 🎮 Bond Sorter: more substances).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

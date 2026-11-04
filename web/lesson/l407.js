@@ -16,8 +16,8 @@
 //         ammonia comes in, its lone pair moves to boron, a gold arrow N → B "an addition compound ✓" · ✓.
 //  EX     Example 4.2: three bins (uncombined atoms · molecules · ions) · five cards drop in: Ne, O₂, NO₂, KCl, Na₂O · ✓.
 //  END    the bottles and the white smoke: "One atom gives both: a dative bond ✓".
-// Game (🎮 Bond Builder, docs/COVERAGE_U4.md): Practice 4.2 (H₂, He, HCl, HgO), coordinate covalent compounds, the
-//   electron-rich / electron-deficient words.
+// Game (🎮 Bond Reasons › Facts + Why?: Practice 4.2 (He atom, H₂ molecule, HCl and HgO compounds), coordinate
+//   covalent, electron-rich / electron-deficient, why a dative bond is always polar).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

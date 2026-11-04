@@ -21,7 +21,7 @@ function model(g, key) {
   const mol = molecule(G, key, { scale: 1.3 }); popIn(mol.g, 1, 0.45);
   mol.g.rotation.x = key === 'CH4' ? 0.3 : 0.15;
   g.onFrame((dt) => (mol.g.rotation.y += 0.35 * (dt ?? 0.016)));
-  g.stage.tag(`<b>${F[key]}</b>`, G, [0, 2.35, 0], 'huge');
+  g.stage.tag(`<b>${F[key]}</b>`, G, [0, 1.5, 0], 'huge');
   return { G, mol };
 }
 function pulls(mol, key) {                  // an arrow along each bond toward the atom that pulls harder (δ−)
@@ -54,11 +54,17 @@ function polar(k, g) {
     why: POLAR[key] ? `${F[key]}: the pulls add up one way → polar` : `${F[key]}: the pulls cancel → non-polar`,
     onReveal: () => k >= 6 && pulls(mol, key) });
 }
+function explore(k, g) {                   // 🔍 Explore: every molecule with its shape, angle and polarity; nothing to get wrong
+  const key = KEYS[k], { G, mol } = model(g, key); pulls(mol, key);
+  g.stage.tag(`<b>${NAME[key]} · ${SHAPES[key].angle}</b>`, G, [0, -2.0, 0], 'big gold');
+  g.goal(`${F[key]}: ${POLAR[key] ? 'polar' : 'non-polar'}`, k); g.setTap(() => g.right(k, true, `${F[key]}: ${NAME[key]}, ${SHAPES[key].angle}`, 0, false));
+}
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: KEYS.length, run: explore },
   { key: 'shape', icon: '🔷', name: 'Shapes', n: SH.length, steps: [6], run: shapes },
   { key: 'angle', icon: '📐', name: 'Angles', n: AN.length, steps: [6], run: angles },
   { key: 'polar', icon: '⚖️', name: 'Polar', n: PO.length, steps: [6], run: polar },
 ];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'shapelab', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.2, 0] });
+  return runGame({ stage, ui, level, id: 'shapelab', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.2, 0], excite: true });
 }

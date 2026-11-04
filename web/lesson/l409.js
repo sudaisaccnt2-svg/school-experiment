@@ -17,7 +17,7 @@
 //         "ammonia: polar too ✓" · Test Yourself: ten cards drop into polar / non-polar bins · the comb's − edge: five
 //         water molecules turn their δ+ ends toward it "the comb pulls their charged ends ✓".
 //  END    the bent stream on the table: "Polar molecules: + and − ends ✓".
-// Game (🎮 Bond Sorter, docs/COVERAGE_U4.md): the Test Yourself Lewis structures, Br₂, every pair of the table.
+// Game (🎮 Bond Sorter: every pair of the table, H₂, Cl₂, HCl …; 🎮 Bond Reasons › Facts: Br₂).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

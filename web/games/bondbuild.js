@@ -64,7 +64,7 @@ function ions(k, g) {
   choose(g, k, opts, ion, { w: 1.7, size: 0.55, why, onRight: () => A.dots.forEach((e) => tween(0.5, (t) => e.scale.setScalar(1 + 0.6 * Math.sin(t * Math.PI)), ease.lin)) });
 }
 
-function build(k, g, R, kind) {
+function build(k, g, R, kind, explore = false) {
   const G = new THREE.Group(); G.position.y = 1.2; g.stage.root.add(G);
   G.scale.setScalar(Math.min(1.25, (innerWidth / innerHeight > 1.15 ? 9.5 : 6.5) / (Math.max(...R.atoms.map((a) => Math.abs(a[1]))) * 2 + 2.4)));
   const A = R.atoms.map(([s, x, y, n, o]) => dotAtom(g.stage, G, s, [x, y, 0], n, o));
@@ -84,9 +84,10 @@ function build(k, g, R, kind) {
   pending.forEach((p) => { if (p.key) p.of = rows[p.key]; });
   g.goal(kind === 'give' ? `${R.f}: give the electrons` : `${R.f}: share pairs`, k);
   let first = true, busy = false, miss = 0, glowing = null;
-  const beginner = k < 2;
+  const beginner = k < 2 && !explore;
   const hintNext = () => { if (busy || !pending.length) return; glowing = pending[0].dots; glowing.forEach((d) => pulse(d)); };
   if (beginner) g.later(9, hintNext);
+  if (explore) { g.goal(R.f, k); g.later(1.2, () => go(pending[0])); }   // 🔍 Explore: every move plays by itself, nothing can be wrong
 
   async function doMove(p) {
     const [type] = p.m;
@@ -111,7 +112,7 @@ function build(k, g, R, kind) {
     await doMove(p);
     if (my !== g.token) return;
     busy = false; miss = 0;
-    if (pending.length) { if (beginner) g.later(9, hintNext); return; }
+    if (pending.length) { if (beginner) g.later(9, hintNext); if (explore) g.later(0.5, () => go(pending[0])); return; }
     busy = true;
     if (kind === 'give') {                 // the emptied metal ring shrinks; ion names appear
       A.forEach((a, j) => { if (!a.dots.length) tween(0.4, (t) => a.ring.scale.setScalar(1 - 0.35 * t), ease.out);
@@ -122,6 +123,7 @@ function build(k, g, R, kind) {
   }
   g.setTap((hit) => {
     const e = hit && hit.obj;
+    if (explore) return;
     if (busy || !e || e.userData.ai === undefined) return;
     const p = pending.find((q) => q.dots.includes(e));
     if (p) { go(p); return; }
@@ -131,12 +133,14 @@ function build(k, g, R, kind) {
 }
 function pulse(m) { tween(1.2, (t) => m.scale.setScalar(1 + 0.7 * Math.sin(t * Math.PI * 2) ** 2), ease.lin); }
 
+const EXPLORE = [...GIVE.map((R) => [R, 'give']), ...SHARE.map((R) => [R, 'share']), ...MULTI.map((R) => [R, 'multi'])];
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: EXPLORE.length, run: (k, g) => build(k, g, ...EXPLORE[k], true) },
   { key: 'ions', icon: '⚡', name: 'Ions', n: IONS.length, run: ions },
   { key: 'give', icon: '🧂', name: 'Give', n: GIVE.length, steps: [3], run: (k, g) => build(k, g, GIVE[k], 'give') },
   { key: 'share', icon: '🤝', name: 'Share', n: SHARE.length, steps: [4], run: (k, g) => build(k, g, SHARE[k], 'share') },
   { key: 'multi', icon: '🔗', name: 'Double', n: MULTI.length, steps: [], run: (k, g) => build(k, g, MULTI[k], 'multi') },
 ];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'bondbuild', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.3, 0] });
+  return runGame({ stage, ui, level, id: 'bondbuild', parts: PARTS, cam: [0, 0.4, 13.5], target: [0, 0.3, 0], excite: true });
 }

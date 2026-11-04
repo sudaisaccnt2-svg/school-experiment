@@ -26,8 +26,8 @@
 //         → the 8 electrons round oxygen are counted → "8 outside: octet ✓"; each hydrogen now has 2 "duplet ✓, like
 //         helium" · ✓ lose · gain · share, ✓ octet · duplet.
 //  END    the first table again: "Bonds lower energy and fill outer shells ✓".
-// Game (🎮 Bond Builder, docs/COVERAGE_U4.md): O₂/O₃ and H₂O/CO₂ examples, the two concepts (valence, orbital),
-//   G. N. Lewis, "inert gases", group VIIIA members, octet/duplet sorting.
+// Game (🎮 Bond Reasons › Facts, docs/COVERAGE_U4.md): O₂/O₃ and H₂O/CO₂ examples, the two concepts (valence, orbital),
+//   G. N. Lewis, "inert gases", group VIIIA, the duplet (helium).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

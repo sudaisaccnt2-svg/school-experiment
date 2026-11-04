@@ -18,8 +18,8 @@
 //         bond ✓" (Fig. 4.20) · "H joined to F, O or N" · Example 4.4: five cards into yes / no: HF yes; C₂H₄, HBr, NH₄⁺,
 //         H₂ no · ✓.
 //  END    the table: "glue, paint, DNA: held by these forces" · "Forces between molecules ✓".
-// Game (🎮 Bond Sorter, docs/COVERAGE_U4.md): Practice 4.4 (H₂O, CH₃OH, NH₃), Van der Waals, the dipole examples (CO,
-//   NO, H₂S, H₂O, NH₃, HCl), the epoxy box, the reasons of Example 4.4.
+// Game (🎮 Bond Reasons › Facts + Words: Van der Waals, the dipole examples CO, NO, H₂S, H₂O, NH₃, HCl, Practice 4.4
+//   H₂O, CH₃OH, NH₃, H-bond needs F, O or N, water's high boiling point).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -16,7 +16,7 @@
 //         same: "2 bond pairs, 2 lone pairs ✓" · ✓.
 //  SINGLE three ball models in a row, H–H, Cl–Cl, F–F, each with one line "one shared pair: a single bond ✓" · ✓.
 //  END    the glued plate again: "Atoms share a pair: the covalent bond ✓".
-// Game (🎮 Bond Builder › Share, docs/COVERAGE_U4.md): O₂ and HCl as examples, dot-and-cross drawings, glue uses.
+// Game (🎮 Bond Builder › Share: H₂, HCl, H₂O dot-and-cross; 🎮 Bond Reasons › Words: covalent bond).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

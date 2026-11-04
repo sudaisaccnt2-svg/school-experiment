@@ -21,8 +21,7 @@
 //  ACT    Activity 4.4: each property card meets its name and one use (wires · car bodies · mirrors · bells · cables ·
 //         weights · cooking pots), one at a time · ✓.
 //  END    the three things: "Their bonds decide their properties ✓".
-// Game (🎮 Bond Sorter, docs/COVERAGE_U4.md): the full lists 4.5.1 i–vii and 4.5.2 i–vi, the three things covalent
-//   properties depend on, every row of Activity 4.4, hydrogen-bond properties (p.114 top).
+// Game (🎮 Bond Reasons › Facts + Why?: the property lists 4.5.1 / 4.5.2, Activity 4.4 rows, Long Q iv).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

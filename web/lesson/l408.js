@@ -13,8 +13,7 @@
 //         with two lone pairs ✓ · Practice 4.3: "nitrogen: 3 shared pairs + 1 lone pair" → the pencil draws NH₃ ✓.
 //  COUNT  Test Yourself 2: the pencil draws H–H "1 line = 2 electrons" and O=O "2 lines = 4 electrons" ✓.
 //  END    the page: "Lines for shared pairs, dots for lone pairs ✓".
-// Game (🎮 Bond Builder, docs/COVERAGE_U4.md): Test Yourself 1 (non-metals form covalent bonds; how), 3 (dot and cross
-//   for Cl₂, HCl, NH₃).
+// Game (🎮 Bond Builder › Share: Cl₂, HCl, NH₃ dot and cross; 🎮 Bond Reasons › Lewis: Long Q iii).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

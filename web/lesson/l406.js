@@ -18,7 +18,7 @@
 //         pointer goes past 1.7 "more than 1.7: hand over → ionic", back below "less than 1.7: share → covalent" · ✓.
 //  ACT    Activity 4.1: two bins, covalent and ionic · six cards drop in one by one: CO₂, NaCl, H₂O, C₆H₆, MgCl₂, HCl · ✓.
 //  END    the table: "One, two or three shared pairs ✓".
-// Game (🎮 Bond Builder › Double, docs/COVERAGE_U4.md): C₂H₄ and C₂H₂ examples, dot-and-cross drawings, the 1.7 rule.
+// Game (🎮 Bond Builder › Double: O=O, N≡N, O=C=O; 🎮 Bond Reasons › Facts: C₂H₄, C₂H₂, N₂; 🎮 Bond Sorter: the 1.7 rule).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U4.md.
 import * as THREE from 'three';
 import * as K from './kit.js';
