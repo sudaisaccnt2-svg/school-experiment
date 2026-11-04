@@ -97,6 +97,11 @@ may come later). Style rules for films: see "v2 style" in docs/STORYBOARD.md.
 - [x] Export 501–515 + build_pwa + test_offline
 - [ ] Waiting for the user's look at Unit 5
 
+- [x] 2026-11-04 SKILL rebuild: all 15 lessons are now CODE lessons (web/lesson/l501–l515.js, shared u5kit.js; app.js
+      CODE_LESSONS). zcheck 0, text_check 0 each. Coverage: docs/COVERAGE_U5.md. Games: Explore + arcade in State
+      Sorter and Why? Lab; new 🧠 Matter Practice (recall5.js: Key Points, Tables 5.1–5.3, dates, Long Q iii, iv).
+- [ ] Baked tables for 505–513 still in the CPU queue; dense 1.5 s + five-screen pass for 503–515 still to do
+
 ## Unit 6 Solutions (pp. 152–181) (2026-10-09)
 - [x] Films 601–617 built (scripts/u6, u6lib.py: beaker, inside, dissolve, flask, beam/torch, water, scale_bal,
       cylinder_glass; build with `sh scripts/u6/b6.sh scripts/u6/f6NN_x.py`; storyboard docs/STORYBOARD_U6.md), previews checked
