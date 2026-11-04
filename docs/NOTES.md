@@ -139,3 +139,4 @@ The films show book values as printed, because those are the exam answers. The r
 ## Unit 6 (Solutions)
 - p.163 Practice 6.1 (0.750 g CaCl₂ in 11.6 cm³) has no printed answer. With Ca = 40, Cl = 35.5: 111 g/mol → 0.00676 mol, 0.0116 dm³ → 0.583 M (lesson 608).
 - p.165 Example 6.4 uses "2.5 M CaCO₃": calcium carbonate hardly dissolves in water, so such a stock cannot really be made; kept as printed (exam answer 0.267 M).
+- p.166 (ii) says sugar has "comparatively low solubility in water" next to NaCl: in fact sugar is far more soluble (about 200 g vs 36 g per 100 g water at 20 °C). Kept as printed in the game; the lesson does not repeat it.
