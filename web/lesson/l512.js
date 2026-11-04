@@ -17,7 +17,7 @@
 //  TEMPS  the tall thermometer: three marks light, 13.2 · 95.5 · 128.5 °C with their pairs (grey ↔ white tin, rhombic ↔
 //         monoclinic sulphur, rhombohedral ↔ orthorhombic KNO₃) "transition temperature: both forms meet ✓".
 //  END    "One element, many forms: allotropy ✓".
-// Game (🎮 State Sorter, docs/COVERAGE_U5.md): kajol, soot, the three temperatures, the crystal names.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter, docs/COVERAGE_U5.md): kajol, soot, the three temperatures, the crystal names.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

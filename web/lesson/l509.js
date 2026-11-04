@@ -17,7 +17,7 @@
 //         liquids: fixed volume, much denser than gases ✓".
 //  ACT 5.3 the bromine jar: its brown vapour climbs and fills the jar "its brown vapour spreads ✓".
 //  END    "Liquids spread too, just more slowly ✓".
-// Game (🎮 State Sorter + Why? Lab, docs/COVERAGE_U5.md): Table 5.3 (seven densities), the kinetic theory sentence.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter + Why? Lab, docs/COVERAGE_U5.md): Table 5.3 (seven densities), the kinetic theory sentence.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

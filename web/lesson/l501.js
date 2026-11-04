@@ -14,7 +14,7 @@
 //         · the flask's rim flashes "takes the round shape: no fixed shape ✓".
 //  END    back on the table, the neon light glows "glowing gas: plasma, another state ✓" · "A gas fills any space, any
 //         shape ✓".
-// Game (🎮 State Sorter + Why? Lab, docs/COVERAGE_U5.md): the other states (liquid crystals, superfluids, supersolids,
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter + Why? Lab, docs/COVERAGE_U5.md): the other states (liquid crystals, superfluids, supersolids,
 //   paramagnetic), matter = mass + space, everyday examples.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';

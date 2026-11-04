@@ -14,7 +14,7 @@
 //  WARM   two dishes, one on a hot plate that is switched on; later the warm one has lost more "warmer: faster ✓".
 //  FORCES water vs alcohol; later the alcohol is almost gone "alcohol: weaker forces, faster ✓ · water holds on harder".
 //  END    "The fastest molecules escape: liquids evaporate ✓".
-// Game (🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): the definitions, the three factors as sorting rounds.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): the definitions, the three factors as sorting rounds.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

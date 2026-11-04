@@ -17,7 +17,7 @@
 //  FLOW   back on the table: the tap turns, a glow runs along the pipe, the burner lights "it flows along pipes:
 //         mobility ✓ (weak forces, empty spaces)".
 //  END    the balloon: "A gas pushes, squeezes, flows and is light ✓".
-// Game (🎮 Gas Law Lab › Units + Why? Lab, docs/COVERAGE_U5.md): the units and conversions, the definitions.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Gas Law Lab › Units + Why? Lab, docs/COVERAGE_U5.md): the units and conversions, the definitions.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

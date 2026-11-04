@@ -21,7 +21,7 @@
 //  BAROMETER the tube of mercury, turned over in its dish: the column falls and stops at 760 mm "the air holds it up:
 //         Torricelli, 1646 ✓".
 //  END    "A liquid boils when its vapour pressure equals the outside pressure ✓".
-// Game (🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): Table 5.2 (freezing and boiling points), Boyle's J-tube,
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): Table 5.2 (freezing and boiling points), Boyle's J-tube,
 //   the manometer, the factors.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';

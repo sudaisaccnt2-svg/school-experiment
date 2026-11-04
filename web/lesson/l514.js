@@ -20,7 +20,7 @@
 //  15 jumbled beside ordered "amorphous: no order · crystalline: a 3D pattern" ✓
 //  16 O₂ and O₃ "allotropy: one element, more forms"
 //  17 rhombic → needles at 95.5 °C "transition temperature: one allotrope → another" ✓
-// Game (🎮 State Sorter + Why? Lab + Gas Law Lab, docs/COVERAGE_U5.md): every point as a recall round.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter + Why? Lab + Gas Law Lab, docs/COVERAGE_U5.md): every point as a recall round.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

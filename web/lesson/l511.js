@@ -17,7 +17,7 @@
 //         baking soda, charcoal, lead pencil, candle wax, plastic, eraser, rubber) ✓.
 //  STS    the salted fish "salt keeps bacteria away: meat and fish keep longer ✓".
 //  END    "Ordered: crystalline. Jumbled: amorphous ✓".
-// Game (🎮 State Sorter, docs/COVERAGE_U5.md): more crystalline / amorphous items, butter, cotton candy, 20 % salt.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter, docs/COVERAGE_U5.md): more crystalline / amorphous items, butter, cotton candy, 20 % salt.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

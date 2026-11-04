@@ -16,7 +16,7 @@
 //         own: weaker forces, smaller molecules → more vapour ✓".
 //  WARM   the hot plate under the first jar is switched on: the needle climbs "hotter → more vapour pressure ✓".
 //  END    "Escape = return: the vapour's push is vapour pressure ✓".
-// Game (🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): water < acetone, alcohol > water, pentane > decane, Table 5.1.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): water < acetone, alcohol > water, pentane > decane, Table 5.1.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

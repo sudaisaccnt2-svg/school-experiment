@@ -18,7 +18,7 @@
 //  BALLOON Point to Ponder "Why does a balloon come down in a day or two?" · day 1 → day 2: tiny specks leave its
 //         skin, it shrinks and sinks to the table "its gas escapes through the rubber, one by one ✓".
 //  END    the open perfume bottle: "Gases spread by themselves, everywhere ✓".
-// Game (🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): the definitions word for word, Graham 1833.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Why? Lab + State Sorter, docs/COVERAGE_U5.md): the definitions word for word, Graham 1833.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

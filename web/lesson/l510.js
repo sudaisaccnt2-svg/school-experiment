@@ -15,7 +15,7 @@
 //         ice shrinks, the water rises, the red column stays "still 0 °C while ice is left ✓" · all melted, it climbs
 //         again "melting point: solid ↔ liquid · each pure solid its own: a purity test ✓".
 //  END    "Held tight in a fixed pattern: a solid keeps its shape ✓".
-// Game (🎮 State Sorter, docs/COVERAGE_U5.md): the full 9-row comparison table (mass … intermolecular force).
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter, docs/COVERAGE_U5.md): the full 9-row comparison table (mass … intermolecular force).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

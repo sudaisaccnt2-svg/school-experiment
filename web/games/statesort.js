@@ -37,11 +37,20 @@ function round(g, k, name, set, a, goal, n = 0) {
   choose(g, k, opts, opts[a], { w: 2.6, size: 0.45, column: [3.4, 1.0], why: `${name ? name + ': ' : ''}${opts[a]}, ${WHY[set][a]}`,
     onReveal: () => name && !look && fill(g, J, set, a) });
 }
+const EXP = [...NAMES.map(([n, a]) => [n, 's', a]), ...SOLIDS.map(([n, a]) => [n, 'k', a])];
+function explore(k, g) {                     // 🔍 Explore: every thing with its particles and its answer; nothing to get wrong
+  const [name, set, a] = EXP[k], opts = set === 's' ? STATES : KINDS;
+  const J = jar(1.3, 3.1); J.position.set(-1.6, -2.0, 0); g.stage.root.add(J); popIn(J, 1, 0.4);
+  g.stage.tag(`<b>${name}</b>`, J, [0, 3.9, 0], 'huge'); fill(g, J, set, a);
+  g.stage.tag(`<b>${opts[a]}</b>`, J, [3.6, 1.6, 0], 'huge gold');
+  g.goal(`${name}: ${opts[a]}, ${WHY[set][a]}`, k); g.setTap(() => g.right(k, true, `${name}: ${opts[a]}`, 0, false));
+}
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: EXP.length, run: explore },
   { key: 'see', icon: '👀', name: 'Particles', n: SEE.length, run: (k, g) => round(g, k, null, 's', SEE[k], 'Which state is this?') },
   { key: 'name', icon: '🏷️', name: 'Names', n: NAMES.length, run: (k, g) => round(g, k, NAMES[k][0], 's', NAMES[k][1], 'Solid, liquid or gas?', NAMES.length) },
   { key: 'kind', icon: '💎', name: 'Crystal', n: SOLIDS.length, run: (k, g) => round(g, k, SOLIDS[k][0], 'k', SOLIDS[k][1], 'Crystalline or amorphous?', SOLIDS.length) },
 ];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'statesort', parts: PARTS, cam: [0, 0.6, 13.5], target: [0, 0.3, 0] });
+  return runGame({ stage, ui, level, id: 'statesort', parts: PARTS, cam: [0, 0.6, 13.5], target: [0, 0.3, 0], excite: true });
 }

@@ -18,7 +18,7 @@
 //         carbon" · "pentagons and hexagons, like a football ✓ (20–100 atoms)" · "used in semiconductors, superconductors
 //         and lubricants".
 //  END    the charcoal "coke, charcoal, lampblack: amorphous carbon ✓" · "Same atoms, different arrangements ✓".
-// Game (🎮 State Sorter, docs/COVERAGE_U5.md): Long Q iii (allotropy, the three forms of carbon), the properties.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 State Sorter, docs/COVERAGE_U5.md): Long Q iii (allotropy, the three forms of carbon), the properties.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

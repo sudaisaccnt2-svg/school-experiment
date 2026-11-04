@@ -18,7 +18,7 @@
 //  ACT 5.2 the hot plate is switched on, its plate glows, the balloon on the flask blows up "hot air expands into the
 //         balloon ✓".
 //  END    "Hotter gas, bigger volume: V / T stays the same ✓".
-// Game (🎮 Gas Law Lab › Charles, docs/COVERAGE_U5.md): Fig. 5.9, °C ↔ K practice, more numericals, Jacques Charles 1787.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Gas Law Lab › Charles, docs/COVERAGE_U5.md): Fig. 5.9, °C ↔ K practice, more numericals, Jacques Charles 1787.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

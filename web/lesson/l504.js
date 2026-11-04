@@ -19,7 +19,7 @@
 //  PR 5.1 "P₂ = 3 atm · V₂ = 70.4 cm³" · the handle lifts to 1.20 atm, the gas grows · V₁ = P₂V₂ / P₁ → = 3 × 70.4 /
 //         1.20 → = 176 cm³ ✓ (the old film printed 70.4 → 176 the same way).
 //  END    "Press harder, the gas gets smaller: PV stays the same ✓".
-// Game (🎮 Gas Law Lab › Boyle, docs/COVERAGE_U5.md): Fig. 5.6, more numericals, Robert Boyle 1662, the STS balloon box.
+// Game (🎮 Matter Practice › Words + Facts; 🎮 Gas Law Lab › Boyle, docs/COVERAGE_U5.md): Fig. 5.6, more numericals, Robert Boyle 1662, the STS balloon box.
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U5.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

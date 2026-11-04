@@ -52,9 +52,14 @@ function round(k, g) {
   g.goal(R.ask, k);
   chooseText(g, k, R.o, R.a, { why: R.o[R.a], onRight: () => S.why(), onReveal: () => S.why() });
 }
-const PARTS = [{ key: 'why', icon: '🔬', name: 'Why?', n: ROUNDS.length, run: round }];
+function explore(k, g) {                     // 🔍 Explore: watch each experiment with its answer; nothing to get wrong
+  const R = ROUNDS[k], H = helpers(g);
+  H.G = new THREE.Group(); g.stage.root.add(H.G); popIn(H.G, 1, 0.4);
+  const S = R.scene(H); g.goal(`${R.ask} ${R.o[R.a]}`, k); g.later(0.8, () => S.why()); g.setTap(() => g.right(k, true, R.o[R.a], 0, false));
+}
+const PARTS = [{ key: 'explore', icon: '🔍', name: 'Explore', n: ROUNDS.length, run: explore }, { key: 'why', icon: '🔬', name: 'Why?', n: ROUNDS.length, run: round }];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'whylab', parts: PARTS, cam: [0, -0.8, 13.5], target: [0, -1.2, 0] });
+  return runGame({ stage, ui, level, id: 'whylab', parts: PARTS, cam: [0, -0.8, 13.5], target: [0, -1.2, 0], excite: true });
 }
 
 
