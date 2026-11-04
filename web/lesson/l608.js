@@ -16,7 +16,7 @@
 //  6.1    Practice 6.1: CaCl₂ = 40 + 2 × 35.5 = 111 g/mol · 0.750 ÷ 111 = 0.00676 mol · 11.6 cm³ = 0.0116 dm³ ·
 //         M = 0.00676 ÷ 0.0116 = 0.583 M ✓.
 //  END    "Grams ÷ molar mass = moles; moles ÷ dm³ = molarity ✓".
-// Game (🎮 Molarity Lab, docs/COVERAGE_U6.md): the same steps with other numbers, numericals i–v.
+// Game (🎮 Molarity Lab › Molarity: the same steps with other numbers, numericals i–v; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

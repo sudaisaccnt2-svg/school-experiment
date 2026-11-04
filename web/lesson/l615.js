@@ -17,7 +17,7 @@
 //         heterogeneous".
 //  MEDS   the antacid bottle: it settles, it is shaken "medicines that are suspensions: shake before use ✓".
 //  END    "Size decides: solution, colloid or suspension ✓".
-// Game (🎮 Mixture Sorter, docs/COVERAGE_U6.md): Table 6.2 row by row, more everyday mixtures (Short Q iii).
+// Game (🎮 Solutions Practice › Tables, Mixture Sorter › Kind: Table 6.2 row by row, Short Q iii; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

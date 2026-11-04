@@ -79,11 +79,19 @@ function round(k, g, list) {
   choose(g, k, SETS[R.set], SETS[R.set][R.a], { w: 3.0, size: 0.4, column: [3.3, 1.2], why: `${R.name}: ${R.why}`,
     onReveal: () => k >= half && B.fill() });
 }
+// 🔍 Explore first (SKILL): every item with its particles and its answer; a tap goes on, nothing is wrong.
+function explore(k, g) {
+  const R = ROUNDS[k], B = beaker(g, R); B.fill();
+  g.stage.tag(`<b>${R.name}</b>`, B.J, [0, 3.8, 0], 'huge');
+  g.stage.tag(`<b>${SETS[R.set][R.a]}</b>`, g.stage.root, [3.3, 1.2, 0], 'huge gold');
+  g.goal(R.why, k); g.setTap(() => g.right(k, true, `${R.name}: ${SETS[R.set][R.a]}`, 0, false));
+}
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: ROUNDS.length, run: explore },
   { key: 'kind', icon: '🥛', name: 'Kind', n: KIND.length, run: (k, g) => round(k, g, KIND) },
   { key: 'states', icon: '🧪', name: 'States', n: STAT.length, steps: [], run: (k, g) => round(k, g, STAT) },
   { key: 'pure', icon: '⚗️', name: 'Pure?', n: PURE.length, run: (k, g) => round(k, g, PURE) },
 ];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'mixsort', parts: PARTS, cam: [0, 0.6, 13.5], target: [0, 0.3, 0] });
+  return runGame({ stage, ui, level, id: 'mixsort', parts: PARTS, cam: [0, 0.6, 13.5], target: [0, 0.3, 0], excite: true });
 }

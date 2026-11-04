@@ -111,6 +111,12 @@ may come later). Style rules for films: see "v2 style" in docs/STORYBOARD.md.
 - [x] Export 601–617 + build_pwa + test_offline
 - [ ] Waiting for the user's look at Unit 6
 
+- [x] 2026-11-04 SKILL rebuild: all 17 lessons are now CODE lessons (web/lesson/l601–l617.js, shared u6kit.js; app.js
+      CODE_LESSONS). zcheck 0, text_check 0 each. Coverage: docs/COVERAGE_U6.md. Games: Explore + arcade in Mixture
+      Sorter, Solution Lab and Molarity Lab; new 🧠 Solutions Practice (recall6.js: Key Points, Tables 6.1, 6.2, the
+      nine types, alloys, Activities 6.1, 6.2, Fig. 6.10/6.11, Short Q i, ii, iv, v, Long Q i–v).
+- [ ] Baked tables for 603–615 still in the CPU queue; five-screen pass still to do
+
 ## Unit 7 Electrochemistry (pp. 182–217) (2026-10-09)
 - [x] Films 701–719 built (scripts/u7, u7lib.py: atom, badge, tank, plate, wire, battery, flow, bubbles, bulb, ion,
       molb, cflask, cell; build with `sh scripts/u7/b7.sh scripts/u7/f7NN_x.py`; storyboard docs/STORYBOARD_U7.md), previews checked

@@ -18,7 +18,7 @@
 //  PONDER Point to Ponder: 500 cm³ alcohol + 500 cm³ water into the 1 L cylinder: the level stops below the mark "less
 //         than 1 litre: the molecules pack closer (hydrogen bonds) ✓".
 //  END    "Liquids alike in polarity mix; gases dissolve more under pressure ✓".
-// Game (🎮 Solution Lab, docs/COVERAGE_U6.md): Activity 6.2 table, the salt-in-a-full-glass ponder, which liquids mix.
+// Game (🎮 Solutions Practice › Tables, Solution Lab: Activity 6.2, the ponder, which liquids mix, pressure; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -14,7 +14,7 @@
 //         dm³ of solution ✓".
 //  EX 6.1 the notebook: M = moles ÷ dm³ → 7.50 mol ÷ 1.50 dm³ → = 5.0 M ✓ · "1 M glucose: 180 g in 1 dm³".
 //  END    "Molarity: moles of solute per dm³ of solution ✓".
-// Game (🎮 Molarity Lab, docs/COVERAGE_U6.md): molar masses, more problems, the formula both ways.
+// Game (🎮 Molarity Lab › Molar mass + Molarity, Solutions Practice › Tables: molar masses, units, the formula; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

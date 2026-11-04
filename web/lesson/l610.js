@@ -12,7 +12,7 @@
 //  6.4    the notebook: M₂ = M₁V₁ ÷ V₂ → = 2.5 × 30 ÷ 280 → = 0.267 M ✓.
 //  6.5    V₂ = M₁V₁ ÷ M₂ → = 3.5 × 85 ÷ 0.41 → = 725.60 cm³ · water to add = 725.60 − 85 = 640.60 cm³ ✓.
 //  END    "Diluting adds solvent; the moles of solute stay the same ✓".
-// Game (🎮 Molarity Lab › Dilute, docs/COVERAGE_U6.md): more dilution problems.
+// Game (🎮 Molarity Lab › Molarity (Examples 6.4, 6.5), Solutions Practice › Tables: M₁V₁ = M₂V₂; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

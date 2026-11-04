@@ -15,7 +15,7 @@
 //  TEST   Fig. 6.2: tongs drop one crystal into each beaker: (a) it dissolves "unsaturated", (b) it stays "saturated",
 //         (c) crystals grow on it "supersaturated" ✓.
 //  END    "Unsaturated: more fits. Saturated: full. Supersaturated: over-full ✓".
-// Game (🎮 Mixture Sorter + Solution Lab, docs/COVERAGE_U6.md): the three definitions, the crystal test.
+// Game (🎮 Solutions Practice › Words + Why?, Solution Lab: the three definitions, the crystal test; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

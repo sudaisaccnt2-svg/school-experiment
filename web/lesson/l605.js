@@ -14,7 +14,7 @@
 //         cm³" "the 5 g one is dilute compared with the 8 g one ✓".
 //  STD    the 0.1 M bottle "its concentration is known: a standard solution ✓".
 //  END    "Concentration: how much solute in a given amount of solution ✓".
-// Game (🎮 Molarity Lab + Solution Lab, docs/COVERAGE_U6.md): the definitions, the two units (percentage, molarity).
+// Game (🎮 Solutions Practice › Words, Solution Lab: dilute, concentrated, standard solution; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

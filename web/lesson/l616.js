@@ -12,7 +12,7 @@
 //  14 gold balls in a 1 dm³ cube "molarity: moles per dm³"             15 the heap and 100 g "solubility: grams in 100 g"
 //  16 two layers / one liquid "immiscible · completely miscible"       17 a beam through particles "colloids: 1–1000 nm, Tyndall"
 //  18 lumps sink "suspension: heterogeneous, big particles · sedimentation"
-// Game (🎮 Mixture Sorter + Solution Lab + Molarity Lab, docs/COVERAGE_U6.md): every point as a recall round.
+// Game (🎮 Solutions Practice › Words: every Key Point as a recall round; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -60,9 +60,17 @@ function round(k, g) {
   g.goal(R.ask, k);
   chooseText(g, k, R.o, R.a, { why: R.o[R.a], onRight: () => S.why(), onReveal: () => S.why() });
 }
-const PARTS = [{ key: 'q', icon: '🔬', name: 'Questions', n: ROUNDS.length, run: round }];
+// 🔍 Explore first (SKILL): each experiment plays with its answer on it; a tap goes on, nothing is wrong.
+function explore(k, g) {
+  const R = ROUNDS[k], H = helpers(g);
+  H.G = new THREE.Group(); g.stage.root.add(H.G); popIn(H.G, 1, 0.4);
+  const S = R.scene(H); S.why();
+  g.goal(R.ask, k); g.stage.tag(`<b>${R.o[R.a]}</b>`, g.stage.root, [0, 2.7, 0], 'big gold');
+  g.setTap(() => g.right(k, true, R.o[R.a], 0, false));
+}
+const PARTS = [{ key: 'explore', icon: '🔍', name: 'Explore', n: ROUNDS.length, run: explore }, { key: 'q', icon: '🔬', name: 'Questions', n: ROUNDS.length, run: round }];
 export function start({ stage, ui, level }) {
-  return runGame({ stage, ui, level, id: 'sollab', parts: PARTS, cam: [0, -0.3, 14], target: [0, -0.7, 0] });
+  return runGame({ stage, ui, level, id: 'sollab', parts: PARTS, cam: [0, -0.3, 14], target: [0, -0.7, 0], excite: true });
 }
 
 // sea water boils dry: the water flies off, salt stays

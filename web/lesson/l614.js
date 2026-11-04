@@ -18,7 +18,7 @@
 //  EX 6.6 (dark) two bins, liquid ammonia NH₃ (polar) · benzene C₆H₆ (non-polar); cards drop in: H₂O → NH₃, C₆H₁₂ →
 //         benzene, AgCl → NH₃, CH₃OH (Practice 6.2) → polar ✓.
 //  END    "A beam of light tells a colloid from a solution ✓".
-// Game (🎮 Mixture Sorter, docs/COVERAGE_U6.md): Table 6.1 (sol, gel, emulsion, foam, aerosols, solid emulsion) to learn.
+// Game (🎮 Solutions Practice › Tables, Mixture Sorter: Table 6.1 classes of colloids, Example 6.6 (Solution Lab); docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

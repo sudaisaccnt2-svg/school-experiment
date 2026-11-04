@@ -19,7 +19,7 @@
 //  C      gasoline poured into benzene: it mixes; into water: it floats in a layer "non-polar mixes with non-polar, not
 //         with polar water ✓" · "grease and paints dissolve in petrol, ether, CCl₄".
 //  END    "Like dissolves like: polar with polar, non-polar with non-polar ✓".
-// Game (🎮 Solution Lab + Mixture Sorter, docs/COVERAGE_U6.md): which dissolves in which; the factors; NaCl vs sugar.
+// Game (🎮 Solutions Practice › Tables, Solution Lab: which dissolves in which; the factors (Long Q ii); docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

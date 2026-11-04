@@ -16,7 +16,7 @@
 //         "hydrogen in palladium: gas in solid ✓".
 //  END    the bench, the steel spoon "jewellery, steel, airplane parts (Al + Mg): solid solutions in daily life ✓" ·
 //         "Metals dissolve in metals: alloys are solid solutions ✓".
-// Game (🎮 Mixture Sorter › nine types, docs/COVERAGE_U6.md): the 6.3.3 table, the alloys and their metals, STS lists.
+// Game (🎮 Solutions Practice › Tables: the solid types, the alloys and their metals, airplane Al + Mg; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -17,7 +17,7 @@
 //  GRAPH  the pencil draws Fig. 6.11: KNO₃ rising, NaCl flat, Ce₂(SO₄)₃ falling, Na₂SO₄ rising to a peak at 32.4 °C then
 //         falling "Na₂SO₄: most soluble at 32.4 °C ✓".
 //  END    "Gases: less when hot. Solids: it depends on the solid ✓".
-// Game (🎮 Solution Lab, docs/COVERAGE_U6.md): the lists of up / down / flat / peak salts, Fig. 6.10 gases.
+// Game (🎮 Solutions Practice › Tables, Solution Lab: the up / down / flat / peak salts, Fig. 6.10 gases; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

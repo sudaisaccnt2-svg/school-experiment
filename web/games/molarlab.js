@@ -131,11 +131,24 @@ function problem(k, g) {
   choose(g, k, R.o, R.o[0], { w: 2.5, size: 0.42, column: [4.7, 1.8], why: `${R.book}: ${R.o[0]}`, tap: true,
     onRight: () => rig.why(), onReveal: () => rig.why() });
 }
+// 🔍 Explore first (SKILL): every molar mass, then every problem worked through; a tap goes on, nothing is wrong.
+function explore(k, g) {
+  stage = g.stage; on = (f) => g.onFrame(f);
+  if (k < MASS.length) {
+    const [f, M] = MASS[k];
+    const card = tile(f, { w: 3.2, h: 1.3, d: 0.3, color: '#3d6ab0', size: 0.6 }); card.position.set(0, 1.0, 0); g.stage.root.add(card); popIn(card, 1, 0.4);
+    g.stage.tag(`<b>${M} g per mol</b>`, card, [0, -1.3, 0], 'huge gold'); g.goal('Its molar mass', k);
+    g.setTap(() => g.right(k, true, `${f} = ${M} g per mol`, 0, false)); return;
+  }
+  const R = ROUNDS[k - MASS.length], rig = build(R); rig.why(); g.goal(R.ask, k);
+  g.setTap(() => g.right(k, true, `${R.book}: ${R.o[0]}`, 0, false));
+}
 let stage = null, on = null;
 const PARTS = [
+  { key: 'explore', icon: '🔍', name: 'Explore', n: MASS.length + ROUNDS.length, run: explore },
   { key: 'mass', icon: '⚖️', name: 'Molar mass', n: MASS.length, run: mass },
   { key: 'mol', icon: '🧮', name: 'Molarity', n: ROUNDS.length, run: problem },
 ];
 export function start({ stage: st, ui, level }) {
-  return runGame({ stage: st, ui, level, id: 'molarlab', parts: PARTS, cam: [0, 0.6, 14.5], target: [0, 0.4, 0] });
+  return runGame({ stage: st, ui, level, id: 'molarlab', parts: PARTS, cam: [0, 0.6, 14.5], target: [0, 0.4, 0], excite: true });
 }

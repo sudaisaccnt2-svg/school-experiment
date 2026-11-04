@@ -16,7 +16,7 @@
 //         100.0 g "10 cm³ in 100 g: 10 % v/m ✓ (the volume is not counted)".
 //  V/V    10 cm³ alcohol in the cylinder, water to the 100 mark "10 cm³ in 100 cm³: 10 % v/v ✓".
 //  END    "A percentage: parts of solute in 100 parts of solution ✓".
-// Game (🎮 Molarity Lab + Solution Lab, docs/COVERAGE_U6.md): the four formulas, more numbers.
+// Game (🎮 Solutions Practice › Tables + Why?, Molarity Lab: the four percentages, 10 g in 100 g; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

@@ -15,7 +15,7 @@
 //         · Na⁺ and Cl⁻ spread through "salt in sea water: solid in liquid ✓".
 //  END    back on the table, the two groups "solvent: a gas · solvent: a liquid" · "Solutes of every state dissolve in
 //         gases and liquids ✓".
-// Game (🎮 Mixture Sorter › nine types, docs/COVERAGE_U6.md): the tables of 6.3.1 and 6.3.2 (solute · solvent · example).
+// Game (🎮 Solutions Practice › Tables: the nine types (solute · solvent · example); docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

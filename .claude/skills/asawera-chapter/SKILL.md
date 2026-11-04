@@ -567,3 +567,4 @@ where the SCREEN answers it. Check the logic, not just the look:
 - 2026-10-15 Chapter 7 student review: a correct coverage list is not enough. Establish particle sources and signs,
   count atoms/electrons, show the calculation, and inspect the complete playback plus phone layouts before reporting a pass.
 - 2026-11-04 "Check chapters 4–6 against skill.md … why did you not fix it?": an audit alone is not the job; fix it. Unit 4 rebuilt as code lessons (u4kit.js) + games. Gotchas: a label's grow/pop must keep its own scale (setScalar(1) made signs huge); a lesson header may only name a game that really holds those items.
+- 2026-11-04 Unit 6 rebuilt as code lessons (u6kit.js) + 🧠 Solutions Practice; every Unit 4–6 game opens with 🔍 Explore. Gotcha: a stage's result label must share the group of the working lines above it (oneText), or the sum vanishes when its answer appears.

@@ -18,7 +18,7 @@
 //  STATES the key, the sea water, the balloon "solutions in all three states: alloy (solid), sea water (liquid), air
 //         (gas) ✓".
 //  END    "The sugar is still there, spread evenly through the water ✓".
-// Game (🎮 Mixture Sorter + Solution Lab, docs/COVERAGE_U6.md): the definitions word for word.
+// Game (🎮 Solutions Practice › Words, Mixture Sorter › Pure?, Solution Lab: the definitions, the boil-dry test; docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';

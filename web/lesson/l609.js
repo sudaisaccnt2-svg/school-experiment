@@ -15,7 +15,7 @@
 //  7      "0.5000 mol in 1.000 dm³: 0.5000 M ✓".
 //  SKILL  Skill Development: "2 M NaOH: 20 g made up to 250 mL · 0.1 M NaCl: 5.85 g made up to 1000 mL".
 //  END    "Weigh, dissolve, rinse, fill to the mark, mix: an exact molar solution ✓".
-// Game (🎮 Molarity Lab › Make it, docs/COVERAGE_U6.md): the steps in order, the Skill Development masses.
+// Game (🎮 Solutions Practice › Tables (Activity 6.1 steps), Molarity Lab (Skill Development); docs/COVERAGE_U6.md).
 // §1 CHECK: written only after looking at the sheets, with frame times: docs/COVERAGE_U6.md.
 import * as THREE from 'three';
 import * as K from './kit.js';
