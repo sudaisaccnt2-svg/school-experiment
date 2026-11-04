@@ -130,3 +130,8 @@ The films show book values as printed, because those are the exam answers. The r
   values (fluorine gas is 1.7 g/dm³ = 0.0017 g/cm³). Lesson 816 shows them as printed.
 - p.245 the reactivity order is printed "F > Cl > Br > I > As": As is arsenic; the book means astatine (At). Lesson 817
   shows At. p.243 prints bromine's oxide as Br₃O₄ (the known oxide is Br₃O₈); lesson 817 shows it as printed.
+
+## Unit 4 (Structure of Molecules), noted while rebuilding the lessons (2026-11-04)
+- p.109 text names BF₃ as trigonal planar; Fig. 4.18 shows BCl₃ (both are trigonal planar, 120°). Lesson 411 follows the figure.
+- NH₃ bond angle: 107° in Fig. 4.16 (p.107) and 106.7° in Fig. 4.18 (p.110). Each lesson shows the value of the figure it explains.
+- p.106–107: no table of electronegativity values in the unit; lessons 406 and 409 show the 0.5 and 1.7 rules on a ruler without per-element values.

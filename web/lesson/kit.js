@@ -1867,3 +1867,15 @@ export function burette(len = 0.5) {
   const tap = solid(new THREE.BoxGeometry(0.05, 0.008, 0.008), M.gloss(0x3a6fb4)); tap.position.y = 0.05;
   grp.add(tube, water, neck, tap); grp.userData.tip = new THREE.Vector3(0, 0, 0); return grp;
 }
+
+// ---------------------------------------------------------------- 411 set pieces: a magnifying glass
+/** a magnifying glass: a round lens in a black rim on a handle (lens centre at the origin, facing +y; handle along +x) */
+export function magnifier(r = 0.07) {
+  const grp = new THREE.Group();
+  const lens = new THREE.Mesh(new THREE.SphereGeometry(r / Math.sin(0.44), 32, 16, 0, Math.PI * 2, 0, 0.44), M.glass()); lens.scale.y = 0.6; lens.position.y = -r / Math.sin(0.44) * Math.cos(0.44) * 0.6; lens.renderOrder = 5;
+  const lens2 = lens.clone(); lens2.rotation.x = Math.PI; lens2.position.y = -lens.position.y;   // the lower half of the lens
+  const rim = solid(new THREE.TorusGeometry(r, 0.008, 12, 48).rotateX(Math.PI / 2), M.gloss(0x1e2128));
+  const neck = solid(new THREE.CylinderGeometry(0.008, 0.008, 0.03, 12).rotateZ(Math.PI / 2), M.metal(0xb9bec6, 0.3)); neck.position.x = r + 0.015;
+  const handle = solid(new THREE.CylinderGeometry(0.013, 0.011, 0.13, 16).rotateZ(Math.PI / 2), M.gloss(0x6a3a22)); handle.position.x = r + 0.095;
+  grp.add(lens, lens2, rim, neck, handle); return grp;
+}
