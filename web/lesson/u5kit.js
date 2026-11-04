@@ -207,3 +207,12 @@ export function charlesRig() {
   g.userData.set = (h, c) => { gas.scale.y = Math.max(1e-3, h); piston.position.y = F + 0.012 + h + 0.013 + 0.001; wt.position.y = piston.position.y + 0.013 + 0.001; th.userData.set(c); };
   g.userData.floor = F + 0.012; g.userData.th = th; g.userData.set(0.15, 27); return g;
 }
+
+/** water lying in a kit.dish(R): a clear blue layer that follows the dish's sloping wall. set(k): 1 = full, 0 = dry. */
+export function dishWater(R = 0.13, color = 0x3d9ee6, op = 0.6) {
+  const g = new THREE.Group();
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(1, 1, 1, 48).translate(0, 0.5, 0), new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: op, roughness: 0.05, clearcoat: 1, depthWrite: false }));
+  m.renderOrder = 4; g.add(m);
+  g.userData.set = (k) => { const h = 0.002 + 0.02 * k, y0 = 0.0135, r = R * (0.5 + 0.3 * (h / 0.022)); m.visible = k > 0.01; m.position.y = y0; m.scale.set(r, h, r); };
+  g.userData.set(1); return g;
+}
