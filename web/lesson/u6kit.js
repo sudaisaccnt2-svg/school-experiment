@@ -99,3 +99,27 @@ export function pourer(vessel, home, to, mouth, lip, s, { dur = 1.6, tilt = 1.6,
     return K.span(t, t0 + 1.2, t0 + 1.2 + dur);
   };
 }
+
+/** a torch lying along +x (lens at +x end, bottom at y 0): userData.set(k) lights the lens; userData.lens = local point */
+export function torch(len = 0.16, r = 0.02) {
+  const g = new THREE.Group(), body = K.solid(new THREE.CylinderGeometry(r, r, len, 24), K.M.matte(0x2a2e36, 0.5)); body.rotation.z = Math.PI / 2; body.position.set(0, r + 0.002, 0); g.add(body);
+  const head = K.solid(new THREE.CylinderGeometry(r * 1.45, r, 0.04, 24, 1, true), K.M.metal(0xb9bec6, 0.3)); head.rotation.z = -Math.PI / 2; head.position.set(len / 2 + 0.02, r + 0.002, 0); g.add(head);
+  const lens = new THREE.Mesh(new THREE.CircleGeometry(r * 1.4, 24), K.M.glow(0xfff2c0, 0)); lens.rotation.y = Math.PI / 2; lens.position.set(len / 2 + 0.04, r + 0.002, 0); g.add(lens);
+  const halo = K.glowSprite(0xfff0c0, 0.12); halo.position.copy(lens.position); halo.material.opacity = 0; g.add(halo);
+  const sw = K.solid(new THREE.BoxGeometry(0.02, 0.008, 0.012), K.M.matte(0xd84a3a, 0.5)); sw.position.set(-0.02, 2 * r + 0.004, 0); g.add(sw);
+  g.userData.set = (k) => { lens.material.emissiveIntensity = 3 * k; halo.material.opacity = 0.8 * k; }; g.userData.lens = lens.position.clone(); g.userData.set(0); return g;
+}
+/** a straight light beam from a to b (world points); its brightness set(k); scattering beams glow, others are faint */
+export function beam(color = 0xfff0c0) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(0.014, 0.018, 1, 16, 1, true), new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0, depthWrite: false, toneMapped: false, blending: THREE.AdditiveBlending }));
+  m.renderOrder = 7; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(1, d.length(), 1); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); m.material.opacity = k; };
+  return m;
+}
+/** a glass funnel with a folded filter paper cone in it (tip at y 0): userData.stain(color, k) colours what stays on the paper */
+export function filterFunnel(r = 0.07) {
+  const g = new THREE.Group(), prof = [[0.008, 0], [0.008, 0.05], [r, 0.05 + r * 1.1], [r + 0.004, 0.055 + r * 1.1], [r - 0.004, 0.055 + r * 1.1], [0.004, 0.052], [0.004, 0]].map(([x, y]) => new THREE.Vector2(x, y));
+  const gl = new THREE.Mesh(new THREE.LatheGeometry(prof, 32), K.M.glass()); gl.renderOrder = 5; g.add(gl);
+  const paper = new THREE.Mesh(new THREE.ConeGeometry(r - 0.012, r * 1.05, 24, 1, true), new THREE.MeshStandardMaterial({ color: 0xf6f4ec, roughness: 0.95, side: THREE.DoubleSide })); paper.rotation.x = Math.PI; paper.position.y = 0.058 + r * 0.55; g.add(paper);
+  const mud = new THREE.Mesh(new THREE.ConeGeometry((r - 0.012) * 0.55, r * 0.55, 20), new THREE.MeshStandardMaterial({ color: 0x6a4a2a, roughness: 1 })); mud.rotation.x = Math.PI; mud.position.y = 0.06 + r * 0.3; mud.visible = false; g.add(mud);
+  g.userData.stain = (c, k) => { mud.visible = k > 0.02; mud.material.color.set(c); mud.scale.setScalar(Math.max(1e-3, k)); }; g.userData.top = 0.055 + r * 1.1; return g;
+}

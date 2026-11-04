@@ -325,10 +325,10 @@ export function saltedFish() {
 }
 /** an activity: dark bins with names under them, and cards that drop one by one into their bin.
  *  U = the lesson kit (tag, grp, add, root); names = bin titles; cards = [[text, bin]…]; returns update(t) */
-export function sortBins(U, names, cards, { x = 0, y = 1.15, t0 = 0, dt = 1.1, group = 'act', colors = ['#ffd27a', '#9fc8ff', '#e0e4ea'], tint = [0xb07a2a, 0x3d6fb4, 0x6a7280] } = {}) {
+export function sortBins(U, names, cards, { x = 0, y = 1.15, t0 = 0, dt = 1.1, group = 'act', lh = 0.05, colors = ['#ffd27a', '#9fc8ff', '#e0e4ea'], tint = [0xb07a2a, 0x3d6fb4, 0x6a7280] } = {}) {
   const n = names.length, BW = 1.6, gap = 1.75, BIN = names.map((_, i) => x + (i - (n - 1) / 2) * gap), BY = y;
   BIN.forEach((bx) => { const g = U.add(new THREE.Group(), bx, BY, 0), m = K.M.matte(0x262b35, 0.7); [[BW - 0.03, 0.04, 0.47, 0, 0, 0], [0.04, 0.4, 0.5, -BW / 2, 0.2, 0], [0.04, 0.4, 0.5, BW / 2, 0.2, 0], [BW - 0.07, 0.37, 0.04, 0, 0.19, -0.225]].forEach(([w, h, d, x0, y0, z0]) => { const b = K.solid(new THREE.BoxGeometry(w, h, d), m); b.position.set(x0, y0, z0); g.add(b); }); });
-  const lab = names.map((s, i) => U.grp(U.tag(s, 0.05, colors[i % colors.length], BIN[i], BY - 0.22, 0.3), group)), cnt = names.map(() => 0);
+  const lab = names.map((s, i) => U.grp(U.tag(s, lh, colors[i % colors.length], BIN[i], BY - 0.22, 0.3), group)), cnt = names.map(() => 0);
   const tiles = cards.map(([s, b], i) => { const k = cnt[b]++, tl = U.add(K.tile(s, tint[b % tint.length], 0.74, 0.27, 0.05)); tl.traverse((o) => { if (o.userData.text !== undefined) o.userData.group = group; }); return { tl, slot: V(BIN[b] + ((k % 2) - 0.5) * 0.78, BY + 0.18 + Math.floor(k / 2) * 0.3, 0.05), t0: t0 + 1.2 + i * dt }; });
   const top = V(x, BY + 1.75, 0.1);
   return (t, t1 = 1e9) => {
