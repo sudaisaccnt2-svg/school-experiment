@@ -1713,3 +1713,43 @@ export function sunLamp(r = 0.12) {
   grp.userData.set = (k) => { ball.material.emissiveIntensity = 3 * k; rays.forEach((m) => { m.material.emissiveIntensity = 2.5 * k; m.scale.setScalar(Math.max(1e-4, k)); }); halo.material.opacity = k; halo.visible = k > 0.01; };
   grp.userData.set(0); return grp;
 }
+
+// ---------------------------------------------------------------- 401 set pieces: why atoms bond (Chapter 4)
+/** a party balloon on a ribbon tied to a small weight (the weight stands at y 0); the balloon floats at about y 0.62 */
+export function balloon(color = 0xd8a4ff, r = 0.13) {
+  const grp = new THREE.Group(), prof = [];
+  for (let i = 0; i <= 24; i++) { const a = i / 24 * Math.PI, s = Math.sin(a); prof.push(new THREE.Vector2(r * s * (1 - 0.22 * (1 - i / 24) ** 2), -r * Math.cos(a) * 1.18)); }   // narrower toward the knot
+  const body = solid(new THREE.LatheGeometry(prof, 48), new THREE.MeshPhysicalMaterial({ color, roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.1, sheen: 0.4 }));
+  const knot = solid(new THREE.ConeGeometry(r * 0.12, r * 0.16, 16), M.gloss(color)); knot.position.y = -r * 1.24;
+  const ball = new THREE.Group(); ball.add(body, knot); ball.position.y = 0.62; grp.add(ball);
+  const top = new THREE.Vector3(0, 0.62 - r * 1.3, 0), ribbon = wire([[0, 0.05, 0], [0.02, 0.2, 0.01], [-0.015, 0.36, 0], [0, top.y, 0]], 0xf2f2f2, 0.003);
+  const weight = solid(new THREE.CylinderGeometry(0.035, 0.045, 0.05, 24), M.metal(0xc8ccd2, 0.3)); weight.position.y = 0.025;
+  grp.add(ribbon, weight); grp.userData.ball = ball;
+  grp.userData.update = (t) => { ball.position.y = 0.62 + 0.012 * Math.sin(t * 1.3); ball.rotation.z = 0.05 * Math.sin(t * 0.9); };
+  return grp;
+}
+/** a neon sign: a bent glass tube (path = [[x, y]…] in metres, standing on a small dark base) that really glows;
+ *  userData.set(k) switches it on (0..1) */
+export function neonSign(path, color = 0xff5a2a) {
+  const grp = new THREE.Group(), curve = new THREE.CatmullRomCurve3(path.map(([x, y]) => new THREE.Vector3(x, y, 0)), false, 'centripetal', 0.2);
+  const glowM = M.glow(color, 0), core = new THREE.Mesh(new THREE.TubeGeometry(curve, 160, 0.008, 8), glowM);
+  const sleeve = new THREE.Mesh(new THREE.TubeGeometry(curve, 160, 0.016, 10), M.glass()); sleeve.renderOrder = 5;
+  const xs = path.map(([x]) => x), base = solid(new THREE.BoxGeometry(Math.max(...xs) - Math.min(...xs) + 0.12, 0.03, 0.1), M.matte(0x1c1f26, 0.6));
+  base.position.set((Math.max(...xs) + Math.min(...xs)) / 2, 0.015, 0);
+  const halos = path.filter((_, i) => i % 2 === 0).map(([x, y]) => { const s = glowSprite(color, 0.22); s.position.set(x, y, 0.01); s.material.opacity = 0; grp.add(s); return s; });
+  const lamp = new THREE.PointLight(color, 0, 2.5, 2); lamp.position.set(base.position.x, 0.25, 0.15);
+  for (const [x, y] of [path[0], path.at(-1)]) { const post = solid(new THREE.CylinderGeometry(0.006, 0.006, y - 0.03, 8), M.metal(0x9aa0a8, 0.3), { outline: false }); post.position.set(x, 0.03 + (y - 0.03) / 2, -0.02); grp.add(post); }   // it stands on two thin posts
+  grp.add(core, sleeve, base, lamp);
+  grp.userData.set = (k) => { glowM.emissiveIntensity = 4 * k; halos.forEach((s) => { s.material.opacity = 0.35 * k; }); lamp.intensity = 1.2 * k; };
+  grp.userData.set(0); return grp;
+}
+/** an energy meter: a glass tube on a base with a glowing gold column; userData.set(k) = how full (0..1), height h */
+export function energyBar(h = 1.2, r = 0.07) {
+  const grp = new THREE.Group();
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 32, 1, true), M.glass()); tube.position.y = h / 2; tube.renderOrder = 5;
+  const col = new THREE.Mesh(new THREE.CylinderGeometry(r * 0.78, r * 0.78, 1, 24), M.glow(0xffb43a, 1.6)); col.position.y = 0.5;
+  const colG = new THREE.Group(); colG.add(col); colG.position.y = 0.004; grp.add(tube, colG);
+  const base = solid(new THREE.CylinderGeometry(r * 1.6, r * 1.8, 0.05, 32), M.matte(0x2a2f38, 0.5)); base.position.y = -0.025; grp.add(base);
+  grp.userData.set = (k) => { colG.scale.y = Math.max(1e-4, k * (h - 0.01)); };
+  grp.userData.set(1); grp.userData.top = (k) => k * h; return grp;
+}
