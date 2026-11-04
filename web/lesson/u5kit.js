@@ -106,3 +106,71 @@ export function gasTap(to = [0.6, 0]) {
   g.userData.set = (u) => { h.rotation.y = -Math.PI / 2 * u; }; g.userData.curve = pipe.userData.curve;
   return g;
 }
+
+/** Fig. 5.4: the Boyle's-law rig on a base: a glass cylinder of gas (faint blue column under a dark piston), a screw
+ *  rod through a bridge with a T handle on top, a pressure gauge on a pipe at the right, a thermometer at the left.
+ *  userData.set(h, p): h = height of the gas column (0.05 … 0.5), p = the gauge needle (0 … 1 of its sweep).
+ *  userData.gauge / .cyl = local points for labels. Bottom at y 0. */
+export function boyleRig() {
+  const g = new THREE.Group(), steel = K.M.metal(0x9aa0a8, 0.3), dark = K.M.matte(0x2a2e36, 0.6), R = 0.085, Y0 = 0.05, HMAX = 0.52;
+  const base = K.solid(new THREE.BoxGeometry(0.62, 0.04, 0.24), K.M.matte(0x5a4632, 0.7)); base.position.y = 0.02; g.add(base);
+  const foot = K.solid(new THREE.CylinderGeometry(R + 0.025, R + 0.03, 0.012, 40), dark); foot.position.y = 0.046; g.add(foot);
+  const glass = new THREE.Mesh(new THREE.CylinderGeometry(R, R, HMAX, 40, 1, true), K.M.glass()); glass.position.y = Y0 + 0.004 + HMAX / 2; glass.renderOrder = 5; g.add(glass);
+  for (let k = 1; k <= 8; k++) { const tk = new THREE.Mesh(new THREE.BoxGeometry(k % 2 ? 0.02 : 0.035, 0.003, 0.002), new THREE.MeshBasicMaterial({ color: 0xe8eef6 })); tk.position.set(-R * 0.55, Y0 + 0.01 + (HMAX - 0.04) * k / 8, R + 0.003); g.add(tk); }
+  const gasM = new THREE.MeshStandardMaterial({ color: 0x7fb6ff, transparent: true, opacity: 0.22, depthWrite: false });
+  const gas = new THREE.Mesh(new THREE.CylinderGeometry(R - 0.006, R - 0.006, 1, 32).translate(0, 0.5, 0), gasM); gas.position.y = Y0 + 0.012; gas.renderOrder = 4; g.add(gas);
+  const piston = K.solid(new THREE.CylinderGeometry(R - 0.004, R - 0.004, 0.03, 40), dark); g.add(piston);
+  const rod = K.solid(new THREE.CylinderGeometry(0.008, 0.008, 0.46, 12), steel); g.add(rod);
+  const posts = [-1, 1].map((s) => { const p = K.solid(new THREE.CylinderGeometry(0.008, 0.008, HMAX + 0.06, 12), steel); p.position.set(s * (R + 0.04), Y0 + (HMAX + 0.06) / 2, -0.02); g.add(p); return p; });
+  const bridge = K.solid(new THREE.BoxGeometry(2 * (R + 0.04) + 0.03, 0.02, 0.03), steel); bridge.position.set(0, Y0 + HMAX + 0.06, -0.02); g.add(bridge);
+  const T = new THREE.Group(); g.add(T); const bar = K.solid(new THREE.CylinderGeometry(0.009, 0.009, 0.16, 12), K.M.gloss(0xd8a040)); bar.rotation.z = Math.PI / 2; T.add(bar);
+  const pipe = K.wire([[R, 0.07, 0], [0.16, 0.07, 0], [0.2, 0.1, 0], [0.2, 0.2, 0]], 0x9aa0a8, 0.008); g.add(pipe);
+  const dial = new THREE.Group(); dial.position.set(0.2, 0.28, 0.0); g.add(dial);
+  const c = document.createElement('canvas'); c.width = c.height = 256; const x = c.getContext('2d');
+  x.fillStyle = '#f4f2ea'; x.beginPath(); x.arc(128, 128, 124, 0, 6.29); x.fill(); x.strokeStyle = '#1c2230'; x.lineWidth = 10; x.stroke();
+  for (let k = 0; k <= 10; k++) { const a = Math.PI * (1.25 - 1.5 * k / 10); x.lineWidth = k % 5 ? 4 : 8; x.beginPath(); x.moveTo(128 + Math.cos(a) * 100, 128 - Math.sin(a) * 100); x.lineTo(128 + Math.cos(a) * (k % 5 ? 84 : 74), 128 - Math.sin(a) * (k % 5 ? 84 : 74)); x.stroke(); }
+  x.fillStyle = '#c33'; x.beginPath(); x.arc(128, 128, 10, 0, 6.29); x.fill();
+  const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const rim = K.solid(new THREE.CylinderGeometry(0.075, 0.075, 0.03, 40), steel); rim.rotation.x = Math.PI / 2; dial.add(rim);
+  const face = new THREE.Mesh(new THREE.CircleGeometry(0.066, 40), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.5 })); face.position.z = 0.0165; dial.add(face);
+  const needle = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.055, 0.002).translate(0, 0.024, 0), new THREE.MeshBasicMaterial({ color: 0xcc2b2b })); needle.position.z = 0.019; dial.add(needle);
+  const th = thermoMini(); th.position.set(-0.22, 0.04, 0.04); g.add(th);
+  g.userData.set = (h, p) => {
+    gas.scale.y = Math.max(1e-3, h); piston.position.y = Y0 + 0.012 + h + 0.015 + 0.001;
+    rod.position.y = piston.position.y + 0.23; T.position.y = piston.position.y + 0.46; T.rotation.y = h * 40;
+    needle.rotation.z = Math.PI * (1.25 - 1.5 * p) - Math.PI / 2;   // same sweep as the ticks (225° → −45°)
+  };
+  g.userData.gauge = V(0.2, 0.28, 0.03); g.userData.cyl = V(0, Y0, R); g.userData.HMAX = HMAX; g.userData.Y0 = Y0;
+  g.userData.set(0.4, 0.2); return g;
+}
+function thermoMini() {
+  const g = new THREE.Group(), tube = new THREE.Mesh(new THREE.CylinderGeometry(0.01, 0.01, 0.36, 16, 1, true), K.M.glass()); tube.position.y = 0.2; tube.renderOrder = 5; g.add(tube);
+  const bulb = K.solid(new THREE.SphereGeometry(0.016, 16, 12), K.M.gloss(0xd23b30), { outline: false }); bulb.position.y = 0.03; g.add(bulb);
+  const col = K.solid(new THREE.CylinderGeometry(0.004, 0.004, 0.12, 8), K.M.gloss(0xd23b30), { outline: false }); col.position.y = 0.1; g.add(col);
+  const stand = K.solid(new THREE.CylinderGeometry(0.03, 0.035, 0.012, 24), K.M.matte(0x2a2e36, 0.6)); stand.position.y = 0.006; g.add(stand);
+  return g;
+}
+
+/** a pencil that writes the notebook's items (kit.notebook draw items) in time: picked up before a stroke, gliding
+ *  lifted between strokes, laid down at `rest` after a pause. nbPos = the notebook's world position. */
+export function penWriter(nb, pen, items, rest, nbPos) {
+  const ease = K.ease, span = K.span;
+  const at = (u, v) => nb.userData.at(u, v).add(nbPos);
+  const tipAt = (t) => {
+    for (let i = 0; i < items.length; i++) {
+      const it = items[i], end = it.t0 + (it.d || 0.3), nx = items[i + 1];
+      if (t >= it.t0 - 0.05 && t <= end) return { p: (nb.userData.pen([it], Math.max(it.t0, t)) ?? nb.userData.at(it.x, it.y)).add(nbPos), up: 0 };
+      if (nx && t > end && t < nx.t0 && nx.t0 - end < 1.3) { const a = (nb.userData.pen([it], end - 0.001) ?? nb.userData.at(it.x, it.y)).add(nbPos), b = at(nx.x, nx.y), u = ease(span(t, end, nx.t0)); return { p: a.lerp(b, u), up: Math.sin(Math.PI * u) }; }
+    }
+    return null;
+  };
+  return (t) => {
+    nb.userData.draw(items, t);
+    const tip = tipAt(t), first = items.find((it) => it.t0 > t - 0.8 && it.t0 - t < 0.8);
+    let p, lie = 0;
+    if (tip) p = tip.p.clone().add(V(0, 0.002 + 0.02 * tip.up, 0));
+    else if (first) { const s = ease(span(t, first.t0 - 0.8, first.t0)); p = rest.clone().lerp(at(first.x, first.y), s); lie = 1 - s; }
+    else { const prev = [...items].reverse().find((it) => it.t0 + (it.d || 0.3) <= t); const s = prev ? ease(span(t, prev.t0 + (prev.d || 0.3), prev.t0 + (prev.d || 0.3) + 0.8)) : 1; p = (prev ? at(prev.x, prev.y) : rest.clone()).lerp(rest, s); lie = s; }
+    pen.position.copy(p); pen.rotation.set(-0.35 * (1 - lie) - (Math.PI / 2 - 0.02) * lie, 0.4 * lie, -0.25 * (1 - lie)); if (lie > 0.5) pen.position.y = rest.y;
+  };
+}
