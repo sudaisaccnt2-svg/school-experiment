@@ -295,3 +295,44 @@ export function dropper(len = 0.16) {
   const bulb = K.solid(new THREE.SphereGeometry(0.018, 20, 14), K.M.matte(0x2a2e36, 0.5)); bulb.scale.y = 1.5; bulb.position.y = len + 0.02; g.add(bulb);
   return g;
 }
+
+/** a white candle on a small brass holder (bottom at y 0), wick on top; userData.flame (off until shown) */
+export function candle(h = 0.16, r = 0.022) {
+  const g = new THREE.Group();
+  const dish = K.solid(new THREE.CylinderGeometry(0.045, 0.05, 0.012, 32), K.M.metal(0xc8a050, 0.35)); dish.position.y = 0.006; g.add(dish);
+  const wax = K.solid(new THREE.CylinderGeometry(r, r, h, 28), new THREE.MeshPhysicalMaterial({ color: 0xf4efe2, roughness: 0.5, sheen: 0.4, transmission: 0.15, thickness: 0.03 })); wax.position.y = 0.012 + 0.001 + h / 2; g.add(wax);
+  const wick = K.solid(new THREE.CylinderGeometry(0.0018, 0.0018, 0.016, 6), K.M.matte(0x1c1c1c, 0.8), { outline: false }); wick.position.y = 0.013 + h + 0.008; g.add(wick);
+  g.userData.wax = wax; return g;
+}
+/** a little heap of big salt crystals (clear-white cubes) on a dark plate (bottom at y 0) */
+export function saltCrystals(n = 9, s = 0.028) {
+  const g = new THREE.Group(), plate = K.solid(new THREE.CylinderGeometry(0.1, 0.11, 0.012, 40), K.M.matte(0x2a2e36, 0.6)); plate.position.y = 0.006; g.add(plate);
+  const m = new THREE.MeshPhysicalMaterial({ color: 0xf6f6f2, roughness: 0.15, transmission: 0.35, thickness: 0.02, clearcoat: 1 });
+  for (let i = 0; i < n; i++) { const a = i * 2.4, r = 0.02 + 0.05 * rnd(i, 1), k = s * (0.7 + 0.5 * rnd(i, 2)), c = K.solid(new THREE.BoxGeometry(k, k, k), m); c.position.set(Math.cos(a) * r, 0.012 + 0.001 * (i + 1) + k / 2 + (i > 5 ? k * 0.8 : 0), Math.sin(a) * r); c.rotation.set(0, a, i > 5 ? 0.3 : 0); g.add(c); }
+  return g;
+}
+/** a fish lying on a plate under a layer of salt (bottom at y 0) */
+export function saltedFish() {
+  const g = new THREE.Group(), plate = K.solid(new THREE.CylinderGeometry(0.16, 0.15, 0.014, 48), K.M.gloss(0xf2f0ea)); plate.position.y = 0.007; g.add(plate);
+  const fm = new THREE.MeshPhysicalMaterial({ color: 0x8a97a6, metalness: 0.4, roughness: 0.3, clearcoat: 0.8 });
+  const body = K.solid(new THREE.SphereGeometry(0.05, 32, 18), fm); body.scale.set(2.2, 0.55, 0.8); body.position.set(-0.01, 0.014 + 0.028, 0); g.add(body);
+  const ts = new THREE.Shape(); ts.moveTo(0, 0); ts.lineTo(0.06, 0.04); ts.lineTo(0.06, -0.04); ts.lineTo(0, 0);
+  const tail = K.solid(new THREE.ExtrudeGeometry(ts, { depth: 0.006, bevelEnabled: false }), fm); tail.rotation.x = -Math.PI / 2; tail.position.set(0.1, 0.014 + 0.03, 0.003); g.add(tail);
+  const eye = K.solid(new THREE.SphereGeometry(0.006, 10, 8), K.M.gloss(0x101010), { outline: false }); eye.position.set(-0.09, 0.014 + 0.038, 0.026); g.add(eye);
+  const salt = new THREE.InstancedMesh(new THREE.BoxGeometry(0.008, 0.008, 0.008), new THREE.MeshPhysicalMaterial({ color: 0xf6f6f2, roughness: 0.4 }), 160), d = new THREE.Object3D();
+  for (let i = 0; i < 160; i++) { const u = rnd(i, 5) * 2 - 1, v = rnd(i, 6) * 2 - 1; d.position.set(-0.01 + u * 0.1, 0.014 + 0.004 + 0.03 * Math.sqrt(Math.max(0, 1 - u * u)) * (0.6 + 0.4 * (1 - v * v)) * (Math.abs(v) < 0.9 ? 1 : 0.2), v * 0.04); d.rotation.set(i, i * 2, 0); d.updateMatrix(); salt.setMatrixAt(i, d.matrix); }
+  g.add(salt); return g;
+}
+/** an activity: dark bins with names under them, and cards that drop one by one into their bin.
+ *  U = the lesson kit (tag, grp, add, root); names = bin titles; cards = [[text, bin]…]; returns update(t) */
+export function sortBins(U, names, cards, { x = 0, y = 1.15, t0 = 0, dt = 1.1, group = 'act', colors = ['#ffd27a', '#9fc8ff', '#e0e4ea'], tint = [0xb07a2a, 0x3d6fb4, 0x6a7280] } = {}) {
+  const n = names.length, BW = 1.6, gap = 1.75, BIN = names.map((_, i) => x + (i - (n - 1) / 2) * gap), BY = y;
+  BIN.forEach((bx) => { const g = U.add(new THREE.Group(), bx, BY, 0), m = K.M.matte(0x262b35, 0.7); [[BW - 0.03, 0.04, 0.47, 0, 0, 0], [0.04, 0.4, 0.5, -BW / 2, 0.2, 0], [0.04, 0.4, 0.5, BW / 2, 0.2, 0], [BW - 0.07, 0.37, 0.04, 0, 0.19, -0.225]].forEach(([w, h, d, x0, y0, z0]) => { const b = K.solid(new THREE.BoxGeometry(w, h, d), m); b.position.set(x0, y0, z0); g.add(b); }); });
+  const lab = names.map((s, i) => U.grp(U.tag(s, 0.05, colors[i % colors.length], BIN[i], BY - 0.22, 0.3), group)), cnt = names.map(() => 0);
+  const tiles = cards.map(([s, b], i) => { const k = cnt[b]++, tl = U.add(K.tile(s, tint[b % tint.length], 0.74, 0.27, 0.05)); tl.traverse((o) => { if (o.userData.text !== undefined) o.userData.group = group; }); return { tl, slot: V(BIN[b] + ((k % 2) - 0.5) * 0.78, BY + 0.18 + Math.floor(k / 2) * 0.3, 0.05), t0: t0 + 1.2 + i * dt }; });
+  const top = V(x, BY + 1.75, 0.1);
+  return (t, t1 = 1e9) => {
+    lab.forEach((l) => K.popIn(l, t, t0 + 0.4, t1));
+    tiles.forEach(({ tl, slot, t0: s }) => { const u = K.span(t, s, s + 0.6); tl.visible = t > s - 0.4; tl.position.copy(t < s ? top : K.arc(top, slot, 0.2, K.easeIn(u))); tl.scale.setScalar(Math.max(1e-4, K.back(K.span(t, s - 0.4, s)))); });
+  };
+}
