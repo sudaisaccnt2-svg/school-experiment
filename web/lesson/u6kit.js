@@ -47,13 +47,13 @@ export function digitalScale() {
   const pan = K.solid(new THREE.CylinderGeometry(0.085, 0.085, 0.01, 40), K.M.metal(0xc8ccd2, 0.25)); pan.position.y = 0.035 + 0.004 + 0.005; g.add(pan);
   const c = document.createElement('canvas'); c.width = 256; c.height = 96; const x = c.getContext('2d'), tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
   const scr = new THREE.Mesh(new THREE.PlaneGeometry(0.11, 0.04), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); scr.position.set(0, 0.0175, 0.1 + 0.002); g.add(scr);
-  let last = null; g.userData.set = (s) => { if (s === last) return; last = s; x.fillStyle = '#1b2a1f'; x.fillRect(0, 0, 256, 96); x.fillStyle = '#9dff9d'; x.font = '700 64px monospace'; x.textAlign = 'right'; x.textBaseline = 'middle'; x.fillText(s, 240, 50); tex.needsUpdate = true; };
+  let last = null; g.userData.set = (s) => { if (s === last) return; last = s; x.fillStyle = '#1b2a1f'; x.fillRect(0, 0, 256, 96); x.fillStyle = '#9dff9d'; x.font = '700 52px monospace'; x.textAlign = 'right'; x.textBaseline = 'middle'; x.fillText(s, 240, 50); tex.needsUpdate = true; };
   g.userData.set('0.0 g'); g.userData.top = 0.049; return g;
 }
 /** a thin falling stream of liquid from a to b (world points); set(a, b, k) k = 0 hides it */
 export function stream(color = 0x3d9ee6) {
   const m = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.004, 1, 10, 1, true), new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: 0.6, roughness: 0.05, depthWrite: false }));
-  m.renderOrder = 4; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(k, d.length(), k); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); };
+  m.renderOrder = 4; m.visible = false; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(k, d.length(), k); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); };
   return m;
 }
 /** a volumetric flask (bottom at y 0) with a white mark ring on the neck; liquid set by setLevel(y) (top height) */
@@ -67,4 +67,31 @@ export function volFlask(r = 0.075, color = 0x3d9ee6) {
   const neck = new THREE.Mesh(new THREE.CylinderGeometry(n - 0.004, n - 0.004, 1, 16).translate(0, 0.5, 0), lm); neck.position.y = nb - 0.01; neck.renderOrder = 4; g.add(neck);
   g.userData.setLevel = (k) => { bulb.visible = k > 0.01; bulb.scale.set(1, 0.95 * Math.min(1, k * 1.6), 1); bulb.position.y = r * 0.82 - (r * 0.82) * (1 - Math.min(1, k * 1.6)) * 0.9; neck.visible = k > 0.62; neck.scale.y = Math.max(1e-3, (k - 0.62) / 0.38 * 0.11); };
   g.userData.mat = lm; g.userData.mark = nb + 0.1; g.userData.setLevel(0); return g;
+}
+
+/** a graduated measuring cylinder (bottom at y 0) of `cap` cm³: a foot, a tall glass tube with marks every cap/10 and
+ *  number labels at 50 and cap; userData.set(v, color) fills it to v cm³; userData.y(v) = height of a reading */
+export function gradCylinder(cap = 100, r = 0.035, h = 0.34) {
+  const g = new THREE.Group(), y0 = 0.02, k = (h - 0.04) / cap;
+  const foot = K.solid(new THREE.CylinderGeometry(0.055, 0.06, 0.016, 6), K.M.glass()); foot.position.y = 0.008; foot.renderOrder = 5; g.add(foot);
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 32, 1, true), K.M.glass()); tube.position.y = 0.016 + h / 2; tube.renderOrder = 5; g.add(tube);
+  for (let v = cap / 10; v <= cap; v += cap / 10) { const tk = new THREE.Mesh(new THREE.BoxGeometry(v % (cap / 2) ? 0.012 : 0.022, 0.0025, 0.002), new THREE.MeshBasicMaterial({ color: 0xffffff })); tk.position.set(-r * 0.4, y0 + v * k, r + 0.003); g.add(tk); }
+  const lm = new THREE.MeshPhysicalMaterial({ color: 0x3d9ee6, transparent: true, opacity: 0.5, roughness: 0.05, depthWrite: false });
+  const liq = new THREE.Mesh(new THREE.CylinderGeometry(r - 0.004, r - 0.004, 1, 24).translate(0, 0.5, 0), lm); liq.position.y = y0; liq.renderOrder = 4; g.add(liq);
+  g.userData.set = (v, c) => { liq.visible = v > 0.2; liq.scale.y = Math.max(1e-3, v * k); if (c !== undefined) lm.color.set(c); };
+  g.userData.y = (v) => y0 + v * k; g.userData.top = 0.016 + h; g.userData.set(0); return g;
+}
+/** pour: a vessel group lifts from `home`, tilts over `to` (world), a stream runs, then it goes back.
+ *  over `to` (where the vessel's base goes), the stream falls from its lip (local) into `mouth` (world).
+ *  Returns update(t, t0) → the pouring fraction 0..1 (for the levels) */
+export function pourer(vessel, home, to, mouth, lip, s, { dur = 1.6, tilt = 1.6, side = 1 } = {}) {
+  // where the vessel's base must be so that its tilted lip sits just above the mouth
+  const a = side * tilt, rl = V(lip.x * Math.cos(a) - lip.y * Math.sin(a), lip.x * Math.sin(a) + lip.y * Math.cos(a), lip.z);
+  to = mouth.clone().sub(rl).add(V(0, 0.13, 0));
+  return (t, t0) => {
+    const up = K.ease(K.span(t, t0, t0 + 0.7)), tl = K.ease(K.span(t, t0 + 0.7, t0 + 1.2)) * (1 - K.ease(K.span(t, t0 + 1.2 + dur, t0 + 1.7 + dur))), dn = K.ease(K.span(t, t0 + 1.7 + dur, t0 + 2.4 + dur));
+    vessel.position.copy(K.arc(home, to, 0.08, up - dn)); vessel.rotation.z = side * tilt * tl;
+    const a = vessel.localToWorld(lip.clone()); s.userData.set(a, mouth, tl > 0.6 ? 1 : 0);
+    return K.span(t, t0 + 1.2, t0 + 1.2 + dur);
+  };
 }
