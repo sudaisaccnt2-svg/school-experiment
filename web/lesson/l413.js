@@ -86,7 +86,7 @@ export default {
     const U = U4.lessonKit({ scene, cam, R }, '413', { dark, AY }), { beats, ST, add, tag, grp, keyLight, goldE } = U;
     const fires = [], fire = (tint, size, opts) => { const f = K.makeFire(tint, size, opts); fires.push(f); return f; }, shown = (o) => { for (; o; o = o.parent) if (!o.visible) return false; return true; };
     const copperM = M.metal(0xc8743a, 0.25);
-    const sugarCubes = (n = 3) => { const g = new THREE.Group(), m = new THREE.MeshStandardMaterial({ color: 0xf8f6f0, roughness: 0.85 }); for (let i = 0; i < n; i++) { const c = K.solid(new THREE.BoxGeometry(0.04, 0.04, 0.04), m); c.position.set((i - (n - 1) / 2) * 0.046, 0.02, (i % 2) * 0.01); c.rotation.y = i * 0.4; g.add(c); } return g; };
+    const sugarCubes = (n = 3) => { const g = new THREE.Group(), m = new THREE.MeshStandardMaterial({ color: 0xf8f6f0, roughness: 0.85 }); for (let i = 0; i < n; i++) { const c = K.solid(new THREE.BoxGeometry(0.04, 0.04, 0.04), m); c.position.set((i - (n - 1) / 2) * 0.046, 0.02 + 0.0025 * i, (i % 2) * 0.01); c.rotation.y = i * 0.4; g.add(c); } return g; };
     const circuit = (x, y) => {                                         // battery + bulb on a little stand, two rods that dip into a beaker
       const g = add(new THREE.Group(), x, y, 0); const bat = K.battery(); bat.scale.setScalar(0.42); bat.position.set(-0.2, 0, 0); const blb = K.bulb(); blb.scale.setScalar(0.32); blb.position.set(0.2, 0, 0); blb.userData.set(0);
       const rods = [-0.04, 0.04].map((dx) => { const r = K.solid(new THREE.CylinderGeometry(0.008, 0.008, 0.32, 12), M.matte(0x22252b, 0.55)); r.position.set(dx, -0.2, 0); g.add(r); return r; });

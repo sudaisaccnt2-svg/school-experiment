@@ -112,7 +112,7 @@ export function torch(len = 0.16, r = 0.02) {
 /** a straight light beam from a to b (world points); its brightness set(k); scattering beams glow, others are faint */
 export function beam(color = 0xfff0c0) {
   const m = new THREE.Mesh(new THREE.CylinderGeometry(0.014, 0.018, 1, 16, 1, true), new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0, depthWrite: false, toneMapped: false, blending: THREE.AdditiveBlending }));
-  m.renderOrder = 7; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(1, d.length(), 1); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); m.material.opacity = k; };
+  m.renderOrder = 7; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(1, Math.max(1e-3, d.length() - 0.006), 1); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); m.material.opacity = k; };   // 3 mm short at each end: beams that meet never share a plane
   return m;
 }
 /** a glass funnel with a folded filter paper cone in it (tip at y 0): userData.stain(color, k) colours what stays on the paper */

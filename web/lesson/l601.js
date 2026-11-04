@@ -30,7 +30,7 @@ const { V, ADIR, DDIR, bump } = U4;
 
 // ---------------------------------------------------------------- places
 const AY = 1.9;
-const HKX = 0, SBX = HKX - 1.05, SDX = HKX - 0.75, SLX = HKX - 0.35, DKX = HKX + 0.02, TPX = HKX + 0.45, KYX = HKX + 0.88, SWX = HKX + 1.08, BLX = HKX + 1.32;
+const HKX = 0, SBX = HKX - 1.05, SDX = HKX - 0.75, SLX = HKX - 0.35, DKX = HKX + 0.02, TPX = HKX + 0.45, KYX = HKX + 0.82, SWX = HKX + 1.08, BLX = HKX + 1.32;
 const DX = 40;
 
 // ---------------------------------------------------------------- time
