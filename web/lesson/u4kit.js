@@ -108,9 +108,10 @@ export function lessonKit({ scene, cam, R }, id, { dark = () => false, AY = 1.9 
       const l = K.label(el, rr * 1.1, el === 'H' ? '#1b2030' : '#ffffff', 800); l.position.z = rr + 0.005; l.renderOrder = 22; b.add(l); b.position.copy(P[i]); g.add(b);
     });
     bonds.forEach(([i, j, o = 1]) => {
-      const a = P[i], b = P[j], along = b.clone().sub(a), len = along.length(), side = V(-along.y, along.x, 0).normalize();
-      for (let k = 0; k < o; k++) {
-        const off = (k - (o - 1) / 2) * 0.065, m = K.solid(new THREE.CylinderGeometry(o > 1 ? 0.022 : 0.03, o > 1 ? 0.022 : 0.03, len, 14), stickM, { outline: false });
+      const ra = r[atoms[i][0]] ?? 0.2, rb = r[atoms[j][0]] ?? 0.2, dir = P[j].clone().sub(P[i]).normalize();
+      const a = P[i].clone().addScaledVector(dir, ra * 0.6), b = P[j].clone().addScaledVector(dir, -rb * 0.6), along = b.clone().sub(a), len = along.length(), side = V(-along.y, along.x, 0).normalize();
+      for (let k = 0; k < o; k++) {                                     // sticks run from inside one ball to inside the other, open at the ends (no caps that could meet)
+        const off = (k - (o - 1) / 2) * 0.065, m = K.solid(new THREE.CylinderGeometry(o > 1 ? 0.022 : 0.03, o > 1 ? 0.022 : 0.03, len, 14, 1, true), stickM, { outline: false });
         m.position.copy(a).lerp(b, 0.5).addScaledVector(side, off); m.quaternion.setFromUnitVectors(V(0, 1, 0), along.clone().normalize()); g.add(m);
       }
     });

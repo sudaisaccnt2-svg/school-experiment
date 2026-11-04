@@ -1783,3 +1783,64 @@ export function glueTube(len = 0.2) {
 }
 // Chapter 4 atoms that the kit did not have yet (carbon dark grey, boron salmon, aluminium light grey)
 Object.assign(ATOM, { C: [0x4a4f58, 0.077], B: [0xe6b09c, 0.085], Al: [0xc5cbd3, 0.12] });
+
+// ---------------------------------------------------------------- 407 set pieces: reagent bottles
+/** a clear glass reagent bottle (bottom at y 0) with a liquid inside, a white paper label and a glass stopper;
+ *  userData.stopper (lift it to open), userData.mouth (local point of the opening) */
+export function reagentBottle(liquid = 0xdfeaf2, h = 0.26, r = 0.07, text = '') {
+  const grp = new THREE.Group(), n = 0.022;
+  const prof = [[0, 0], [r, 0], [r + 0.004, 0.01], [r + 0.004, h * 0.7], [r * 0.55, h * 0.86], [n + 0.004, h * 0.9], [n + 0.004, h], [n - 0.002, h], [n - 0.002, h * 0.9 + 0.004], [r * 0.55 - 0.006, h * 0.86], [r - 0.004, h * 0.7], [r - 0.004, 0.012], [0, 0.012]];
+  const glass = new THREE.Mesh(new THREE.LatheGeometry(prof.map(([x, y]) => new THREE.Vector2(x, y)), 48), M.glass()); glass.renderOrder = 5;
+  const liq = liquid ? (() => { const m = new THREE.Mesh(new THREE.CylinderGeometry(r - 0.01, r - 0.01, h * 0.5, 40), M.liquid(liquid, 0.55)); m.position.y = 0.016 + h * 0.25; m.renderOrder = 4; return m; })() : null;
+  const stopper = new THREE.Group(), plug = new THREE.Mesh(new THREE.CylinderGeometry(n - 0.005, n - 0.008, 0.03, 24), M.glass()); plug.position.y = -0.005;
+  const knob = new THREE.Mesh(new THREE.SphereGeometry(n + 0.012, 24, 16), M.glass()); knob.scale.y = 0.6; knob.position.y = 0.022; plug.renderOrder = knob.renderOrder = 5;
+  stopper.add(plug, knob); stopper.position.y = h; grp.add(glass, stopper); if (liq) grp.add(liq);
+  if (text) { const lab = printBox(r * 1.3, h * 0.28, 0.004, '#f4f1e8', [text], '#2b2f38'); lab.position.set(0, h * 0.32, r + 0.006); grp.add(lab); }
+  grp.userData.stopper = stopper; grp.userData.mouth = new THREE.Vector3(0, h + 0.01, 0); return grp;
+}
+
+// ---------------------------------------------------------------- 408 set pieces: a notebook that is drawn on, a pencil
+/** an open ruled notebook lying on the table (top face at y ≈ 0.012). userData.draw(items, t) redraws its page:
+ *  items = [{ k: 'text'|'line'|'dot'|'cross', x, y, (x1, y1), s, t0, d }] in page units (0..1 across, 0..1 down);
+ *  each appears from t0 over d seconds (lines grow, text and marks pop). userData.at(u, v) = the local 3D point of a
+ *  page spot; userData.pen(items, t) = where the pencil tip is (or null when it rests) */
+export function notebook(w = 0.62, d = 0.44) {
+  const grp = new THREE.Group(), C = document.createElement('canvas'); C.width = 1024; C.height = Math.round(1024 * d / w);
+  const x = C.getContext('2d'), tex = new THREE.CanvasTexture(C); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 8;
+  const cover = solid(new THREE.BoxGeometry(w + 0.03, 0.006, d + 0.03), M.matte(0x2f4f7a, 0.6)); cover.position.y = 0.003;
+  const pages = solid(new THREE.BoxGeometry(w, 0.006, d), M.matte(0xf2efe6, 0.9), { outline: false }); pages.position.y = 0.009;
+  const face = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.92 })); face.rotation.x = -Math.PI / 2; face.position.y = 0.0145;
+  grp.add(cover, pages, face);
+  const base = () => { x.fillStyle = '#f7f4ec'; x.fillRect(0, 0, C.width, C.height); x.strokeStyle = 'rgba(80,120,200,0.28)'; x.lineWidth = 2; for (let y = 60; y < C.height; y += 46) { x.beginPath(); x.moveTo(0, y); x.lineTo(C.width, y); x.stroke(); } x.strokeStyle = 'rgba(210,80,80,0.35)'; x.beginPath(); x.moveTo(90, 0); x.lineTo(90, C.height); x.stroke(); };
+  let last = '';
+  grp.userData.draw = (items, t) => {
+    const key = items.map((it) => Math.round(Math.min(1, Math.max(0, (t - it.t0) / (it.d || 0.3))) * 20)).join(',');
+    if (key === last) return; last = key; base();
+    x.strokeStyle = x.fillStyle = '#26303f'; x.lineCap = 'round'; x.textAlign = 'center'; x.textBaseline = 'middle';
+    for (const it of items) {
+      const u = Math.min(1, Math.max(0, (t - it.t0) / (it.d || 0.3))); if (u <= 0) continue;
+      const X = it.x * C.width, Y = it.y * C.height;
+      if (it.k === 'text') { x.globalAlpha = u; x.font = `600 ${it.size || 64}px "Segoe Print", "Comic Sans MS", cursive`; x.fillText(it.s, X, Y); x.globalAlpha = 1; }
+      else if (it.k === 'line') { x.lineWidth = it.w || 7; x.beginPath(); x.moveTo(X, Y); x.lineTo(X + (it.x1 * C.width - X) * u, Y + (it.y1 * C.height - Y) * u); x.stroke(); }
+      else if (it.k === 'dot') { x.globalAlpha = u; x.beginPath(); x.arc(X, Y, 8, 0, Math.PI * 2); x.fill(); x.globalAlpha = 1; }
+      else if (it.k === 'cross') { x.globalAlpha = u; x.lineWidth = 5; x.beginPath(); x.moveTo(X - 9, Y - 9); x.lineTo(X + 9, Y + 9); x.moveTo(X + 9, Y - 9); x.lineTo(X - 9, Y + 9); x.stroke(); x.globalAlpha = 1; }
+    }
+    tex.needsUpdate = true;
+  };
+  grp.userData.at = (u, v) => new THREE.Vector3((u - 0.5) * w, 0.015, (v - 0.5) * d);
+  grp.userData.pen = (items, t) => {
+    const it = items.find((q) => t >= q.t0 - 0.25 && t < q.t0 + (q.d || 0.3)); if (!it) return null;
+    const u = Math.min(1, Math.max(0, (t - it.t0) / (it.d || 0.3)));
+    return it.k === 'line' ? grp.userData.at(it.x + (it.x1 - it.x) * u, it.y + (it.y1 - it.y) * u) : grp.userData.at(it.x + 0.01 * Math.sin(u * 12), it.y + 0.01 * Math.cos(u * 12));
+  };
+  base(); tex.needsUpdate = true; return grp;
+}
+/** a yellow hexagonal pencil, tip at the origin pointing down (−y) along its length when upright */
+export function pencil(len = 0.24) {
+  const grp = new THREE.Group(), body = solid(new THREE.CylinderGeometry(0.009, 0.009, len, 6), M.gloss(0xe8b43a)); body.position.y = len / 2 + 0.024;
+  const wood = solid(new THREE.ConeGeometry(0.009, 0.022, 6).rotateX(Math.PI), M.matte(0xe6c79a, 0.8), { outline: false }); wood.position.y = 0.013;
+  const lead = solid(new THREE.ConeGeometry(0.0032, 0.007, 8).rotateX(Math.PI), M.matte(0x2a2d33, 0.5), { outline: false }); lead.position.y = 0.0035;
+  const band = solid(new THREE.CylinderGeometry(0.0118, 0.0118, 0.014, 12, 1, true), M.metal(0xc0c4ca, 0.3), { outline: false }); band.position.y = len + 0.02;
+  const eraser = solid(new THREE.CylinderGeometry(0.0088, 0.0088, 0.012, 12), M.matte(0xe08a9a, 0.7)); eraser.position.y = len + 0.033;
+  grp.add(body, wood, lead, band, eraser); return grp;
+}
