@@ -66,3 +66,43 @@ export function onionBag(s = 1) {
   const tie = K.solid(new THREE.TorusGeometry(0.014, 0.004, 8, 20), K.M.matte(0xd8b040)); tie.rotation.x = Math.PI / 2; tie.position.y = 0.205; g.add(tie);
   g.scale.setScalar(s); return g;
 }
+
+/** a plastic syringe standing upright on its sealed tip (bottom of the cap at y 0), length L: a clear barrel with
+ *  printed rings, a dark rubber piston on a white rod with a thumb plate. userData.set(u): 0 = drawn out, 1 = pushed in
+ *  (the piston slides down to `stop` of the way); userData.top = local y of the thumb plate (for a weight to sit on). */
+export function syringe(L = 0.36, r = 0.045, stop = 0.55) {
+  const g = new THREE.Group(), y0 = 0.045, bar = L * 0.8;
+  const cap = K.solid(new THREE.CylinderGeometry(0.012, 0.016, 0.03, 16), K.M.matte(0xd84a3a, 0.5)); cap.position.y = 0.015; g.add(cap);
+  const nose = K.solid(new THREE.CylinderGeometry(0.01, 0.014, 0.022, 16, 1, true), K.M.gloss(0xeef4fa)); nose.position.y = 0.035; g.add(nose);
+  const prof = [[0.012, y0 - 0.006], [r, y0], [r, y0 + bar], [r + 0.03, y0 + bar], [r + 0.03, y0 + bar + 0.008], [r - 0.004, y0 + bar + 0.008], [r - 0.004, y0 + 0.004], [0.012, y0 + 0.001]].map(([x, y]) => new THREE.Vector2(x, y));
+  const barrel = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), new THREE.MeshPhysicalMaterial({ color: 0xf4f8fc, transparent: true, opacity: 0.3, roughness: 0.15, clearcoat: 1, side: THREE.DoubleSide, depthWrite: false }));
+  barrel.renderOrder = 6; g.add(barrel);
+  for (let k = 1; k < 8; k++) { const m = new THREE.Mesh(new THREE.TorusGeometry(r + 0.0015, 0.0012, 4, 40), new THREE.MeshBasicMaterial({ color: 0x2a3040 })); m.rotation.x = Math.PI / 2; m.position.y = y0 + bar * k / 8; g.add(m); }
+  const pl = new THREE.Group(); g.add(pl);
+  const piston = K.solid(new THREE.CylinderGeometry(r - 0.006, r - 0.006, 0.022, 32), K.M.matte(0x22252c, 0.6)); pl.add(piston);
+  const rod = K.solid(new THREE.BoxGeometry(0.012, L * 0.85, 0.012), K.M.gloss(0xf2f2f0)); rod.position.y = 0.011 + L * 0.425; pl.add(rod);
+  const thumb = K.solid(new THREE.CylinderGeometry(r * 1.1, r * 1.1, 0.008, 32), K.M.gloss(0xf2f2f0)); thumb.position.y = 0.011 + L * 0.85 + 0.004; pl.add(thumb);
+  const yOut = y0 + bar - 0.04, yIn = y0 + 0.015 + (bar - 0.055) * (1 - stop);
+  g.userData.set = (u) => { pl.position.y = yOut + (yIn - yOut) * u; g.userData.top = pl.position.y + 0.011 + L * 0.85 + 0.008; g.userData.piston = pl.position.y; };
+  g.userData.set(0); g.userData.inner = [y0 + 0.004, r - 0.006]; return g;
+}
+/** a steel weight with a knob (bottom at y 0) */
+export function weight(r = 0.05, h = 0.06) {
+  const g = new THREE.Group(), m = K.M.metal(0x8d939b, 0.35);
+  const b = K.solid(new THREE.CylinderGeometry(r, r, h, 32), m); b.position.y = h / 2; g.add(b);
+  const n = K.solid(new THREE.CylinderGeometry(r * 0.3, r * 0.35, h * 0.5, 20), m); n.position.y = h + h * 0.25 - 0.001; g.add(n);
+  return g;
+}
+/** a gas tap on a small wall post, with a rubber pipe that runs along the table to `to` (x, z), ending in a hose
+ *  barb for a burner. userData.set(u) turns the handle (0 closed, 1 open); userData.path = the pipe's points. */
+export function gasTap(to = [0.6, 0]) {
+  const g = new THREE.Group(), m = K.M.metal(0xb9bec6, 0.3);
+  const post = K.solid(new THREE.BoxGeometry(0.06, 0.22, 0.06), K.M.matte(0x4a4f58, 0.6)); post.position.y = 0.11; g.add(post);
+  const valve = K.solid(new THREE.CylinderGeometry(0.018, 0.018, 0.08, 16), m); valve.rotation.z = Math.PI / 2; valve.position.set(0.06, 0.16, 0); g.add(valve);
+  const h = new THREE.Group(); h.position.set(0.06, 0.185, 0); g.add(h);
+  const handle = K.solid(new THREE.BoxGeometry(0.012, 0.012, 0.09), K.M.gloss(0xd84a3a)); handle.position.z = 0.03; h.add(handle);
+  const path = [[0.1, 0.16, 0], [0.16, 0.1, 0.02], [0.24, 0.012, 0.04], [to[0] * 0.5 + 0.1, 0.012, to[1] + 0.06], [to[0] - 0.24, 0.012, to[1] + 0.02], [to[0] - 0.2, 0.06, to[1]]];
+  const pipe = K.wire(path, 0xb8442f, 0.014); g.add(pipe);
+  g.userData.set = (u) => { h.rotation.y = -Math.PI / 2 * u; }; g.userData.curve = pipe.userData.curve;
+  return g;
+}
