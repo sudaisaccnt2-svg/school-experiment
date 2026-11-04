@@ -132,8 +132,8 @@ export function boyleRig() {
   x.fillStyle = '#c33'; x.beginPath(); x.arc(128, 128, 10, 0, 6.29); x.fill();
   const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
   const rim = K.solid(new THREE.CylinderGeometry(0.075, 0.075, 0.03, 40), steel); rim.rotation.x = Math.PI / 2; dial.add(rim);
-  const face = new THREE.Mesh(new THREE.CircleGeometry(0.066, 40), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.5 })); face.position.z = 0.0165; dial.add(face);
-  const needle = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.055, 0.002).translate(0, 0.024, 0), new THREE.MeshBasicMaterial({ color: 0xcc2b2b })); needle.position.z = 0.019; dial.add(needle);
+  const face = new THREE.Mesh(new THREE.CircleGeometry(0.066, 40), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.5 })); face.position.z = 0.018; dial.add(face);
+  const needle = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.055, 0.002).translate(0, 0.024, 0), new THREE.MeshBasicMaterial({ color: 0xcc2b2b })); needle.position.z = 0.0205; dial.add(needle);
   const th = thermoMini(); th.position.set(-0.22, 0.04, 0.04); g.add(th);
   g.userData.set = (h, p) => {
     gas.scale.y = Math.max(1e-3, h); piston.position.y = Y0 + 0.012 + h + 0.015 + 0.001;
@@ -215,4 +215,35 @@ export function dishWater(R = 0.13, color = 0x3d9ee6, op = 0.6) {
   m.renderOrder = 4; g.add(m);
   g.userData.set = (k) => { const h = 0.002 + 0.02 * k, y0 = 0.0135, r = R * (0.5 + 0.3 * (h / 0.022)); m.visible = k > 0.01; m.position.y = y0; m.scale.set(r, h, r); };
   g.userData.set(1); return g;
+}
+
+/** a round pressure gauge (dial with ticks and a red needle) facing +z, radius r; userData.set(p): 0 … 1 of its sweep */
+export function gauge(r = 0.06) {
+  const g = new THREE.Group(), steel = K.M.metal(0x9aa0a8, 0.3);
+  const c = document.createElement('canvas'); c.width = c.height = 256; const x = c.getContext('2d');
+  x.fillStyle = '#f4f2ea'; x.beginPath(); x.arc(128, 128, 124, 0, 6.29); x.fill(); x.strokeStyle = '#1c2230'; x.lineWidth = 10; x.stroke();
+  for (let k = 0; k <= 10; k++) { const a = Math.PI * (1.25 - 1.5 * k / 10); x.lineWidth = k % 5 ? 4 : 8; x.beginPath(); x.moveTo(128 + Math.cos(a) * 100, 128 - Math.sin(a) * 100); x.lineTo(128 + Math.cos(a) * (k % 5 ? 84 : 74), 128 - Math.sin(a) * (k % 5 ? 84 : 74)); x.stroke(); }
+  x.fillStyle = '#c33'; x.beginPath(); x.arc(128, 128, 10, 0, 6.29); x.fill();
+  const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const rim = K.solid(new THREE.CylinderGeometry(r + 0.009, r + 0.009, 0.026, 40), steel); rim.rotation.x = Math.PI / 2; g.add(rim);
+  const face = new THREE.Mesh(new THREE.CircleGeometry(r, 40), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.5 })); face.position.z = 0.016; g.add(face);   // ≥ 2 mm in front of the rim (no flicker)
+  const needle = new THREE.Mesh(new THREE.BoxGeometry(r * 0.06, r * 0.8, 0.002).translate(0, r * 0.36, 0), new THREE.MeshBasicMaterial({ color: 0xcc2b2b })); needle.position.z = 0.0185; g.add(needle);
+  g.userData.set = (p) => { needle.rotation.z = Math.PI * (1.25 - 1.5 * p) - Math.PI / 2; }; g.userData.set(0); return g;
+}
+/** a closed jar of liquid with a pressure gauge on its lid (bottom at y 0). userData.lid (the lid group, lift it off),
+ *  .gauge, .liquid (set its level with .setLevel(k)), .cloud (vapour wisps: update(t, k)) */
+export function vpJar(liquid = 0x3d9ee6, r = 0.085, h = 0.3, level = 0.4) {
+  const g = new THREE.Group();
+  const prof = [[0, 0], [r, 0], [r, h], [r + 0.012, h], [r + 0.012, h + 0.01], [r - 0.008, h + 0.01], [r - 0.008, 0.01], [0, 0.01]].map(([x, y]) => new THREE.Vector2(x, y));
+  const glass = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), K.M.glass()); glass.renderOrder = 5; g.add(glass);
+  const lq = new THREE.Mesh(new THREE.CylinderGeometry(r - 0.012, r - 0.012, 1, 32).translate(0, 0.5, 0), new THREE.MeshPhysicalMaterial({ color: liquid, transparent: true, opacity: 0.55, roughness: 0.05, clearcoat: 1, depthWrite: false }));
+  lq.position.y = 0.014; lq.renderOrder = 4; g.add(lq);
+  const setLevel = (k) => { lq.scale.y = Math.max(1e-3, (h - 0.03) * k); }; setLevel(level);
+  const lid = new THREE.Group(); lid.position.y = h + 0.016; g.add(lid);
+  const disc = K.solid(new THREE.CylinderGeometry(r + 0.022, r + 0.022, 0.012, 40), K.M.matte(0x3a3f48, 0.5)); lid.add(disc);
+  const stem = K.solid(new THREE.CylinderGeometry(0.008, 0.008, 0.06, 12), K.M.metal(0x9aa0a8, 0.3)); stem.position.y = 0.036; lid.add(stem);
+  const gg = gauge(0.05); gg.position.y = 0.11; lid.add(gg);
+  const cloud = K.gasCloud(0xffffff, 8); g.add(cloud);
+  g.userData = { lid, gauge: gg, setLevel, cloud: { update: (t, k) => cloud.userData.update(t, 0.02 + (h - 0.03) * level, h - 0.02, r - 0.02, k) }, h };
+  return g;
 }
