@@ -135,3 +135,6 @@ The films show book values as printed, because those are the exam answers. The r
 - p.109 text names BF₃ as trigonal planar; Fig. 4.18 shows BCl₃ (both are trigonal planar, 120°). Lesson 411 follows the figure.
 - NH₃ bond angle: 107° in Fig. 4.16 (p.107) and 106.7° in Fig. 4.18 (p.110). Each lesson shows the value of the figure it explains.
 - p.106–107: no table of electronegativity values in the unit; lessons 406 and 409 show the 0.5 and 1.7 rules on a ruler without per-element values.
+
+## Unit 6 (Solutions)
+- p.163 Practice 6.1 (0.750 g CaCl₂ in 11.6 cm³) has no printed answer. With Ca = 40, Cl = 35.5: 111 g/mol → 0.00676 mol, 0.0116 dm³ → 0.583 M (lesson 608).
