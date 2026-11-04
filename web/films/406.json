@@ -1,0 +1,170 @@
+{
+ "id": "406",
+ "title": "Single, Double & Triple Bonds",
+ "pages": "99–102",
+ "glb": "models/406.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3000,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "406 Cam Cl2"
+  },
+  {
+   "frame": 391,
+   "camera": "406 Cam CH4"
+  },
+  {
+   "frame": 841,
+   "camera": "406 Cam O2"
+  },
+  {
+   "frame": 1231,
+   "camera": "406 Cam CO2"
+  },
+  {
+   "frame": 1621,
+   "camera": "406 Cam N2"
+  },
+  {
+   "frame": 1981,
+   "camera": "406 Cam Rule"
+  },
+  {
+   "frame": 2401,
+   "camera": "406 Cam Sort"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Single: Cl2",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Single: CH4",
+   "frame": 391,
+   "zone": 0
+  },
+  {
+   "name": "Double: O2",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Double: CO2",
+   "frame": 1231,
+   "zone": 0
+  },
+  {
+   "name": "Triple: N2",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "The 1.7 rule",
+   "frame": 1981,
+   "zone": 0
+  },
+  {
+   "name": "Activity 4.1",
+   "frame": 2401,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Single, Double & Triple Bonds",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/406.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "406 Cam Cl2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam CH4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam O2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam CO2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam N2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam Rule": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "406 Cam Sort": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "406 Cam Cl2": [
+   0.0,
+   0.0
+  ],
+  "406 Cam CH4": [
+   0.0,
+   0.0
+  ],
+  "406 Cam O2": [
+   0.0,
+   0.0
+  ],
+  "406 Cam CO2": [
+   0.0,
+   0.0
+  ],
+  "406 Cam N2": [
+   0.0,
+   0.0
+  ],
+  "406 Cam Rule": [
+   0.0,
+   0.0
+  ],
+  "406 Cam Sort": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "9dcddd0494"
+}

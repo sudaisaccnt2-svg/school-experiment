@@ -1,0 +1,98 @@
+{
+ "id": "603",
+ "title": "Types of Solution: Gas & Liquid",
+ "pages": "156",
+ "glb": "models/603.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2265,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "603 Cam Nine"
+  },
+  {
+   "frame": 421,
+   "camera": "603 Cam Gas"
+  },
+  {
+   "frame": 1261,
+   "camera": "603 Cam Liquid"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Nine types",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Gaseous solutions",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Liquid solutions",
+   "frame": 1261,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Types of Solution: Gas & Liquid",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/603.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "603 Cam Nine": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "603 Cam Gas": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "603 Cam Liquid": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "603 Cam Nine": [
+   0.0,
+   0.0
+  ],
+  "603 Cam Gas": [
+   0.0,
+   0.0
+  ],
+  "603 Cam Liquid": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "ffbaf83302"
+}

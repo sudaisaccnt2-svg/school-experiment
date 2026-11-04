@@ -1,0 +1,134 @@
+{
+ "id": "715",
+ "title": "Corrosion & Rusting",
+ "pages": "206–208",
+ "glb": "models/715.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2295,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "715 Cam Corrosion"
+  },
+  {
+   "frame": 301,
+   "camera": "715 Cam Photo"
+  },
+  {
+   "frame": 541,
+   "camera": "715 Cam Needs"
+  },
+  {
+   "frame": 841,
+   "camera": "715 Cam Drop"
+  },
+  {
+   "frame": 1981,
+   "camera": "715 Cam Rust"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Corrosion",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Photography",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Water and air",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Rusting",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Porous rust",
+   "frame": 1981,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Corrosion & Rusting",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/715.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "715 Cam Corrosion": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "715 Cam Photo": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "715 Cam Needs": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "715 Cam Drop": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "715 Cam Rust": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "715 Cam Corrosion": [
+   0.0,
+   0.0
+  ],
+  "715 Cam Photo": [
+   0.0,
+   0.0
+  ],
+  "715 Cam Needs": [
+   0.0,
+   0.0
+  ],
+  "715 Cam Drop": [
+   0.0,
+   0.0
+  ],
+  "715 Cam Rust": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "703d06869b"
+}

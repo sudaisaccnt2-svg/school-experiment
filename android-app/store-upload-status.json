@@ -1,0 +1,29 @@
+{
+  "checkedAtUTC": "2026-10-14T10:39:51Z",
+  "account": "sudaisaccnt3@gmail.com",
+  "store": "Google Play",
+  "developerNameDraft": "Asawera Chemistry",
+  "accountTypeDraft": "personal",
+  "existingGooglePaymentsProfileSelected": true,
+  "registrationStep": "Public profile",
+  "publicEmailEntryBlockedByAutomaticApprovalReview": true,
+  "publicProfileDisclosureApprovalRequested": true,
+  "registrationFeeUSD": 25,
+  "registrationFeeCharged": false,
+  "developerAccountCreated": false,
+  "appBundleUploadAttempted": false,
+  "appBundleUploaded": false,
+  "appPublishedToStore": false,
+  "appBundlePath": "D:\\_Asawera art\\school experiment\\android-app\\dist\\asawera-chemistry-1.0.1.aab",
+  "appBundleSHA256": "f65223e49e9f0c161992bc0bf4020863214cbc95060500ec181eee1b93ebd2f8",
+  "appBundleBytes": 223023987,
+  "abis": [
+    "arm64-v8a"
+  ],
+  "listingAndGraphicsPrepared": true,
+  "admobStoreLinked": false,
+  "admobReviewStillRequired": true,
+  "publicPrivacyURLVerified": true,
+  "publicDeletionURLVerified": true,
+  "ownedAppAdsTxtEntryVerified": true
+}

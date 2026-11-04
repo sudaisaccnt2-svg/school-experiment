@@ -1,0 +1,139 @@
+{
+ "id": "612",
+ "title": "Miscible Liquids & Pressure",
+ "pages": "168–170",
+ "glb": "models/612.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2625,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "612 Cam Layers"
+  },
+  {
+   "frame": 781,
+   "camera": "612 Cam Ethanol"
+  },
+  {
+   "frame": 1261,
+   "camera": "612 Cam Soda"
+  },
+  {
+   "frame": 1741,
+   "camera": "612 Cam Activity"
+  },
+  {
+   "frame": 2221,
+   "camera": "612 Cam Ponder"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Immiscible",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Miscible",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Ethanol and water",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "Pressure",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Activity 6.2",
+   "frame": 1741,
+   "zone": 0
+  },
+  {
+   "name": "Point to Ponder",
+   "frame": 2221,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Miscible Liquids & Pressure",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/612.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "612 Cam Layers": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "612 Cam Ethanol": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "612 Cam Soda": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "612 Cam Activity": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "612 Cam Ponder": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "612 Cam Layers": [
+   0.0,
+   0.0
+  ],
+  "612 Cam Ethanol": [
+   0.0,
+   0.0
+  ],
+  "612 Cam Soda": [
+   0.0,
+   0.0
+  ],
+  "612 Cam Activity": [
+   0.0,
+   0.0
+  ],
+  "612 Cam Ponder": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "82633468cf"
+}

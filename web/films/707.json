@@ -1,0 +1,134 @@
+{
+ "id": "707",
+ "title": "Redox Reactions",
+ "pages": "190–191",
+ "glb": "models/707.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "707 Cam Oxidizers"
+  },
+  {
+   "frame": 391,
+   "camera": "707 Cam Reducers"
+  },
+  {
+   "frame": 661,
+   "camera": "707 Cam Zinc"
+  },
+  {
+   "frame": 1201,
+   "camera": "707 Cam Halves"
+  },
+  {
+   "frame": 1861,
+   "camera": "707 Cam Tests"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Oxidizing agents",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Reducing agents",
+   "frame": 391,
+   "zone": 0
+  },
+  {
+   "name": "Zinc in copper sulphate",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Half reactions",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Tests",
+   "frame": 1861,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Redox Reactions",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/707.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "707 Cam Oxidizers": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "707 Cam Reducers": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "707 Cam Zinc": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "707 Cam Halves": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "707 Cam Tests": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "707 Cam Oxidizers": [
+   0.0,
+   0.0
+  ],
+  "707 Cam Reducers": [
+   0.0,
+   0.0
+  ],
+  "707 Cam Zinc": [
+   0.0,
+   0.0
+  ],
+  "707 Cam Halves": [
+   0.0,
+   0.0
+  ],
+  "707 Cam Tests": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "721663d3b1"
+}

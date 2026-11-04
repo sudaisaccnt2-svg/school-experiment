@@ -1,0 +1,11 @@
+name = "asawera-chemistry"
+pages_build_output_dir = "releases/5300af60fa6b"
+compatibility_date = "2026-10-13"
+
+[vars]
+STUDENT_AUTH_MODE = "username"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "asawera-membership"
+database_id = "28c3dd2a-24d9-4016-b6e9-387088601781"

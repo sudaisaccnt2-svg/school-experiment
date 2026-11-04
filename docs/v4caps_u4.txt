@@ -1,0 +1,150 @@
+== scripts/u4/f401_why.py
+A1 | Things roll down to low energy
+A2 | Low energy means stable
+B1 | Two hydrogen atoms meet
+B2 | They share and give out energy
+C1 | Noble gases join no one
+C2 | Full outer shells: 2 or 8
+D1 | Oxygen has 6 outer electrons
+D2 | 2 more make 8: octet rule
+E  | Hydrogen needs just 2: duplet
+F1 | Atoms lose, gain or share
+G  | -
+== scripts/u4/f402_valence.py
+A1 | Outer electrons: valence electrons
+A2 | Only these take part in bonds
+B1 | Chlorine's single electron bonds
+B2 | The pairs stay home: lone pairs
+C1 | End to end: sigma bond
+C2 | Side by side: pi bond
+D1 | A bond holds atoms together
+D2 | Ionic gives, covalent shares
+D3 | Dative and metallic bonds
+E  | -
+== scripts/u4/f403_ionic.py
+A1 | Sodium meets chlorine
+A2 | Sodium 2, 8, 1 · chlorine 2, 8, 7
+B1 | Sodium hands over one electron
+B2 | Now Na⁺ and Cl⁻: both full
+C1 | Plus and minus attract
+C2 | Na⁺ + Cl⁻ → NaCl
+D1 | Billions of ions stack up
+D2 | A crystal lattice: salt
+E  | -
+== scripts/u4/f404_cacl2.py
+A1 | Calcium has 2 outer electrons
+A2 | One to each chlorine
+A3 | Ca²⁺ + 2Cl⁻ → CaCl₂
+B1 | Which ions form?
+B2 | Ca → Ca²⁺ · F → F⁻
+B3 | Li → Li⁺ · O → O²⁻
+B4 | Every ion has a full shell
+C1 | Magnesium meets oxygen
+C2 | Mg²⁺ and O²⁻: MgO
+D  | -
+== scripts/u4/f405_covalent.py
+A1 | Each hydrogen puts in one
+A2 | The pair belongs to both
+A3 | One shared pair = one line
+B1 | Hydrogen meets chlorine
+B2 | They share one pair
+B3 | Three lone pairs on chlorine
+C1 | Oxygen needs 2 more
+C2 | Two shared pairs: H–O–H
+D  | -
+== scripts/u4/f406_multiple.py
+A1 | One shared pair: single bond
+A2 | Both have 8: Cl–Cl
+B1 | Carbon needs 4 more
+B2 | Four single bonds: CH₄
+C1 | Two shared pairs: double bond
+C2 | Two lines: O=O
+D1 | Carbon shares with two oxygens
+D2 | Two double bonds: O=C=O
+E1 | Three shared pairs: triple bond
+E2 | Three lines: N≡N
+F1 | Share or give? Subtract
+F2 | H–H: 0 · covalent
+F3 | H–Cl: 0.9 · covalent
+F4 | Na–Cl: 2.1 · ionic
+G1 | Covalent or ionic?
+G2 | NaCl, MgCl₂ ionic · rest covalent
+== scripts/u4/f407_dative.py
+A1 | Noble gases stay single atoms
+A2 | Molecules share · metal salts make ions
+A3 | He atoms · H₂, HCl molecules · HgO ions
+B1 | Ammonia has a spare pair
+B2 | H⁺ has no electrons
+B3 | Nitrogen gives both: dative bond
+B4 | Now it is NH₄⁺
+C1 | Boron is 2 short
+C2 | Nitrogen gives its pair: N → B
+D  | -
+== scripts/u4/f408_lewis.py
+A1 | Only the outer electrons
+A2 | Each shared pair becomes a line
+A3 | Water: two lines, two lone pairs
+B1 | Sulphur has 6, like oxygen
+B2 | H–S–H with two lone pairs
+C1 | Nitrogen has 5 outer electrons
+C2 | Three lines, one lone pair
+D1 | Single bond: 2 electrons
+D2 | Double 4 · triple 6
+E  | -
+== scripts/u4/f409_polar.py
+A1 | Same atoms pull equally
+A2 | Fair sharing: non-polar
+B1 | Chlorine pulls harder
+B2 | The pair slides: δ+ and δ−
+C1 | 0.5 or less: non-polar
+C2 | More than 0.5: polar
+C3 | More than 1.7: ionic
+D1 | Water: oxygen pulls both pairs
+D2 | Ammonia: nitrogen pulls three
+E1 | Polar or non-polar?
+E2 | Same atoms: non-polar
+== scripts/u4/f410_metallic.py
+A1 | Metal atoms packed tight
+A2 | Each atom lets electrons go
+A3 | A sea of electrons
+A4 | The sea holds the ions: metallic bond
+B1 | Ionic, covalent or metallic?
+B2 | Metals, salts, the rest covalent
+C  | -
+== scripts/u4/f411_shapes.py
+A1 | CO₂: linear, 180°
+A2 | SO₂: bent
+A3 | BCl₃: trigonal planar, 120°
+A4 | Water: bent, 104.5°
+A5 | Methane: tetrahedral, 109.5°
+A6 | Ammonia: trigonal pyramidal, 107°
+B1 | Lone pairs push bonds closer
+C  | -
+== scripts/u4/f412_forces.py
+A1 | Inside water: 464 kJ/mol
+A2 | Between molecules: only 19
+B1 | δ+ attracts δ−: dipole-dipole
+B2 | Weak: HCl is a gas
+C1 | H on F, O or N
+C2 | Grabs a neighbour's pair: hydrogen bond
+D1 | Who forms hydrogen bonds?
+D2 | HF yes · the others no
+D3 | H₂O, CH₃OH, NH₃: yes
+E1 | Glues stick this way
+F  | -
+== scripts/u4/f413_properties.py
+A1 | Covalent > hydrogen bond > dipole
+A2 | Hydrogen bond: in between
+B1 | Ionic: strong pulls everywhere
+B2 | MgO melts at 2800 °C
+B3 | Free ions conduct electricity
+C1 | Covalent: weak pulls between molecules
+C2 | Low melting · no conducting
+C3 | Like dissolves like
+D1 | Metals hammer into sheets
+D2 | Metals draw into wires
+D3 | Metals conduct
+D4 | Metals shine and ring
+D5 | Mercury: the liquid metal
+E1 | Property, name, use
+F  | -

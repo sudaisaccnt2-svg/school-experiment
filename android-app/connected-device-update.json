@@ -1,0 +1,13 @@
+{
+  "deviceModel": "Infinix X682B",
+  "existingSigningKeyMatchesRelease": false,
+  "existingSigningKeyMatchesDebug": true,
+  "appDataPreserved": true,
+  "uninstallPerformed": false,
+  "updated": true,
+  "installedVersion": "1.0.1",
+  "installedVariant": "debug",
+  "launchVerified": false,
+  "deviceNotDisplayingApp": true,
+  "physicalArPlacementVerified": false
+}

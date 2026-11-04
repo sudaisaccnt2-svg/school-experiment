@@ -1,0 +1,152 @@
+{
+ "id": "717",
+ "title": "Electroplating",
+ "pages": "210–212",
+ "glb": "models/717.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "717 Cam Why"
+  },
+  {
+   "frame": 361,
+   "camera": "717 Cam Clean"
+  },
+  {
+   "frame": 661,
+   "camera": "717 Cam Tin"
+  },
+  {
+   "frame": 1321,
+   "camera": "717 Cam Zinc"
+  },
+  {
+   "frame": 1681,
+   "camera": "717 Cam Chrome"
+  },
+  {
+   "frame": 1981,
+   "camera": "717 Cam Cans"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Why plate?",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Cleaning",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Tin",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Zinc",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Chromium",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Cans and silver",
+   "frame": 1981,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Electroplating",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/717.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "717 Cam Why": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "717 Cam Clean": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "717 Cam Tin": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "717 Cam Zinc": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "717 Cam Chrome": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "717 Cam Cans": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "717 Cam Why": [
+   0.0,
+   0.0
+  ],
+  "717 Cam Clean": [
+   0.0,
+   0.0
+  ],
+  "717 Cam Tin": [
+   0.0,
+   0.0
+  ],
+  "717 Cam Zinc": [
+   0.0,
+   0.0
+  ],
+  "717 Cam Chrome": [
+   0.0,
+   0.0
+  ],
+  "717 Cam Cans": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "65e3360035"
+}

@@ -1,0 +1,134 @@
+{
+ "id": "409",
+ "title": "Polar & Non-polar Bonds",
+ "pages": "106–107",
+ "glb": "models/409.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2880,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "409 Cam Fair"
+  },
+  {
+   "frame": 481,
+   "camera": "409 Cam HCl"
+  },
+  {
+   "frame": 1021,
+   "camera": "409 Cam Rule"
+  },
+  {
+   "frame": 1561,
+   "camera": "409 Cam Bent"
+  },
+  {
+   "frame": 2101,
+   "camera": "409 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Fair sharing",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Unfair sharing",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "The 0.5 rule",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Water and ammonia",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Test Yourself",
+   "frame": 2101,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Polar & Non-polar Bonds",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/409.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "409 Cam Fair": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "409 Cam HCl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "409 Cam Rule": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "409 Cam Bent": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "409 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "409 Cam Fair": [
+   0.0,
+   0.0
+  ],
+  "409 Cam HCl": [
+   0.0,
+   0.0
+  ],
+  "409 Cam Rule": [
+   0.0,
+   0.0
+  ],
+  "409 Cam Bent": [
+   0.0,
+   0.0
+  ],
+  "409 Cam Table": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3c67d429f6"
+}

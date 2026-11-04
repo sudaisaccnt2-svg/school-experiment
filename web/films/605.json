@@ -1,0 +1,116 @@
+{
+ "id": "605",
+ "title": "Dilute & Concentrated",
+ "pages": "158–159",
+ "glb": "models/605.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2115,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "605 Cam Compare"
+  },
+  {
+   "frame": 421,
+   "camera": "605 Cam Add"
+  },
+  {
+   "frame": 901,
+   "camera": "605 Cam Sugar"
+  },
+  {
+   "frame": 1381,
+   "camera": "605 Cam Standard"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Dilute and concentrated",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Add solvent",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "5 g vs 8 g",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Standard solution",
+   "frame": 1381,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Dilute & Concentrated",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/605.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "605 Cam Compare": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "605 Cam Add": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "605 Cam Sugar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "605 Cam Standard": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "605 Cam Compare": [
+   0.0,
+   0.0
+  ],
+  "605 Cam Add": [
+   0.0,
+   0.0
+  ],
+  "605 Cam Sugar": [
+   0.0,
+   0.0
+  ],
+  "605 Cam Standard": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "30a8ca5bb3"
+}

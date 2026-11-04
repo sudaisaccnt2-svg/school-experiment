@@ -1,0 +1,170 @@
+{
+ "id": "716",
+ "title": "Preventing Corrosion",
+ "pages": "208–209",
+ "glb": "models/716.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "716 Cam 0"
+  },
+  {
+   "frame": 331,
+   "camera": "716 Cam 1"
+  },
+  {
+   "frame": 661,
+   "camera": "716 Cam 2"
+  },
+  {
+   "frame": 1021,
+   "camera": "716 Cam 3"
+  },
+  {
+   "frame": 1381,
+   "camera": "716 Cam 4"
+  },
+  {
+   "frame": 1681,
+   "camera": "716 Cam 5"
+  },
+  {
+   "frame": 2101,
+   "camera": "716 Cam 6"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Stains",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Paint",
+   "frame": 331,
+   "zone": 0
+  },
+  {
+   "name": "Alloys",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Metal coating",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Inhibitors",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Cathodic protection",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Ships",
+   "frame": 2101,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Preventing Corrosion",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/716.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "716 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "716 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "716 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "716 Cam 6": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3e05d6bcf3"
+}

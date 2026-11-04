@@ -1,0 +1,116 @@
+{
+ "id": "705",
+ "title": "Working Out Oxidation Numbers",
+ "pages": "187–188",
+ "glb": "models/705.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1935,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "705 Cam PCl5"
+  },
+  {
+   "frame": 541,
+   "camera": "705 Cam Nitrite"
+  },
+  {
+   "frame": 1021,
+   "camera": "705 Cam Practice"
+  },
+  {
+   "frame": 1561,
+   "camera": "705 Cam Metals"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Example 7.1",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Example 7.2",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Practice 7.1",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Transition metals",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Working Out Oxidation Numbers",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/705.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "705 Cam PCl5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "705 Cam Nitrite": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "705 Cam Practice": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "705 Cam Metals": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "705 Cam PCl5": [
+   0.0,
+   0.0
+  ],
+  "705 Cam Nitrite": [
+   0.0,
+   0.0
+  ],
+  "705 Cam Practice": [
+   0.0,
+   0.0
+  ],
+  "705 Cam Metals": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "22fd855b17"
+}

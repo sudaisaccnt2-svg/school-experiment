@@ -1,0 +1,145 @@
+{
+ "id": "810",
+ "title": "Magnesium & Calcium",
+ "pages": "232–233",
+ "glb": "models/810.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1995,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "810 Cam Mg Ores"
+  },
+  {
+   "frame": 301,
+   "camera": "810 Cam Mg Sea"
+  },
+  {
+   "frame": 541,
+   "camera": "810 Cam Mg Atom"
+  },
+  {
+   "frame": 841,
+   "camera": "810 Cam Mg Lump"
+  },
+  {
+   "frame": 1141,
+   "camera": "810 Cam Ca Ores"
+  },
+  {
+   "frame": 1441,
+   "camera": "810 Cam Ca Atom"
+  },
+  {
+   "frame": 1681,
+   "camera": "810 Cam Ca Lump"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Magnesium",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Calcium",
+   "frame": 1141,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Magnesium & Calcium",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/810.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "810 Cam Mg Ores": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Mg Sea": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Mg Atom": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Mg Lump": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Ca Ores": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Ca Atom": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "810 Cam Ca Lump": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "810 Cam Mg Ores": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Mg Sea": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Mg Atom": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Mg Lump": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Ca Ores": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Ca Atom": [
+   0.0,
+   0.0
+  ],
+  "810 Cam Ca Lump": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "a73cf4fca0"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "613",
+ "title": "Temperature & Solubility",
+ "pages": "171–172",
+ "glb": "models/613.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2235,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "613 Cam Gas"
+  },
+  {
+   "frame": 421,
+   "camera": "613 Cam Gas Graph"
+  },
+  {
+   "frame": 901,
+   "camera": "613 Cam Salt"
+  },
+  {
+   "frame": 1261,
+   "camera": "613 Cam Salt Graph"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Gases",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 6.10",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Solids",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Fig 6.11",
+   "frame": 1261,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Temperature & Solubility",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/613.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "613 Cam Gas": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "613 Cam Gas Graph": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "613 Cam Salt": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "613 Cam Salt Graph": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "613 Cam Gas": [
+   0.0,
+   0.0
+  ],
+  "613 Cam Gas Graph": [
+   0.0,
+   0.0
+  ],
+  "613 Cam Salt": [
+   0.0,
+   0.0
+  ],
+  "613 Cam Salt Graph": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "4bf2eca8e8"
+}

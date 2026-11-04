@@ -1,0 +1,134 @@
+{
+ "id": "714",
+ "title": "NaOH: the Nelson Cell",
+ "pages": "204–205",
+ "glb": "models/714.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2175,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "714 Cam Wide"
+  },
+  {
+   "frame": 421,
+   "camera": "714 Cam Ions"
+  },
+  {
+   "frame": 721,
+   "camera": "714 Cam Cathode"
+  },
+  {
+   "frame": 1321,
+   "camera": "714 Cam Anode"
+  },
+  {
+   "frame": 1621,
+   "camera": "714 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Nelson cell",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Ions",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Cathode",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Anode",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Overall",
+   "frame": 1621,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "NaOH: the Nelson Cell",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/714.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "714 Cam Wide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "714 Cam Ions": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "714 Cam Cathode": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "714 Cam Anode": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "714 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "714 Cam Wide": [
+   0.0,
+   0.0
+  ],
+  "714 Cam Ions": [
+   0.0,
+   0.0
+  ],
+  "714 Cam Cathode": [
+   0.0,
+   0.0
+  ],
+  "714 Cam Anode": [
+   0.0,
+   0.0
+  ],
+  "714 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "e35fa189bc"
+}

@@ -1,0 +1,217 @@
+{
+ "id": "803",
+ "title": "Alkali Metals",
+ "pages": "222–223",
+ "glb": "models/803.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2220,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "803 Cam Metals"
+  },
+  {
+   "frame": 181,
+   "camera": "803 Cam Acid"
+  },
+  {
+   "frame": 331,
+   "camera": "803 Cam Test"
+  },
+  {
+   "frame": 481,
+   "camera": "803 Cam Graphite"
+  },
+  {
+   "frame": 601,
+   "camera": "803 Cam Ash"
+  },
+  {
+   "frame": 811,
+   "camera": "803 Cam Water"
+  },
+  {
+   "frame": 991,
+   "camera": "803 Cam Group"
+  },
+  {
+   "frame": 1171,
+   "camera": "803 Cam Atom"
+  },
+  {
+   "frame": 1441,
+   "camera": "803 Cam Bond"
+  },
+  {
+   "frame": 1591,
+   "camera": "803 Cam Earth"
+  },
+  {
+   "frame": 2041,
+   "camera": "803 Cam Lab"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Alkali metals",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Metal test",
+   "frame": 181,
+   "zone": 0
+  },
+  {
+   "name": "The ashes",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Group IA",
+   "frame": 991,
+   "zone": 0
+  },
+  {
+   "name": "One s electron",
+   "frame": 1171,
+   "zone": 0
+  },
+  {
+   "name": "Where found",
+   "frame": 1591,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Alkali Metals",
+   "center": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    -1.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/803.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "803 Cam Metals": [
+   0.0,
+   -1.0,
+   -0.0
+  ],
+  "803 Cam Acid": [
+   40.0,
+   -0.8999999761581421,
+   -0.0
+  ],
+  "803 Cam Test": [
+   80.0,
+   -0.6000000238418579,
+   -0.0
+  ],
+  "803 Cam Graphite": [
+   119.69999694824219,
+   -1.2000000476837158,
+   -0.0
+  ],
+  "803 Cam Ash": [
+   160.0,
+   -0.8999999761581421,
+   -0.0
+  ],
+  "803 Cam Water": [
+   200.0,
+   -0.8999999761581421,
+   -0.0
+  ],
+  "803 Cam Group": [
+   239.5,
+   0.6000000238418579,
+   -0.0
+  ],
+  "803 Cam Atom": [
+   280.0,
+   0.0,
+   -0.0
+  ],
+  "803 Cam Bond": [
+   320.0,
+   0.0,
+   -0.0
+  ],
+  "803 Cam Earth": [
+   360.0,
+   -0.5,
+   -0.0
+  ],
+  "803 Cam Lab": [
+   400.0,
+   -0.5,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "803 Cam Metals": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Acid": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Test": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Graphite": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Ash": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Group": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Atom": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Bond": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Earth": [
+   0.0,
+   0.0
+  ],
+  "803 Cam Lab": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3769d1106f"
+}

@@ -1,0 +1,192 @@
+== scripts/u7/f701_oxidation.py
+A1 | Electricity ↔ chemical change
+A2 | Rust, fire, food: moving electrons
+B1 | Lost by one = gained by other
+C1 | Gaining oxygen: C + O₂ → CO₂
+D1 | Ammonia loses its hydrogen
+D2 | Nitrogen left over: oxidized
+E1 | Fe²⁺ gives one electron
+E2 | Losing electrons: Fe³⁺, oxidized
+F  | -
+== scripts/u7/f702_reduction.py
+A1 | Heat mercury oxide
+A2 | Oxygen leaves: reduced to Hg
+B1 | Nitrogen gains hydrogen
+B2 | Reduced to ammonia: NH₃
+C1 | Sn⁴⁺ takes two electrons
+C2 | Gaining electrons: Sn²⁺, reduced
+D1 | Sodium gives chlorine one
+D2 | Both at once: redox
+E1 | Fireflies glow by oxidation
+F  | -
+== scripts/u7/f703_states.py
+A1 | Na⁺ and Cl⁻: real charges
+B1 | Apparent charge: oxidation number
+B2 | Pretend: O −2, H +1
+C1 | Chromium changes colour
+C2 | Blue +2, green +3, orange +6
+F  | -
+== scripts/u7/f704_rules.py
+A1 | Free element 0 · ion: its charge
+B1 | H is +1 · in NaH −1
+C1 | O is −2 · H₂O₂ −1
+D1 | Groups I–III: +1 to +3
+E1 | A molecule adds to 0
+E2 | 2 − 8 + 6 = 0: S is +6
+F1 | An ion adds to its charge
+F2 | 7 − 8 = −1: Mn is +7
+G1 | Greedier atom is negative
+H1 | CO +2 · CO₂ +4
+Z  | -
+== scripts/u7/f705_examples.py
+A1 | PCl₅: each Cl is −1
+A2 | Five chlorines make −5
+A3 | So P is +5
+B1 | NO₂⁻: each O is −2
+B2 | x − 4 = −1: N is +3
+C1 | CO: carbon is +2
+C2 | SO₃²⁻: sulphur is +4
+D1 | Iron +2 or +3
+D2 | Manganese: six states
+F  | -
+== scripts/u7/f706_agents.py
+A1 | Takes electrons: oxidizing agent
+A2 | KMnO₄, HNO₃, Cl₂
+B1 | Oxygen moves to zinc
+B2 | Cu reduced: CuO oxidizes
+C1 | Tin gives chlorine two
+C2 | Cl reduced: Cl₂ oxidizes
+D1 | Gives electrons: reducing agent
+D2 | H₂S, Na, Al, Mg
+E1 | H₂S gives hydrogen to bromine
+E2 | S oxidized: H₂S reduces
+F  | -
+== scripts/u7/f707_redox.py
+A1 | Oxidizing agents
+A2 | Ozone: very strong
+B1 | Reducing agents
+C1 | Zinc in copper sulphate
+C2 | Zinc gives, copper takes
+D1 | Split into two halves
+D2 | Losing: oxidation half
+D3 | Gaining: reduction half
+E1 | Oxidizer turns KI brown
+E2 | Reducer turns dichromate green
+F  | -
+== scripts/u7/f708_electrolytes.py
+A1 | Electricity ↔ chemical energy
+A2 | Electrolytic and voltaic cells
+B1 | Salt splits into ions
+B2 | Moving ions carry current
+C1 | Sugar: no ions, dark bulb
+C2 | Acetic acid: dim glow
+C3 | Salt: bright bulb
+D1 | Electrodes: where electrons pass
+D2 | Anions → anode · cations → cathode
+F  | -
+== scripts/u7/f709_electrolytic.py
+A1 | Current forces a reaction
+A2 | Splitting with current: electrolysis
+B1 | Two electrodes in molten salt
+B2 | Cl⁻ to anode, Na⁺ to cathode
+C1 | Anode: Cl⁻ give electrons
+C2 | Chlorine gas bubbles off
+D1 | Cathode: Na⁺ take electrons
+D2 | Liquid sodium forms
+E1 | The battery pumps electrons
+E2 | Lost = gained
+F  | -
+== scripts/u7/f710_refining.py
+A1 | Wires need pure copper
+A2 | Impure anode, pure cathode
+B1 | The impure block dissolves
+B2 | Pure copper builds up
+C1 | Gold, silver fall: sludge
+C2 | Zinc, iron stay dissolved
+D1 | 99.99 % pure
+F  | -
+== scripts/u7/f711_daniell.py
+A1 | A reaction makes electricity
+A2 | Daniell cell: two half cells
+B1 | The salt bridge joins them
+B2 | Joins, separates, keeps neutral
+C1 | Zinc gives electrons: anode
+C2 | Through the wire: 1.10 V
+C3 | Copper ions take them: cathode
+D1 | Ions drift in the bridge
+E1 | Zn + Cu²⁺ → Zn²⁺ + Cu
+E2 | Every battery works this way
+F1 | Galvanic: chemical → electrical
+F2 | Electrolytic: electrical → chemical
+F  | -
+== scripts/u7/f712_drycell.py
+A1 | Cells in a row: battery
+A2 | More cells, more push
+B1 | The dry cell
+B2 | Zinc case, graphite rod
+B3 | A moist paste inside
+C1 | The zinc case is eaten
+C2 | MnO₂ takes the electrons
+C3 | 1.25 V
+F  | -
+== scripts/u7/f713_downs.py
+A1 | Batteries for everything
+A2 | Plating, refining, making sodium
+A3 | NaOH by electrolysis
+B1 | Davy, 1807: first sodium
+C1 | The Down cell
+C2 | Graphite anode, ring cathode
+C3 | CaCl₂ lowers melting to 600 °C
+D1 | Sodium floats up
+D2 | Chlorine rises into the dome
+D3 | The screen keeps them apart
+E1 | Aluminium's skin protects it
+E2 | Rust flakes off iron
+F  | -
+== scripts/u7/f714_nelson.py
+A1 | NaOH from brine
+A2 | U-tube cathode, graphite anode
+B1 | Brine is full of ions
+C1 | H⁺ win the electrons
+C2 | Hydrogen bubbles out
+C3 | Caustic soda drips down
+D1 | Chlorine leaves the top
+E1 | Three products at once
+E2 | Asbestos harms the lungs
+F  | -
+== scripts/u7/f715_rusting.py
+A1 | Metal eaten away: corrosion
+A2 | Iron's corrosion: rust
+B1 | Light makes silver grains
+C1 | Dry air or no air: no rust
+C2 | Water + air: rust
+D1 | A drop of water on iron
+D2 | Iron dissolves under the middle
+D3 | Electrons run to the edge
+D4 | Oxygen and water take them
+D5 | Fe³⁺ meets OH⁻: rust
+E1 | Rust flakes off
+F  | -
+== scripts/u7/f716_prevent.py
+A1 | Clean off stains
+B1 | Paint keeps water and air out
+C1 | Stainless steel resists rust
+D1 | Zinc coat: galvanizing
+D2 | Nickel, chromium, tin plating
+E1 | Inhibitors cover the surface
+F1 | Magnesium wired to the pipe
+F2 | Magnesium dissolves, iron is safe
+G1 | Bars on ships rust instead
+Z  | -
+== scripts/u7/f717_plating.py
+A1 | Current lays a metal coat
+A2 | Protect, repair, beautify
+B1 | Clean the object first
+C1 | Object −, tin +
+C2 | The tin bar dissolves
+C3 | A tin coat grows
+D1 | Zinc plating
+E1 | Chromium: bright and hard
+F1 | Tin cans keep food safe
+F2 | Sterling silver: 92.5 % silver
+F  | -

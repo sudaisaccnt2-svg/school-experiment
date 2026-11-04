@@ -1,0 +1,17 @@
+{
+  "version": "11.41.0",
+  "source": "https://www.npmjs.com/package/prebid.js/v/11.41.0",
+  "sha256": "871477a2d539023633e6bc041c86e7fd9c0e34e23e966e101ff47fe9d806817c",
+  "bytes": 271440,
+  "bidders": [
+    "pubmatic",
+    "rubicon",
+    "ix",
+    "openx",
+    "sovrn",
+    "appnexus"
+  ],
+  "displayOnly": true,
+  "userIdModules": false,
+  "excludedFromOfflineDownloads": true
+}

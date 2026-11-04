@@ -1,0 +1,160 @@
+{
+ "id": "303",
+ "title": "Groups: the Families",
+ "pages": "69–70",
+ "glb": "models/303.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2640,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "303 Cam Columns"
+  },
+  {
+   "frame": 271,
+   "camera": "303 Cam Group1"
+  },
+  {
+   "frame": 466,
+   "camera": "303 Cam Group7"
+  },
+  {
+   "frame": 631,
+   "camera": "303 Cam Families"
+  },
+  {
+   "frame": 1651,
+   "camera": "303 Cam Halogen"
+  },
+  {
+   "frame": 2041,
+   "camera": "303 Cam Noble"
+  },
+  {
+   "frame": 2431,
+   "camera": "303 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Columns",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 3.2",
+   "frame": 271,
+   "zone": 0
+  },
+  {
+   "name": "Families",
+   "frame": 631,
+   "zone": 0
+  },
+  {
+   "name": "Halogens",
+   "frame": 1651,
+   "zone": 0
+  },
+  {
+   "name": "Noble gases",
+   "frame": 2041,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Groups: the Families",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/303.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "303 Cam Columns": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam Group1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam Group7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam Families": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam Halogen": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam Noble": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "303 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "303 Cam Columns": [
+   0.0,
+   0.0
+  ],
+  "303 Cam Group1": [
+   0.0,
+   0.0
+  ],
+  "303 Cam Group7": [
+   0.0,
+   0.0
+  ],
+  "303 Cam Families": [
+   0.0,
+   0.0
+  ],
+  "303 Cam Halogen": [
+   0.0,
+   0.0
+  ],
+  "303 Cam Noble": [
+   0.0,
+   0.0
+  ],
+  "303 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8fa98b26b7"
+}

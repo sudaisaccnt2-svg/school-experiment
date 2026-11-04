@@ -1,0 +1,103 @@
+{
+ "id": "307",
+ "title": "Covalent Radius",
+ "pages": "75–76",
+ "glb": "models/307.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2400,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "307 Cam H2"
+  },
+  {
+   "frame": 721,
+   "camera": "307 Cam AB"
+  },
+  {
+   "frame": 1021,
+   "camera": "307 Cam Halogens"
+  }
+ ],
+ "acts": [
+  {
+   "name": "H₂",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "r = d/2",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Bond A–B",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Halogens",
+   "frame": 1021,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Covalent Radius",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/307.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "307 Cam H2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "307 Cam AB": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "307 Cam Halogens": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "307 Cam H2": [
+   0.0,
+   0.0
+  ],
+  "307 Cam AB": [
+   0.0,
+   0.0
+  ],
+  "307 Cam Halogens": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "952c2accf8"
+}

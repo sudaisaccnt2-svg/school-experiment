@@ -1,0 +1,134 @@
+{
+ "id": "601",
+ "title": "Solution, Solute & Solvent",
+ "pages": "152–154",
+ "glb": "models/601.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2445,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "601 Cam Mix"
+  },
+  {
+   "frame": 601,
+   "camera": "601 Cam Water"
+  },
+  {
+   "frame": 1081,
+   "camera": "601 Cam Amounts"
+  },
+  {
+   "frame": 1501,
+   "camera": "601 Cam Drink"
+  },
+  {
+   "frame": 1921,
+   "camera": "601 Cam Test"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Solution",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Aqueous",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Solute and solvent",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Soft drink",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Test Yourself",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Solution, Solute & Solvent",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/601.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "601 Cam Mix": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "601 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "601 Cam Amounts": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "601 Cam Drink": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "601 Cam Test": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "601 Cam Mix": [
+   0.0,
+   0.0
+  ],
+  "601 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "601 Cam Amounts": [
+   0.0,
+   0.0
+  ],
+  "601 Cam Drink": [
+   0.0,
+   0.0
+  ],
+  "601 Cam Test": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "77aa9504e7"
+}

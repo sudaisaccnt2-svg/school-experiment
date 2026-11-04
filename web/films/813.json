@@ -1,0 +1,134 @@
+{
+ "id": "813",
+ "title": "Soft & Hard Metals",
+ "pages": "235–236",
+ "glb": "models/813.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1755,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "813 Cam Kinds"
+  },
+  {
+   "frame": 301,
+   "camera": "813 Cam Knife"
+  },
+  {
+   "frame": 721,
+   "camera": "813 Cam Water"
+  },
+  {
+   "frame": 1021,
+   "camera": "813 Cam Melt"
+  },
+  {
+   "frame": 1321,
+   "camera": "813 Cam Bridge"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Soft and hard",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Knife test",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Float or sink",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Melting points",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Strength",
+   "frame": 1321,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Soft & Hard Metals",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/813.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "813 Cam Kinds": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "813 Cam Knife": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "813 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "813 Cam Melt": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "813 Cam Bridge": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "813 Cam Kinds": [
+   0.0,
+   0.0
+  ],
+  "813 Cam Knife": [
+   0.0,
+   0.0
+  ],
+  "813 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "813 Cam Melt": [
+   0.0,
+   0.0
+  ],
+  "813 Cam Bridge": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "93d2fb36b1"
+}

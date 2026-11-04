@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Chemistry Games · Asawera</title>
+<link rel="stylesheet" href="games/games.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#07080b">
+<script type="importmap">
+{ "imports": {
+    "three": "./lib/three/build/three.module.js",
+    "three/addons/": "./lib/three/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="stage"></div>
+<header id="gbar">
+  <a id="homeBtn" href="home.html" title="All chapters">⌂</a>
+  <a id="filmsBtn" href="index.html" title="Back to the 3D films">🎬 Films</a>
+  <a id="backBtn" href="games.html">← Games</a>
+  <span id="gtitle">Chemistry Games</span>
+  <span class="spacer"></span>
+  <span id="offlineBadge" class="badge" role="status"></span>
+  <button id="muteBtn" title="Sound on / off">🔊</button>
+</header>
+<section id="hub" hidden>
+  <h1>Play &amp; practise</h1>
+  <div id="unitTabs"></div>
+  <p class="sub" id="hubSub">Unit 2 · Structure of an Atom: the exercise as games. Choose one!</p>
+  <div id="cards"></div>
+</section>
+<div id="ui"></div>
+<div id="modal" hidden></div>
+<div id="error" hidden></div>
+<script type="module" src="offline.js"></script>
+<script type="module" src="games/main.js"></script>
+</body>
+</html>

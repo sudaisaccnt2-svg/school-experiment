@@ -1,0 +1,134 @@
+{
+ "id": "604",
+ "title": "Solid Solutions & Alloys",
+ "pages": "157–158",
+ "glb": "models/604.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2175,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "604 Cam Pd"
+  },
+  {
+   "frame": 331,
+   "camera": "604 Cam Hg"
+  },
+  {
+   "frame": 661,
+   "camera": "604 Cam Brass"
+  },
+  {
+   "frame": 991,
+   "camera": "604 Cam Alloys"
+  },
+  {
+   "frame": 1561,
+   "camera": "604 Cam Daily"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Gas in solid",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Liquid in solid",
+   "frame": 331,
+   "zone": 0
+  },
+  {
+   "name": "Solid in solid",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Alloys",
+   "frame": 991,
+   "zone": 0
+  },
+  {
+   "name": "Daily life",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Solid Solutions & Alloys",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/604.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "604 Cam Pd": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "604 Cam Hg": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "604 Cam Brass": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "604 Cam Alloys": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "604 Cam Daily": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "604 Cam Pd": [
+   0.0,
+   0.0
+  ],
+  "604 Cam Hg": [
+   0.0,
+   0.0
+  ],
+  "604 Cam Brass": [
+   0.0,
+   0.0
+  ],
+  "604 Cam Alloys": [
+   0.0,
+   0.0
+  ],
+  "604 Cam Daily": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "84cac0fa43"
+}

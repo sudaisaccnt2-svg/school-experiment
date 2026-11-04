@@ -1,0 +1,936 @@
+{
+ "chapter": "Unit 2 · Structure of an Atom",
+ "chapters": [
+  {
+   "id": "u2",
+   "title": "Unit 2 · Structure of an Atom",
+   "pages": "41–62",
+   "blurb": "Inside the atom: nucleus, shells, isotopes",
+   "icon": "⚛️"
+  },
+  {
+   "id": "u3",
+   "title": "Unit 3 · Periodic Table & Periodicity",
+   "pages": "66–90",
+   "blurb": "Why the table looks the way it does: trends you can see",
+   "icon": "🧪"
+  },
+  {
+   "id": "u4",
+   "title": "Unit 4 · Structure of Molecules",
+   "pages": "92–120",
+   "blurb": "How atoms hold hands: ionic, covalent and metallic bonds",
+   "icon": "🔗"
+  },
+  {
+   "id": "u5",
+   "title": "Unit 5 · Physical States of Matter",
+   "pages": "122–151",
+   "blurb": "Gases, liquids and solids: how molecules move",
+   "icon": "🧊"
+  },
+  {
+   "id": "u6",
+   "title": "Unit 6 · Solutions",
+   "pages": "152–181",
+   "blurb": "Solutions: mixing, measuring and dissolving",
+   "icon": "🥤"
+  },
+  {
+   "id": "u7",
+   "title": "Unit 7 · Electrochemistry",
+   "pages": "182–217",
+   "blurb": "Electrochemistry: electrons on the move",
+   "icon": "🔋"
+  },
+  {
+   "id": "u8",
+   "title": "Unit 8 · Chemical Reactivity",
+   "pages": "218–248",
+   "blurb": "Metals give electrons, non-metals take them",
+   "icon": "🔥"
+  }
+ ],
+ "films": [
+  {
+   "id": "01",
+   "title": "Rutherford's Atomic Model",
+   "pages": "41–44",
+   "meta": "scene.json",
+   "unit": "u2",
+   "game": "match"
+  },
+  {
+   "id": "02",
+   "title": "Bohr's Atomic Theory",
+   "pages": "45–46",
+   "meta": "films/02.json",
+   "unit": "u2",
+   "game": "light"
+  },
+  {
+   "id": "03",
+   "title": "Fundamental Particles of an Atom",
+   "pages": "47–48",
+   "meta": "films/03.json",
+   "unit": "u2",
+   "game": "particles"
+  },
+  {
+   "id": "04",
+   "title": "Shells & Electronic Configuration",
+   "pages": "48",
+   "meta": "films/04.json",
+   "unit": "u2",
+   "game": "seats"
+  },
+  {
+   "id": "05",
+   "title": "Sub-shells s, p, d, f",
+   "pages": "49–50",
+   "meta": "films/05.json",
+   "unit": "u2",
+   "game": "cloud"
+  },
+  {
+   "id": "06",
+   "title": "The Aufbau Principle",
+   "pages": "50",
+   "meta": "films/06.json",
+   "unit": "u2",
+   "game": "aufbau"
+  },
+  {
+   "id": "07",
+   "title": "Configurations of the First 18 Elements",
+   "pages": "51–52",
+   "meta": "films/07.json",
+   "unit": "u2",
+   "game": "configs"
+  },
+  {
+   "id": "08",
+   "title": "Isotopes of Hydrogen",
+   "pages": "52–53",
+   "meta": "films/08.json",
+   "unit": "u2",
+   "game": "isotopes"
+  },
+  {
+   "id": "09",
+   "title": "Isotopes of Carbon, Chlorine & Uranium",
+   "pages": "54–56",
+   "meta": "films/09.json",
+   "unit": "u2",
+   "game": "isotopes"
+  },
+  {
+   "id": "10",
+   "title": "Uses of Isotopes",
+   "pages": "57–58",
+   "meta": "films/10.json",
+   "unit": "u2",
+   "game": "isouses"
+  },
+  {
+   "id": "11",
+   "title": "Key Points",
+   "pages": "59",
+   "meta": "films/11.json",
+   "unit": "u2",
+   "game": "lab"
+  },
+  {
+   "id": "12",
+   "title": "Exercise: Multiple Choice",
+   "pages": "60–61",
+   "meta": "films/12.json",
+   "unit": "u2",
+   "game": "quiz"
+  },
+  {
+   "id": "301",
+   "title": "The Modern Periodic Table",
+   "pages": "66–67",
+   "meta": "films/301.json",
+   "unit": "u3",
+   "game": "ptbuild"
+  },
+  {
+   "id": "302",
+   "title": "Periods: the Rows",
+   "pages": "66–69",
+   "meta": "films/302.json",
+   "unit": "u3",
+   "game": "ptbuild&part=periods"
+  },
+  {
+   "id": "303",
+   "title": "Groups: the Families",
+   "pages": "69–70",
+   "meta": "films/303.json",
+   "unit": "u3",
+   "game": "families"
+  },
+  {
+   "id": "304",
+   "title": "Blocks s, p, d, f",
+   "pages": "70–71",
+   "meta": "films/304.json",
+   "unit": "u3",
+   "game": "blocks"
+  },
+  {
+   "id": "305",
+   "title": "Reading the Table (Test Yourself)",
+   "pages": "72",
+   "meta": "films/305.json",
+   "unit": "u3",
+   "game": "finder"
+  },
+  {
+   "id": "306",
+   "title": "Atomic Size & Radius",
+   "pages": "72–74",
+   "meta": "films/306.json",
+   "unit": "u3",
+   "game": "duel"
+  },
+  {
+   "id": "307",
+   "title": "Covalent Radius",
+   "pages": "75–76",
+   "meta": "films/307.json",
+   "unit": "u3",
+   "game": "duel"
+  },
+  {
+   "id": "308",
+   "title": "Ionization Energy",
+   "pages": "76–79",
+   "meta": "films/308.json",
+   "unit": "u3",
+   "game": "duel"
+  },
+  {
+   "id": "309",
+   "title": "Electron Affinity",
+   "pages": "80–81",
+   "meta": "films/309.json",
+   "unit": "u3",
+   "game": "trends"
+  },
+  {
+   "id": "310",
+   "title": "Shielding Effect",
+   "pages": "82–83",
+   "meta": "films/310.json",
+   "unit": "u3",
+   "game": "trends"
+  },
+  {
+   "id": "311",
+   "title": "Electronegativity",
+   "pages": "83–85",
+   "meta": "films/311.json",
+   "unit": "u3",
+   "game": "duel"
+  },
+  {
+   "id": "312",
+   "title": "All the Trends & Key Points",
+   "pages": "86–87",
+   "meta": "films/312.json",
+   "unit": "u3",
+   "game": "trends"
+  },
+  {
+   "id": "313",
+   "title": "Exercise: Multiple Choice",
+   "pages": "88",
+   "meta": "films/313.json",
+   "unit": "u3",
+   "game": "quiz3"
+  },
+  {
+   "id": "401",
+   "title": "Why Atoms Bond: Octet & Duplet",
+   "pages": "92–93",
+   "meta": "films/401.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "402",
+   "title": "Valence Electrons & Types of Bonds",
+   "pages": "94",
+   "meta": "films/402.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "403",
+   "title": "Ionic Bond: Sodium Chloride",
+   "pages": "95–96",
+   "meta": "films/403.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "404",
+   "title": "Calcium Chloride & Ions",
+   "pages": "96–97",
+   "meta": "films/404.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "405",
+   "title": "Covalent Bond: Sharing",
+   "pages": "98–99",
+   "meta": "films/405.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "406",
+   "title": "Single, Double & Triple Bonds",
+   "pages": "99–102",
+   "meta": "films/406.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "407",
+   "title": "Dative (Coordinate) Bond",
+   "pages": "102–104",
+   "meta": "films/407.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "408",
+   "title": "Lewis Structures",
+   "pages": "105",
+   "meta": "films/408.json",
+   "unit": "u4",
+   "game": "bondbuild"
+  },
+  {
+   "id": "409",
+   "title": "Polar & Non-polar Bonds",
+   "pages": "106–107",
+   "meta": "films/409.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "410",
+   "title": "Metallic Bond: Sea of Electrons",
+   "pages": "108–109",
+   "meta": "films/410.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "411",
+   "title": "Shapes of Molecules",
+   "pages": "109–110",
+   "meta": "films/411.json",
+   "unit": "u4",
+   "game": "shapelab"
+  },
+  {
+   "id": "412",
+   "title": "Forces Between Molecules",
+   "pages": "110–113",
+   "meta": "films/412.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "413",
+   "title": "Properties of Ionic, Covalent & Metallic",
+   "pages": "113–116",
+   "meta": "films/413.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "414",
+   "title": "Key Points",
+   "pages": "117",
+   "meta": "films/414.json",
+   "unit": "u4",
+   "game": "bondsort"
+  },
+  {
+   "id": "415",
+   "title": "Exercise: Multiple Choice",
+   "pages": "118–119",
+   "meta": "films/415.json",
+   "unit": "u4",
+   "game": "quiz4"
+  },
+  {
+   "id": "501",
+   "title": "Three States & the Gas State",
+   "pages": "122–123",
+   "meta": "films/501.json",
+   "unit": "u5",
+   "game": "statesort"
+  },
+  {
+   "id": "502",
+   "title": "Diffusion & Effusion",
+   "pages": "123–124",
+   "meta": "films/502.json",
+   "unit": "u5",
+   "game": "whylab"
+  },
+  {
+   "id": "503",
+   "title": "Pressure, Compressibility & Density",
+   "pages": "125–126",
+   "meta": "films/503.json",
+   "unit": "u5",
+   "game": "gaslab"
+  },
+  {
+   "id": "504",
+   "title": "Boyle's Law",
+   "pages": "126–129",
+   "meta": "films/504.json",
+   "unit": "u5",
+   "game": "gaslab"
+  },
+  {
+   "id": "505",
+   "title": "Charles's Law",
+   "pages": "129–133",
+   "meta": "films/505.json",
+   "unit": "u5",
+   "game": "gaslab"
+  },
+  {
+   "id": "506",
+   "title": "Liquids & Evaporation",
+   "pages": "133–135",
+   "meta": "films/506.json",
+   "unit": "u5",
+   "game": "whylab"
+  },
+  {
+   "id": "507",
+   "title": "Vapour Pressure",
+   "pages": "135–136",
+   "meta": "films/507.json",
+   "unit": "u5",
+   "game": "whylab"
+  },
+  {
+   "id": "508",
+   "title": "Boiling Point & Freezing Point",
+   "pages": "137–139",
+   "meta": "films/508.json",
+   "unit": "u5",
+   "game": "whylab"
+  },
+  {
+   "id": "509",
+   "title": "Diffusion, Mobility & Density of Liquids",
+   "pages": "139–140",
+   "meta": "films/509.json",
+   "unit": "u5",
+   "game": "whylab"
+  },
+  {
+   "id": "510",
+   "title": "The Solid State",
+   "pages": "141–142",
+   "meta": "films/510.json",
+   "unit": "u5",
+   "game": "statesort"
+  },
+  {
+   "id": "511",
+   "title": "Crystalline & Amorphous Solids",
+   "pages": "143–144",
+   "meta": "films/511.json",
+   "unit": "u5",
+   "game": "statesort&part=kind"
+  },
+  {
+   "id": "512",
+   "title": "Allotropy",
+   "pages": "145",
+   "meta": "films/512.json",
+   "unit": "u5",
+   "game": "statesort"
+  },
+  {
+   "id": "513",
+   "title": "Diamond, Graphite & Buckyball",
+   "pages": "146–147",
+   "meta": "films/513.json",
+   "unit": "u5",
+   "game": "statesort"
+  },
+  {
+   "id": "514",
+   "title": "Key Points",
+   "pages": "148–149",
+   "meta": "films/514.json",
+   "unit": "u5",
+   "game": "statesort"
+  },
+  {
+   "id": "515",
+   "title": "Exercise: Multiple Choice",
+   "pages": "149–150",
+   "meta": "films/515.json",
+   "unit": "u5",
+   "game": "quiz5"
+  },
+  {
+   "id": "601",
+   "title": "Solution, Solute & Solvent",
+   "pages": "152–154",
+   "meta": "films/601.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "602",
+   "title": "Saturated, Unsaturated & Supersaturated",
+   "pages": "154–155",
+   "meta": "films/602.json",
+   "unit": "u6",
+   "game": "sollab"
+  },
+  {
+   "id": "603",
+   "title": "Types of Solution: Gas & Liquid",
+   "pages": "156",
+   "meta": "films/603.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "604",
+   "title": "Solid Solutions & Alloys",
+   "pages": "157–158",
+   "meta": "films/604.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "605",
+   "title": "Dilute & Concentrated",
+   "pages": "158–159",
+   "meta": "films/605.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "606",
+   "title": "Percentage Composition",
+   "pages": "159–161",
+   "meta": "films/606.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "607",
+   "title": "Molarity",
+   "pages": "161–162",
+   "meta": "films/607.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "608",
+   "title": "Molarity Problems",
+   "pages": "163",
+   "meta": "films/608.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "609",
+   "title": "Making a Molar Solution",
+   "pages": "164",
+   "meta": "films/609.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "610",
+   "title": "Dilution: M₁V₁ = M₂V₂",
+   "pages": "165",
+   "meta": "films/610.json",
+   "unit": "u6",
+   "game": "molarlab"
+  },
+  {
+   "id": "611",
+   "title": "Solubility & Like Dissolves Like",
+   "pages": "166–168",
+   "meta": "films/611.json",
+   "unit": "u6",
+   "game": "sollab"
+  },
+  {
+   "id": "612",
+   "title": "Miscible Liquids & Pressure",
+   "pages": "168–170",
+   "meta": "films/612.json",
+   "unit": "u6",
+   "game": "sollab"
+  },
+  {
+   "id": "613",
+   "title": "Temperature & Solubility",
+   "pages": "171–172",
+   "meta": "films/613.json",
+   "unit": "u6",
+   "game": "sollab"
+  },
+  {
+   "id": "614",
+   "title": "Colloids & the Tyndall Effect",
+   "pages": "173–174",
+   "meta": "films/614.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "615",
+   "title": "Suspensions & Comparison",
+   "pages": "175–176",
+   "meta": "films/615.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "616",
+   "title": "Key Points",
+   "pages": "177–178",
+   "meta": "films/616.json",
+   "unit": "u6",
+   "game": "mixsort"
+  },
+  {
+   "id": "617",
+   "title": "Exercise: Multiple Choice",
+   "pages": "179",
+   "meta": "films/617.json",
+   "unit": "u6",
+   "game": "quiz6"
+  },
+  {
+   "id": "701",
+   "title": "Oxidation",
+   "pages": "182–184",
+   "meta": "films/701.json",
+   "unit": "u7",
+   "game": "redoxsort"
+  },
+  {
+   "id": "702",
+   "title": "Reduction & Redox",
+   "pages": "184–185",
+   "meta": "films/702.json",
+   "unit": "u7",
+   "game": "redoxsort"
+  },
+  {
+   "id": "703",
+   "title": "Oxidation States",
+   "pages": "185",
+   "meta": "films/703.json",
+   "unit": "u7",
+   "game": "oxlab"
+  },
+  {
+   "id": "704",
+   "title": "Rules for Oxidation Numbers",
+   "pages": "186",
+   "meta": "films/704.json",
+   "unit": "u7",
+   "game": "oxlab"
+  },
+  {
+   "id": "705",
+   "title": "Working Out Oxidation Numbers",
+   "pages": "187–188",
+   "meta": "films/705.json",
+   "unit": "u7",
+   "game": "oxlab"
+  },
+  {
+   "id": "706",
+   "title": "Oxidizing & Reducing Agents",
+   "pages": "188–189",
+   "meta": "films/706.json",
+   "unit": "u7",
+   "game": "redoxsort"
+  },
+  {
+   "id": "707",
+   "title": "Redox Reactions",
+   "pages": "190–191",
+   "meta": "films/707.json",
+   "unit": "u7",
+   "game": "redoxsort"
+  },
+  {
+   "id": "708",
+   "title": "Electrolytes & Electrodes",
+   "pages": "191–193",
+   "meta": "films/708.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "709",
+   "title": "Electrolytic Cell",
+   "pages": "193–195",
+   "meta": "films/709.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "710",
+   "title": "Refining Copper",
+   "pages": "195–196",
+   "meta": "films/710.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "711",
+   "title": "Daniell Cell",
+   "pages": "196–198",
+   "meta": "films/711.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "712",
+   "title": "Batteries & the Dry Cell",
+   "pages": "199–200",
+   "meta": "films/712.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "713",
+   "title": "Sodium: the Down Cell",
+   "pages": "200–203",
+   "meta": "films/713.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "714",
+   "title": "NaOH: the Nelson Cell",
+   "pages": "204–205",
+   "meta": "films/714.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "715",
+   "title": "Corrosion & Rusting",
+   "pages": "206–208",
+   "meta": "films/715.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "716",
+   "title": "Preventing Corrosion",
+   "pages": "208–209",
+   "meta": "films/716.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "717",
+   "title": "Electroplating",
+   "pages": "210–212",
+   "meta": "films/717.json",
+   "unit": "u7",
+   "game": "celllab"
+  },
+  {
+   "id": "718",
+   "title": "Key Points",
+   "pages": "213–214",
+   "meta": "films/718.json",
+   "unit": "u7",
+   "game": "recall7"
+  },
+  {
+   "id": "719",
+   "title": "Exercise: Multiple Choice",
+   "pages": "215–216",
+   "meta": "films/719.json",
+   "unit": "u7",
+   "game": "quiz7"
+  },
+  {
+   "id": "801",
+   "title": "Metals",
+   "pages": "218–219",
+   "meta": "films/801.json",
+   "unit": "u8",
+   "game": "metalprops&part=sort"
+  },
+  {
+   "id": "802",
+   "title": "Metallic Character",
+   "pages": "220–221",
+   "meta": "films/802.json",
+   "unit": "u8",
+   "game": "metalprops&part=sort"
+  },
+  {
+   "id": "803",
+   "title": "Alkali Metals",
+   "pages": "222–223",
+   "meta": "films/803.json",
+   "unit": "u8",
+   "game": "reactlab&part=water"
+  },
+  {
+   "id": "804",
+   "title": "Alkali Metals React",
+   "pages": "224–225",
+   "meta": "films/804.json",
+   "unit": "u8",
+   "game": "reactlab&part=flame"
+  },
+  {
+   "id": "805",
+   "title": "Alkaline Earth Metals",
+   "pages": "225–226",
+   "meta": "films/805.json",
+   "unit": "u8",
+   "game": "reactlab&part=order"
+  },
+  {
+   "id": "806",
+   "title": "Ionization Energy",
+   "pages": "226–228",
+   "meta": "films/806.json",
+   "unit": "u8",
+   "game": "reactlab&part=order"
+  },
+  {
+   "id": "807",
+   "title": "Sodium",
+   "pages": "229–230",
+   "meta": "films/807.json",
+   "unit": "u8",
+   "game": "metalprops&part=soft"
+  },
+  {
+   "id": "808",
+   "title": "Sodium Reacts",
+   "pages": "230–231",
+   "meta": "films/808.json",
+   "unit": "u8",
+   "game": "reactlab&part=make"
+  },
+  {
+   "id": "809",
+   "title": "Uses of Sodium",
+   "pages": "231",
+   "meta": "films/809.json",
+   "unit": "u8",
+   "game": "metalprops&part=uses"
+  },
+  {
+   "id": "810",
+   "title": "Magnesium & Calcium",
+   "pages": "232–233",
+   "meta": "films/810.json",
+   "unit": "u8",
+   "game": "metalprops&part=free"
+  },
+  {
+   "id": "811",
+   "title": "Magnesium & Calcium React",
+   "pages": "233–234",
+   "meta": "films/811.json",
+   "unit": "u8",
+   "game": "reactlab&part=make"
+  },
+  {
+   "id": "812",
+   "title": "Uses of Mg & Ca",
+   "pages": "235",
+   "meta": "films/812.json",
+   "unit": "u8",
+   "game": "metalprops&part=uses"
+  },
+  {
+   "id": "813",
+   "title": "Soft & Hard Metals",
+   "pages": "235–236",
+   "meta": "films/813.json",
+   "unit": "u8",
+   "game": "metalprops&part=soft"
+  },
+  {
+   "id": "814",
+   "title": "Noble Metals",
+   "pages": "236–238",
+   "meta": "films/814.json",
+   "unit": "u8",
+   "game": "metalprops&part=free"
+  },
+  {
+   "id": "815",
+   "title": "Non-metals",
+   "pages": "238–240",
+   "meta": "films/815.json",
+   "unit": "u8",
+   "game": "metalprops&part=sort"
+  },
+  {
+   "id": "816",
+   "title": "Halogens",
+   "pages": "241–242",
+   "meta": "films/816.json",
+   "unit": "u8",
+   "game": "halolab&part=look"
+  },
+  {
+   "id": "817",
+   "title": "Halogens React",
+   "pages": "242–245",
+   "meta": "films/817.json",
+   "unit": "u8",
+   "game": "halolab&part=duel"
+  },
+  {
+   "id": "818",
+   "title": "Key Points",
+   "pages": "245",
+   "meta": "films/818.json",
+   "unit": "u8",
+   "game": "quiz8"
+  },
+  {
+   "id": "819",
+   "title": "Exercise: Multiple Choice",
+   "pages": "246–247",
+   "meta": "films/819.json",
+   "unit": "u8",
+   "game": "quiz8"
+  }
+ ]
+}

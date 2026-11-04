@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rutherford 3D · Asawera</title>
+<style>
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #07080b;
+    color: #eef1f6; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .card { width: min(560px, 92vw); padding: 28px; border-radius: 20px; background: #12141b; border: 1px solid #262a35; }
+  .brand { font-family: "Palatino Linotype", Palatino, Georgia, serif; font-weight: 700; color: #f2c46d; font-size: 30px; letter-spacing: .05em; }
+  h1 { font-size: 20px; margin: 6px 0 18px; font-weight: 600; }
+  a.btn, button { display: block; width: 100%; box-sizing: border-box; margin: 10px 0; padding: 16px; border-radius: 14px; border: none;
+    font-size: 17px; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; }
+  .primary { background: #f2c46d; color: #1a1407; }
+  .secondary { background: #262a35; color: #eef1f6; }
+  ol { padding-left: 20px; line-height: 1.55; font-size: 15px; }
+  #status { font-size: 14px; opacity: .75; margin-bottom: 8px; }
+  small { opacity: .6; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="brand">Asawera</div>
+  <h1>Rutherford's Gold Foil Experiment · 3D</h1>
+  <div id="status">Checking…</div>
+
+  <div id="setup" hidden>
+    <p>To install the app so it works <b>offline</b> (Home Screen, AR, VR/gyro), this iPad needs the classroom
+       certificate. It's a one-time step:</p>
+    <ol>
+      <li>Tap <b>Download certificate</b>, then <b>Allow</b>.</li>
+      <li>Open <b>Settings › Profile Downloaded › Install</b>.</li>
+      <li>Open <b>Settings › General › About › Certificate Trust Settings</b> and switch on <b>Asawera Classroom CA</b>.</li>
+      <li>Come back here and tap <b>I've done it: open the app</b>.</li>
+    </ol>
+    <a class="btn primary" href="/install-certificate.crt">Download certificate</a>
+    <button class="secondary" id="retry">I've done it: open the app</button>
+    <a class="btn secondary" href="/app/">Just view it now (no offline install)</a>
+  </div>
+  <small>Keep this page's address; it's the only link you need.</small>
+</div>
+<script>
+  const host = location.hostname;
+  const secure = `https://${host}:8443/`;
+  const status = document.getElementById('status');
+  async function trusted() {
+    // an https request only succeeds once the iPad trusts the classroom certificate
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 3000);
+    try { await fetch(secure + 'manifest.webmanifest', { mode: 'no-cors', cache: 'no-store', signal: ctl.signal }); return true; }
+    catch (e) { return false; }
+    finally { clearTimeout(t); }
+  }
+  async function go() {
+    status.textContent = 'Checking…';
+    if (await trusted()) { status.textContent = 'Opening the app…'; location.replace(secure); return; }
+    status.textContent = 'Certificate not installed yet on this device.';
+    document.getElementById('setup').hidden = false;
+  }
+  document.getElementById('retry').onclick = go;
+  go();
+</script>
+</body>
+</html>

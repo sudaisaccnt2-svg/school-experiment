@@ -1,0 +1,2 @@
+﻿"id","email","created_at","status","student_name","class_label","private_note","last_seen","pro_until"
+"fixture-student","student@example.com","1770000000000","suspended","Test student","Class 10","","1770000000000","0"

@@ -1,0 +1,19 @@
+"""Small final edits confined to app source and the isolated publishing overlay."""
+import json,time
+from pathlib import Path
+app=Path(__file__).resolve().parents[1];commerce=app.parent/'publishing/cloudflare/commerce'
+main=app/'app/src/main/java/com/asawera/chemistry/MainActivity.kt';text=main.read_text(encoding='utf-8')
+old='onError={issue=it});if(issue!=null)Text("Player notice: "+issue!!.take(160)'
+new='onError={issue=it},onLessonChanged={lesson=it;chooseAr=false});if(issue!=null)Text("Please reopen this lesson if it cannot load."'
+if old in text:
+ assert text.count(old)==1;main.write_text(text.replace(old,new),encoding='utf-8')
+privacy=commerce/'public/privacy.html';text=privacy.read_text(encoding='utf-8')
+marker='<h2>Questions or account data requests</h2>'
+section='<h2>Android app</h2><p>The Asawera Chemistry Android app bundles lessons, practice games and AR scene models on your phone. The camera is used for native AR, and the app renders those scenes locally. AR on supported devices uses Google Play Services for AR. Online account checks and secure session cookies connect the app to the same Pro membership and owner controls as this website.</p><p>When app advertising is approved and enabled, Google AdMob serves home banners and occasional ads at lesson breaks. Its SDK can process IP addresses, device and app information and ad interaction data for delivery, measurement and fraud prevention. The app requests non-personalized advertising with the configured school audience restrictions. Pro accounts, owner accounts, offline sessions and unavailable membership checks receive no app advertising. Google privacy choices appear in the app when required. Payment profile information and payouts are managed directly in Google’s private dashboard.</p>'
+if '<h2>Android app</h2>' not in text:
+ assert text.count(marker)==1;text=text.replace(marker,section+marker).replace('Updated 13 October 2026','Updated 14 October 2026');privacy.write_text(text,encoding='utf-8')
+timestamp=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())
+path=commerce/'adsense-signup-preparation.json';data=json.loads(path.read_text(encoding='utf-8'));data.update(agreementAccepted=True,signupSubmitted=True,accountCreated=True,publisherId='ca-pub-7035355195474246',websiteOwnershipVerified=True,siteReviewRequested=True,approvalPending='Google site review; Google payment profile incomplete',blockedBy=None,recordedAtUTC=timestamp);path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+path=commerce/'advertising-live-status.json';data=json.loads(path.read_text(encoding='utf-8'));data.pop('signupBlockedByApproval',None);data.update(adsenseAccountExists=True,adsensePublisherConnected=True,websiteOwnershipVerified=True,siteReviewRequested=True,admobAccountCreated=True,admobAndroidAppCreated=True,admobAppApproved=False,admobPaymentProfileComplete=False,admobPaidServing=False,recordedAtUTC=timestamp);path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+path=commerce/'status.json';data=json.loads(path.read_text(encoding='utf-8'));data['waitingFor']=[entry for entry in data['waitingFor'] if 'explicit AdSense agreement' not in entry and 'actual publisher/ad-unit' not in entry];data['waitingFor']+=['Google payment profile completion, AdSense site review, Android store listing and AdMob app review'];data.update(adsenseAccountCreated=True,googlePublisherId='ca-pub-7035355195474246',adsenseOwnershipVerified=True,adsenseSiteReviewRequested=True,admobAccountCreated=True,admobAndroidAppCreated=True,androidAppApproved=False,androidPaidAdsActive=False);data['biddingChecks']['apiSecurity']='28 passed';path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+print('Native lesson navigation synchronized; Android privacy policy and actual Google setup status recorded.')

@@ -1,0 +1,98 @@
+{
+ "id": "404",
+ "title": "Calcium Chloride & Ions",
+ "pages": "96–97",
+ "glb": "models/404.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2235,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "404 Cam CaCl2"
+  },
+  {
+   "frame": 901,
+   "camera": "404 Cam Ions"
+  },
+  {
+   "frame": 1741,
+   "camera": "404 Cam MgO"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Calcium gives two",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Ions",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Magnesium oxide",
+   "frame": 1741,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Calcium Chloride & Ions",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/404.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "404 Cam CaCl2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "404 Cam Ions": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "404 Cam MgO": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "404 Cam CaCl2": [
+   0.0,
+   0.0
+  ],
+  "404 Cam Ions": [
+   0.0,
+   0.0
+  ],
+  "404 Cam MgO": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "a47f9a0657"
+}

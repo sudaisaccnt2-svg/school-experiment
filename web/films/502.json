@@ -1,0 +1,134 @@
+{
+ "id": "502",
+ "title": "Diffusion & Effusion",
+ "pages": "123–124",
+ "glb": "models/502.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2595,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "502 Cam Perfume"
+  },
+  {
+   "frame": 661,
+   "camera": "502 Cam Graham"
+  },
+  {
+   "frame": 1021,
+   "camera": "502 Cam Effusion"
+  },
+  {
+   "frame": 1561,
+   "camera": "502 Cam Bromine"
+  },
+  {
+   "frame": 2101,
+   "camera": "502 Cam Balloon"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Diffusion",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Graham",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Effusion",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Activity 5.1",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Point to Ponder",
+   "frame": 2101,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Diffusion & Effusion",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/502.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "502 Cam Perfume": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "502 Cam Graham": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "502 Cam Effusion": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "502 Cam Bromine": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "502 Cam Balloon": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "502 Cam Perfume": [
+   0.0,
+   0.0
+  ],
+  "502 Cam Graham": [
+   0.0,
+   0.0
+  ],
+  "502 Cam Effusion": [
+   0.0,
+   0.0
+  ],
+  "502 Cam Bromine": [
+   0.0,
+   0.0
+  ],
+  "502 Cam Balloon": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "f6b3c253b8"
+}

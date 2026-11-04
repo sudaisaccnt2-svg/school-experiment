@@ -1,0 +1,134 @@
+{
+ "id": "509",
+ "title": "Diffusion, Mobility & Density of Liquids",
+ "pages": "139–140",
+ "glb": "models/509.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2235,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "509 Cam Ink"
+  },
+  {
+   "frame": 661,
+   "camera": "509 Cam Flow"
+  },
+  {
+   "frame": 1021,
+   "camera": "509 Cam Table"
+  },
+  {
+   "frame": 1621,
+   "camera": "509 Cam Float"
+  },
+  {
+   "frame": 1921,
+   "camera": "509 Cam Bromine"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Ink in water",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Mobility",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Table 5.3",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Oil on water",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Activity 5.3",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Diffusion, Mobility & Density of Liquids",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/509.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "509 Cam Ink": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "509 Cam Flow": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "509 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "509 Cam Float": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "509 Cam Bromine": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "509 Cam Ink": [
+   0.0,
+   0.0
+  ],
+  "509 Cam Flow": [
+   0.0,
+   0.0
+  ],
+  "509 Cam Table": [
+   0.0,
+   0.0
+  ],
+  "509 Cam Float": [
+   0.0,
+   0.0
+  ],
+  "509 Cam Bromine": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8ae9aea1bf"
+}

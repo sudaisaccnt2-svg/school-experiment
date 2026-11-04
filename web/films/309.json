@@ -1,0 +1,134 @@
+{
+ "id": "309",
+ "title": "Electron Affinity",
+ "pages": "80–81",
+ "glb": "models/309.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2700,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "309 Cam Catch"
+  },
+  {
+   "frame": 661,
+   "camera": "309 Cam Oxygen"
+  },
+  {
+   "frame": 1081,
+   "camera": "309 Cam Size"
+  },
+  {
+   "frame": 1441,
+   "camera": "309 Cam City"
+  },
+  {
+   "frame": 2461,
+   "camera": "309 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Taking an electron",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Oxygen",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Factors",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Table 3.4",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "+ values",
+   "frame": 2221,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Electron Affinity",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/309.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "309 Cam Catch": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "309 Cam Oxygen": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "309 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "309 Cam City": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "309 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "309 Cam Catch": [
+   0.0,
+   0.0
+  ],
+  "309 Cam Oxygen": [
+   0.0,
+   0.0
+  ],
+  "309 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "309 Cam City": [
+   0.0,
+   0.0
+  ],
+  "309 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "7d4d645d68"
+}

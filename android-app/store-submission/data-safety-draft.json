@@ -1,0 +1,86 @@
+{
+  "draft": true,
+  "encryptedInTransit": true,
+  "accountCreation": "Username and password; optional for public offline lessons",
+  "accountDeletion": "https://asawera-chemistry-51y.pages.dev/delete-account",
+  "dataTypes": [
+    {
+      "type": "Personal info / User IDs",
+      "collected": true,
+      "optional": true,
+      "purpose": [
+        "Account management",
+        "App functionality"
+      ],
+      "details": "Student username and an opaque Google Play account binding; password and recovery verifiers remain on the private server."
+    },
+    {
+      "type": "Personal info / Name",
+      "collected": true,
+      "optional": true,
+      "purpose": [
+        "Account management"
+      ],
+      "details": "School owner can optionally record a student name and class; these are deleted with the profile."
+    },
+    {
+      "type": "Financial info / Purchase history",
+      "collected": true,
+      "optional": true,
+      "purpose": [
+        "App functionality",
+        "Fraud prevention"
+      ],
+      "details": "Pro expiry and transaction/purchase references; paid records are anonymised on account deletion."
+    },
+    {
+      "type": "Approximate location",
+      "collected": true,
+      "shared": true,
+      "optional": true,
+      "purpose": [
+        "Advertising",
+        "Fraud prevention"
+      ],
+      "details": "Ad SDK may derive location from IP during eligible ad requests; no precise-location permission is requested."
+    },
+    {
+      "type": "App activity / App interactions",
+      "collected": true,
+      "shared": true,
+      "optional": true,
+      "purpose": [
+        "Advertising",
+        "Analytics",
+        "Fraud prevention"
+      ],
+      "details": "Ad interactions when advertising is enabled; lesson-by-lesson progress is not tracked by Asawera."
+    },
+    {
+      "type": "App info and performance / Diagnostics",
+      "collected": true,
+      "shared": true,
+      "optional": true,
+      "purpose": [
+        "Analytics",
+        "Fraud prevention"
+      ],
+      "details": "Google Mobile Ads SDK diagnostics during advertising."
+    },
+    {
+      "type": "Device or other IDs",
+      "collected": true,
+      "shared": true,
+      "optional": true,
+      "purpose": [
+        "Advertising",
+        "Fraud prevention"
+      ],
+      "details": "Advertising-ID permission is removed, but the Google SDK can use other identifiers."
+    }
+  ],
+  "camera": "Local AR processing; camera images are not uploaded by app code",
+  "sdkSource": "https://developers.google.com/admob/android/privacy/play-data-disclosure",
+  "needsFinalConsoleReview": true,
+  "liveAdRequestsDuringChecks": 0
+}

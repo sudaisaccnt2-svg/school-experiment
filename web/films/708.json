@@ -1,0 +1,116 @@
+{
+ "id": "708",
+ "title": "Electrolytes & Electrodes",
+ "pages": "191–193",
+ "glb": "models/708.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2295,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "708 Cam Types"
+  },
+  {
+   "frame": 421,
+   "camera": "708 Cam Ions"
+  },
+  {
+   "frame": 841,
+   "camera": "708 Cam Bulbs"
+  },
+  {
+   "frame": 1561,
+   "camera": "708 Cam Electrodes"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Two kinds of cell",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Electrolyte",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Strong, weak, none",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Electrodes",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Electrolytes & Electrodes",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/708.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "708 Cam Types": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "708 Cam Ions": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "708 Cam Bulbs": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "708 Cam Electrodes": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "708 Cam Types": [
+   0.0,
+   0.0
+  ],
+  "708 Cam Ions": [
+   0.0,
+   0.0
+  ],
+  "708 Cam Bulbs": [
+   0.0,
+   0.0
+  ],
+  "708 Cam Electrodes": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8876d595c9"
+}

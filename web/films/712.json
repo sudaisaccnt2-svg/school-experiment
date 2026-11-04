@@ -1,0 +1,98 @@
+{
+ "id": "712",
+ "title": "Batteries & the Dry Cell",
+ "pages": "199–200",
+ "glb": "models/712.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1995,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "712 Cam Battery"
+  },
+  {
+   "frame": 541,
+   "camera": "712 Cam Dry"
+  },
+  {
+   "frame": 1321,
+   "camera": "712 Cam Work"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Battery",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Dry cell",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Working",
+   "frame": 1321,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Batteries & the Dry Cell",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/712.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "712 Cam Battery": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "712 Cam Dry": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "712 Cam Work": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "712 Cam Battery": [
+   0.0,
+   0.0
+  ],
+  "712 Cam Dry": [
+   0.0,
+   0.0
+  ],
+  "712 Cam Work": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "6ce31e9813"
+}

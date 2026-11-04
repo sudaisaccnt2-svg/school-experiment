@@ -1,0 +1,2232 @@
+{
+  "release": "c85d85d213c1",
+  "lessonCount": 110,
+  "arSceneCount": 113,
+  "sourceLessonBytesUnchanged": true,
+  "embeddedFiles": [
+    {
+      "path": "app.js",
+      "sha256": "58979c5d7563f7f461d4bf36e8773edf0002d6efa0f24f3aab58e3209dd0a3ea",
+      "bytes": 61824
+    },
+    {
+      "path": "ar.js",
+      "sha256": "9104bccbebe2d66dd80ffe55b69923f5cc0539d5017df0f2a52087c64f3a9c3f",
+      "bytes": 2698
+    },
+    {
+      "path": "env.hdr",
+      "sha256": "ca6623894ba7f31d5978ed86ab1ed98944c11b78c4b20f4ca959fcece05386b6",
+      "bytes": 1634119
+    },
+    {
+      "path": "films.json",
+      "sha256": "d2addbe60cfc46ecdfa465d7640016473a179541d039ad5f70d491e471712c7a",
+      "bytes": 19219
+    },
+    {
+      "path": "fx.js",
+      "sha256": "88134151411b25d9e07d372e6235766e5422b0257c7a034db76c6c31ea57ff4e",
+      "bytes": 7621
+    },
+    {
+      "path": "games.html",
+      "sha256": "e7d6046ef3b4c520b870548e07a44df3f66178022878a587a5660240b8dad845",
+      "bytes": 1617
+    },
+    {
+      "path": "home.html",
+      "sha256": "153d384325035d0905632e8eb42d1df2486392ced5728433ba2183600c95e96b",
+      "bytes": 5873
+    },
+    {
+      "path": "house.js",
+      "sha256": "4519ec56a7563e3382aa8d9ae31026434fee5637020a8e1d8744e451c96929eb",
+      "bytes": 7699
+    },
+    {
+      "path": "index.html",
+      "sha256": "90ccc4cae5f574af860a6ebc29eabbbb299151b83b9fec4b39fa108dbe3c40fa",
+      "bytes": 3450
+    },
+    {
+      "path": "scene.json",
+      "sha256": "92295606a98938bcb7edc494b32086b17a6e33d50ba88ac330bf958da20584a5",
+      "bytes": 3102
+    },
+    {
+      "path": "style.css",
+      "sha256": "d4e90fe2bcc7e91668887f3184ae3baae903e3a4d8cd931be06028bb65e7aeb1",
+      "bytes": 14839
+    },
+    {
+      "path": "films/02.json",
+      "sha256": "e6b394a77bf407e3e0464843c56387a3b41a56da2c2a45f8c50e145f2e4fdebf",
+      "bytes": 2409
+    },
+    {
+      "path": "films/03.json",
+      "sha256": "0d4fb6642142c2c34d5d725cbb720305b7d81ac7aa2cdbe0c55968160e78f1c7",
+      "bytes": 2212
+    },
+    {
+      "path": "films/04.json",
+      "sha256": "d319ee54bc6cc4a2dec3487a4e1f11fcd6d0984c5a4ea6a645ee8ec5f9696eda",
+      "bytes": 2159
+    },
+    {
+      "path": "films/05.json",
+      "sha256": "1cdc2dd465e4eb8af5e385c81183087b1b3798ecc187c70d870a45406f09201a",
+      "bytes": 2730
+    },
+    {
+      "path": "films/06.json",
+      "sha256": "67a9b36b8b151c1038744a8fb2fb9ad9639738f8bd31a8eb39d8a1d9b9a4d836",
+      "bytes": 1359
+    },
+    {
+      "path": "films/07.json",
+      "sha256": "2dd5ccf7a894d4c64594d6147d8419e1bde145c783af8ed61ef352d97b95f63c",
+      "bytes": 1864
+    },
+    {
+      "path": "films/08.json",
+      "sha256": "7d6600cf94783e13f67023b67190bb158958e27b4311310e0416c85d3e2f6c7b",
+      "bytes": 2212
+    },
+    {
+      "path": "films/09.json",
+      "sha256": "33bbed5a8800ace44129ac95ee530cb7eaacfdc882d5dd2794511336778d228b",
+      "bytes": 2415
+    },
+    {
+      "path": "films/10.json",
+      "sha256": "a8a30b0c6380774682c551ce4ad3b4db1e69d91e46c6f1be209a0ccd33848139",
+      "bytes": 2827
+    },
+    {
+      "path": "films/11.json",
+      "sha256": "639c55633fb1b2dac9ee1ec72faa16373728b1048800bba81bc15aa94c0c407b",
+      "bytes": 3234
+    },
+    {
+      "path": "films/12.json",
+      "sha256": "360535d0dc1d6b3d13357186d8f9f9cb72a5046ad7270f2a5c0f6224156349db",
+      "bytes": 4687
+    },
+    {
+      "path": "films/301.json",
+      "sha256": "a019ca86b161d4ec7dbe902a6328a548cd8cfab8d21baedc4b1ec9f1e3e8e40c",
+      "bytes": 2697
+    },
+    {
+      "path": "films/302.json",
+      "sha256": "077c9d50f142b3d1b6055b71fdeb13d7fc9112f9f24251fe1cf46c705baf235c",
+      "bytes": 2632
+    },
+    {
+      "path": "films/303.json",
+      "sha256": "5cf926e2eac55c6fd1c43bf13b31438ae7f1570c561bcbfebd8ec62eeca18582",
+      "bytes": 2187
+    },
+    {
+      "path": "films/304.json",
+      "sha256": "63f8528f1df5ec94ef8f42a1b14b5d12733b077094a589416d65a279b5f28fbb",
+      "bytes": 2539
+    },
+    {
+      "path": "films/305.json",
+      "sha256": "0c40037f17df18a3bcee4ed3ef225a8280647e3320fb4e1ed489e9c38ac288ec",
+      "bytes": 2429
+    },
+    {
+      "path": "films/306.json",
+      "sha256": "083ebc9c24478c17a2f5eee4f214ea26ff6479ee4dde35b71f744bc371850864",
+      "bytes": 2029
+    },
+    {
+      "path": "films/307.json",
+      "sha256": "c5f78dcecbccab7c96a07191a376669657a946fe0d7310d36460088b9dab3d18",
+      "bytes": 1437
+    },
+    {
+      "path": "films/308.json",
+      "sha256": "a30952501a259fab342ddf1599952c076d61ce2449847abba6b3894463441fb0",
+      "bytes": 2622
+    },
+    {
+      "path": "films/309.json",
+      "sha256": "32b00e3e59e1414fe0022b2dee9f48655624a8fffecd62e8134340b1bfd88920",
+      "bytes": 1841
+    },
+    {
+      "path": "films/310.json",
+      "sha256": "dc7efeef76370974ae3a567e5e33d311eb3a3b2dca8a3a360da907e438bb4d6a",
+      "bytes": 1845
+    },
+    {
+      "path": "films/311.json",
+      "sha256": "41730932edd8b54eb659b07fe54f122b921f93cf1b8688d8955c3528eff773ad",
+      "bytes": 2055
+    },
+    {
+      "path": "films/312.json",
+      "sha256": "80230e594c8ffbc9fefe2245d1e17b24c6a8d4d5d19665e8c41b35bffe65e77f",
+      "bytes": 2022
+    },
+    {
+      "path": "films/313.json",
+      "sha256": "d56e287fca9294dd8789e14966c067bd4de433e7af0a7f5c95eeb6023fb6cadc",
+      "bytes": 2853
+    },
+    {
+      "path": "films/401.json",
+      "sha256": "dc0360a0c48a6ddf43221d68086382ba39c5dd9917492d89ef41722601fcc035",
+      "bytes": 2086
+    },
+    {
+      "path": "films/402.json",
+      "sha256": "56ce482094ae5a8b812fc7ca588511570fce536296c7f450bbb74ccaa206c53e",
+      "bytes": 1668
+    },
+    {
+      "path": "films/403.json",
+      "sha256": "c297b66b799385b0d751cff43c7eb9e52e447df723e2101953b26f75e4d46b86",
+      "bytes": 1326
+    },
+    {
+      "path": "films/404.json",
+      "sha256": "0eb116ca68b8706a64f4ee7983e856ed9442f3e0b41284eb8bd81685bd843df6",
+      "bytes": 1401
+    },
+    {
+      "path": "films/405.json",
+      "sha256": "0c01c01317d56363ad1fc85a0782f9ee9c1609450230c4985bd702522b2b43a0",
+      "bytes": 1380
+    },
+    {
+      "path": "films/406.json",
+      "sha256": "6e0a7972125120f91580e7a586212134e55e031abedcca840c31f447f4ea3f64",
+      "bytes": 2300
+    },
+    {
+      "path": "films/407.json",
+      "sha256": "17763b4e138eae0d091a32e1762d84e8ba5ec4b641ad873712f50904458def8a",
+      "bytes": 1417
+    },
+    {
+      "path": "films/408.json",
+      "sha256": "2c18d9adbdee29533d28b146e655d9c05a00236a9bf74efbf14a02d48d3f0c7d",
+      "bytes": 1611
+    },
+    {
+      "path": "films/409.json",
+      "sha256": "a628d6a081421287ce3333fb7b3ac66cc1c1906e504e5f31b0d1a6cbf67ac322",
+      "bytes": 1869
+    },
+    {
+      "path": "films/410.json",
+      "sha256": "7f9839cd127eb8dfbbce9682d44774c623a89688728dd6f585a2386e94217ad2",
+      "bytes": 1259
+    },
+    {
+      "path": "films/411.json",
+      "sha256": "158109e0bc7f1c247878da278cf7ff22ff990e67f084d7feee0934fa76394320",
+      "bytes": 2243
+    },
+    {
+      "path": "films/412.json",
+      "sha256": "100466db4b4dce96d962a5a1c069f70b914d18128e2ffb26f20b076cdc88c5fc",
+      "bytes": 1872
+    },
+    {
+      "path": "films/413.json",
+      "sha256": "a7802b5ade21059c3ee0fd5e85b75bf18b7250060194f2fe2c6c1fda18ea396f",
+      "bytes": 1925
+    },
+    {
+      "path": "films/414.json",
+      "sha256": "c081899e7bb3923a6b535430b91bf6930ac67a41392d220aada588d72586fa10",
+      "bytes": 3500
+    },
+    {
+      "path": "films/415.json",
+      "sha256": "396aa3491667e4de55a3bf02981be6cb4c53163bcd2dbb7e356e92ae45bc365b",
+      "bytes": 4520
+    },
+    {
+      "path": "films/501.json",
+      "sha256": "9a4e033f493103aad241aa7e6ff302373b5d3a3d8e6433dc8d0bdbabc42d8457",
+      "bytes": 1661
+    },
+    {
+      "path": "films/502.json",
+      "sha256": "b2aaaa858ef9bda17c3a6391c510f87d4314cce510b5b99e21f8e0261dfb4f21",
+      "bytes": 1890
+    },
+    {
+      "path": "films/503.json",
+      "sha256": "436d738dafe0377b5a6900b932ec09b8f0a952eabccd86425f73caafcf938abc",
+      "bytes": 1893
+    },
+    {
+      "path": "films/504.json",
+      "sha256": "509eb9f6232d77d271439ba08f7915eecdf7f9f3dd48a0e3a4fbdb3c7f5d0dff",
+      "bytes": 2078
+    },
+    {
+      "path": "films/505.json",
+      "sha256": "43f8f197e35d761885e44ee642470f0f6b11af04ab70378485de15303ac0bd2f",
+      "bytes": 2087
+    },
+    {
+      "path": "films/506.json",
+      "sha256": "f2a4c25dd42fddb0433f6aed33fb158662cdcecd9e1afc4fef3a8e70db516bcf",
+      "bytes": 1912
+    },
+    {
+      "path": "films/507.json",
+      "sha256": "daf154cd58c98a4d4b85ad943b8947e7c935ed2054eeb74c3d8b6ed244731345",
+      "bytes": 1831
+    },
+    {
+      "path": "films/508.json",
+      "sha256": "d82cbfc8806c6b75edc090927b0996f6e90e874e44f69b9043f9b2467580bef5",
+      "bytes": 2134
+    },
+    {
+      "path": "films/509.json",
+      "sha256": "587e36906f3294229e3782ea2161085e90871cd167a6474757414a43c53d4d55",
+      "bytes": 1900
+    },
+    {
+      "path": "films/510.json",
+      "sha256": "7d54a91a10dbd183ed50f57bd5a25072a7ac390a6a36da2872134b5cbffee13a",
+      "bytes": 1844
+    },
+    {
+      "path": "films/511.json",
+      "sha256": "66c426781fce348de4613fcc54bd93a7c424f90cd5d159bd7ea451650dc74abe",
+      "bytes": 1665
+    },
+    {
+      "path": "films/512.json",
+      "sha256": "598e05798bd41dcc0c078cf4147bdc10dd2e2f44e7f66bd5a70516a2102e298b",
+      "bytes": 1873
+    },
+    {
+      "path": "films/513.json",
+      "sha256": "0de370e3876e770295ceaa3049e00de4a40e4191bde2cd51778548d3a9f7584f",
+      "bytes": 1671
+    },
+    {
+      "path": "films/514.json",
+      "sha256": "2494bff131f5bd86a2729597c12d48b7772b7cfbd6994a969efa1e3dfa729017",
+      "bytes": 5078
+    },
+    {
+      "path": "films/515.json",
+      "sha256": "711a34232d69811132793bd71479a83c4aa6c0478031ed4c444be521b84a7567",
+      "bytes": 4520
+    },
+    {
+      "path": "films/601.json",
+      "sha256": "8da36f051456d802a7204b34bbc9732d226079af71b030be5b3bb84f4de52e2d",
+      "bytes": 1875
+    },
+    {
+      "path": "films/602.json",
+      "sha256": "a12487b7b031ebcb94bb079d98e79d862e85be857ad9667ddbf866624b0bc0bb",
+      "bytes": 1671
+    },
+    {
+      "path": "films/603.json",
+      "sha256": "b637822a1d8c9d0f1c7e7427d617b6e782902533ab5be04efff2fd54412a38f5",
+      "bytes": 1423
+    },
+    {
+      "path": "films/604.json",
+      "sha256": "42361e464b0410aebcfcf9dc795915791263b8b3ce1e0b5adcdb01bcacd7158f",
+      "bytes": 1856
+    },
+    {
+      "path": "films/605.json",
+      "sha256": "2ceaa22e6c9f480a6b004d1a162342db9fe795ee0c7f4322d3ac74e4fa70e089",
+      "bytes": 1660
+    },
+    {
+      "path": "films/606.json",
+      "sha256": "bb3a9748cf4db28b6ff8090e89327f5bf6ab64635bb2728176bd506a9e445d39",
+      "bytes": 1850
+    },
+    {
+      "path": "films/607.json",
+      "sha256": "d88ed8a00e1e3bed5780d6b051c02afdbb45b49bd6c44cdafc3f5846b18465af",
+      "bytes": 1838
+    },
+    {
+      "path": "films/608.json",
+      "sha256": "4bb78c26f2facd742143ec641b81f849da719a12b980413edb3e44d97eec3370",
+      "bytes": 1398
+    },
+    {
+      "path": "films/609.json",
+      "sha256": "7f7062d4107fdfb4d295c50fa4b00c89d02a1773a625dfd748637215f2b86ab0",
+      "bytes": 1586
+    },
+    {
+      "path": "films/610.json",
+      "sha256": "87dae4c172009d20f8490ddd48492210610a4388b25174b6566e14d730af4e18",
+      "bytes": 1411
+    },
+    {
+      "path": "films/611.json",
+      "sha256": "df741d1af3b56df10377448b77dbb5163a3549d0c713a2812a89c012a39ede52",
+      "bytes": 2260
+    },
+    {
+      "path": "films/612.json",
+      "sha256": "fb5e6c994d0f336e106aa32ba6d3c082156582db266e4cb829bbcaf559f87161",
+      "bytes": 1971
+    },
+    {
+      "path": "films/613.json",
+      "sha256": "307e200eb39777defb8a2be2de7f3e612030933c28fe29b754dc10cccce2f6b4",
+      "bytes": 1641
+    },
+    {
+      "path": "films/614.json",
+      "sha256": "c0004488cf8695ce8a19a7d2a3a9e88601ec2586a9a5512efa6c6890fd39de87",
+      "bytes": 2133
+    },
+    {
+      "path": "films/615.json",
+      "sha256": "9680a5cddcb130d08b165643d5b14a654be27d7961d0d7e9273839a55f4623b5",
+      "bytes": 1650
+    },
+    {
+      "path": "films/616.json",
+      "sha256": "1f44f3f3008c887be268286d38d1a7977893151ee326265e7ab459a45a06696d",
+      "bytes": 5499
+    },
+    {
+      "path": "films/617.json",
+      "sha256": "c5dd2341b91d67746e67f31be02c29d88ce9954e4ec5b83ff3a59d913c4165ed",
+      "bytes": 4514
+    },
+    {
+      "path": "films/701.json",
+      "sha256": "9a62d995bb9b554bfa5dca3abc775f2b7dc7f42fb83dbc4477594694e942644a",
+      "bytes": 1871
+    },
+    {
+      "path": "films/702.json",
+      "sha256": "f3afaf338700ecdc485e4672c22001365f1f7736c526fd31be0d68604326ed66",
+      "bytes": 1882
+    },
+    {
+      "path": "films/703.json",
+      "sha256": "ea01a31efd2db00641e5a33b113b6267f52da3343eca26b42e44a7cc5a78e185",
+      "bytes": 1395
+    },
+    {
+      "path": "films/704.json",
+      "sha256": "9c5c2360491bc30efb4414c15c446a824eb78437026121c4cc2f32acbd4c16f9",
+      "bytes": 2458
+    },
+    {
+      "path": "films/705.json",
+      "sha256": "85b760b5de347ddcf67e89f79cdc8dacce124b1d9633432bab56a9dd094ecdee",
+      "bytes": 1674
+    },
+    {
+      "path": "films/706.json",
+      "sha256": "2bf558744ca55aab0dd47f71224598b40ab5b2f9e2946aa3517fbc90133ee752",
+      "bytes": 1875
+    },
+    {
+      "path": "films/707.json",
+      "sha256": "d586efde35350a52352fc3e28002fa40915569cc19a736aff5fd8dd243fb5db1",
+      "bytes": 1892
+    },
+    {
+      "path": "films/708.json",
+      "sha256": "bf66587e8b15db027f4bd9fd2bdf7f3fdddbe74f2633cd57ed4761f65d2a50aa",
+      "bytes": 1666
+    },
+    {
+      "path": "films/709.json",
+      "sha256": "338836e4f3eda7aed9bd56d129a78b6785f91d0c5b36a4b6536e89c68bdf86e7",
+      "bytes": 1865
+    },
+    {
+      "path": "films/710.json",
+      "sha256": "0b95cbdf4f60c6c7e6b2baf53b889908ce1578011a3f790c8e717829cacbdfcf",
+      "bytes": 1610
+    },
+    {
+      "path": "films/711.json",
+      "sha256": "20a763a03aa1d2812368ec6c2012c338dbb370774a230c1bb3fa0d053c609720",
+      "bytes": 2092
+    },
+    {
+      "path": "films/712.json",
+      "sha256": "5f00c4e35420883dbe714478b9176289fb68b74320a8581e40feb30f0f4c8b09",
+      "bytes": 1397
+    },
+    {
+      "path": "films/713.json",
+      "sha256": "1e26aadc116c686d14a36375e990f48f0017d72a98023619f493df61d0a40a59",
+      "bytes": 1843
+    },
+    {
+      "path": "films/714.json",
+      "sha256": "68d2539470775d3a666f194acb9d6107c7aaf6541cdd562688e706f2da3c07e1",
+      "bytes": 1838
+    },
+    {
+      "path": "films/715.json",
+      "sha256": "c108e2d0c3b479b51b31d8a583a8a10f6c3f403559302a2fa29e054320fdf13e",
+      "bytes": 1861
+    },
+    {
+      "path": "films/716.json",
+      "sha256": "d6a0afb7fc6e9ac53c11f346db3f9c20173999fe95993a84c8bb733e9e5907a5",
+      "bytes": 2228
+    },
+    {
+      "path": "films/717.json",
+      "sha256": "d993491ca3f9548da288b0e6f3c7e50b595d464b9f87030f8527f213eba063b6",
+      "bytes": 2049
+    },
+    {
+      "path": "films/718.json",
+      "sha256": "69da624304a556fbbd87e680c9480211e6f8b94866e692be6e40436d8d4e5773",
+      "bytes": 4248
+    },
+    {
+      "path": "films/719.json",
+      "sha256": "89d727c367a8d756f8ab66ea838b45e0033b0b1a94b2e9af377c600271074851",
+      "bytes": 4520
+    },
+    {
+      "path": "films/801.json",
+      "sha256": "d67d2e483f5b22027a1fb40a88a9703d3e83d9ce54cb3d4654f12f906d1e0aa8",
+      "bytes": 2350
+    },
+    {
+      "path": "films/802.json",
+      "sha256": "acb0e3ad37eb11321dfc0a224e008e09e794838259a3bb411dccb23f3c3a99fa",
+      "bytes": 2071
+    },
+    {
+      "path": "films/803.json",
+      "sha256": "33a84e12b82219d674f00adeefdbdfb857e497b8a9f3bd2d7d0b46a4bdd374c1",
+      "bytes": 2993
+    },
+    {
+      "path": "films/804.json",
+      "sha256": "c67ada8248433e1a4c4348a36708fed1b8dd91535ff611697d1d499d0bec65e3",
+      "bytes": 2152
+    },
+    {
+      "path": "films/805.json",
+      "sha256": "023a96fac8093da03307516f35d4dd6d9d9085e36496c58e098911ad85155f42",
+      "bytes": 2011
+    },
+    {
+      "path": "films/806.json",
+      "sha256": "d846a5b49c8187641b4629f643bbbf21348465257eab4f717b0484649ee1ee23",
+      "bytes": 2000
+    },
+    {
+      "path": "films/807.json",
+      "sha256": "9ad7689d6726f1f24698cd07ffee0c0da535131169fe48a39917f4e610ed54f4",
+      "bytes": 2127
+    },
+    {
+      "path": "films/808.json",
+      "sha256": "0ee0c2aba5845b26466a9210553b62e64ad8b172f11178d46626680cdf2fd480",
+      "bytes": 2293
+    },
+    {
+      "path": "films/809.json",
+      "sha256": "892698cb96ed159df945a8d130de30b3786502e93bbe16ef38b9a0dd023a7317",
+      "bytes": 1670
+    },
+    {
+      "path": "films/810.json",
+      "sha256": "fc1c2b4824881020e396fa926b236ee7ca4af12afe03f44cff131a0ed7e3182b",
+      "bytes": 2002
+    },
+    {
+      "path": "films/811.json",
+      "sha256": "5ebaa6e74558f93662f528f14167d229dad24ef65223e591c5c9cf248ef91e81",
+      "bytes": 2236
+    },
+    {
+      "path": "films/812.json",
+      "sha256": "34d47167aea0d4ca38adac8b740ad4864f655bc90722c21ce8467c573b3562dc",
+      "bytes": 1901
+    },
+    {
+      "path": "films/813.json",
+      "sha256": "e14cf50cf3264271f2e009b5c6256b21c618f888c82c8e55b2155dd6446178c2",
+      "bytes": 1862
+    },
+    {
+      "path": "films/814.json",
+      "sha256": "3c6873fcf4505b543f6efb610fc3861368d11985a4a7ca1015346a6e02c6521c",
+      "bytes": 2651
+    },
+    {
+      "path": "films/815.json",
+      "sha256": "0d881b25412696f6c65fbf3dd6762667f60064ec4b990de848f2175165dfb35b",
+      "bytes": 2593
+    },
+    {
+      "path": "films/816.json",
+      "sha256": "d045ef299273f64a94081cc226ec16dcdb100b9faedd7ddf4934a58e5fef7ffb",
+      "bytes": 2067
+    },
+    {
+      "path": "films/817.json",
+      "sha256": "777dc68541e525c05d5e110a7b39c8419b792a429e1cc261fe402af632a0f019",
+      "bytes": 3201
+    },
+    {
+      "path": "films/818.json",
+      "sha256": "28d14f21f023ee0d3afe387133f390acc2cf62e29484c4bcaeac2b36e1bb7abd",
+      "bytes": 3618
+    },
+    {
+      "path": "films/819.json",
+      "sha256": "6cf74f64b460ded914e82c08a97d73ccedd8a6236d3091e4d031e2a2c143cd33",
+      "bytes": 4752
+    },
+    {
+      "path": "games/arcade.js",
+      "sha256": "6d47176fe013fbd9a9248062116417c08a83df842ca6ac1c9e0edc6b2d1d4475",
+      "bytes": 6621
+    },
+    {
+      "path": "games/atom.js",
+      "sha256": "0b9ae4c6fbbade002571f40dc6e929881877e0cf54a781f05576a7321a41379e",
+      "bytes": 9996
+    },
+    {
+      "path": "games/atomlab.js",
+      "sha256": "fe63005354dcd14f520df99b2804a341c5e504009787431eff25ece0c3a60012",
+      "bytes": 14150
+    },
+    {
+      "path": "games/aufbau.js",
+      "sha256": "0276b99ae29d11c850273f7887f9c8189ee2ea48ad091edfa7dd0a859bf21e4d",
+      "bytes": 12157
+    },
+    {
+      "path": "games/blocks.js",
+      "sha256": "54a258c6cb465d6380cac8a734e725416e28e7f59d9f3b3ecd41e8b7dcd21749",
+      "bytes": 5232
+    },
+    {
+      "path": "games/bondbuild.js",
+      "sha256": "e9d5e295b820b52c4caaf517b14307dc14326a1278b268f24f5b6ba1c3536ef0",
+      "bytes": 11002
+    },
+    {
+      "path": "games/bondsort.js",
+      "sha256": "c78b1cf1405fc94f21fb5a14089363b3b4a95230e38a682f4a9470587231dbf1",
+      "bytes": 3441
+    },
+    {
+      "path": "games/celllab.js",
+      "sha256": "f812a59b3d00b379a7ec984f51495e44ad685e9d55bede220267ead19023d829",
+      "bytes": 11999
+    },
+    {
+      "path": "games/chem7.js",
+      "sha256": "df7053fd1e93571e005c5c5f49f8b01d7d13a0ac2dc6f3bd361f61647c4440a9",
+      "bytes": 5970
+    },
+    {
+      "path": "games/chem8.js",
+      "sha256": "c0f1678560e2678f390fbc020b2d80892d0f54eef85cdcaf755cf4784c8e691e",
+      "bytes": 5493
+    },
+    {
+      "path": "games/cloud.js",
+      "sha256": "8ef68c2742d23f0c8acc56a96921e1b1077703d935e23a9a9f6b23881cc5407a",
+      "bytes": 11746
+    },
+    {
+      "path": "games/cloud3d.js",
+      "sha256": "c43b9e1df560dbff79e67d8e8a5c8ef4ea60d3141df4ce17873393afbd3d5548",
+      "bytes": 6716
+    },
+    {
+      "path": "games/configs.js",
+      "sha256": "ca1f3643b48e67bb7fb9990ef07e75ee8775594c278fbfa89496d406d599e1ec",
+      "bytes": 10297
+    },
+    {
+      "path": "games/counter.js",
+      "sha256": "e209928d51ffb8202d95722bb064a7a3c32a210e15e846fdfb231f96d6f5ffa5",
+      "bytes": 10415
+    },
+    {
+      "path": "games/duel.js",
+      "sha256": "34d952c907ef407e3f4625916f3be58c473fdb66c8c30a8dc4dc7b84be36c017",
+      "bytes": 6319
+    },
+    {
+      "path": "games/families.js",
+      "sha256": "bca3e0af7224d43b8a09d44d4b6909fa521f35f2922119aa11024ad6743bddd0",
+      "bytes": 6525
+    },
+    {
+      "path": "games/finder.js",
+      "sha256": "e67c5cb2460f254e05fb5f5718e565496e7b59431c21d46d39380c75ee358d7a",
+      "bytes": 4472
+    },
+    {
+      "path": "games/games.css",
+      "sha256": "3d526745b7efb36650eb4e2f47f166aeaa60d95d18128199ffa4e9deed5caa1a",
+      "bytes": 37483
+    },
+    {
+      "path": "games/gas3d.js",
+      "sha256": "07ecdcf4ab1f77ec697c535388a4d7567c923756ba357b11c7c8cf43dfefea7c",
+      "bytes": 8720
+    },
+    {
+      "path": "games/gaslab.js",
+      "sha256": "e1a85a7f1732186f50d79983bcb56efdabf8ea8912edbed5433a1804504f74f6",
+      "bytes": 7146
+    },
+    {
+      "path": "games/halolab.js",
+      "sha256": "7f7428092b2c6e75910530ed581d2dd875d1e973644b388f27dd7ab74c41a7d2",
+      "bytes": 9154
+    },
+    {
+      "path": "games/isotopes.js",
+      "sha256": "48ef0c438e42033b5a628bed4662aafaf4a27f5a98ad759a4b8851705296f7e0",
+      "bytes": 12022
+    },
+    {
+      "path": "games/isouses.js",
+      "sha256": "f92940aecdf7535be9528a143b4dcdc34e6de51285f517275233cd12a9c13e88",
+      "bytes": 10525
+    },
+    {
+      "path": "games/kit.js",
+      "sha256": "7f6ec46e7a8aa6e3e8551a260b3c5fa5b65f609e0685201db1e2867c254c8ed3",
+      "bytes": 23500
+    },
+    {
+      "path": "games/light.js",
+      "sha256": "681d587ec06d22763a4d553706a62f79c01d28c411a6bfa4b6f53f716f079be5",
+      "bytes": 37420
+    },
+    {
+      "path": "games/main.js",
+      "sha256": "52406370c0609a3f4ec3b271b5e8368b3f31cda92e265d193c2e8e1c54235607",
+      "bytes": 13745
+    },
+    {
+      "path": "games/match.js",
+      "sha256": "ba2931bc00f938043485c0c45367c75c0ef0e5ad84ea0acb1bf57d78cf4a48e2",
+      "bytes": 10480
+    },
+    {
+      "path": "games/metalprops.js",
+      "sha256": "d54c43843a89aa57af16f476647c98cb28d0ae8fe1f61a38437cd19dfc3f48bf",
+      "bytes": 7826
+    },
+    {
+      "path": "games/metalsort.js",
+      "sha256": "f0b6e72e7f2e26531f40968722013a86c1ba71c6d07b7161139558f650be2f2b",
+      "bytes": 5050
+    },
+    {
+      "path": "games/mixsort.js",
+      "sha256": "82b9c638a25668874702bc3352a0238aa9ae596aad2d70e6082c26c3c6f0b786",
+      "bytes": 6264
+    },
+    {
+      "path": "games/mol3d.js",
+      "sha256": "b8688d559f527dfceec57227f94cdb04c9bb3dc5e3601d79d54ce05f0d2181f9",
+      "bytes": 9145
+    },
+    {
+      "path": "games/molarlab.js",
+      "sha256": "938992dd62c147828b83336eef2123669de1c12f655b0a65ec8bf203b82fae0d",
+      "bytes": 10172
+    },
+    {
+      "path": "games/oxlab.js",
+      "sha256": "66010b084695b302d995dc44bde12aa5eb39c2a6195ca4c1dd8a239122711089",
+      "bytes": 7960
+    },
+    {
+      "path": "games/particles.js",
+      "sha256": "e759471af8067016a482509814cb552e0fb91abfd633152db8ab6b76d3543e0e",
+      "bytes": 4896
+    },
+    {
+      "path": "games/prism.js",
+      "sha256": "b0817d1e4c35fab0ad5e90855ef67df8e8240c1f2ceeb3fb6e7a64bd7cea4712",
+      "bytes": 18832
+    },
+    {
+      "path": "games/ptable.js",
+      "sha256": "796d411e31c887ccb1ff6d4349c424047e8400bec719ae266128ff342c8fb9ee",
+      "bytes": 3278
+    },
+    {
+      "path": "games/ptbuild.js",
+      "sha256": "1242a77c44fbc99f8958bc97aa071c9db55192a7088dddcf6a81db599bfaef28",
+      "bytes": 26774
+    },
+    {
+      "path": "games/quiz.js",
+      "sha256": "bada6d6a779e34de2e892978cdc6f4ea4ba829928956cc3962b205df397c2487",
+      "bytes": 16742
+    },
+    {
+      "path": "games/quiz3.js",
+      "sha256": "5bca6ec8577189878eb36c2465d35e74294c4ceef8d376104f7d8f64c54b2e1d",
+      "bytes": 6265
+    },
+    {
+      "path": "games/quiz4.js",
+      "sha256": "0af75112b3dbd83a575f7b0bc9edc0ceb5db2457863482aee004c51b79652337",
+      "bytes": 7571
+    },
+    {
+      "path": "games/quiz5.js",
+      "sha256": "762cddca98eebcaa1d833cb2d7f74f625557fc8d2d8f423d5f734b67d654df6d",
+      "bytes": 12261
+    },
+    {
+      "path": "games/quiz6.js",
+      "sha256": "751e52e484fec33a07b459fd2a66050ef67baf479a8b1bb538db9131784cf69c",
+      "bytes": 9140
+    },
+    {
+      "path": "games/quiz7.js",
+      "sha256": "e960c2ca40cc72bb539b8246b245c4347c929fe101e5909e2db468df8751c97b",
+      "bytes": 7470
+    },
+    {
+      "path": "games/quiz8.js",
+      "sha256": "d293d9b26b30234600e41d82ca12a814ac1616a763ad1f8205f7fe9a7fcefc86",
+      "bytes": 5932
+    },
+    {
+      "path": "games/reactlab.js",
+      "sha256": "2a85dd100d43995d53160f7818c1276248252e93e86adc5c66b0179303c4eaef",
+      "bytes": 9394
+    },
+    {
+      "path": "games/redoxsort.js",
+      "sha256": "03a1102fb97f42443b47894f7a007d7b686cf82077e4057c4a9f3030b6ff5d8f",
+      "bytes": 4670
+    },
+    {
+      "path": "games/rounds.js",
+      "sha256": "738684c2a2da54bf7e32f67e8f207800cc86eb9edbc477c72188cd694f4b74d7",
+      "bytes": 20741
+    },
+    {
+      "path": "games/seats.js",
+      "sha256": "7b08815da65025aa50ed5e5bfc11bc603723b079c7bb537c68396dd148497934",
+      "bytes": 7907
+    },
+    {
+      "path": "games/shapelab.js",
+      "sha256": "0d6ee7326d77a681a7bcee80fbb3453685c131062db4a5b471a3c63fbda80f35",
+      "bytes": 3731
+    },
+    {
+      "path": "games/sollab.js",
+      "sha256": "d15f8843e7c19d4c1cd3e49fc2baf7c0538f4320663ccda737b4095e81ebf6a5",
+      "bytes": 14185
+    },
+    {
+      "path": "games/spin.js",
+      "sha256": "778ec1a10f73cabfd9b438a646866c9f3ecc3dfa238ba6e2954bcf8d3585330d",
+      "bytes": 35407
+    },
+    {
+      "path": "games/stairs.js",
+      "sha256": "6c12582b315b2ed6e75b9f95b00278a35e6b198bb68653706f24887acbcadd2b",
+      "bytes": 16338
+    },
+    {
+      "path": "games/statesort.js",
+      "sha256": "b55ef326d77bfd24860d999e48f51a594be3174311dcea0b0398f1e08b9b21b3",
+      "bytes": 3472
+    },
+    {
+      "path": "games/table3d.js",
+      "sha256": "47f2e9986ea84c181d1f6302ae464e97efcaace538ddb67f21d9c347b6b787ad",
+      "bytes": 4122
+    },
+    {
+      "path": "games/trends.js",
+      "sha256": "42bdca1a6ddf4efd203bf7ec173374dbcb4ba7f2beb99e5cb2a407d9c2f0747c",
+      "bytes": 6828
+    },
+    {
+      "path": "games/u3data.js",
+      "sha256": "87711cbf40ca0de924ad0297d33f17a1ccc43af5f75a10be559a233bc56702d8",
+      "bytes": 5950
+    },
+    {
+      "path": "games/whylab.js",
+      "sha256": "862c45d8716a54bfd26b73e1d29223b6b5c73a13483a8446a5af122da89875e9",
+      "bytes": 13290
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "sha256": "94c57c733d20de84bc70b15819e81b7dac7ed6b55119cfa7d941abfd5b89bd3c",
+      "bytes": 25147
+    },
+    {
+      "path": "icons/ar-button.svg",
+      "sha256": "ee29917a04351dd30710d9c42ba11a0d59abf005c54a1d321e2e11692f157d0f",
+      "bytes": 510
+    },
+    {
+      "path": "icons/icon-192.png",
+      "sha256": "ffe1dd68424f64a47f7765bdbf7d65f3fe3952e866da153afe01e56c62b202da",
+      "bytes": 28111
+    },
+    {
+      "path": "icons/icon-512.png",
+      "sha256": "532e3602a696b2ddb2cc13ebf966a0d2d69ffb6313b57fa86899023ada6fbc32",
+      "bytes": 96611
+    },
+    {
+      "path": "icons/icon-maskable-192.png",
+      "sha256": "6983ab095c7dbf9481e54e46189aebd4fc3bb92b5a9a1cf2db61abdab811cf70",
+      "bytes": 22841
+    },
+    {
+      "path": "icons/icon-maskable-512.png",
+      "sha256": "6cdd10508ff59ff2339d6353e7beee76372a5b810656b9251b02b22a8bb0cbb2",
+      "bytes": 79815
+    },
+    {
+      "path": "lesson/engine.js",
+      "sha256": "0da24e854822204d462bd6e5f97ddb64d68dcf62b19268e76d1b868cf67f1247",
+      "bytes": 15765
+    },
+    {
+      "path": "lesson/index.html",
+      "sha256": "2ccf796d83141a7fe21c3f820334f27c5b75987ae1075a3342c1143dadcf0b4a",
+      "bytes": 5289
+    },
+    {
+      "path": "lesson/kit.js",
+      "sha256": "502f55cb1e8aa510f08392e310a5007a367a6e9307ff925c9e8bfdf070c8d0bb",
+      "bytes": 100161
+    },
+    {
+      "path": "lesson/l801.js",
+      "sha256": "181462272baaee7c6ad2d3326cfc828cbb61ad653b05e63d1f61802bbf9775c3",
+      "bytes": 50285
+    },
+    {
+      "path": "lesson/l802.js",
+      "sha256": "afa5b3eba6b8ff653a1cc3fac550081b3e41c54145e67dc8387770cd048f29a0",
+      "bytes": 20688
+    },
+    {
+      "path": "lesson/l803.js",
+      "sha256": "5e5ea829b1923636a184e409eb68084eb5a65670daf580ceafe51c66349488d6",
+      "bytes": 59718
+    },
+    {
+      "path": "lesson/l804.js",
+      "sha256": "7fa84dfc41d3f9f8c2f57a29c5206d23b886b742d86d9b639a6cf47470a1e4f6",
+      "bytes": 36224
+    },
+    {
+      "path": "lesson/l805.js",
+      "sha256": "1ada84e72fcbcb214a3698e4cdca38a6fc8e811c1bc184d3f9481b38f903eef0",
+      "bytes": 31242
+    },
+    {
+      "path": "lesson/l806.js",
+      "sha256": "bd9602eb4dbf015a38a966edaf7d93a07f5f5918b99d4336bbd09734e630f6b8",
+      "bytes": 33132
+    },
+    {
+      "path": "lesson/l807.js",
+      "sha256": "0e7255fdf305092738c64a46ec7b6f7d15f78e79b1414d2117bde1a8dc77788e",
+      "bytes": 40732
+    },
+    {
+      "path": "lesson/l808.js",
+      "sha256": "27d6e94e0b474f5b6869cd4a15e219f772a9561b7e3b9f84a653baa3d346bc62",
+      "bytes": 42809
+    },
+    {
+      "path": "lesson/zcheck.js",
+      "sha256": "c0c438b006250baf22e04be23eb226531e640a6f5e6359ff253f476f2d120e3d",
+      "bytes": 3238
+    },
+    {
+      "path": "models/02.glb",
+      "sha256": "b8741d455dd0913042c475f4dde9c6bb0fe7597fa9760bb9ad162c87a6bb3755",
+      "bytes": 1782152
+    },
+    {
+      "path": "models/03.glb",
+      "sha256": "c9afa75b04593ac2048855659bfc0aedc8bee8ed82b716af2c84748bca1cb954",
+      "bytes": 1332968
+    },
+    {
+      "path": "models/04.glb",
+      "sha256": "592977a33f3b4611b26b41993315496d0b1cebc732a48a4037eb59fac96d1801",
+      "bytes": 850592
+    },
+    {
+      "path": "models/05.glb",
+      "sha256": "18a1817e17a40a965f73014e8ee4feaee332dfb2a4da03e0a59e994a33ef08b1",
+      "bytes": 943552
+    },
+    {
+      "path": "models/06.glb",
+      "sha256": "ab46fd1e1e48b7afa9e4c282dd00c4b9197af5b831ce42cb186e48945af18ba5",
+      "bytes": 613392
+    },
+    {
+      "path": "models/07.glb",
+      "sha256": "dfcaf2c6f5ac7307745ef2cd0f27ebccbf0503fcbaa3e3adb4a43b324733bcfb",
+      "bytes": 1958132
+    },
+    {
+      "path": "models/08.glb",
+      "sha256": "dd037075e7d0471191c77efbb778460f36f02db3a19f2333bc082893bcdf6f09",
+      "bytes": 983452
+    },
+    {
+      "path": "models/09.glb",
+      "sha256": "a0d1d162d8fc3e4240056fd6f1383ef230a02f723c5c30bb8420f7f2d62758b2",
+      "bytes": 2406660
+    },
+    {
+      "path": "models/10.glb",
+      "sha256": "18f92b86f88ca123a3b9f27381cf7f06a9009b26593e8100ae20a2b1f1ecfe37",
+      "bytes": 1407840
+    },
+    {
+      "path": "models/11.glb",
+      "sha256": "1162133b261a6ce07983787706e3201ecf8bdbe67b2822194683586ef7b86df8",
+      "bytes": 1196988
+    },
+    {
+      "path": "models/12.glb",
+      "sha256": "695c56fff28f75a27688e2cfea330db27361e0fa88fd8a5b44a06fe8d96549db",
+      "bytes": 2408796
+    },
+    {
+      "path": "models/301.glb",
+      "sha256": "6c7a5c11da92d030f8fa7c4672cf500e2910f55fafc2fb92d6c518e1e463adb1",
+      "bytes": 1658296
+    },
+    {
+      "path": "models/302.glb",
+      "sha256": "6ee32509fd339f7835b5756d9b4b45613ca046db38328418cfb9e3b3c33f13c6",
+      "bytes": 1607352
+    },
+    {
+      "path": "models/303.glb",
+      "sha256": "8d8a189e20ff68d00663a68f5d171364ea52f37b7bc38d8cf4ee5a2e572d0b2a",
+      "bytes": 1504680
+    },
+    {
+      "path": "models/304.glb",
+      "sha256": "b4200c72704b3b61c32335af885f8c6b03650b9fc9bea07488e7d1cd65c9daf1",
+      "bytes": 1399600
+    },
+    {
+      "path": "models/305.glb",
+      "sha256": "4405a8fed9e706485374416f5027c38bf04b69a317e41a149f99931e2487498b",
+      "bytes": 1259108
+    },
+    {
+      "path": "models/306.glb",
+      "sha256": "a74e8b8eec62c5ade10f3dd6265521500cd8374ddd02c051b7f3a0ffb438f5c4",
+      "bytes": 1570648
+    },
+    {
+      "path": "models/307.glb",
+      "sha256": "dbda0747a77c2dc3ad40103a372f0e9d1d2a5776ca1365204f95a87152ea7ca1",
+      "bytes": 669108
+    },
+    {
+      "path": "models/308.glb",
+      "sha256": "682876e0dc0ba304ad397d15d166edc44e6a92bc777c18e29e4abee1e86fa79e",
+      "bytes": 1654560
+    },
+    {
+      "path": "models/309.glb",
+      "sha256": "413aa012ee16b87da3cfa6a2ea913fd0c8451918b9b02f88e4a89ccd1eda2442",
+      "bytes": 1136276
+    },
+    {
+      "path": "models/310.glb",
+      "sha256": "c5231f958ca449f62cb5ee3a4a906a5b43271e5920cd215baf4b512d85d5b9c5",
+      "bytes": 1307972
+    },
+    {
+      "path": "models/311.glb",
+      "sha256": "def156f3d5d42cd0a510d336f08b330787859f962440b7c98152501f7d0a5ee0",
+      "bytes": 1187520
+    },
+    {
+      "path": "models/312.glb",
+      "sha256": "3263dbd80631eb98b7dd16fefd05edac8a730e318e2b4e0f25129a83cd5dd9fc",
+      "bytes": 1593032
+    },
+    {
+      "path": "models/313.glb",
+      "sha256": "94e3094eca0688cb843101af113e91cd06ea33e41a2d67c8d40fbe67a75377bb",
+      "bytes": 2641332
+    },
+    {
+      "path": "models/401.glb",
+      "sha256": "3eebc3278fbf10ecf8f823b2a0cc63ade99fbf1228e74390667dd854d4ca15c3",
+      "bytes": 716764
+    },
+    {
+      "path": "models/402.glb",
+      "sha256": "52faf64407b0d2c8d94565443f03d272d077febd278cf0bc7eeb646be1e26afc",
+      "bytes": 572572
+    },
+    {
+      "path": "models/403.glb",
+      "sha256": "d4f9e051ed4370e10cc9654fe76c007a21363bae6176cd134a943a2d0aa405a3",
+      "bytes": 337996
+    },
+    {
+      "path": "models/404.glb",
+      "sha256": "603df57c0eacbb8557389b00b9102dd816e95478df0f6f7b4453d3310b3fa64c",
+      "bytes": 579216
+    },
+    {
+      "path": "models/405.glb",
+      "sha256": "292b2697ce3f9a90de5dfb1bdbff176bb84357a3e08200811e65939128e1c947",
+      "bytes": 352552
+    },
+    {
+      "path": "models/406.glb",
+      "sha256": "f0d5c00a1429a7c5e2c730c125c2db242aeb7fc80ff67e8f4c4de91bd99e2889",
+      "bytes": 681444
+    },
+    {
+      "path": "models/407.glb",
+      "sha256": "feb02723824e38ff497355ab39181f8657930dfc7937cbefde5f2b784f514500",
+      "bytes": 424620
+    },
+    {
+      "path": "models/408.glb",
+      "sha256": "4af2b0fc4fb5839cd969cf076c5829078b27cfe9089c8cc94f7531e2a1f5da98",
+      "bytes": 375188
+    },
+    {
+      "path": "models/409.glb",
+      "sha256": "c122956f6d2848726f2656f60ca5d201b7406170b495e3a1d60087e8cd0f5f5d",
+      "bytes": 484984
+    },
+    {
+      "path": "models/410.glb",
+      "sha256": "173207215942f1c7834cacbcfcf79b5fda63a784f9d0593fcdc958a2309b4c06",
+      "bytes": 1206776
+    },
+    {
+      "path": "models/411.glb",
+      "sha256": "bb9803df63d40628cd4b5369854e2c793609c7c67a41a3ecda270067b4ab227d",
+      "bytes": 431816
+    },
+    {
+      "path": "models/412.glb",
+      "sha256": "4620db1f0672ad91f2a0ffe407457df3e0542837ffba653426b468a1deefdb62",
+      "bytes": 516880
+    },
+    {
+      "path": "models/413.glb",
+      "sha256": "593ede08b13a80dd11c8d0940fad3066158493261b5574f3a9d3bf2ebd6a0c16",
+      "bytes": 1027616
+    },
+    {
+      "path": "models/414.glb",
+      "sha256": "c07c0646e13078d6a6a3b143eb3a8c0d0942237161e624de9fc9a299bee18a73",
+      "bytes": 734400
+    },
+    {
+      "path": "models/415.glb",
+      "sha256": "2f58bee66d3bc4421df3f9b2a11aced2053e301519dd3d8b05475d4d001f5b02",
+      "bytes": 2562088
+    },
+    {
+      "path": "models/501.glb",
+      "sha256": "3636a3387cbe753f0834098a26e0ad8520ef922d459ba02982185ece8b141a5c",
+      "bytes": 1218424
+    },
+    {
+      "path": "models/502.glb",
+      "sha256": "1cbc5cdd3f3950053917d66b12d44ca39958a2def9a76d2a583af6162bf3e052",
+      "bytes": 1118888
+    },
+    {
+      "path": "models/503.glb",
+      "sha256": "662de9c3070a49dabe0793d31ca50d4def1f178f3b2bb41024f7009d11514f4a",
+      "bytes": 1537608
+    },
+    {
+      "path": "models/504.glb",
+      "sha256": "ca4cd859db6fb2c3c19bf131e5cd8b00f869619c182584f7dd2be35bf1f5d77c",
+      "bytes": 1180220
+    },
+    {
+      "path": "models/505.glb",
+      "sha256": "2bb6c6170828159d82bc98b6fadd786e75e77b8703d89183a05b861efe1b7941",
+      "bytes": 1111472
+    },
+    {
+      "path": "models/506.glb",
+      "sha256": "90bff412601288e3994d87cd41f9e564fd28916635a3d2acaf7501288b6071bb",
+      "bytes": 1616400
+    },
+    {
+      "path": "models/507.glb",
+      "sha256": "d7ca8a540ed433e8fdb0c4afeba77d287fde1bd3202283a91d93d694698ddd16",
+      "bytes": 1390604
+    },
+    {
+      "path": "models/508.glb",
+      "sha256": "e3fd2b7f86ff8cf80d52974a635e39cf5269a850f9985077e0bd109d65d7cf85",
+      "bytes": 1440984
+    },
+    {
+      "path": "models/509.glb",
+      "sha256": "f80a1e62dd63fc45b4f4ed0f0c9f71b45b120026824d334a41a5b16d471e39b4",
+      "bytes": 1094276
+    },
+    {
+      "path": "models/510.glb",
+      "sha256": "ce8cc4776dca68c0858db0dff800cea429dfe5dbfa5fbcf997bd955c30b9d86f",
+      "bytes": 2814100
+    },
+    {
+      "path": "models/511.glb",
+      "sha256": "4059d2059c0893a1cd1c939f2349b5d7db9a9793347f0eb565827a4281707a60",
+      "bytes": 998144
+    },
+    {
+      "path": "models/512.glb",
+      "sha256": "5a0ce6492e2d0c4cf111294656db97ade1e24664a3770614b765816b74aedab5",
+      "bytes": 485492
+    },
+    {
+      "path": "models/513.glb",
+      "sha256": "eceeeee2fbdb37ba8cee760addca4b87c5c52197960a221bd0bd16d3aed90737",
+      "bytes": 777880
+    },
+    {
+      "path": "models/514.glb",
+      "sha256": "860ddbc4441ca148949a1632488dce4104dee06dcaa8a0d7da13d4b954c4bfa7",
+      "bytes": 2296944
+    },
+    {
+      "path": "models/515.glb",
+      "sha256": "38fc82772dec3ee87d33e0f9e90f73d313056c990b569d38f9c938fa487607a6",
+      "bytes": 3773788
+    },
+    {
+      "path": "models/601.glb",
+      "sha256": "70e89e10bfec01cafda1299571f230bc3aa31fbeea58bdd6969af2565c641155",
+      "bytes": 1319312
+    },
+    {
+      "path": "models/602.glb",
+      "sha256": "4c47649cea8b2c8f70d9d49694cdc7ed8963335d7c03e45c85a8dd18282e757e",
+      "bytes": 1744032
+    },
+    {
+      "path": "models/603.glb",
+      "sha256": "57f3ebdc21d236c58833b0cd55b58ee423e793b77d0414021c3b5f1f8360ef1b",
+      "bytes": 1479060
+    },
+    {
+      "path": "models/604.glb",
+      "sha256": "1119e0948b7294b13c8fad097bad016a3951b502d3348e91cf69119fe0f7f485",
+      "bytes": 480636
+    },
+    {
+      "path": "models/605.glb",
+      "sha256": "1ac36fa2665f3f8b21a77896a955c193538cd491c5d7ef7f0b20bdcb905ae2f8",
+      "bytes": 764556
+    },
+    {
+      "path": "models/606.glb",
+      "sha256": "536f2768a16d0cc36331ca626bbf5cfb5c2a60d60a9565b930a13c2a3321d2c3",
+      "bytes": 560112
+    },
+    {
+      "path": "models/607.glb",
+      "sha256": "b11ec3e3d290f88eab8c99268ccd1479c25a5c39bb08d3d84ef233267235a2c4",
+      "bytes": 414412
+    },
+    {
+      "path": "models/608.glb",
+      "sha256": "19f6912e643a29c96699dc10228eb6bedc85eef9bc6ab55c87d53fa4f1fc4b35",
+      "bytes": 379224
+    },
+    {
+      "path": "models/609.glb",
+      "sha256": "833c3c2a51c5e9c28f9fc396e0232cd8c7ef3c89c649b20bcb24ac775da93ff6",
+      "bytes": 376300
+    },
+    {
+      "path": "models/610.glb",
+      "sha256": "ab4973604ce6fbf394ae705d24415e1fb108a05d89ce058c334314da25cf9a87",
+      "bytes": 403140
+    },
+    {
+      "path": "models/611.glb",
+      "sha256": "d4dc0e2188dd8b96f3cdf8437b49362bd29504b39dfe69219890dcaef82a304c",
+      "bytes": 1354336
+    },
+    {
+      "path": "models/612.glb",
+      "sha256": "d161296082ab76bac8565db36d32b8db073cc4c046c958b74937c44b4a60eaf1",
+      "bytes": 937160
+    },
+    {
+      "path": "models/613.glb",
+      "sha256": "7a09eef65a8bdb630f96a03192ca6ac841cc237dc6c1c3a7fe366ce642eff137",
+      "bytes": 774760
+    },
+    {
+      "path": "models/614.glb",
+      "sha256": "d84f159057d3fe2777e9c76d7b72b34a240d62a1b7bef71f4fd309e4d5e45ae7",
+      "bytes": 872688
+    },
+    {
+      "path": "models/615.glb",
+      "sha256": "0e6b8cb3b565667f3b8db74ff454a4fa117fb5b050915e2b092c61de89592072",
+      "bytes": 755348
+    },
+    {
+      "path": "models/616.glb",
+      "sha256": "fb6ad8254152982b5c9ba429c39addb9c03b254944a6eb3409ebec8c34211131",
+      "bytes": 1918604
+    },
+    {
+      "path": "models/617.glb",
+      "sha256": "ac9cd2ccce0a91d7af38b611878deb095ff8478061167eb33948a5a19d98b7c7",
+      "bytes": 2670816
+    },
+    {
+      "path": "models/701.glb",
+      "sha256": "58f374a731c4a0f8851c51fb33ed43fdbcffc4628bd424e146aa0d597905a079",
+      "bytes": 470300
+    },
+    {
+      "path": "models/702.glb",
+      "sha256": "e3115924c217ebd49d9bcbf627f0080a8d9be38a9b3a849d427ab57ce3c63f8e",
+      "bytes": 466308
+    },
+    {
+      "path": "models/703.glb",
+      "sha256": "d992de0d23b80e6298bec1cf9ba369ebf3d744153c6ac6a05356766abd21f3c2",
+      "bytes": 190752
+    },
+    {
+      "path": "models/704.glb",
+      "sha256": "709f605a2471a93a853f17ebfd7b26e93969cba83d2a38594c7f9ca4deb30a47",
+      "bytes": 619224
+    },
+    {
+      "path": "models/705.glb",
+      "sha256": "974448a56285e6b78dcd4be96cfe03bfa07ea750a2a783b01253fe71ae5fb025",
+      "bytes": 403172
+    },
+    {
+      "path": "models/706.glb",
+      "sha256": "07bbaa5215a7c2c0bc37c4209221f935546d064a7af3264b6942c1a74aa902f3",
+      "bytes": 466352
+    },
+    {
+      "path": "models/707.glb",
+      "sha256": "0e4f59d3398aa46c21d0ad116019b8eaa636bb747c3e956d89ccecefc477497a",
+      "bytes": 459744
+    },
+    {
+      "path": "models/708.glb",
+      "sha256": "315cd69626b65126454442929ca89b28bd4b625645900b7ef3c6468a1ccffb1a",
+      "bytes": 683448
+    },
+    {
+      "path": "models/709.glb",
+      "sha256": "19eb0d1f7e1e839eaf6464fe54f2c91d4fa286b6e581f5522a3f45f4a7db6bbc",
+      "bytes": 366356
+    },
+    {
+      "path": "models/710.glb",
+      "sha256": "999cec291da89ff503ca690470c6cf343f912f8fb2dbfec47c42350fdd0caae7",
+      "bytes": 336316
+    },
+    {
+      "path": "models/711.glb",
+      "sha256": "452aa9e7e0fad002171c91baee600a1da3144504b77775ad64637650e3d899df",
+      "bytes": 420492
+    },
+    {
+      "path": "models/712.glb",
+      "sha256": "3be42feac3d4bc2cd68d8d5a24b679a30b7d2343b34941832455981870c00935",
+      "bytes": 305588
+    },
+    {
+      "path": "models/713.glb",
+      "sha256": "9f8156ba8d309b2931f91969e431285f7f2e163774cf3fde29995f3eedce7ded",
+      "bytes": 436344
+    },
+    {
+      "path": "models/714.glb",
+      "sha256": "ce36e4e82403d63aed6a91e16c3ae1ee0b466b09ddf213ef30da6f841ffcfd75",
+      "bytes": 333948
+    },
+    {
+      "path": "models/715.glb",
+      "sha256": "d370554dcc01b61d07ea50dc0b75fddbea1a18865158dccaf0fcae10a81f8a4a",
+      "bytes": 451952
+    },
+    {
+      "path": "models/716.glb",
+      "sha256": "a01d75d005a48cd0b98f7992b36400bd29d7466e659b7cbca4e58518f5c1a48d",
+      "bytes": 385632
+    },
+    {
+      "path": "models/717.glb",
+      "sha256": "b4b95a3398fdf2e808b2b6b59c12b17654786b2bbe169618b7444923fe4ca508",
+      "bytes": 540988
+    },
+    {
+      "path": "models/718.glb",
+      "sha256": "d628bbe2e649f5202775cab77681d7b51db057e85533eeb14aa4a236885c313c",
+      "bytes": 904764
+    },
+    {
+      "path": "models/719.glb",
+      "sha256": "863f9e752bd67e7b70786fd591fff414d882469aa440852e8f082eaaff0470d5",
+      "bytes": 2567388
+    },
+    {
+      "path": "models/801.glb",
+      "sha256": "216941bcc4a20b5d6dfb7ac166b7ad967d1f1cad74adbcc0755e7430305b24ac",
+      "bytes": 507232
+    },
+    {
+      "path": "models/802.glb",
+      "sha256": "b3e16ae71cd4bcc03426e646c7d132aa8ff9f83466b336d770dfaa09c53160d9",
+      "bytes": 656720
+    },
+    {
+      "path": "models/803.glb",
+      "sha256": "54233f6af6861915065e90a6017bc756aad700655d5f57935a2e835b0398d2c9",
+      "bytes": 3678240
+    },
+    {
+      "path": "models/804.glb",
+      "sha256": "95ad3a1dfd9f145599f8f11bc6c911515a3177289d63ce12abafd110724bc2a7",
+      "bytes": 599712
+    },
+    {
+      "path": "models/805.glb",
+      "sha256": "82ca9fbd1dfaee99ea1eb2acd2f2284d0179b25de656bf4b007a64e060d05f8e",
+      "bytes": 514664
+    },
+    {
+      "path": "models/806.glb",
+      "sha256": "dedd6542d30cb4f953061c7b772d8ad71c36b9a31032e50a3b41c98803305cd7",
+      "bytes": 561752
+    },
+    {
+      "path": "models/807.glb",
+      "sha256": "9c724b91c6e3d3e28e89ffe7b1e48467a32b0f5abeb380e8e733a927a4d27ab5",
+      "bytes": 431424
+    },
+    {
+      "path": "models/808.glb",
+      "sha256": "a7f9f18ff6f7f86840af3177c65519c0e7461b0612a5a34f73bcdb9cbb6bb327",
+      "bytes": 668596
+    },
+    {
+      "path": "models/809.glb",
+      "sha256": "cb4948074cdb4886a5e850b27b2c9fd48fa45e34baf24fc19dab3f0d6bec5ba0",
+      "bytes": 325548
+    },
+    {
+      "path": "models/810.glb",
+      "sha256": "c8c689aea2acc7cbb3981a8654b291e4bc82bd106b2396a31d88121e46bcff05",
+      "bytes": 402848
+    },
+    {
+      "path": "models/811.glb",
+      "sha256": "5cc9d9233b8471e24542547ab409fb66d22a25a41d2c65489e0336a2321ed71f",
+      "bytes": 540044
+    },
+    {
+      "path": "models/812.glb",
+      "sha256": "21af42605ee75e55efe42e756fed70b917bdd513340f8033c79aa0b0a7b1009f",
+      "bytes": 489700
+    },
+    {
+      "path": "models/813.glb",
+      "sha256": "a573d481446b760f02f337516a1a2e5c0e84feb452820040c4d13c747893d5a4",
+      "bytes": 303808
+    },
+    {
+      "path": "models/814.glb",
+      "sha256": "de56e1a239514501e6a623ca919b6287066e184aaf56c7ff2e1f956dfbc699e8",
+      "bytes": 470048
+    },
+    {
+      "path": "models/815.glb",
+      "sha256": "04bff7cf4b7826ac53ec2e250eab7c716c1a37dae66cc02fe48fe4ca722abbd0",
+      "bytes": 766344
+    },
+    {
+      "path": "models/816.glb",
+      "sha256": "e3d7539c501714d179fd168fd065eac607fc8e1eada24856be49054be61287d2",
+      "bytes": 491560
+    },
+    {
+      "path": "models/817.glb",
+      "sha256": "bcefb042f708c01fbc34221d3b7159547a1e3a4884f9a84bc31863dca2b9f122",
+      "bytes": 1030676
+    },
+    {
+      "path": "models/818.glb",
+      "sha256": "0bf454fe712b3fc4c1778adcd4ad6ffe3cc601c3e7747aa0560f5738067fb93c",
+      "bytes": 654908
+    },
+    {
+      "path": "models/819.glb",
+      "sha256": "9dc641de465dfdfacf8600a1071a0fe0e87af3203b06fa3c5479dd117903a600",
+      "bytes": 2373956
+    },
+    {
+      "path": "models/rutherford.glb",
+      "sha256": "e5355110083ca4c7c40b3320b85e7604a88fbbc786ef002c61e9b7f9d5a64fab",
+      "bytes": 7927008
+    },
+    {
+      "path": "lesson/bake/801_elec.glb",
+      "sha256": "f0f6877f18972079c603923f33e71ae12a7796c38aa9bc02ffde7696b43fc27a",
+      "bytes": 4135792
+    },
+    {
+      "path": "lesson/bake/801_intro.glb",
+      "sha256": "10165c27c475f0654b3374271db8f71525d7ff93b47af3ac30e99a4f770e4c1b",
+      "bytes": 3152912
+    },
+    {
+      "path": "lesson/bake/801_ox.glb",
+      "sha256": "5c698249da2fe6fd6363ac8f6a1c78fc0fec6080490d131abae0b6693566bb9f",
+      "bytes": 3846956
+    },
+    {
+      "path": "lesson/bake/801_shape.glb",
+      "sha256": "65b0375b49731acd4fb3aced1ac6f5704260a8655bedf64cfd72b9ce35cd7769",
+      "bytes": 3664468
+    },
+    {
+      "path": "lesson/bake/801_state.glb",
+      "sha256": "1da2fb4fe5631f47dccf379410938f01f0ee1c4bc6b9409fd35d63c1a4c48f25",
+      "bytes": 3198340
+    },
+    {
+      "path": "lesson/bake/802_rows.glb",
+      "sha256": "5c18fcffb542572b2e89cb1dd0d180ed1cab8a5607fa14209e5be14d0a2aa685",
+      "bytes": 3773072
+    },
+    {
+      "path": "lesson/bake/802_stairs.glb",
+      "sha256": "84983764f802b574b2b313977f67166ff4818cbe84c7e3317d18d090f657514b",
+      "bytes": 3687040
+    },
+    {
+      "path": "lesson/bake/804_air.glb",
+      "sha256": "93d6f2a3818ae4265c31d317330a4a69229ec39db1e84e3b9da38c1bb263a51b",
+      "bytes": 3445312
+    },
+    {
+      "path": "lesson/bake/804_cl.glb",
+      "sha256": "a8e25c740dc05950c133fde1870c33da1fb77c1e404b7b17b069fc937ecefbdc",
+      "bytes": 3871060
+    },
+    {
+      "path": "lesson/bake/804_jars.glb",
+      "sha256": "e4397f61d4bf96477f92ea56f391d6f14b69a9e91965a01bb14af6553f1e2235",
+      "bytes": 3756968
+    },
+    {
+      "path": "lesson/bake/804_water.glb",
+      "sha256": "e52c921c6760f6407f49dde9abf3d4aa877f9e6254d2e5cec1243eb4aa7010fd",
+      "bytes": 4007104
+    },
+    {
+      "path": "lesson/bake/805_ground.glb",
+      "sha256": "9532f525985485af145fcdfecb298c015bb570de545edb2a14f83a9830530943",
+      "bytes": 3341244
+    },
+    {
+      "path": "lesson/bake/805_life.glb",
+      "sha256": "db32e96a57c570d07a104b9ee779da0a49459eea5e2c868e8a68c6537ed23231",
+      "bytes": 3498152
+    },
+    {
+      "path": "lesson/bake/805_water.glb",
+      "sha256": "3bd5b839a396433d68f02a6e9ae5a1e54548b362f915cfe2eaec18e7eb762ccc",
+      "bytes": 3756504
+    },
+    {
+      "path": "lesson/bake/806_bench.glb",
+      "sha256": "c8a7895e38ca99c26ab413e9c4eb3fee235b44f23a8310f4c9d9a9c877fc8735",
+      "bytes": 3526560
+    },
+    {
+      "path": "lesson/bake/807_elec.glb",
+      "sha256": "6413b1b7314c475f579fa59204f53b08541b838c75c4e22695e2dc72a9be5971",
+      "bytes": 4151904
+    },
+    {
+      "path": "lesson/bake/807_heat.glb",
+      "sha256": "47a64ef34a14a78034a470bc1c4161f6218d84f1a5538d73a1f87efb81c5677b",
+      "bytes": 3496516
+    },
+    {
+      "path": "lesson/bake/807_knife.glb",
+      "sha256": "9d249e725b45b025adb2293df4a23ff7cf4a4122c1737700ed2138cc513e667e",
+      "bytes": 3564056
+    },
+    {
+      "path": "lesson/bake/807_salt.glb",
+      "sha256": "412e71b8565586cb86ac7b345454eb66747b71d352f4b8ddf6db9cb4a1319d66",
+      "bytes": 3213708
+    },
+    {
+      "path": "lesson/bake/807_shape.glb",
+      "sha256": "8a0833b1d2343cad56d0b0f602a3a3e2beaa99ab08955f6162dc27bd380ac14d",
+      "bytes": 3095968
+    },
+    {
+      "path": "lesson/bake/808_h2.glb",
+      "sha256": "0ba633f8ca493c74e3a256f7b8c2d938c19a8dcb41c7e1697422365a6d98d680",
+      "bytes": 3680992
+    },
+    {
+      "path": "lesson/bake/808_hal.glb",
+      "sha256": "fe25a4416eca3408fe3516ed2fdb97921e7ba6aeff5a26548cbf8ee0d20dcac9",
+      "bytes": 3755680
+    },
+    {
+      "path": "lesson/bake/808_jar.glb",
+      "sha256": "b011ad04988263703e709bb9c1f56eee1d9c137c3fa9e0dfc1f24445697dd7e9",
+      "bytes": 3748108
+    },
+    {
+      "path": "lesson/bake/808_o2.glb",
+      "sha256": "68f9ecb041f8beb6e801323a8bc03cd4a2102cf7bb15497a72a6e4adc2be9c52",
+      "bytes": 3407160
+    },
+    {
+      "path": "lesson/bake/808_red.glb",
+      "sha256": "14bbee042aab62071e0506c136322899eee93c72dc35ba6cda7ec0131388bd1d",
+      "bytes": 3230848
+    },
+    {
+      "path": "lesson/bake/808_s.glb",
+      "sha256": "31f24a8f6cd993ad70d39b2f09b32bccc901919dd585f6219d8e31b02c918a56",
+      "bytes": 3804108
+    },
+    {
+      "path": "lesson/bake/808_wat.glb",
+      "sha256": "d9b5ac7b1d8fce4f5bd93959a47c2a6d3020e73d46c3234897ba741f4f7c7998",
+      "bytes": 4404700
+    },
+    {
+      "path": "lesson/bake/studio.hdr",
+      "sha256": "36724313c0fc66dab126ff90f081b85a0b1ef47be65eda1417bd20b033f0573f",
+      "bytes": 6312947
+    },
+    {
+      "path": "lib/three/build/three.module.js",
+      "sha256": "da7f8aecb0b1e4a55e820cce5dc5a5a8eb13dc379758f215e8fb07937be7a6a3",
+      "bytes": 1369252
+    },
+    {
+      "path": "lib/three/examples/jsm/controls/OrbitControls.js",
+      "sha256": "00021f896fee7accad035ada2b72abd9e12f21de349896576e8fd75d9542989e",
+      "bytes": 33657
+    },
+    {
+      "path": "lib/three/examples/jsm/loaders/DRACOLoader.js",
+      "sha256": "8a90b39b6c0d7faa70410cdd19348029a83a9f2d5f71e11b665a5f48330a4c72",
+      "bytes": 13699
+    },
+    {
+      "path": "lib/three/examples/jsm/loaders/GLTFLoader.js",
+      "sha256": "5bb7bde28842727558c1f9a692004229c76ed8e8f846469d7c6258e719c7ee8c",
+      "bytes": 115000
+    },
+    {
+      "path": "lib/three/examples/jsm/loaders/RGBELoader.js",
+      "sha256": "6dbd6b14f7d86b57474c9261381e53bcba1ffeb76d9f248d5a097135fb4005c9",
+      "bytes": 11827
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/BokehPass.js",
+      "sha256": "6f497d2168759f73a841fc531c8044a472cf0860558991ea6f8617ed518fca69",
+      "bytes": 3535
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/EffectComposer.js",
+      "sha256": "0dbb9c044721be861e8b7f17a273475c47388cee6fd16474c56d715df2fe65b2",
+      "bytes": 4882
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/MaskPass.js",
+      "sha256": "b0360737a0fa5a3416f062915a16b0448a93f26e01d0e559d9c9cfac8b9cf46d",
+      "bytes": 2335
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/OutputPass.js",
+      "sha256": "e040260fd6c8c26f155432e181b407b35c43e44314b9aad1c56222a2655aa51c",
+      "bytes": 2621
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/Pass.js",
+      "sha256": "e142845fdd6a19d979c6f064dd71e5f5b7a4d35bd6eb4f5af46edf2eabff9da9",
+      "bytes": 1801
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/RenderPass.js",
+      "sha256": "d57f1aa0e21be0f0969547006560ecf1678fdf2de18251b5a70b76a62390de7d",
+      "bytes": 2040
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/ShaderPass.js",
+      "sha256": "84d3854fd7e42a4a0aeddd6c58c902ad0b3aea82bf7d5e7cb76c24248acfb0b7",
+      "bytes": 1653
+    },
+    {
+      "path": "lib/three/examples/jsm/postprocessing/UnrealBloomPass.js",
+      "sha256": "9cfd2ff389368709af19c0f55171bf80aa8126c9215611ee608a902a0846813b",
+      "bytes": 12825
+    },
+    {
+      "path": "lib/three/examples/jsm/shaders/BokehShader.js",
+      "sha256": "0e5121139f959bfda078f770306e7c84ae67dceb2198749ae5993d1c6a42c24d",
+      "bytes": 5914
+    },
+    {
+      "path": "lib/three/examples/jsm/shaders/CopyShader.js",
+      "sha256": "5827504ed05e7ae252e75f53b3fb10caa96ec21e70a78143e9ef90d430f1107e",
+      "bytes": 616
+    },
+    {
+      "path": "lib/three/examples/jsm/shaders/LuminosityHighPassShader.js",
+      "sha256": "58830498f7c6eafbfa2874319cfc79aa8d1ccf68b46fd5ab1c0d409ebef2eb62",
+      "bytes": 1211
+    },
+    {
+      "path": "lib/three/examples/jsm/shaders/OutputShader.js",
+      "sha256": "b20bb58821aa527f80a052f36e18c188f9202c6edaabf895c665594cd54c8320",
+      "bytes": 1575
+    },
+    {
+      "path": "lib/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "sha256": "5beb9dc7e9248a32f7b5e8cc0dd5fd4054d227d8e19a3a98b4715f6d2784c4ef",
+      "bytes": 33141
+    },
+    {
+      "path": "lib/three/examples/jsm/webxr/VRButton.js",
+      "sha256": "3c38b790f997d8f22c9979a6ade3dfe0bcad7837b11153519b34895a9c778198",
+      "bytes": 5034
+    },
+    {
+      "path": "lib/three/examples/jsm/libs/draco/gltf/draco_decoder.wasm",
+      "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac",
+      "bytes": 192420
+    },
+    {
+      "path": "lib/three/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js",
+      "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6",
+      "bytes": 58456
+    }
+  ],
+  "nativeArJobs": [
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\experiment.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\b716cc436446fcb1a66e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\inside_the_foil.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\9e9fb410592cb6339f21.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\planetary_model.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e9e0100e38a5af6da592.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\defects.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\94736a16114cc2f3a2ba.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\02.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\c87d0c4ee5f18f3ab8a7.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\03.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\91ff48cf062ce2d98fa1.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\04.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\86bc3c185c70ec6d5a71.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\05.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\b10d815f285dbb93b6cc.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\06.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\428b8185c61903f57bda.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\07.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d8ce56c18bded5c352d5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\08.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\0a58da8e98744ee5c0a3.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\09.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\52f06e352c13fd589d7a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\10.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\a67719467cc3101b75e8.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\11.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\cdecc2b25ed15664ed2c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\12.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\70820defaeabdb21aef4.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\301.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\76797ba13b7120822fb2.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\302.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6eba7a6aca2871cfea3d.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\303.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\cebc6616cd6f6d0fb4f1.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\304.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\02e1b2c6a37e20cb9a10.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\305.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\501fb00d9e979ee65cb9.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\306.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\fa6c070aa99c6a30fb98.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\307.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d6029ffaf2d9cd69573b.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\308.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\710b7d44a58150e19bb5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\309.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\bb02a50062ed729acf0a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\310.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\135e2554d887d8dbef39.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\311.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6de59238f8b7e6892e0f.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\312.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e65ed029adeaba0cce8c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\313.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\8309b4ceeedf6610b451.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\401.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\47634755c2517d07045b.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\402.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\314172d6c775dcaa1df2.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\403.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\a9a20f8f041085059e8b.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\404.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d9a55c8d9cadcd8a2c07.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\405.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\adc25178ab3b6c120a1e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\406.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\c8a09e372b79df640b31.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\407.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\043443a3844fc588c007.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\408.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\832dc70109c8033bd82b.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\409.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\b0271c6cbf91152ab528.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\410.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\1e9a3dfa13ae08aff08b.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\411.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\1f5881377ed6ee2a4561.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\412.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\2c1c30e461b96dceab98.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\413.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\352cff457089cc6d15db.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\414.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6b5014a6dfb6163e1eb9.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\415.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\2289a65aa3d0cf818e4e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\501.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\3c938e8e7d3ed1c7907a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\502.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\1dd38d20c428afbdd3e5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\503.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\71a1f82819a17443f93c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\504.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d49c965a323dacc847b5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\505.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\bb5bd6bab101cc94ebc0.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\506.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\dda1df2faf2ddc7ef5ae.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\507.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\94e350631e7864203551.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\508.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\da221e7b9d885acf95ae.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\509.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\583e614a6272b4d84a76.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\510.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\41c6f220c29df0c33d4a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\511.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6bd308bda67f32bf454e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\512.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e2f31ed8e646d13b0525.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\513.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\92770fd5e81686e4166c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\514.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\9b7efc9c09eab27a6f83.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\515.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6c3a343121caf71df367.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\601.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\94fe65edf4b74e595e35.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\602.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\142dce4de2e3f851a219.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\603.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\774998c554591f9b55d8.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\604.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\5f3da05090b77c6be21e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\605.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\11ebbc4943be4695c7c4.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\606.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\68184b009548061a536a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\607.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d15635a29f8582e1be90.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\608.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\a6da58d19c6ee842f1fa.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\609.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\2b80fc61ccbfccc7d7a5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\610.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\c3670435aa7c44241c71.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\611.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\632d652f449a695a3009.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\612.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\7edae0a87df93f093d98.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\613.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\3e81ab060b2207c72f49.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\614.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\b0c366e07a28a2445213.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\615.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\9fe4dba889f21bed51d1.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\616.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\18229069aaabd82ca171.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\617.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\c5138f53a62a57ab2361.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\701.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\0ab48d4998b82d3f90bc.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\702.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d9a3146c4804c1b9f9d4.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\703.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\c324cb6d5e69a1a69e0d.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\704.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\68978315c1be1ed10386.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\705.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\3af3b79d0614f26fb5a1.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\706.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\76eaccf8850390256e48.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\707.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\53752347dc028e84b97d.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\708.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\1837c815b714b0a3c189.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\709.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6c3a158aafcf4cdd479d.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\710.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\7981ce24c1b3e8161479.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\711.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\0737568278170ea3d2df.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\712.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\15c14c52dcf68cdf9a57.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\713.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\2251f40bfe6a2db9e52f.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\714.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\d39d83b0b4a570b3d21c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\715.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\10090b4e059c673cc867.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\716.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\1ef731180de243fa68fa.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\717.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\377a154af48aed1abc10.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\718.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\f940fcc2dd88fe0b9a35.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\719.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e577ff4f3b64610f45cd.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\801.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\bb36a07422cbc140745a.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\802.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e69a334d61a800905b05.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\803.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\f49c2dddeb38cc50b37c.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\804.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\aaa5e5bc634d6425ced1.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\805.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\8936efd2018d18ee6bb0.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\806.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\73274f93182c6751c2c5.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\807.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\cb228c2eac050a135a02.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\808.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\934376ebc07ea239ab6e.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\809.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\09c343d1baa079b5b036.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\810.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\7595b4a938569833e9bc.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\811.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\a7fe02070d145a22e150.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\812.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\6ee8845ffa7c0710e038.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\813.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e7b2884af50d7eea93b6.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\814.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\62a78be5145093ba3748.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\815.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\90fafc02b7578d3e109f.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\816.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\9f3c8e0997deaca47e6f.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\817.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\12db0aa0c72fbf5be3ab.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\818.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\2edb65ea4bc1262fe163.glb"
+    },
+    {
+      "source": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\c85d85d213c1\\ar\\819.usdz",
+      "output": "D:\\_Asawera art\\school experiment\\android-app\\app\\src\\main\\assets\\native-ar\\e95088a87b1d0ff40933.glb"
+    }
+  ]
+}

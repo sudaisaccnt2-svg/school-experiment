@@ -1,0 +1,147 @@
+{
+ "id": "04",
+ "title": "Shells & Electronic Configuration",
+ "pages": "48",
+ "glb": "models/04.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3180,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "04 Cam K"
+  },
+  {
+   "frame": 196,
+   "camera": "04 Cam Stadium"
+  },
+  {
+   "frame": 1681,
+   "camera": "04 Cam Squares"
+  },
+  {
+   "frame": 2191,
+   "camera": "04 Cam NO"
+  },
+  {
+   "frame": 2341,
+   "camera": "04 Cam Sodium"
+  },
+  {
+   "frame": 2941,
+   "camera": "04 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Shells",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Energy",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Seats 2n²",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Configuration",
+   "frame": 2341,
+   "zone": 0
+  },
+  {
+   "name": "Table 2.2",
+   "frame": 2941,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Shells & Electronic Configuration",
+   "center": [
+    0.0,
+    0.30000001192092896,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.30000001192092896,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/04.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "04 Cam K": [
+   0.0,
+   0.30000001192092896,
+   -0.0
+  ],
+  "04 Cam Stadium": [
+   -1.100000023841858,
+   0.5,
+   -0.0
+  ],
+  "04 Cam Squares": [
+   0.30000001192092896,
+   0.6000000238418579,
+   -0.0
+  ],
+  "04 Cam NO": [
+   -1.100000023841858,
+   0.5,
+   -0.0
+  ],
+  "04 Cam Sodium": [
+   39.400001525878906,
+   0.8999999761581421,
+   -0.0
+  ],
+  "04 Cam Table": [
+   -1.100000023841858,
+   0.5,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "04 Cam K": [
+   0.0,
+   0.0
+  ],
+  "04 Cam Stadium": [
+   0.0,
+   0.0
+  ],
+  "04 Cam Squares": [
+   0.0,
+   0.0
+  ],
+  "04 Cam NO": [
+   0.0,
+   0.0
+  ],
+  "04 Cam Sodium": [
+   0.0,
+   0.0
+  ],
+  "04 Cam Table": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "c0ae0b6eb0"
+}

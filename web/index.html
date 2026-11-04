@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Structure of an Atom · Asawera</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<meta name="theme-color" content="#07080b">
+<script type="importmap">
+{ "imports": {
+    "three": "./lib/three/build/three.module.js",
+    "three/addons/": "./lib/three/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="loading">
+  <div class="brand">Asawera</div>
+  <h1 id="loadtitle">Structure of an Atom</h1>
+  <div class="bar"><div id="loadbar"></div></div>
+  <div id="loadtext">Loading 3D scene…</div>
+</div>
+
+<header id="title">
+  <a id="homeBtn" href="home.html" title="All chapters">⌂</a>
+  <button id="topicsBtn" title="All topics">☰ Topics</button>
+  <a id="gamesBtn" href="games.html" title="Games: practise the exercise">🎮 Games</a>
+  <span class="brand">Asawera</span>
+  <span class="sep">·</span>
+  <span id="filmname"></span>
+  <span class="sep">·</span>
+  <span id="actname"></span>
+  <span id="offlineBadge" class="badge" role="status"></span>
+</header>
+
+<div id="topright">
+  <button id="resetBtn" hidden title="Back to the film framing (or double-tap the scene)">↺ Film view</button>
+  <a id="arBtn" class="arlink" rel="ar" href="ar/experiment.usdz#allowsContentScaling=1" download="experiment.usdz" title="Open this scene in AR"><img src="icons/ar-button.svg" alt="AR" width="92" height="38"></a>
+  <span id="arText" class="arText"></span>
+</div>
+
+
+<nav id="topics" hidden>
+  <div class="sheet">
+    <div class="head"><span id="chapter">Structure of an Atom</span><button id="topicsClose" title="Close">✕</button></div>
+    <div id="unitTabs" hidden></div>
+    <ol id="topicList"></ol>
+  </div>
+</nav>
+<button id="nextBtn" hidden></button>
+
+<!-- start card (what the lesson is about) and end card; tap ▶ or the scene to start -->
+<div id="intro" hidden>
+  <div class="card">
+    <div class="chap"><span id="introIcon"></span><span id="introChapter"></span></div>
+    <h1 id="introTitle"></h1>
+    <div id="introPages" class="pg"></div>
+    <div id="introActsHead" class="small">In this lesson</div>
+    <ol id="introActs"></ol>
+    <div class="row" id="introStart"><button id="introPlay" class="go">▶ Watch</button></div>
+    <div class="row" id="introEnd" hidden>
+      <button id="againBtn">↺ Watch again</button>
+      <a id="practiseBtn" href="games.html">🎮 Practise</a>
+      <button id="nextLessonBtn" class="go">Next lesson ▸</button>
+    </div>
+  </div>
+</div>
+<div id="tapfx" aria-hidden="true"></div>
+
+<footer id="controls">
+  <button id="playBtn" class="big" title="Play / pause (space)">▶</button>
+  <button id="speedBtn" title="Playback speed">1×</button>
+  <div class="timeline">
+    <input id="scrub" type="range" min="1" max="1260" step="1" value="1">
+    <div id="marks"></div>
+  </div>
+  <span id="clock">0:00 / 0:42</span>
+  <div id="acts"></div>
+</footer>
+
+<div id="error" hidden></div>
+<script type="module" src="offline.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

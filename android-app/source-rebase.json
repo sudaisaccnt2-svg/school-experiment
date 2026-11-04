@@ -1,0 +1,21 @@
+{
+  "previousRelease": "5300af60fa6b",
+  "currentRelease": "c85d85d213c1",
+  "changedModelFiles": 13,
+  "changedArSources": [],
+  "changedAssets": [
+    "lesson/bake/806_bench.glb",
+    "lesson/bake/807_elec.glb",
+    "lesson/bake/807_heat.glb",
+    "lesson/bake/807_knife.glb",
+    "lesson/bake/807_salt.glb",
+    "lesson/bake/807_shape.glb",
+    "lesson/bake/808_h2.glb",
+    "lesson/bake/808_hal.glb",
+    "lesson/bake/808_jar.glb",
+    "lesson/bake/808_o2.glb",
+    "lesson/bake/808_red.glb",
+    "lesson/bake/808_s.glb",
+    "lesson/bake/808_wat.glb"
+  ]
+}

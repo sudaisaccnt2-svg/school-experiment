@@ -1,0 +1,116 @@
+{
+ "id": "501",
+ "title": "Three States & the Gas State",
+ "pages": "122–123",
+ "glb": "models/501.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "501 Cam States"
+  },
+  {
+   "frame": 1321,
+   "camera": "501 Cam Plasma"
+  },
+  {
+   "frame": 1621,
+   "camera": "501 Cam Gas"
+  },
+  {
+   "frame": 2161,
+   "camera": "501 Cam Shape"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Solid, liquid, gas",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Other states",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Gas state",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "No fixed shape",
+   "frame": 2161,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Three States & the Gas State",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/501.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "501 Cam States": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "501 Cam Plasma": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "501 Cam Gas": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "501 Cam Shape": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "501 Cam States": [
+   0.0,
+   0.0
+  ],
+  "501 Cam Plasma": [
+   0.0,
+   0.0
+  ],
+  "501 Cam Gas": [
+   0.0,
+   0.0
+  ],
+  "501 Cam Shape": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "a922ff41c3"
+}

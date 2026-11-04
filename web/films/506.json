@@ -1,0 +1,134 @@
+{
+ "id": "506",
+ "title": "Liquids & Evaporation",
+ "pages": "133–135",
+ "glb": "models/506.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2295,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "506 Cam Liquid"
+  },
+  {
+   "frame": 541,
+   "camera": "506 Cam Evaporation"
+  },
+  {
+   "frame": 1201,
+   "camera": "506 Cam Surface"
+  },
+  {
+   "frame": 1561,
+   "camera": "506 Cam Temperature"
+  },
+  {
+   "frame": 1861,
+   "camera": "506 Cam Forces"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Liquid state",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Evaporation",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Surface area",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Temperature",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Forces",
+   "frame": 1861,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Liquids & Evaporation",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/506.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "506 Cam Liquid": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "506 Cam Evaporation": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "506 Cam Surface": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "506 Cam Temperature": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "506 Cam Forces": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "506 Cam Liquid": [
+   0.0,
+   0.0
+  ],
+  "506 Cam Evaporation": [
+   0.0,
+   0.0
+  ],
+  "506 Cam Surface": [
+   0.0,
+   0.0
+  ],
+  "506 Cam Temperature": [
+   0.0,
+   0.0
+  ],
+  "506 Cam Forces": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "45e730eb01"
+}

@@ -1,0 +1,11 @@
+Prepared for sudaisaccnt3@gmail.com / account3.
+1. Complete the Google Play developer registration, US$25 registration fee and identity/device checks. No registration fee has been charged by this work.
+2. Create com.asawera.chemistry, enable Play App Signing, upload the verified 1.0.1 AAB and use listing-en.json, graphics and native screenshots here.
+3. Complete Data safety, privacy/deletion URLs, ads and content-rating declarations using the audited app behavior. The disclosure file is a draft for console review, not a submitted declaration.
+4. Create the monthly/yearly subscription products in play-product-drafts.json and activate their base plans and regional prices. Website coupons do not change Play checkout prices.
+5. Grant an Android Publisher service account purchase/subscription permissions. Store its JSON only in the Cloudflare PLAY_SERVICE_ACCOUNT secret; never in the APK or this folder. Enable PLAY_BILLING_ENABLED=true only after products and verification are connected.
+6. Connect authenticated Pub/Sub real-time developer notifications to https://asawera-chemistry-51y.pages.dev/api/play/notifications. Set PLAY_RTDN_AUDIENCE to that exact URL and PLAY_RTDN_SERVICE_EMAIL to the authorised push service account. Google signed identity and current Google purchase state are checked on every notification.
+7. Configure license testers and perform real sandbox purchase, acknowledgement, cancellation, renewal, refund and restore checks. Current automated purchase checks use a mock Google service; no real charges were made.
+8. Run the required closed test with 12 real opted-in testers for 14 consecutive days for a new personal account, then apply for production access and publish when accepted.
+9. Link the published store listing in AdMob and wait for account/app approval. Then enable native ad serving and eligible mediation groups. Website AdSense has its own pending site review.
+10. Physical camera placement needs a compatible Android phone; emulator native AR startup is checked but does not establish physical tracking quality.

@@ -1,0 +1,14 @@
+{
+  "version": "df3ccbf099ae",
+  "accountDeletionVerified": true,
+  "externalDeletionVerified": true,
+  "playViewHidesBankCheckout": true,
+  "signupAndSecureSessionVerified": true,
+  "recoveryDownloadVerified": true,
+  "recoveryAndPasswordChangeVerified": true,
+  "studentCannotAccessOwnerDashboard": true,
+  "ownerStudentAndProControlsVerified": true,
+  "mobileLayoutVerified": true,
+  "realPaidRequests": 0,
+  "javascriptErrors": []
+}

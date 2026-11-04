@@ -1,0 +1,134 @@
+{
+ "id": "713",
+ "title": "Sodium: the Down Cell",
+ "pages": "200–203",
+ "glb": "models/713.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "713 Cam Uses"
+  },
+  {
+   "frame": 421,
+   "camera": "713 Cam Davy"
+  },
+  {
+   "frame": 661,
+   "camera": "713 Cam Down"
+  },
+  {
+   "frame": 1201,
+   "camera": "713 Cam Work"
+  },
+  {
+   "frame": 1921,
+   "camera": "713 Cam Metals"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Uses",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Davy",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Down cell",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Working",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Aluminium and rust",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Sodium: the Down Cell",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/713.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "713 Cam Uses": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "713 Cam Davy": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "713 Cam Down": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "713 Cam Work": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "713 Cam Metals": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "713 Cam Uses": [
+   0.0,
+   0.0
+  ],
+  "713 Cam Davy": [
+   0.0,
+   0.0
+  ],
+  "713 Cam Down": [
+   0.0,
+   0.0
+  ],
+  "713 Cam Work": [
+   0.0,
+   0.0
+  ],
+  "713 Cam Metals": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "d0def484e4"
+}

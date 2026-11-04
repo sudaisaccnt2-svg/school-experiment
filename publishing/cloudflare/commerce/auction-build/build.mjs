@@ -1,0 +1,12 @@
+import {build} from 'esbuild';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import {resolve} from 'node:path';
+const root=fileURLToPath(new URL('.',import.meta.url)),version=JSON.parse(readFileSync(resolve(root,'node_modules/prebid.js/package.json'),'utf8')).version;
+if(version!=='11.41.0')throw new Error('Unexpected advertising library version.');
+await build({entryPoints:[resolve(root,'entry.js')],outfile:resolve(root,'../public/prebid-'+version+'.js'),bundle:true,minify:true,format:'iife',target:['es2020'],legalComments:'inline',banner:{js:'/* Prebid.js '+version+' | Apache-2.0 | https://github.com/prebid/Prebid.js | Custom Asawera display build */'},plugins:[{name:'prebid-display-options',setup(builder){builder.onLoad({filter:/dist[\\/]src[\\/]buildOptions\.mjs$/},()=>({contents:'export default '+JSON.stringify({pbGlobal:'pbjs',defineGlobal:true,features:{NATIVE:false,VIDEO:false,AUDIO:false,UID2_CSTG:false,GREEDY:false,LOG_NON_ERROR:true,LOG_ERROR:true},distUrlBase:'https://cdn.jsdelivr.net/npm/prebid.js@'+version+'/dist/chunks/',skipCalls:{}}),loader:'js'}));}}]});
+const file=readFileSync(resolve(root,'../public/prebid-'+version+'.js'));
+writeFileSync(resolve(root,'../public/prebid-license.txt'),readFileSync(resolve(root,'node_modules/prebid.js/LICENSE')));
+writeFileSync(resolve(root,'../auction-build-verification.json'),JSON.stringify({version,source:'https://www.npmjs.com/package/prebid.js/v/'+version,sha256:createHash('sha256').update(file).digest('hex'),bytes:file.length,bidders:['pubmatic','rubicon','ix','openx','sovrn','appnexus'],displayOnly:true,userIdModules:false,excludedFromOfflineDownloads:true},null,2)+'\n');
+console.log('Built official Prebid '+version+' with six display bidders: '+file.length+' bytes.');

@@ -1,0 +1,183 @@
+{
+ "id": "305",
+ "title": "Reading the Table (Test Yourself)",
+ "pages": "72",
+ "glb": "models/305.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2760,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "305 Cam K"
+  },
+  {
+   "frame": 361,
+   "camera": "305 Cam Find K"
+  },
+  {
+   "frame": 661,
+   "camera": "305 Cam As"
+  },
+  {
+   "frame": 901,
+   "camera": "305 Cam Ti"
+  },
+  {
+   "frame": 1141,
+   "camera": "305 Cam Sort"
+  },
+  {
+   "frame": 1741,
+   "camera": "305 Cam Ca"
+  },
+  {
+   "frame": 2161,
+   "camera": "305 Cam X"
+  },
+  {
+   "frame": 2521,
+   "camera": "305 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Two rules",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Potassium",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Arsenic",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Titanium",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Metal or not",
+   "frame": 1141,
+   "zone": 0
+  },
+  {
+   "name": "Calcium",
+   "frame": 1741,
+   "zone": 0
+  },
+  {
+   "name": "Element X",
+   "frame": 2161,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Reading the Table (Test Yourself)",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/305.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "305 Cam K": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam Find K": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam As": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam Ti": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam Sort": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam Ca": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam X": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "305 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "305 Cam K": [
+   0.0,
+   0.0
+  ],
+  "305 Cam Find K": [
+   0.0,
+   0.0
+  ],
+  "305 Cam As": [
+   0.0,
+   0.0
+  ],
+  "305 Cam Ti": [
+   0.0,
+   0.0
+  ],
+  "305 Cam Sort": [
+   0.0,
+   0.0
+  ],
+  "305 Cam Ca": [
+   0.0,
+   0.0
+  ],
+  "305 Cam X": [
+   0.0,
+   0.0
+  ],
+  "305 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "6d94b94623"
+}

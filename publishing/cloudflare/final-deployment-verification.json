@@ -1,0 +1,14 @@
+{
+  "url": "https://asawera-chemistry-51y.pages.dev",
+  "version": "96bc86bd5d49",
+  "deploymentURL": "https://e6eacffb.asawera-chemistry-51y.pages.dev",
+  "liveFilesMatch": true,
+  "changesFromOfflineAndARVerifiedDeployment": [
+    "privacy.html",
+    "sw.js"
+  ],
+  "privacyChoicesVerified": true,
+  "anonymousAdminDenied": true,
+  "ownerPasswordReady": true,
+  "javascriptErrors": []
+}

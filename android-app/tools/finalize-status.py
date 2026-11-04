@@ -1,0 +1,8 @@
+import json
+from pathlib import Path
+app=Path(__file__).resolve().parents[1];host=json.loads((app/'hosting/release.json').read_text(encoding='utf-8'));assert host['published'] and host['liveDownloadHashVerified']
+connection_path=app/'admob-connection.json';connection=json.loads(connection_path.read_text(encoding='utf-8'));connection.update(apkPublished=True,downloadURL=host['publicURL'],apkURL=host['apkURL'],paidServing=False,dashboardConnected=True);connection_path.write_text(json.dumps(connection,indent=2)+'\n',encoding='utf-8')
+commerce=app.parent/'publishing/cloudflare/commerce'
+status_path=commerce/'status.json';status=json.loads(status_path.read_text(encoding='utf-8'));status.update(androidAppBuilt=True,androidAppDownloadURL=host['publicURL'],androidApkURL=host['apkURL'],androidNativeArImplemented=True,androidOfflineLessonsEmbedded=110,androidNativeArModelsEmbedded=113,androidAdsDashboardConnected=True,androidPaidAdsActive=False,androidGooglePaymentProfileComplete=False,androidStoreListed=False);status_path.write_text(json.dumps(status,indent=2)+'\n',encoding='utf-8')
+readme=app/'README.txt';text=readme.read_text(encoding='utf-8');text=text.replace('The bundle includes the current published lesson artwork.','The bundle pins tested website release c85d85d213c1; later artwork changes require a new app release.');text+='\nPublished Android download: '+host['publicURL']+'\nVerified signed APK: '+host['apkURL']+'\n';readme.write_text(text,encoding='utf-8')
+print('Signed Android download and real paused AdMob connection recorded. Original website deployment metadata preserved.')

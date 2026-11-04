@@ -1,0 +1,134 @@
+{
+ "id": "606",
+ "title": "Percentage Composition",
+ "pages": "159–161",
+ "glb": "models/606.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "606 Cam Hundred"
+  },
+  {
+   "frame": 361,
+   "camera": "606 Cam MM"
+  },
+  {
+   "frame": 901,
+   "camera": "606 Cam MV"
+  },
+  {
+   "frame": 1381,
+   "camera": "606 Cam VM"
+  },
+  {
+   "frame": 1921,
+   "camera": "606 Cam VV"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Parts in 100",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Mass by mass",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Mass by volume",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Volume by mass",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Volume by volume",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Percentage Composition",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/606.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "606 Cam Hundred": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "606 Cam MM": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "606 Cam MV": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "606 Cam VM": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "606 Cam VV": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "606 Cam Hundred": [
+   0.0,
+   0.0
+  ],
+  "606 Cam MM": [
+   0.0,
+   0.0
+  ],
+  "606 Cam MV": [
+   0.0,
+   0.0
+  ],
+  "606 Cam VM": [
+   0.0,
+   0.0
+  ],
+  "606 Cam VV": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "a4780604f9"
+}

@@ -1,0 +1,57 @@
+# OS, logs & scratch files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.log
+tmp_*
+
+# Large Blender scene files (>100 MB GitHub file limit), render frames & local backups
+/*.blend
+/*.blend1
+*.blend1
+backups/
+renders/
+assets/polyhaven/
+
+# Local tunnel binaries, Wrangler state & private keys/signing credentials
+tools/cloudflared.exe
+tools/tunnel.*
+.wrangler/
+certs/*.key
+certs/*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+.env
+.env.*
+.dev.vars
+
+# Dependencies & caches
+node_modules/
+.npm-cache/
+
+# Android emulator VM images, build artifacts, generated web mirrors & private signing
+android-app/.avd/
+android-app/.gradle/
+android-app/.kotlin/
+android-app/build/
+android-app/app/build/
+android-app/dist/
+android-app/hosting/
+android-app/app/src/main/assets/site/
+android-app/app/src/main/assets/native-ar/
+android-app/local.properties
+android-app/private-signing/
+android-app/private-testing/
+android-app/emulator-screen.png
+
+# Cloudflare archived release snapshots, temp staging & private migration credentials
+publishing/cloudflare/releases/
+publishing/cloudflare/work/
+publishing/cloudflare/.npm-cache/
+publishing/cloudflare/.python-tools/
+publishing/cloudflare/.wrangler/
+publishing/cloudflare/android-public/
+publishing/cloudflare/private-migration/

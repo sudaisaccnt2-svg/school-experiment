@@ -1,0 +1,17 @@
+{
+  "ownerEmail": "sudaisaccnt3@gmail.com",
+  "accountID": "785d5ca0d4ce6d80478bb1328ab78f80",
+  "authProfile": "asawera-owner3",
+  "projectName": "asawera-chemistry",
+  "migrationPending": false,
+  "previousAccountID": "0f116747b066734bb55766b7637413f0",
+  "previousURL": "https://asawera-chemistry.pages.dev/",
+  "reason": "The owner corrected the destination to sudaisaccnt3, not sudaisaccnt2. Do not publish more updates to account2.",
+  "preservedRelease": "9c8e5a417237",
+  "publicURL": "https://asawera-chemistry-51y.pages.dev/",
+  "databaseID": "28c3dd2a-24d9-4016-b6e9-387088601781",
+  "publishedRelease": "5300af60fa6b",
+  "migrationCompletedAtUTC": "2026-10-13T14:29:27.099461+00:00",
+  "ownerAuthentication": "private-website-password",
+  "ownerLoginVerified": true
+}

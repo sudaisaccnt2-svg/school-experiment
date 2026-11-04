@@ -1,0 +1,260 @@
+{
+ "id": "818",
+ "title": "Key Points",
+ "pages": "245",
+ "glb": "models/818.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1815,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "818 Cam KP 0"
+  },
+  {
+   "frame": 151,
+   "camera": "818 Cam KP 1"
+  },
+  {
+   "frame": 301,
+   "camera": "818 Cam KP 2"
+  },
+  {
+   "frame": 451,
+   "camera": "818 Cam KP 3"
+  },
+  {
+   "frame": 601,
+   "camera": "818 Cam KP 4"
+  },
+  {
+   "frame": 751,
+   "camera": "818 Cam KP 5"
+  },
+  {
+   "frame": 901,
+   "camera": "818 Cam KP 6"
+  },
+  {
+   "frame": 1051,
+   "camera": "818 Cam KP 7"
+  },
+  {
+   "frame": 1201,
+   "camera": "818 Cam KP 8"
+  },
+  {
+   "frame": 1351,
+   "camera": "818 Cam KP 9"
+  },
+  {
+   "frame": 1501,
+   "camera": "818 Cam KP 10"
+  },
+  {
+   "frame": 1651,
+   "camera": "818 Cam KP 11"
+  }
+ ],
+ "acts": [
+  {
+   "name": "IA, IIA, d-block: all metals",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Metals are electropositive",
+   "frame": 151,
+   "zone": 0
+  },
+  {
+   "name": "Non-metals are electronegative",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "IA alkali · IIA alkaline earth",
+   "frame": 451,
+   "zone": 0
+  },
+  {
+   "name": "Alkali metals give electrons easily",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Alkali metals: only in compounds",
+   "frame": 751,
+   "zone": 0
+  },
+  {
+   "name": "Group VIIA: the halogens",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Halogens grab electrons",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Halogens: only in compounds",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Sodium soft, iron hard",
+   "frame": 1351,
+   "zone": 0
+  },
+  {
+   "name": "Noble metals resist rust",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Silver, platinum, gold: precious",
+   "frame": 1651,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/818.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "818 Cam KP 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "818 Cam KP 11": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "818 Cam KP 0": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 1": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 2": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 3": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 4": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 5": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 6": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 7": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 8": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 9": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 10": [
+   0.0,
+   0.0
+  ],
+  "818 Cam KP 11": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "cb979b8e33"
+}

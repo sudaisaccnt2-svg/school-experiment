@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "esbuild": "^0.25.12",
+    "prebid.js": "^11.41.0"
+  }
+}

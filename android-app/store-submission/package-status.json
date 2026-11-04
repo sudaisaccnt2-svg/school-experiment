@@ -1,0 +1,28 @@
+{
+  "preparedAtUTC": "2026-10-14T08:18:52.167033+00:00",
+  "titleAndDescriptionLimitsVerified": true,
+  "iconDimensions": [
+    512,
+    512
+  ],
+  "iconPngColorType": 6,
+  "featureGraphicDimensions": [
+    1024,
+    500
+  ],
+  "nativeScreenshotsPending": false,
+  "consoleSubmissionPending": true,
+  "productsCreated": false,
+  "liveBillingVerified": false,
+  "screenshots": [
+    "phone-01-library.png",
+    "phone-02-search.png"
+  ],
+  "screenshotsFrom": "Exact signed release UI on the isolated emulator",
+  "screenshotDimensions": [
+    720,
+    1280
+  ],
+  "debugControlsShown": false,
+  "physicalCameraScreenshotClaimed": false
+}

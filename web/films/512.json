@@ -1,0 +1,134 @@
+{
+ "id": "512",
+ "title": "Allotropy",
+ "pages": "145",
+ "glb": "models/512.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2055,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "512 Cam Carbon"
+  },
+  {
+   "frame": 421,
+   "camera": "512 Cam Oxygen"
+  },
+  {
+   "frame": 841,
+   "camera": "512 Cam Sulphur"
+  },
+  {
+   "frame": 1381,
+   "camera": "512 Cam Transition"
+  },
+  {
+   "frame": 1801,
+   "camera": "512 Cam Burn"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Carbon forms",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "O₂ and O₃",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Sulphur",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Transition temperatures",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Same chemistry",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Allotropy",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/512.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "512 Cam Carbon": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "512 Cam Oxygen": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "512 Cam Sulphur": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "512 Cam Transition": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "512 Cam Burn": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "512 Cam Carbon": [
+   0.0,
+   0.0
+  ],
+  "512 Cam Oxygen": [
+   0.0,
+   0.0
+  ],
+  "512 Cam Sulphur": [
+   0.0,
+   0.0
+  ],
+  "512 Cam Transition": [
+   0.0,
+   0.0
+  ],
+  "512 Cam Burn": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "520d4a79da"
+}

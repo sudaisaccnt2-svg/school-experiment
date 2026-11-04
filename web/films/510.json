@@ -1,0 +1,134 @@
+{
+ "id": "510",
+ "title": "The Solid State",
+ "pages": "141–142",
+ "glb": "models/510.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2655,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "510 Cam Solid"
+  },
+  {
+   "frame": 421,
+   "camera": "510 Cam Melt"
+  },
+  {
+   "frame": 961,
+   "camera": "510 Cam Rigid"
+  },
+  {
+   "frame": 1261,
+   "camera": "510 Cam Dense"
+  },
+  {
+   "frame": 1561,
+   "camera": "510 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Solid state",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Melting point",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Rigidity",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "Density",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Comparison",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "The Solid State",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/510.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "510 Cam Solid": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "510 Cam Melt": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "510 Cam Rigid": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "510 Cam Dense": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "510 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "510 Cam Solid": [
+   0.0,
+   0.0
+  ],
+  "510 Cam Melt": [
+   0.0,
+   0.0
+  ],
+  "510 Cam Rigid": [
+   0.0,
+   0.0
+  ],
+  "510 Cam Dense": [
+   0.0,
+   0.0
+  ],
+  "510 Cam Table": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "6663adb3ae"
+}

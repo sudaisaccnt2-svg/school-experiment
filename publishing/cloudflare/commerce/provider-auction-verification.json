@@ -1,0 +1,20 @@
+{
+  "version": "5300af60fa6b",
+  "realAdRequests": 0,
+  "officialPrebidCoreTested": true,
+  "checks": [
+    "home",
+    "lesson",
+    "pro",
+    "deny",
+    "offline",
+    "outside-pk",
+    "placement-off",
+    "new-provider",
+    "one-provider",
+    "floor",
+    "empty",
+    "sdk-failure",
+    "late"
+  ]
+}

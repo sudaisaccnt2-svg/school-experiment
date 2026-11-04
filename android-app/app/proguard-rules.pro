@@ -1,0 +1,4 @@
+-keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
+-keep class * extends androidx.room.RoomDatabase { *; }
+-keep @androidx.room.Database class * { *; }
+-keep class androidx.work.** { *; }

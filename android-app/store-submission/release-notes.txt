@@ -1,0 +1,2 @@
+1.0.1
+Student account deletion in the app and on the website. Native Google Play Pro checkout, restore purchases and subscription management. Website bank-transfer checkout is excluded from the Play account view. Server verifies purchase ownership and expiry. Offline lesson and AR assets are preserved. Paid serving and live purchases remain pending Google account/store setup.

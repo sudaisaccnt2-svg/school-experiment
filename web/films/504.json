@@ -1,0 +1,152 @@
+{
+ "id": "504",
+ "title": "Boyle's Law",
+ "pages": "126–129",
+ "glb": "models/504.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3015,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "504 Cam Squeeze"
+  },
+  {
+   "frame": 901,
+   "camera": "504 Cam Graph"
+  },
+  {
+   "frame": 1441,
+   "camera": "504 Cam PV"
+  },
+  {
+   "frame": 1861,
+   "camera": "504 Cam Fig 5.6"
+  },
+  {
+   "frame": 2101,
+   "camera": "504 Cam Example"
+  },
+  {
+   "frame": 2581,
+   "camera": "504 Cam Practice"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Squeeze",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Graph",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "PV = k",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "Fig 5.6",
+   "frame": 1861,
+   "zone": 0
+  },
+  {
+   "name": "Example 5.1",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "Practice 5.1",
+   "frame": 2581,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Boyle's Law",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/504.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "504 Cam Squeeze": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "504 Cam Graph": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "504 Cam PV": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "504 Cam Fig 5.6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "504 Cam Example": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "504 Cam Practice": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "504 Cam Squeeze": [
+   0.0,
+   0.0
+  ],
+  "504 Cam Graph": [
+   0.0,
+   0.0
+  ],
+  "504 Cam PV": [
+   0.0,
+   0.0
+  ],
+  "504 Cam Fig 5.6": [
+   0.0,
+   0.0
+  ],
+  "504 Cam Example": [
+   0.0,
+   0.0
+  ],
+  "504 Cam Practice": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "663288fde1"
+}

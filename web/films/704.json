@@ -1,0 +1,188 @@
+{
+ "id": "704",
+ "title": "Rules for Oxidation Numbers",
+ "pages": "186",
+ "glb": "models/704.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2655,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "704 Cam 0"
+  },
+  {
+   "frame": 361,
+   "camera": "704 Cam 1"
+  },
+  {
+   "frame": 721,
+   "camera": "704 Cam 2"
+  },
+  {
+   "frame": 1081,
+   "camera": "704 Cam 3"
+  },
+  {
+   "frame": 1411,
+   "camera": "704 Cam 4"
+  },
+  {
+   "frame": 1801,
+   "camera": "704 Cam 5"
+  },
+  {
+   "frame": 2161,
+   "camera": "704 Cam 6"
+  },
+  {
+   "frame": 2461,
+   "camera": "704 Cam 7"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Free elements",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Hydrogen",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Oxygen",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Groups",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Neutral sum",
+   "frame": 1411,
+   "zone": 0
+  },
+  {
+   "name": "Ion sum",
+   "frame": 1801,
+   "zone": 0
+  },
+  {
+   "name": "Electronegative",
+   "frame": 2161,
+   "zone": 0
+  },
+  {
+   "name": "Same element",
+   "frame": 2461,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Rules for Oxidation Numbers",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/704.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "704 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "704 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "704 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "704 Cam 7": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "18601e2072"
+}

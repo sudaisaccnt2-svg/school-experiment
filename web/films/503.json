@@ -1,0 +1,134 @@
+{
+ "id": "503",
+ "title": "Pressure, Compressibility & Density",
+ "pages": "125–126",
+ "glb": "models/503.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "503 Cam Walls"
+  },
+  {
+   "frame": 601,
+   "camera": "503 Cam Atm"
+  },
+  {
+   "frame": 1081,
+   "camera": "503 Cam Squeeze"
+  },
+  {
+   "frame": 1501,
+   "camera": "503 Cam Pipe"
+  },
+  {
+   "frame": 1801,
+   "camera": "503 Cam Density"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Pressure",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "1 atmosphere",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Compressibility",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Mobility",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Density",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Pressure, Compressibility & Density",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/503.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "503 Cam Walls": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "503 Cam Atm": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "503 Cam Squeeze": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "503 Cam Pipe": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "503 Cam Density": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "503 Cam Walls": [
+   0.0,
+   0.0
+  ],
+  "503 Cam Atm": [
+   0.0,
+   0.0
+  ],
+  "503 Cam Squeeze": [
+   0.0,
+   0.0
+  ],
+  "503 Cam Pipe": [
+   0.0,
+   0.0
+  ],
+  "503 Cam Density": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "87edbd3ae8"
+}

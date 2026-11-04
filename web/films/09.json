@@ -1,0 +1,170 @@
+{
+ "id": "09",
+ "title": "Isotopes of Carbon, Chlorine & Uranium",
+ "pages": "54–56",
+ "glb": "models/09.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3000,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "09 Cam Carbon"
+  },
+  {
+   "frame": 661,
+   "camera": "09 Cam Carbon Jar"
+  },
+  {
+   "frame": 931,
+   "camera": "09 Cam Chlorine"
+  },
+  {
+   "frame": 1411,
+   "camera": "09 Cam Chlorine Jar"
+  },
+  {
+   "frame": 1681,
+   "camera": "09 Cam Uranium"
+  },
+  {
+   "frame": 2401,
+   "camera": "09 Cam Uranium Jar"
+  },
+  {
+   "frame": 2701,
+   "camera": "09 Cam Summary"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Carbon",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "100 carbon atoms",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Chlorine",
+   "frame": 931,
+   "zone": 0
+  },
+  {
+   "name": "100 chlorine atoms",
+   "frame": 1411,
+   "zone": 0
+  },
+  {
+   "name": "Uranium",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "100 uranium atoms",
+   "frame": 2401,
+   "zone": 0
+  },
+  {
+   "name": "Summary",
+   "frame": 2701,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Isotopes of Carbon, Chlorine & Uranium",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/09.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "09 Cam Carbon": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Carbon Jar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Chlorine": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Chlorine Jar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Uranium": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Uranium Jar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "09 Cam Summary": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "09 Cam Carbon": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Carbon Jar": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Chlorine": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Chlorine Jar": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Uranium": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Uranium Jar": [
+   0.0,
+   0.0
+  ],
+  "09 Cam Summary": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "4b16ae5e74"
+}

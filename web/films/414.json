@@ -1,0 +1,260 @@
+{
+ "id": "414",
+ "title": "Key Points",
+ "pages": "117",
+ "glb": "models/414.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2535,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "414 Cam KP 0"
+  },
+  {
+   "frame": 211,
+   "camera": "414 Cam KP 1"
+  },
+  {
+   "frame": 421,
+   "camera": "414 Cam KP 2"
+  },
+  {
+   "frame": 631,
+   "camera": "414 Cam KP 3"
+  },
+  {
+   "frame": 841,
+   "camera": "414 Cam KP 4"
+  },
+  {
+   "frame": 1051,
+   "camera": "414 Cam KP 5"
+  },
+  {
+   "frame": 1261,
+   "camera": "414 Cam KP 6"
+  },
+  {
+   "frame": 1471,
+   "camera": "414 Cam KP 7"
+  },
+  {
+   "frame": 1681,
+   "camera": "414 Cam KP 8"
+  },
+  {
+   "frame": 1891,
+   "camera": "414 Cam KP 9"
+  },
+  {
+   "frame": 2101,
+   "camera": "414 Cam KP 10"
+  },
+  {
+   "frame": 2311,
+   "camera": "414 Cam KP 11"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Chemical bond",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Valence electrons",
+   "frame": 211,
+   "zone": 0
+  },
+  {
+   "name": "Ionic (electrovalent) bond",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Covalent bond",
+   "frame": 631,
+   "zone": 0
+  },
+  {
+   "name": "Single, double or triple",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Dative (coordinate) bond",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Polar covalent bond",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Non-polar covalent bond",
+   "frame": 1471,
+   "zone": 0
+  },
+  {
+   "name": "Metallic bond",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Shapes",
+   "frame": 1891,
+   "zone": 0
+  },
+  {
+   "name": "Intermolecular forces",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "Hydrogen bond",
+   "frame": 2311,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/414.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "414 Cam KP 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "414 Cam KP 11": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "414 Cam KP 0": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 1": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 2": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 3": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 4": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 5": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 6": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 7": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 8": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 9": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 10": [
+   0.0,
+   0.0
+  ],
+  "414 Cam KP 11": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "91ec682922"
+}

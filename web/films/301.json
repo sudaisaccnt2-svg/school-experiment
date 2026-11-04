@@ -1,0 +1,201 @@
+{
+ "id": "301",
+ "title": "The Modern Periodic Table",
+ "pages": "66–67",
+ "glb": "models/301.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2970,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "301 Cam Cloud"
+  },
+  {
+   "frame": 271,
+   "camera": "301 Cam Moseley"
+  },
+  {
+   "frame": 631,
+   "camera": "301 Cam Order"
+  },
+  {
+   "frame": 991,
+   "camera": "301 Cam Periods"
+  },
+  {
+   "frame": 1321,
+   "camera": "301 Cam Groups"
+  },
+  {
+   "frame": 1651,
+   "camera": "301 Cam Law"
+  },
+  {
+   "frame": 2011,
+   "camera": "301 Cam Metals"
+  },
+  {
+   "frame": 2401,
+   "camera": "301 Cam Facts"
+  },
+  {
+   "frame": 2761,
+   "camera": "301 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Intro",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Moseley",
+   "frame": 271,
+   "zone": 0
+  },
+  {
+   "name": "Order",
+   "frame": 631,
+   "zone": 0
+  },
+  {
+   "name": "Periods",
+   "frame": 991,
+   "zone": 0
+  },
+  {
+   "name": "Groups",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Periodic law",
+   "frame": 1651,
+   "zone": 0
+  },
+  {
+   "name": "Metals",
+   "frame": 2011,
+   "zone": 0
+  },
+  {
+   "name": "Fun facts",
+   "frame": 2401,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "The Modern Periodic Table",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/301.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "301 Cam Cloud": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Moseley": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Order": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Periods": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Groups": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Law": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Metals": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam Facts": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "301 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "301 Cam Cloud": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Moseley": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Order": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Periods": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Groups": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Law": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Metals": [
+   0.0,
+   0.0
+  ],
+  "301 Cam Facts": [
+   0.0,
+   0.0
+  ],
+  "301 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "062e26db72"
+}

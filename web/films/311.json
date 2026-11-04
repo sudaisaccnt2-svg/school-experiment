@@ -1,0 +1,152 @@
+{
+ "id": "311",
+ "title": "Electronegativity",
+ "pages": "83–85",
+ "glb": "models/311.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3180,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "311 Cam HH"
+  },
+  {
+   "frame": 421,
+   "camera": "311 Cam HCl"
+  },
+  {
+   "frame": 841,
+   "camera": "311 Cam FCs"
+  },
+  {
+   "frame": 1201,
+   "camera": "311 Cam Scale"
+  },
+  {
+   "frame": 1561,
+   "camera": "311 Cam City"
+  },
+  {
+   "frame": 3001,
+   "camera": "311 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Tug of war",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Polar bond",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Strong pullers",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Pauling scale",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Fig 3.8",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Example 3.3",
+   "frame": 2401,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Electronegativity",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/311.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "311 Cam HH": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "311 Cam HCl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "311 Cam FCs": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "311 Cam Scale": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "311 Cam City": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "311 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "311 Cam HH": [
+   0.0,
+   0.0
+  ],
+  "311 Cam HCl": [
+   0.0,
+   0.0
+  ],
+  "311 Cam FCs": [
+   0.0,
+   0.0
+  ],
+  "311 Cam Scale": [
+   0.0,
+   0.0
+  ],
+  "311 Cam City": [
+   0.0,
+   0.0
+  ],
+  "311 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "a49ea1cf18"
+}

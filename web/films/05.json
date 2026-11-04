@@ -1,0 +1,212 @@
+{
+ "id": "05",
+ "title": "Sub-shells s, p, d, f",
+ "pages": "49–50",
+ "glb": "models/05.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3840,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "05 Cam Shell"
+  },
+  {
+   "frame": 271,
+   "camera": "05 Cam Area"
+  },
+  {
+   "frame": 811,
+   "camera": "05 Cam KLM"
+  },
+  {
+   "frame": 1051,
+   "camera": "05 Cam s"
+  },
+  {
+   "frame": 1231,
+   "camera": "05 Cam p"
+  },
+  {
+   "frame": 1441,
+   "camera": "05 Cam d"
+  },
+  {
+   "frame": 1651,
+   "camera": "05 Cam f"
+  },
+  {
+   "frame": 1831,
+   "camera": "05 Cam Row"
+  },
+  {
+   "frame": 2041,
+   "camera": "05 Cam P3"
+  },
+  {
+   "frame": 2281,
+   "camera": "05 Cam Caps"
+  },
+  {
+   "frame": 2911,
+   "camera": "05 Cam Floors"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Shell and area",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "s p d f",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Three p orbitals",
+   "frame": 2041,
+   "zone": 0
+  },
+  {
+   "name": "2 per orbital",
+   "frame": 2401,
+   "zone": 0
+  },
+  {
+   "name": "Floors (Table 2.3)",
+   "frame": 3031,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Sub-shells s, p, d, f",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/05.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "05 Cam Shell": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam Area": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam KLM": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam s": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam p": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam d": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam f": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam Row": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam P3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam Caps": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "05 Cam Floors": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "05 Cam Shell": [
+   0.0,
+   0.0
+  ],
+  "05 Cam Area": [
+   0.0,
+   0.0
+  ],
+  "05 Cam KLM": [
+   0.0,
+   0.0
+  ],
+  "05 Cam s": [
+   0.0,
+   0.0
+  ],
+  "05 Cam p": [
+   0.0,
+   0.0
+  ],
+  "05 Cam d": [
+   0.0,
+   0.0
+  ],
+  "05 Cam f": [
+   0.0,
+   0.0
+  ],
+  "05 Cam Row": [
+   0.0,
+   0.0
+  ],
+  "05 Cam P3": [
+   0.0,
+   0.0
+  ],
+  "05 Cam Caps": [
+   0.0,
+   0.0
+  ],
+  "05 Cam Floors": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "97fab4054d"
+}

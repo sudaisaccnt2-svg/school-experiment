@@ -1,0 +1,152 @@
+{
+ "id": "505",
+ "title": "Charles's Law",
+ "pages": "129–133",
+ "glb": "models/505.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2895,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "505 Cam Heat"
+  },
+  {
+   "frame": 781,
+   "camera": "505 Cam Kelvin"
+  },
+  {
+   "frame": 1201,
+   "camera": "505 Cam Graph"
+  },
+  {
+   "frame": 1681,
+   "camera": "505 Cam Fig 5.9"
+  },
+  {
+   "frame": 1921,
+   "camera": "505 Cam Example"
+  },
+  {
+   "frame": 2401,
+   "camera": "505 Cam Balloon"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Heat the gas",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Kelvin",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "Graph",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Fig 5.9",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Example 5.2",
+   "frame": 1921,
+   "zone": 0
+  },
+  {
+   "name": "Activity 5.2",
+   "frame": 2401,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Charles's Law",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/505.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "505 Cam Heat": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "505 Cam Kelvin": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "505 Cam Graph": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "505 Cam Fig 5.9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "505 Cam Example": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "505 Cam Balloon": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "505 Cam Heat": [
+   0.0,
+   0.0
+  ],
+  "505 Cam Kelvin": [
+   0.0,
+   0.0
+  ],
+  "505 Cam Graph": [
+   0.0,
+   0.0
+  ],
+  "505 Cam Fig 5.9": [
+   0.0,
+   0.0
+  ],
+  "505 Cam Example": [
+   0.0,
+   0.0
+  ],
+  "505 Cam Balloon": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "650cfd3d78"
+}

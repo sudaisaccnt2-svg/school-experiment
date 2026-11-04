@@ -1,0 +1,199 @@
+{
+ "id": "814",
+ "title": "Noble Metals",
+ "pages": "236–238",
+ "glb": "models/814.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "814 Cam Row"
+  },
+  {
+   "frame": 301,
+   "camera": "814 Cam Rust"
+  },
+  {
+   "frame": 541,
+   "camera": "814 Cam Silver"
+  },
+  {
+   "frame": 781,
+   "camera": "814 Cam Mirror"
+  },
+  {
+   "frame": 1021,
+   "camera": "814 Cam Exhaust"
+  },
+  {
+   "frame": 1261,
+   "camera": "814 Cam Pt Ring"
+  },
+  {
+   "frame": 1441,
+   "camera": "814 Cam Gold Bend"
+  },
+  {
+   "frame": 1681,
+   "camera": "814 Cam Gold Mix"
+  },
+  {
+   "frame": 1921,
+   "camera": "814 Cam Chip"
+  },
+  {
+   "frame": 2161,
+   "camera": "814 Cam Coin"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Noble metals",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Silver",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Platinum",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Gold",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "Coins",
+   "frame": 2161,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Noble Metals",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/814.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "814 Cam Row": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Rust": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Silver": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Mirror": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Exhaust": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Pt Ring": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Gold Bend": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Gold Mix": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Chip": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "814 Cam Coin": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "814 Cam Row": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Rust": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Silver": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Mirror": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Exhaust": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Pt Ring": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Gold Bend": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Gold Mix": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Chip": [
+   0.0,
+   0.0
+  ],
+  "814 Cam Coin": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "163e829888"
+}

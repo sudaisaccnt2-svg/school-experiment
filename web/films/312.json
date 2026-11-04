@@ -1,0 +1,147 @@
+{
+ "id": "312",
+ "title": "All the Trends & Key Points",
+ "pages": "86–87",
+ "glb": "models/312.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3120,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "312 Cam Table"
+  },
+  {
+   "frame": 901,
+   "camera": "312 Cam Atoms"
+  },
+  {
+   "frame": 1321,
+   "camera": "312 Cam ArK"
+  },
+  {
+   "frame": 1621,
+   "camera": "312 Cam Groups"
+  },
+  {
+   "frame": 1861,
+   "camera": "312 Cam Blocks"
+  },
+  {
+   "frame": 2581,
+   "camera": "312 Cam Repeat"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Fig 3.9",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Why",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Key points",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Blocks",
+   "frame": 1861,
+   "zone": 0
+  },
+  {
+   "name": "Periodicity",
+   "frame": 2581,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "All the Trends & Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/312.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "312 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "312 Cam Atoms": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "312 Cam ArK": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "312 Cam Groups": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "312 Cam Blocks": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "312 Cam Repeat": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "312 Cam Table": [
+   0.0,
+   0.0
+  ],
+  "312 Cam Atoms": [
+   0.0,
+   0.0
+  ],
+  "312 Cam ArK": [
+   0.0,
+   0.0
+  ],
+  "312 Cam Groups": [
+   0.0,
+   0.0
+  ],
+  "312 Cam Blocks": [
+   0.0,
+   0.0
+  ],
+  "312 Cam Repeat": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "380badbdc4"
+}

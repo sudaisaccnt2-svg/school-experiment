@@ -1,0 +1,152 @@
+{
+ "id": "614",
+ "title": "Colloids & the Tyndall Effect",
+ "pages": "173–174",
+ "glb": "models/614.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2700,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "614 Cam Size"
+  },
+  {
+   "frame": 421,
+   "camera": "614 Cam Tyndall"
+  },
+  {
+   "frame": 901,
+   "camera": "614 Cam Filter"
+  },
+  {
+   "frame": 1261,
+   "camera": "614 Cam Daily"
+  },
+  {
+   "frame": 1621,
+   "camera": "614 Cam Classes"
+  },
+  {
+   "frame": 2221,
+   "camera": "614 Cam Example"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Particle size",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Tyndall effect",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Filter paper",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Daily life",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Table 6.1",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Example 6.6",
+   "frame": 2221,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Colloids & the Tyndall Effect",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/614.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "614 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "614 Cam Tyndall": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "614 Cam Filter": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "614 Cam Daily": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "614 Cam Classes": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "614 Cam Example": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "614 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "614 Cam Tyndall": [
+   0.0,
+   0.0
+  ],
+  "614 Cam Filter": [
+   0.0,
+   0.0
+  ],
+  "614 Cam Daily": [
+   0.0,
+   0.0
+  ],
+  "614 Cam Classes": [
+   0.0,
+   0.0
+  ],
+  "614 Cam Example": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3b616456a9"
+}

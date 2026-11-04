@@ -1,0 +1,162 @@
+{
+ "id": "08",
+ "title": "Isotopes of Hydrogen",
+ "pages": "52–53",
+ "glb": "models/08.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3000,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "08 Cam Solo"
+  },
+  {
+   "frame": 961,
+   "camera": "08 Cam Three"
+  },
+  {
+   "frame": 1321,
+   "camera": "08 Cam Scales"
+  },
+  {
+   "frame": 1681,
+   "camera": "08 Cam Count"
+  },
+  {
+   "frame": 2101,
+   "camera": "08 Cam Three 2"
+  },
+  {
+   "frame": 2401,
+   "camera": "08 Cam Water"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Protium",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Deuterium",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Tritium",
+   "frame": 631,
+   "zone": 0
+  },
+  {
+   "name": "Isotopes",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "Weigh them",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "How common?",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Same chemistry",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "H₂O and D₂O",
+   "frame": 2401,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Isotopes of Hydrogen",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/08.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "08 Cam Solo": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "08 Cam Three": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "08 Cam Scales": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "08 Cam Count": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "08 Cam Three 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "08 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "08 Cam Solo": [
+   0.0,
+   0.0
+  ],
+  "08 Cam Three": [
+   0.0,
+   0.0
+  ],
+  "08 Cam Scales": [
+   0.0,
+   0.0
+  ],
+  "08 Cam Count": [
+   0.0,
+   0.0
+  ],
+  "08 Cam Three 2": [
+   0.0,
+   0.0
+  ],
+  "08 Cam Water": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "41a023d16d"
+}

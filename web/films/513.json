@@ -1,0 +1,116 @@
+{
+ "id": "513",
+ "title": "Diamond, Graphite & Buckyball",
+ "pages": "146–147",
+ "glb": "models/513.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "513 Cam Forms"
+  },
+  {
+   "frame": 301,
+   "camera": "513 Cam Diamond"
+  },
+  {
+   "frame": 1021,
+   "camera": "513 Cam Graphite"
+  },
+  {
+   "frame": 1801,
+   "camera": "513 Cam Buckyball"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Carbon forms",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Diamond",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Graphite",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Buckyball",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Diamond, Graphite & Buckyball",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/513.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "513 Cam Forms": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "513 Cam Diamond": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "513 Cam Graphite": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "513 Cam Buckyball": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "513 Cam Forms": [
+   0.0,
+   0.0
+  ],
+  "513 Cam Diamond": [
+   0.0,
+   0.0
+  ],
+  "513 Cam Graphite": [
+   0.0,
+   0.0
+  ],
+  "513 Cam Buckyball": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "60552b7ab2"
+}

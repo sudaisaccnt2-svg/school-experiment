@@ -1,0 +1,116 @@
+{
+ "id": "511",
+ "title": "Crystalline & Amorphous Solids",
+ "pages": "143–144",
+ "glb": "models/511.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2355,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "511 Cam Amorphous"
+  },
+  {
+   "frame": 601,
+   "camera": "511 Cam Crystal"
+  },
+  {
+   "frame": 1201,
+   "camera": "511 Cam Sort"
+  },
+  {
+   "frame": 1921,
+   "camera": "511 Cam Salt"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Amorphous",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Crystalline",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Activity 5.4",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Salt curing",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Crystalline & Amorphous Solids",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/511.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "511 Cam Amorphous": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "511 Cam Crystal": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "511 Cam Sort": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "511 Cam Salt": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "511 Cam Amorphous": [
+   0.0,
+   0.0
+  ],
+  "511 Cam Crystal": [
+   0.0,
+   0.0
+  ],
+  "511 Cam Sort": [
+   0.0,
+   0.0
+  ],
+  "511 Cam Salt": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "afd62d3d04"
+}

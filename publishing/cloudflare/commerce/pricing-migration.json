@@ -1,0 +1,16 @@
+{
+  "accountID": "785d5ca0d4ce6d80478bb1328ab78f80",
+  "databaseID": "28c3dd2a-24d9-4016-b6e9-387088601781",
+  "backupFile": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\private-migration\\before-pricing-20261013-145912.sql",
+  "addedColumns": [
+    "plan_name",
+    "base_amount_paisa",
+    "discount_paisa",
+    "discount_label",
+    "coupon_code",
+    "quote_expires_at",
+    "cancelled_at"
+  ],
+  "completedAtUTC": "2026-10-13T14:59:24.805437+00:00",
+  "existingOrdersPreserved": true
+}

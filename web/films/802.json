@@ -1,0 +1,155 @@
+{
+ "id": "802",
+ "title": "Metallic Character",
+ "pages": "220–221",
+ "glb": "models/802.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1935,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "802 Cam Na"
+  },
+  {
+   "frame": 211,
+   "camera": "802 Cam Ca"
+  },
+  {
+   "frame": 421,
+   "camera": "802 Cam Al"
+  },
+  {
+   "frame": 631,
+   "camera": "802 Cam Cl"
+  },
+  {
+   "frame": 841,
+   "camera": "802 Cam O"
+  },
+  {
+   "frame": 1051,
+   "camera": "802 Cam Period"
+  },
+  {
+   "frame": 1501,
+   "camera": "802 Cam Group"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Metals lose",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Non-metals gain",
+   "frame": 631,
+   "zone": 0
+  },
+  {
+   "name": "Across a period",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Down a group",
+   "frame": 1501,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Metallic Character",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/802.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "802 Cam Na": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam Ca": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam Al": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam Cl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam O": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam Period": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "802 Cam Group": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "802 Cam Na": [
+   0.0,
+   0.0
+  ],
+  "802 Cam Ca": [
+   0.0,
+   0.0
+  ],
+  "802 Cam Al": [
+   0.0,
+   0.0
+  ],
+  "802 Cam Cl": [
+   0.0,
+   0.0
+  ],
+  "802 Cam O": [
+   0.0,
+   0.0
+  ],
+  "802 Cam Period": [
+   0.0,
+   0.0
+  ],
+  "802 Cam Group": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "4d5a3ec4d8"
+}

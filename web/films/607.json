@@ -1,0 +1,134 @@
+{
+ "id": "607",
+ "title": "Molarity",
+ "pages": "161–162",
+ "glb": "models/607.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "607 Cam Litre"
+  },
+  {
+   "frame": 421,
+   "camera": "607 Cam Units"
+  },
+  {
+   "frame": 781,
+   "camera": "607 Cam Example"
+  },
+  {
+   "frame": 1381,
+   "camera": "607 Cam NaOH"
+  },
+  {
+   "frame": 2161,
+   "camera": "607 Cam Grams"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Molarity",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "dm³ and litre",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Example 6.1",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "NaOH",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Grams to moles",
+   "frame": 2161,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Molarity",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/607.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "607 Cam Litre": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "607 Cam Units": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "607 Cam Example": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "607 Cam NaOH": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "607 Cam Grams": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "607 Cam Litre": [
+   0.0,
+   0.0
+  ],
+  "607 Cam Units": [
+   0.0,
+   0.0
+  ],
+  "607 Cam Example": [
+   0.0,
+   0.0
+  ],
+  "607 Cam NaOH": [
+   0.0,
+   0.0
+  ],
+  "607 Cam Grams": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3ab4f70a12"
+}

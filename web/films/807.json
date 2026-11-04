@@ -1,0 +1,160 @@
+{
+ "id": "807",
+ "title": "Sodium",
+ "pages": "229–230",
+ "glb": "models/807.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1875,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "807 Cam Size"
+  },
+  {
+   "frame": 301,
+   "camera": "807 Cam Sea"
+  },
+  {
+   "frame": 541,
+   "camera": "807 Cam Cut"
+  },
+  {
+   "frame": 961,
+   "camera": "807 Cam Table"
+  },
+  {
+   "frame": 1141,
+   "camera": "807 Cam Atom"
+  },
+  {
+   "frame": 1321,
+   "camera": "807 Cam Float"
+  },
+  {
+   "frame": 1561,
+   "camera": "807 Cam Melt"
+  }
+ ],
+ "acts": [
+  {
+   "name": "IA vs IIA",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Sea salt",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Soft and shiny",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Its place",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "Properties",
+   "frame": 1321,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Sodium",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/807.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "807 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Sea": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Cut": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Atom": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Float": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "807 Cam Melt": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "807 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Sea": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Cut": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Table": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Atom": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Float": [
+   0.0,
+   0.0
+  ],
+  "807 Cam Melt": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "32a268665d"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "408",
+ "title": "Lewis Structures",
+ "pages": "105",
+ "glb": "models/408.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1995,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "408 Cam Water"
+  },
+  {
+   "frame": 601,
+   "camera": "408 Cam H2S"
+  },
+  {
+   "frame": 1081,
+   "camera": "408 Cam NH3"
+  },
+  {
+   "frame": 1561,
+   "camera": "408 Cam Count"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Water",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Hydrogen sulphide",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Ammonia",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Counting electrons",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Lewis Structures",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/408.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "408 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "408 Cam H2S": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "408 Cam NH3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "408 Cam Count": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "408 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "408 Cam H2S": [
+   0.0,
+   0.0
+  ],
+  "408 Cam NH3": [
+   0.0,
+   0.0
+  ],
+  "408 Cam Count": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "b1be2dc018"
+}

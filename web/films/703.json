@@ -1,0 +1,98 @@
+{
+ "id": "703",
+ "title": "Oxidation States",
+ "pages": "185",
+ "glb": "models/703.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1395,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "703 Cam Ions"
+  },
+  {
+   "frame": 361,
+   "camera": "703 Cam Water"
+  },
+  {
+   "frame": 781,
+   "camera": "703 Cam Chromium"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Real charges",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Apparent charges",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Colours",
+   "frame": 781,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Oxidation States",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/703.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "703 Cam Ions": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "703 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "703 Cam Chromium": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "703 Cam Ions": [
+   0.0,
+   0.0
+  ],
+  "703 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "703 Cam Chromium": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8d286c6671"
+}

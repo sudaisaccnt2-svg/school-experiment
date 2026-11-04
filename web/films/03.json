@@ -1,0 +1,149 @@
+{
+ "id": "03",
+ "title": "Fundamental Particles of an Atom",
+ "pages": "47–48",
+ "glb": "models/03.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3060,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "03 Cam Atom"
+  },
+  {
+   "frame": 1021,
+   "camera": "03 Cam Nucleus"
+  },
+  {
+   "frame": 1741,
+   "camera": "03 Cam Charges"
+  },
+  {
+   "frame": 2041,
+   "camera": "03 Cam Balance"
+  },
+  {
+   "frame": 2521,
+   "camera": "03 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Intro",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 2.7",
+   "frame": 286,
+   "zone": 0
+  },
+  {
+   "name": "Electron",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Proton",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Neutron",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Charges",
+   "frame": 1741,
+   "zone": 0
+  },
+  {
+   "name": "Proton vs electron",
+   "frame": 2041,
+   "zone": 0
+  },
+  {
+   "name": "Table 2.1",
+   "frame": 2521,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Fundamental Particles of an Atom",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/03.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "03 Cam Atom": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "03 Cam Nucleus": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "03 Cam Charges": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "03 Cam Balance": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "03 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "03 Cam Atom": [
+   0.20340000092983246,
+   -0.016819000244140625
+  ],
+  "03 Cam Nucleus": [
+   0.20340000092983246,
+   -0.016819000244140625
+  ],
+  "03 Cam Charges": [
+   0.0,
+   0.0
+  ],
+  "03 Cam Balance": [
+   0.20340000092983246,
+   -0.016819000244140625
+  ],
+  "03 Cam Table": [
+   0.20340000092983246,
+   -0.016819000244140625
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "ed39f6a4ba"
+}

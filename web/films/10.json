@@ -1,0 +1,219 @@
+{
+ "id": "10",
+ "title": "Uses of Isotopes",
+ "pages": "57–58",
+ "glb": "models/10.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3240,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "10 Cam 0 Bone"
+  },
+  {
+   "frame": 397,
+   "camera": "10 Cam 0 Rock"
+  },
+  {
+   "frame": 601,
+   "camera": "10 Cam 1"
+  },
+  {
+   "frame": 1201,
+   "camera": "10 Cam 2"
+  },
+  {
+   "frame": 1501,
+   "camera": "10 Cam 3"
+  },
+  {
+   "frame": 1771,
+   "camera": "10 Cam 4"
+  },
+  {
+   "frame": 2011,
+   "camera": "10 Cam 5"
+  },
+  {
+   "frame": 2281,
+   "camera": "10 Cam 6"
+  },
+  {
+   "frame": 2551,
+   "camera": "10 Cam 7"
+  },
+  {
+   "frame": 2851,
+   "camera": "10 Cam 8"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Carbon dating",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Iodine-131 and -123",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Tracers",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Cancer treatment",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Sodium-24",
+   "frame": 1771,
+   "zone": 0
+  },
+  {
+   "name": "Carbon-14",
+   "frame": 2011,
+   "zone": 0
+  },
+  {
+   "name": "Americium-241",
+   "frame": 2281,
+   "zone": 0
+  },
+  {
+   "name": "Californium-252",
+   "frame": 2551,
+   "zone": 0
+  },
+  {
+   "name": "Krypton-85",
+   "frame": 2851,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Uses of Isotopes",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/10.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "10 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 0 Bone": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "10 Cam 0 Rock": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "10 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 7": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 8": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 0 Bone": [
+   0.0,
+   0.0
+  ],
+  "10 Cam 0 Rock": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "61b4c1b86e"
+}

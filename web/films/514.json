@@ -1,0 +1,386 @@
+{
+ "id": "514",
+ "title": "Key Points",
+ "pages": "148–149",
+ "glb": "models/514.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2865,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "514 Cam KP 0"
+  },
+  {
+   "frame": 151,
+   "camera": "514 Cam KP 1"
+  },
+  {
+   "frame": 301,
+   "camera": "514 Cam KP 2"
+  },
+  {
+   "frame": 451,
+   "camera": "514 Cam KP 3"
+  },
+  {
+   "frame": 601,
+   "camera": "514 Cam KP 4"
+  },
+  {
+   "frame": 751,
+   "camera": "514 Cam KP 5"
+  },
+  {
+   "frame": 901,
+   "camera": "514 Cam KP 6"
+  },
+  {
+   "frame": 1051,
+   "camera": "514 Cam KP 7"
+  },
+  {
+   "frame": 1201,
+   "camera": "514 Cam KP 8"
+  },
+  {
+   "frame": 1351,
+   "camera": "514 Cam KP 9"
+  },
+  {
+   "frame": 1501,
+   "camera": "514 Cam KP 10"
+  },
+  {
+   "frame": 1651,
+   "camera": "514 Cam KP 11"
+  },
+  {
+   "frame": 1801,
+   "camera": "514 Cam KP 12"
+  },
+  {
+   "frame": 1951,
+   "camera": "514 Cam KP 13"
+  },
+  {
+   "frame": 2101,
+   "camera": "514 Cam KP 14"
+  },
+  {
+   "frame": 2251,
+   "camera": "514 Cam KP 15"
+  },
+  {
+   "frame": 2401,
+   "camera": "514 Cam KP 16"
+  },
+  {
+   "frame": 2551,
+   "camera": "514 Cam KP 17"
+  },
+  {
+   "frame": 2701,
+   "camera": "514 Cam KP 18"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Three states",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Gas: most energy",
+   "frame": 151,
+   "zone": 0
+  },
+  {
+   "name": "Diffusion",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Effusion",
+   "frame": 451,
+   "zone": 0
+  },
+  {
+   "name": "Pressure",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Compressibility",
+   "frame": 751,
+   "zone": 0
+  },
+  {
+   "name": "Density",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Boyle's law",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Charles's law",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Absolute temperature",
+   "frame": 1351,
+   "zone": 0
+  },
+  {
+   "name": "Evaporation",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Vapour pressure",
+   "frame": 1651,
+   "zone": 0
+  },
+  {
+   "name": "Boiling point",
+   "frame": 1801,
+   "zone": 0
+  },
+  {
+   "name": "Freezing point",
+   "frame": 1951,
+   "zone": 0
+  },
+  {
+   "name": "Melting point",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "Amorphous solid",
+   "frame": 2251,
+   "zone": 0
+  },
+  {
+   "name": "Crystalline solid",
+   "frame": 2401,
+   "zone": 0
+  },
+  {
+   "name": "Allotropy",
+   "frame": 2551,
+   "zone": 0
+  },
+  {
+   "name": "Transition temperature",
+   "frame": 2701,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/514.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "514 Cam KP 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 11": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 12": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 13": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 14": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 15": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 16": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 17": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "514 Cam KP 18": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "514 Cam KP 0": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 1": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 2": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 3": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 4": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 5": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 6": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 7": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 8": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 9": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 10": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 11": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 12": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 13": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 14": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 15": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 16": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 17": [
+   0.0,
+   0.0
+  ],
+  "514 Cam KP 18": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8e476f7178"
+}

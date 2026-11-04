@@ -1,0 +1,98 @@
+{
+ "id": "407",
+ "title": "Dative (Coordinate) Bond",
+ "pages": "102–104",
+ "glb": "models/407.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2115,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "407 Cam Sort"
+  },
+  {
+   "frame": 721,
+   "camera": "407 Cam NH4"
+  },
+  {
+   "frame": 1561,
+   "camera": "407 Cam BCl3"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Atoms, molecules, ions",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Ammonium ion",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Addition compound",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Dative (Coordinate) Bond",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/407.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "407 Cam Sort": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "407 Cam NH4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "407 Cam BCl3": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "407 Cam Sort": [
+   0.0,
+   0.0
+  ],
+  "407 Cam NH4": [
+   0.0,
+   0.0
+  ],
+  "407 Cam BCl3": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "91cdac8b64"
+}

@@ -1,0 +1,178 @@
+{
+ "id": "801",
+ "title": "Metals",
+ "pages": "218–219",
+ "glb": "models/801.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1995,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "801 Cam Na"
+  },
+  {
+   "frame": 181,
+   "camera": "801 Cam Fe"
+  },
+  {
+   "frame": 331,
+   "camera": "801 Cam Au"
+  },
+  {
+   "frame": 481,
+   "camera": "801 Cam Wire"
+  },
+  {
+   "frame": 691,
+   "camera": "801 Cam Hammer"
+  },
+  {
+   "frame": 901,
+   "camera": "801 Cam Pull"
+  },
+  {
+   "frame": 1111,
+   "camera": "801 Cam Litmus"
+  },
+  {
+   "frame": 1501,
+   "camera": "801 Cam Ion"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Three metals",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Conduct",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "Malleable",
+   "frame": 691,
+   "zone": 0
+  },
+  {
+   "name": "Ductile",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Basic oxide",
+   "frame": 1111,
+   "zone": 0
+  },
+  {
+   "name": "Metals lose electrons",
+   "frame": 1501,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Metals",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/801.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "801 Cam Na": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Fe": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Au": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Wire": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Hammer": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Pull": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Litmus": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "801 Cam Ion": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "801 Cam Na": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Fe": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Au": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Wire": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Hammer": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Pull": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Litmus": [
+   0.0,
+   0.0
+  ],
+  "801 Cam Ion": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "5cf1fdf64e"
+}

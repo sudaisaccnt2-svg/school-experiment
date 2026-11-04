@@ -1,0 +1,152 @@
+{
+ "id": "711",
+ "title": "Daniell Cell",
+ "pages": "196–198",
+ "glb": "models/711.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "711 Cam Cell"
+  },
+  {
+   "frame": 361,
+   "camera": "711 Cam Bridge"
+  },
+  {
+   "frame": 721,
+   "camera": "711 Cam Work"
+  },
+  {
+   "frame": 1321,
+   "camera": "711 Cam Ions"
+  },
+  {
+   "frame": 1681,
+   "camera": "711 Cam Sum"
+  },
+  {
+   "frame": 2041,
+   "camera": "711 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Daniell cell",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Salt bridge",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Electrons flow",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Ions in the bridge",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Cell reaction",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Galvanic vs electrolytic",
+   "frame": 2041,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Daniell Cell",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/711.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "711 Cam Cell": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "711 Cam Bridge": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "711 Cam Work": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "711 Cam Ions": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "711 Cam Sum": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "711 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "711 Cam Cell": [
+   0.0,
+   0.0
+  ],
+  "711 Cam Bridge": [
+   0.0,
+   0.0
+  ],
+  "711 Cam Work": [
+   0.0,
+   0.0
+  ],
+  "711 Cam Ions": [
+   0.0,
+   0.0
+  ],
+  "711 Cam Sum": [
+   0.0,
+   0.0
+  ],
+  "711 Cam Table": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "5becc470a9"
+}

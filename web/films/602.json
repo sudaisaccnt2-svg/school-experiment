@@ -1,0 +1,116 @@
+{
+ "id": "602",
+ "title": "Saturated, Unsaturated & Supersaturated",
+ "pages": "154–155",
+ "glb": "models/602.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2325,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "602 Cam Sugar"
+  },
+  {
+   "frame": 721,
+   "camera": "602 Cam Unsat"
+  },
+  {
+   "frame": 1081,
+   "camera": "602 Cam Super"
+  },
+  {
+   "frame": 1561,
+   "camera": "602 Cam Test"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Saturated",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Unsaturated",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Supersaturated",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Crystal test",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Saturated, Unsaturated & Supersaturated",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/602.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "602 Cam Sugar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "602 Cam Unsat": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "602 Cam Super": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "602 Cam Test": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "602 Cam Sugar": [
+   0.0,
+   0.0
+  ],
+  "602 Cam Unsat": [
+   0.0,
+   0.0
+  ],
+  "602 Cam Super": [
+   0.0,
+   0.0
+  ],
+  "602 Cam Test": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "edfb0923e2"
+}

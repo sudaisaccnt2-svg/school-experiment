@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0f16">
+<title>Lesson</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0c0f16; color: #f4efe4;
+    font-family: -apple-system, "SF Pro Display", "Segoe UI", Roboto, sans-serif; -webkit-user-select: none; user-select: none; }
+  canvas { display: block; touch-action: none; }
+  /* caption band: its own strip under the picture, never over the 3D */
+  #cap { position: fixed; left: 0; right: 0; bottom: 0; display: flex; align-items: flex-start; justify-content: center;
+    padding-top: 1.2vh; box-sizing: border-box; pointer-events: none; }
+  #cap::before { content: ""; position: absolute; left: 0; right: 0; top: -36px; height: 36px; pointer-events: none;
+    background: linear-gradient(#0c0f1600, #0c0f16); }   /* the floor fades into the band, no hard line */
+  #cap span { font-size: clamp(16px, min(5vh, 5.4vw), 46px); font-weight: 500; letter-spacing: .01em; color: #f6d48f; text-align: center;
+    padding: 0 6vw; opacity: 0; transform: translateY(6px); transition: opacity .35s ease, transform .35s ease; }
+  #cap.on span { opacity: 1; transform: none; }
+  body.unit7 #cap span { font-size: clamp(16px, min(3.8vh, 4.8vw), 32px); line-height: 1.15; }
+  /* capNear (user 2026-10-15: "no one reads the bottom text, put it where our eyes are"): the line floats in the
+     picture just above the thing it talks about; engine.js moves it every frame */
+  body.capnear #cap { right: auto; bottom: auto; top: 0; left: 0; padding: 0; display: block; width: max-content;
+    max-width: min(900px, 84vw); transform: translate(-50%, -100%); will-change: left, top; }
+  body.capnear #cap::before { display: none; }
+  body.capnear #cap span { display: block; padding: 0 0 .3em; font-size: clamp(17px, min(5.4vh, 5vw), 48px); font-weight: 700; line-height: 1.15;
+    text-shadow: 0 0 4px #000d, 0 0 10px #000b, 0 0 22px #0009; transform: translateY(4px); }
+  body.capnear #cap.on span { transform: none; }
+  #cap.hush span { opacity: 0 !important; transition: opacity .2s; }   /* oneText: a 3D label has the turn */
+  /* chrome: icons only, hides itself while playing */
+  .chrome { position: fixed; transition: opacity .4s; }
+  body.idle .chrome { opacity: 0; pointer-events: none; }
+  #top { top: max(12px, env(safe-area-inset-top)); left: 14px; display: flex; gap: 10px; }
+  .ic { width: 42px; height: 42px; border-radius: 50%; border: 1px solid #ffffff22; background: #0c0f16aa; color: #f4efe4;
+    display: grid; place-items: center; font-size: 18px; text-decoration: none; backdrop-filter: blur(8px); cursor: pointer; }
+  #bar { left: 16px; right: 16px; bottom: max(10px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 14px; }
+  #play, #speed { flex: none; }
+  #speed { font-size: 14px; font-weight: 600; }
+  button.ic { font-family: inherit; padding: 0; }
+  #play::before { content: "❚❚"; font-size: 13px; letter-spacing: -1px; }
+  body.paused #play::before { content: "▶"; font-size: 16px; }
+  #scrub { flex: 1; accent-color: #f6d48f; height: 3px; }
+  #clock { font: 12px/1 ui-monospace, monospace; color: #c9c3b6; min-width: 84px; text-align: right; }
+  #end { position: fixed; left: 50%; top: 42%; transform: translate(-50%, -50%); display: flex; gap: 18px; }
+  #end[hidden] { display: none; }
+  #fade { position: fixed; inset: 0; pointer-events: none; opacity: 0; }
+  #end .ic { width: 64px; height: 64px; font-size: 24px; }
+  /* ☰ the lesson list (same as the film player) */
+  #topics { position: fixed; inset: 0; z-index: 12; background: rgba(4, 5, 8, 0.6); display: flex; align-items: flex-start; justify-content: flex-start; padding: 14px; }
+  #topics[hidden] { display: none; }
+  #topics .sheet { width: min(520px, 94vw); max-height: calc(100vh - 28px); overflow-y: auto; border-radius: 16px; background: #141821f2; border: 1px solid #ffffff1a; }
+  #topics .head { display: flex; align-items: center; justify-content: space-between; padding: 10px 10px 8px 16px; font-weight: 700; color: #f6d48f; }
+  #topicList { list-style: none; margin: 0; padding: 0 6px 8px; }
+  #topicList a { display: flex; gap: 12px; align-items: baseline; padding: 13px 12px; border-radius: 11px; color: #f4efe4; text-decoration: none; }
+  #topicList a b { color: #f6d48f; min-width: 26px; font-variant-numeric: tabular-nums; }
+  #topicList a span.pg { margin-left: auto; font-size: 13px; opacity: .55; white-space: nowrap; }
+  #topicList a.on { background: rgba(242, 196, 109, 0.16); }
+  #topicList a.games { background: rgba(77, 255, 136, 0.08); }
+  #tapfx { position: fixed; pointer-events: none; transform: translate(-50%, -50%); font: 600 22px sans-serif; opacity: 0; }
+  #tapfx.go { animation: tap .6s ease-out; }
+  .u7-question { position:fixed; inset:8% 10% 24%; padding:2vh 3vw; background:#151b27; border:1px solid #ffffff25;
+    border-radius:18px; overflow:auto; font-size:clamp(16px,3.1vh,30px); }
+  .u7-question[hidden] { display:none; }
+  .u7-question h2 { margin:0 0 2vh; font-size:1.1em; color:#f6d48f; }
+  .u7-question p { margin:1.4vh 0; }
+  .u7-question.answered [data-answer=yes] { color:#8ce2a7; }
+  @keyframes tap { from { opacity: .9; transform: translate(-50%, -50%) scale(.8); } to { opacity: 0; transform: translate(-50%, -50%) scale(1.4); } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "../lib/three/build/three.module.js", "three/addons/": "../lib/three/examples/jsm/" } }
+</script>
+</head>
+<body class="paused">
+<div id="fade"></div>
+<div id="cap"><span></span></div>
+<div id="top" class="chrome"><a class="ic" href="../home.html" aria-label="Home">⌂</a><button class="ic" id="menu" aria-label="All lessons">☰</button><a class="ic" id="games" href="../games.html" aria-label="Games">🎮</a></div>
+<nav id="topics" hidden><div class="sheet"><div class="head"><span id="chapter"></span><button class="ic" id="topicsClose" aria-label="Close">✕</button></div><ol id="topicList"></ol></div></nav>
+<div id="bar" class="chrome"><button id="play" class="ic" aria-label="Play or pause"></button><button id="speed" class="ic" aria-label="Playback speed">1×</button>
+  <input id="scrub" type="range" min="0" step="0.01" value="0"><span id="clock"></span></div>
+<div id="end" hidden><a class="ic" id="again" aria-label="Watch again">↺</a><a class="ic" id="practise" aria-label="Practise">🎮</a><a class="ic" id="next" aria-label="Next lesson">▸</a></div>
+<div id="tapfx"></div>
+<script type="module" src="engine.js"></script>
+</body>
+</html>

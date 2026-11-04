@@ -1,0 +1,90 @@
+{
+ "id": "06",
+ "title": "The Aufbau Principle",
+ "pages": "50",
+ "glb": "models/06.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1920,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "06 Cam Steps"
+  },
+  {
+   "frame": 1441,
+   "camera": "06 Cam Chart"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Energy steps",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Lowest first",
+   "frame": 241,
+   "zone": 0
+  },
+  {
+   "name": "Potassium",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "Diagonal rule",
+   "frame": 1441,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "The Aufbau Principle",
+   "center": [
+    0.0,
+    1.149999976158142,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    1.149999976158142,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/06.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "06 Cam Steps": [
+   0.0,
+   1.149999976158142,
+   -0.0
+  ],
+  "06 Cam Chart": [
+   42.400001525878906,
+   -0.25,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "06 Cam Steps": [
+   0.0,
+   0.0
+  ],
+  "06 Cam Chart": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "639d7cf819"
+}

@@ -1,0 +1,98 @@
+{
+ "id": "610",
+ "title": "Dilution: M₁V₁ = M₂V₂",
+ "pages": "165",
+ "glb": "models/610.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2355,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "610 Cam Idea"
+  },
+  {
+   "frame": 661,
+   "camera": "610 Cam Ex4"
+  },
+  {
+   "frame": 1501,
+   "camera": "610 Cam Ex5"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Same moles, more water",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Example 6.4",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Example 6.5",
+   "frame": 1501,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Dilution: M₁V₁ = M₂V₂",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/610.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "610 Cam Idea": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "610 Cam Ex4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "610 Cam Ex5": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "610 Cam Idea": [
+   0.0,
+   0.0
+  ],
+  "610 Cam Ex4": [
+   0.0,
+   0.0
+  ],
+  "610 Cam Ex5": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3044d4c780"
+}

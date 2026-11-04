@@ -1,0 +1,98 @@
+{
+ "id": "405",
+ "title": "Covalent Bond: Sharing",
+ "pages": "98–99",
+ "glb": "models/405.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2115,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "405 Cam H2"
+  },
+  {
+   "frame": 781,
+   "camera": "405 Cam HCl"
+  },
+  {
+   "frame": 1561,
+   "camera": "405 Cam H2O"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Sharing",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Hydrogen chloride",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "Water",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Covalent Bond: Sharing",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/405.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "405 Cam H2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "405 Cam HCl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "405 Cam H2O": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "405 Cam H2": [
+   0.0,
+   0.0
+  ],
+  "405 Cam HCl": [
+   0.0,
+   0.0
+  ],
+  "405 Cam H2O": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "81aa13bda5"
+}

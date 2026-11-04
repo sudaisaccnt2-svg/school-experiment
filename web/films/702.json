@@ -1,0 +1,134 @@
+{
+ "id": "702",
+ "title": "Reduction & Redox",
+ "pages": "184–185",
+ "glb": "models/702.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2055,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "702 Cam Oxygen"
+  },
+  {
+   "frame": 481,
+   "camera": "702 Cam Hydrogen"
+  },
+  {
+   "frame": 901,
+   "camera": "702 Cam Electrons"
+  },
+  {
+   "frame": 1321,
+   "camera": "702 Cam Redox"
+  },
+  {
+   "frame": 1801,
+   "camera": "702 Cam Firefly"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Lose oxygen",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Gain hydrogen",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "Gain electrons",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Redox",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Firefly",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Reduction & Redox",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/702.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "702 Cam Oxygen": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "702 Cam Hydrogen": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "702 Cam Electrons": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "702 Cam Redox": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "702 Cam Firefly": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "702 Cam Oxygen": [
+   0.0,
+   0.0
+  ],
+  "702 Cam Hydrogen": [
+   0.0,
+   0.0
+  ],
+  "702 Cam Electrons": [
+   0.0,
+   0.0
+  ],
+  "702 Cam Redox": [
+   0.0,
+   0.0
+  ],
+  "702 Cam Firefly": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "6767123132"
+}

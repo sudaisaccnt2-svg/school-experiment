@@ -1,0 +1,248 @@
+{
+ "id": "817",
+ "title": "Halogens React",
+ "pages": "242–245",
+ "glb": "models/817.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2775,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "817 Cam F"
+  },
+  {
+   "frame": 181,
+   "camera": "817 Cam Cl"
+  },
+  {
+   "frame": 361,
+   "camera": "817 Cam Br"
+  },
+  {
+   "frame": 541,
+   "camera": "817 Cam I"
+  },
+  {
+   "frame": 721,
+   "camera": "817 Cam O"
+  },
+  {
+   "frame": 961,
+   "camera": "817 Cam Metals"
+  },
+  {
+   "frame": 1321,
+   "camera": "817 Cam P"
+  },
+  {
+   "frame": 1561,
+   "camera": "817 Cam H2S"
+  },
+  {
+   "frame": 1741,
+   "camera": "817 Cam Bleach"
+  },
+  {
+   "frame": 1921,
+   "camera": "817 Cam Order"
+  },
+  {
+   "frame": 2101,
+   "camera": "817 Cam NaBr"
+  },
+  {
+   "frame": 2341,
+   "camera": "817 Cam KI"
+  },
+  {
+   "frame": 2551,
+   "camera": "817 Cam Pool"
+  }
+ ],
+ "acts": [
+  {
+   "name": "With hydrogen",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "With oxygen",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "With metals",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "With non-metals",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "With compounds",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Displacement",
+   "frame": 1921,
+   "zone": 0
+  },
+  {
+   "name": "Test yourself",
+   "frame": 2341,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Halogens React",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/817.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "817 Cam F": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Cl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Br": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam I": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam O": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Metals": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam P": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam H2S": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Bleach": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Order": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam NaBr": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam KI": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "817 Cam Pool": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "817 Cam F": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Cl": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Br": [
+   0.0,
+   0.0
+  ],
+  "817 Cam I": [
+   0.0,
+   0.0
+  ],
+  "817 Cam O": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Metals": [
+   0.0,
+   0.0
+  ],
+  "817 Cam P": [
+   0.0,
+   0.0
+  ],
+  "817 Cam H2S": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Bleach": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Order": [
+   0.0,
+   0.0
+  ],
+  "817 Cam NaBr": [
+   0.0,
+   0.0
+  ],
+  "817 Cam KI": [
+   0.0,
+   0.0
+  ],
+  "817 Cam Pool": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "c8860c967b"
+}

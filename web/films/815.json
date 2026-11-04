@@ -1,0 +1,191 @@
+{
+ "id": "815",
+ "title": "Non-metals",
+ "pages": "238–240",
+ "glb": "models/815.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2355,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "815 Cam Bulb"
+  },
+  {
+   "frame": 241,
+   "camera": "815 Cam Shatter"
+  },
+  {
+   "frame": 421,
+   "camera": "815 Cam Litmus"
+  },
+  {
+   "frame": 781,
+   "camera": "815 Cam Gain"
+  },
+  {
+   "frame": 1021,
+   "camera": "815 Cam States"
+  },
+  {
+   "frame": 1321,
+   "camera": "815 Cam Liquid"
+  },
+  {
+   "frame": 1561,
+   "camera": "815 Cam Give Take"
+  },
+  {
+   "frame": 1801,
+   "camera": "815 Cam Oxides"
+  },
+  {
+   "frame": 2041,
+   "camera": "815 Cam Corner"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Non-metals",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Acidic oxide",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Gain electrons",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "States",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Metals vs non-metals",
+   "frame": 1561,
+   "zone": 0
+  },
+  {
+   "name": "Electronegativity",
+   "frame": 2041,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Non-metals",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/815.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "815 Cam Bulb": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Shatter": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Litmus": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Gain": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam States": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Liquid": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Give Take": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Oxides": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "815 Cam Corner": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "815 Cam Bulb": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Shatter": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Litmus": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Gain": [
+   0.0,
+   0.0
+  ],
+  "815 Cam States": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Liquid": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Give Take": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Oxides": [
+   0.0,
+   0.0
+  ],
+  "815 Cam Corner": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "f97232b4b2"
+}

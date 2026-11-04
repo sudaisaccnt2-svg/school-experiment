@@ -1,0 +1,196 @@
+{
+ "id": "302",
+ "title": "Periods: the Rows",
+ "pages": "66–69",
+ "glb": "models/302.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3180,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "302 Cam Rows"
+  },
+  {
+   "frame": 301,
+   "camera": "302 Cam Shells"
+  },
+  {
+   "frame": 601,
+   "camera": "302 Cam Row1"
+  },
+  {
+   "frame": 1087,
+   "camera": "302 Cam Wide"
+  },
+  {
+   "frame": 1321,
+   "camera": "302 Cam Row7"
+  },
+  {
+   "frame": 1501,
+   "camera": "302 Cam Kinds"
+  },
+  {
+   "frame": 1921,
+   "camera": "302 Cam Valence"
+  },
+  {
+   "frame": 2401,
+   "camera": "302 Cam Metal"
+  },
+  {
+   "frame": 2761,
+   "camera": "302 Cam Practice"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Rows",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 3.1",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Lengths",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Kinds",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Valence e⁻",
+   "frame": 1921,
+   "zone": 0
+  },
+  {
+   "name": "Metal → non-metal",
+   "frame": 2401,
+   "zone": 0
+  },
+  {
+   "name": "Practice 3.1",
+   "frame": 2761,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Periods: the Rows",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/302.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "302 Cam Rows": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Shells": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Row1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Wide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Row7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Kinds": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Valence": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Metal": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "302 Cam Practice": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "302 Cam Rows": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Shells": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Row1": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Wide": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Row7": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Kinds": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Valence": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Metal": [
+   0.0,
+   0.0
+  ],
+  "302 Cam Practice": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "89fb22347c"
+}

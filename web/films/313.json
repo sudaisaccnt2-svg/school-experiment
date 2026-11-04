@@ -1,0 +1,224 @@
+{
+ "id": "313",
+ "title": "Exercise: Multiple Choice",
+ "pages": "88",
+ "glb": "models/313.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3990,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "313 Cam 0"
+  },
+  {
+   "frame": 481,
+   "camera": "313 Cam 1"
+  },
+  {
+   "frame": 871,
+   "camera": "313 Cam 2"
+  },
+  {
+   "frame": 1261,
+   "camera": "313 Cam 3"
+  },
+  {
+   "frame": 1651,
+   "camera": "313 Cam 4"
+  },
+  {
+   "frame": 2041,
+   "camera": "313 Cam 5"
+  },
+  {
+   "frame": 2431,
+   "camera": "313 Cam 6"
+  },
+  {
+   "frame": 2821,
+   "camera": "313 Cam 7"
+  },
+  {
+   "frame": 3211,
+   "camera": "313 Cam 8"
+  },
+  {
+   "frame": 3601,
+   "camera": "313 Cam 9"
+  }
+ ],
+ "acts": [
+  {
+   "name": "MCQ i",
+   "frame": 91,
+   "zone": 0
+  },
+  {
+   "name": "MCQ ii",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "MCQ iii",
+   "frame": 871,
+   "zone": 0
+  },
+  {
+   "name": "MCQ iv",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "MCQ v",
+   "frame": 1651,
+   "zone": 0
+  },
+  {
+   "name": "MCQ vi",
+   "frame": 2041,
+   "zone": 0
+  },
+  {
+   "name": "MCQ vii",
+   "frame": 2431,
+   "zone": 0
+  },
+  {
+   "name": "MCQ viii",
+   "frame": 2821,
+   "zone": 0
+  },
+  {
+   "name": "MCQ ix",
+   "frame": 3211,
+   "zone": 0
+  },
+  {
+   "name": "MCQ x",
+   "frame": 3601,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Exercise: Multiple Choice",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/313.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "313 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "313 Cam 9": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "313 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 7": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 8": [
+   0.0,
+   0.0
+  ],
+  "313 Cam 9": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "36039f6c78"
+}

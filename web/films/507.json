@@ -1,0 +1,134 @@
+{
+ "id": "507",
+ "title": "Vapour Pressure",
+ "pages": "135–136",
+ "glb": "models/507.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2235,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "507 Cam Jar"
+  },
+  {
+   "frame": 661,
+   "camera": "507 Cam Amount"
+  },
+  {
+   "frame": 1021,
+   "camera": "507 Cam Table"
+  },
+  {
+   "frame": 1501,
+   "camera": "507 Cam Size"
+  },
+  {
+   "frame": 1861,
+   "camera": "507 Cam Heat"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Closed jar",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Amount",
+   "frame": 661,
+   "zone": 0
+  },
+  {
+   "name": "Table 5.1",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Size",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Temperature",
+   "frame": 1861,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Vapour Pressure",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/507.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "507 Cam Jar": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "507 Cam Amount": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "507 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "507 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "507 Cam Heat": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "507 Cam Jar": [
+   0.0,
+   0.0
+  ],
+  "507 Cam Amount": [
+   0.0,
+   0.0
+  ],
+  "507 Cam Table": [
+   0.0,
+   0.0
+  ],
+  "507 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "507 Cam Heat": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "fda77261a7"
+}

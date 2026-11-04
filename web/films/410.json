@@ -1,0 +1,85 @@
+{
+ "id": "410",
+ "title": "Metallic Bond: Sea of Electrons",
+ "pages": "108–109",
+ "glb": "models/410.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1755,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "410 Cam Sea"
+  },
+  {
+   "frame": 1081,
+   "camera": "410 Cam Home"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Metal atoms",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Electron sea",
+   "frame": 241,
+   "zone": 0
+  },
+  {
+   "name": "Activity 4.3",
+   "frame": 1081,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Metallic Bond: Sea of Electrons",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/410.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "410 Cam Sea": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "410 Cam Home": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "410 Cam Sea": [
+   0.0,
+   0.0
+  ],
+  "410 Cam Home": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "b31b0aefe4"
+}

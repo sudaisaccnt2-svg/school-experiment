@@ -1,0 +1,191 @@
+{
+ "id": "304",
+ "title": "Blocks s, p, d, f",
+ "pages": "70–71",
+ "glb": "models/304.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3540,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "304 Cam Blocks"
+  },
+  {
+   "frame": 361,
+   "camera": "304 Cam SP"
+  },
+  {
+   "frame": 721,
+   "camera": "304 Cam DF"
+  },
+  {
+   "frame": 1021,
+   "camera": "304 Cam Rep"
+  },
+  {
+   "frame": 1201,
+   "camera": "304 Cam Example"
+  },
+  {
+   "frame": 2821,
+   "camera": "304 Cam Practice"
+  },
+  {
+   "frame": 3001,
+   "camera": "304 Cam Facts"
+  },
+  {
+   "frame": 3181,
+   "camera": "304 Cam Air"
+  },
+  {
+   "frame": 3421,
+   "camera": "304 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Four blocks",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "s and p",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "d and f",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Example 3.1",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Practice 3.2",
+   "frame": 2821,
+   "zone": 0
+  },
+  {
+   "name": "Fun facts",
+   "frame": 3001,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Blocks s, p, d, f",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/304.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "304 Cam Blocks": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam SP": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam DF": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam Rep": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam Example": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam Practice": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam Facts": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam Air": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "304 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "304 Cam Blocks": [
+   0.0,
+   0.0
+  ],
+  "304 Cam SP": [
+   0.0,
+   0.0
+  ],
+  "304 Cam DF": [
+   0.0,
+   0.0
+  ],
+  "304 Cam Rep": [
+   0.0,
+   0.0
+  ],
+  "304 Cam Example": [
+   0.0,
+   0.0
+  ],
+  "304 Cam Practice": [
+   0.0,
+   0.0
+  ],
+  "304 Cam Facts": [
+   0.0,
+   0.0
+  ],
+  "304 Cam Air": [
+   0.0,
+   0.0
+  ],
+  "304 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "6cf9a99ea1"
+}

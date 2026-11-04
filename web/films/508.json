@@ -1,0 +1,152 @@
+{
+ "id": "508",
+ "title": "Boiling Point & Freezing Point",
+ "pages": "137–139",
+ "glb": "models/508.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2955,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "508 Cam Boil"
+  },
+  {
+   "frame": 721,
+   "camera": "508 Cam Curves"
+  },
+  {
+   "frame": 1201,
+   "camera": "508 Cam Pressure"
+  },
+  {
+   "frame": 1741,
+   "camera": "508 Cam Freeze"
+  },
+  {
+   "frame": 2161,
+   "camera": "508 Cam Torricelli"
+  },
+  {
+   "frame": 2521,
+   "camera": "508 Cam Table"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Boiling",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 5.13",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Outside pressure",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Freezing",
+   "frame": 1741,
+   "zone": 0
+  },
+  {
+   "name": "Barometer",
+   "frame": 2161,
+   "zone": 0
+  },
+  {
+   "name": "Table 5.2",
+   "frame": 2521,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Boiling Point & Freezing Point",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/508.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "508 Cam Boil": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "508 Cam Curves": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "508 Cam Pressure": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "508 Cam Freeze": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "508 Cam Torricelli": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "508 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "508 Cam Boil": [
+   0.0,
+   0.0
+  ],
+  "508 Cam Curves": [
+   0.0,
+   0.0
+  ],
+  "508 Cam Pressure": [
+   0.0,
+   0.0
+  ],
+  "508 Cam Freeze": [
+   0.0,
+   0.0
+  ],
+  "508 Cam Torricelli": [
+   0.0,
+   0.0
+  ],
+  "508 Cam Table": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "68eb41e517"
+}

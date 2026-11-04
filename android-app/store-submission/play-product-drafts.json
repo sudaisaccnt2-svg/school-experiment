@@ -1,0 +1,24 @@
+[
+  {
+    "productId": "asawera_pro_monthly",
+    "basePlanId": "monthly",
+    "billingPeriod": "P1M",
+    "title": "Monthly ad-free Pro",
+    "proposedCurrency": "PKR",
+    "proposedBasePricePaisa": 150000,
+    "actualPlayPrice": "Not configured; Google Play owns checkout prices",
+    "autoRenewing": true,
+    "createdInGooglePlay": false
+  },
+  {
+    "productId": "asawera_pro_yearly",
+    "basePlanId": "yearly",
+    "billingPeriod": "P1Y",
+    "title": "Yearly ad-free Pro",
+    "proposedCurrency": "PKR",
+    "proposedBasePricePaisa": 890000,
+    "actualPlayPrice": "Not configured; Google Play owns checkout prices",
+    "autoRenewing": true,
+    "createdInGooglePlay": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "prepared": true,
+  "mode": "prebid",
+  "providerConnections": 6,
+  "approvedProviders": 0,
+  "liveAdsActive": false,
+  "timeoutMs": 1500,
+  "homeFloorUsd": 0,
+  "lessonFloorUsd": 0,
+  "paymentAndAudienceSettingsPreserved": true,
+  "approvalRequiredBeforeServing": true,
+  "url": "https://asawera-chemistry-51y.pages.dev",
+  "recordedAtUTC": "2026-10-13T16:11:29Z"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "402",
+ "title": "Valence Electrons & Types of Bonds",
+ "pages": "94",
+ "glb": "models/402.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2115,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "402 Cam Valence"
+  },
+  {
+   "frame": 421,
+   "camera": "402 Cam Pairs"
+  },
+  {
+   "frame": 721,
+   "camera": "402 Cam Overlap"
+  },
+  {
+   "frame": 1261,
+   "camera": "402 Cam Types"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Valence electrons",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Bonding pairs",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Overlap",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Four bonds",
+   "frame": 1261,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Valence Electrons & Types of Bonds",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/402.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "402 Cam Valence": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "402 Cam Pairs": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "402 Cam Overlap": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "402 Cam Types": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "402 Cam Valence": [
+   0.0,
+   0.0
+  ],
+  "402 Cam Pairs": [
+   0.0,
+   0.0
+  ],
+  "402 Cam Overlap": [
+   0.0,
+   0.0
+  ],
+  "402 Cam Types": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "1428ee971d"
+}

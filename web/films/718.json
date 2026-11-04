@@ -1,0 +1,332 @@
+{
+ "id": "718",
+ "title": "Key Points",
+ "pages": "213–214",
+ "glb": "models/718.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "718 Cam 0"
+  },
+  {
+   "frame": 151,
+   "camera": "718 Cam 1"
+  },
+  {
+   "frame": 301,
+   "camera": "718 Cam 2"
+  },
+  {
+   "frame": 451,
+   "camera": "718 Cam 3"
+  },
+  {
+   "frame": 601,
+   "camera": "718 Cam 4"
+  },
+  {
+   "frame": 751,
+   "camera": "718 Cam 5"
+  },
+  {
+   "frame": 901,
+   "camera": "718 Cam 6"
+  },
+  {
+   "frame": 1051,
+   "camera": "718 Cam 7"
+  },
+  {
+   "frame": 1201,
+   "camera": "718 Cam 8"
+  },
+  {
+   "frame": 1351,
+   "camera": "718 Cam 9"
+  },
+  {
+   "frame": 1501,
+   "camera": "718 Cam 10"
+  },
+  {
+   "frame": 1651,
+   "camera": "718 Cam 11"
+  },
+  {
+   "frame": 1801,
+   "camera": "718 Cam 12"
+  },
+  {
+   "frame": 1951,
+   "camera": "718 Cam 13"
+  },
+  {
+   "frame": 2101,
+   "camera": "718 Cam 14"
+  },
+  {
+   "frame": 2251,
+   "camera": "718 Cam 15"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Electrochemistry",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Oxidation",
+   "frame": 151,
+   "zone": 0
+  },
+  {
+   "name": "Reduction",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "Oxidation state",
+   "frame": 451,
+   "zone": 0
+  },
+  {
+   "name": "Oxidizing agent",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "Reducing agent",
+   "frame": 751,
+   "zone": 0
+  },
+  {
+   "name": "Redox reaction",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Electrochemical cell",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Electrolytes and non-electrolytes",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "Electrolysis",
+   "frame": 1351,
+   "zone": 0
+  },
+  {
+   "name": "Electrodes",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Voltaic cell",
+   "frame": 1651,
+   "zone": 0
+  },
+  {
+   "name": "Down cell",
+   "frame": 1801,
+   "zone": 0
+  },
+  {
+   "name": "Nelson cell",
+   "frame": 1951,
+   "zone": 0
+  },
+  {
+   "name": "Electroplating",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "Corrosion",
+   "frame": 2251,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/718.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "718 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 11": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 12": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 13": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 14": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "718 Cam 15": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "718 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 7": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 8": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 9": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 10": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 11": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 12": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 13": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 14": [
+   0.0,
+   0.0
+  ],
+  "718 Cam 15": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "37caf469c3"
+}

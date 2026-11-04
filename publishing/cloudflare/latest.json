@@ -1,0 +1,45 @@
+{
+  "createdAt": "2026-10-15T12:37:24.156599+00:00",
+  "version": "6e8c9876adf2",
+  "releaseDirectory": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\6e8c9876adf2",
+  "zipFile": "D:\\_Asawera art\\school experiment\\publishing\\cloudflare\\releases\\6e8c9876adf2.zip",
+  "fileCount": 615,
+  "filmCount": 110,
+  "coreBytes": 4350046,
+  "totalBytes": 583774274,
+  "largestFileBytes": 8995989,
+  "dashboardUploadSupported": true,
+  "fullDownloadsFor50000GB": 29188.71,
+  "sourceModified": false,
+  "sourceDirectory": "D:\\_Asawera art\\school experiment\\web",
+  "browserTests": "passed",
+  "published": false,
+  "businessSourceHashes": {
+    "commerce/api.mjs": "09066008ec4f926bb09b60aa65c9f1ea713b6c43a06f76fb921bc0e13aed3fc3",
+    "commerce/owner-access.mjs": "4ff5dffbaca8c7740d477d16d0ed557fd16652b09d2c10efeded2b84396ac047",
+    "commerce/owner-markup.mjs": "61a41f110b372da6e8a1d8e6b00e32f4bbdebad450933e2267e71389f4f5a39b",
+    "commerce/owner-page.mjs": "0e691c400ab3b6d34f7fb9642ec3642a529855bc1993b31941cb0ad68bc0dca5",
+    "commerce/owner-password.mjs": "cf1d5e1cc1e3a9f6e5651a580be848d5eb72bdcf2161e644d9ee36b0c6227fff",
+    "commerce/play-billing.mjs": "c3d0657166b411ee34231bfeafb442f9055c94e9ada5e4b0f233f2417e011143",
+    "commerce/pricing.mjs": "719166b607578ef7b69982820fb84a84df4610a9fa8f5f52696142f7cfa3b0b6",
+    "commerce/student-auth.mjs": "3dc8845673c3e42622b479a657fd1b5b390ae71aa5e8371075c5ffe32ebee563",
+    "functions/ads.txt.js": "380dcd89d9f7b157180722d52ae720f72cef7ef3cbda85080477825b27b79e4d",
+    "functions/api/[[path]].js": "707d8b2ddd705965de57d9bd79c0ed9cd6b9434205487d073464db95b5465d44",
+    "functions/app-ads.txt.js": "d7a8499c4cd5ec4e23ef8377f9547542b921eb1c7aa442bc6a1f936227fe33bf",
+    "functions/control-room.html.js": "6f3e6693344780dd54a42a3b66bc7799b20c65b4942da97423df135032b2afdb",
+    "functions/control-room.js": "c3c792ad74b9fd9866cb6cf3d40b32d472a3131ef3c96de3df7dc328bd20523e"
+  },
+  "businessRuntimeVars": {
+    "STUDENT_AUTH_MODE": "username"
+  },
+  "checks": [
+    "Pages-style home route opens; no model, AR or lighting downloads on home",
+    "A selected film renders and its AR opens from a local blob; unopened film stays unloaded",
+    "Saved film, AR, canonical home and game menu reopen with the network disabled",
+    "An unopened lesson reports that it needs a connection instead of a false offline badge",
+    "Save all pauses on a failed download, resumes, and reports ready only when every file is saved",
+    "Full library byte hashes match offline; nested code lesson route also opens offline",
+    "Code updates preserve downloaded models and AR without another full-library download"
+  ],
+  "nativeARCameraVerified": false
+}

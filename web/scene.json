@@ -1,0 +1,208 @@
+{
+ "id": "01",
+ "title": "Rutherford's Atomic Model",
+ "glb": "models/rutherford.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 3525,
+ "cuts": [
+  {
+   "frame": -9,
+   "camera": "CamMain"
+  },
+  {
+   "frame": 285,
+   "camera": "CamSource"
+  },
+  {
+   "frame": 375,
+   "camera": "CamMain"
+  },
+  {
+   "frame": 785,
+   "camera": "CamAtomic"
+  },
+  {
+   "frame": 1175,
+   "camera": "CamModel"
+  },
+  {
+   "frame": 1606,
+   "camera": "D5 CamDefects"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Intro",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "The Experiment",
+   "frame": 285,
+   "zone": 0
+  },
+  {
+   "name": "Inside the Foil",
+   "frame": 785,
+   "zone": 1
+  },
+  {
+   "name": "Planetary Model",
+   "frame": 1175,
+   "zone": 2
+  },
+  {
+   "name": "Defects",
+   "frame": 1606,
+   "zone": 3
+  }
+ ],
+ "zones": [
+  {
+   "name": "Apparatus",
+   "center": [
+    -1.0,
+    0.8,
+    0
+   ],
+   "orbit_distance": 12,
+   "vr_anchor": [
+    -1.5,
+    0,
+    0
+   ],
+   "min_height": 0.2,
+   "ar": "ar/experiment.usdz"
+  },
+  {
+   "name": "Atomic view",
+   "center": [
+    60,
+    10,
+    0
+   ],
+   "orbit_distance": 26,
+   "vr_anchor": [
+    60,
+    10,
+    0
+   ],
+   "min_height": -6,
+   "ar": "ar/inside_the_foil.usdz"
+  },
+  {
+   "name": "Planetary model",
+   "center": [
+    118,
+    10,
+    0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    120,
+    10,
+    0
+   ],
+   "min_height": -6,
+   "ar": "ar/planetary_model.usdz"
+  },
+  {
+   "name": "Defects",
+   "center": [
+    180,
+    10,
+    0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    180,
+    10,
+    0
+   ],
+   "min_height": -6,
+   "ar": "ar/defects.usdz"
+  }
+ ],
+ "camera_dof": {
+  "CamMain": {
+   "fstop": 1.4000003337860107,
+   "lens": 30.0,
+   "sensor": 36.0,
+   "focus": [
+    -2.200000047683716,
+    0.800000011920929,
+    -0.0
+   ],
+   "focus_distance": 10.0
+  },
+  "CamSource": {
+   "fstop": 0.40000009536743164,
+   "lens": 50.0,
+   "sensor": 36.0,
+   "focus": [
+    -4.400000095367432,
+    0.800000011920929,
+    -0.0
+   ],
+   "focus_distance": 10.0
+  }
+ },
+ "camera_subject": {
+  "CamMain": [
+   -2.200000047683716,
+   0.800000011920929,
+   -0.0
+  ],
+  "CamSource": [
+   -4.400000095367432,
+   0.800000011920929,
+   -0.0
+  ],
+  "CamAtomic": [
+   60.0,
+   10.0,
+   -0.0
+  ],
+  "CamModel": [
+   114.0,
+   10.0,
+   -0.0
+  ],
+  "D5 CamDefects": [
+   180.0,
+   10.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "CamMain": [
+   0.20340000092983246,
+   -0.016818750649690628
+  ],
+  "CamSource": [
+   0.0,
+   0.0
+  ],
+  "CamAtomic": [
+   0.20340000092983246,
+   -0.016818750649690628
+  ],
+  "CamModel": [
+   0.20340000092983246,
+   -0.016818750649690628
+  ],
+  "D5 CamDefects": [
+   0.20340000092983246,
+   -0.016819000244140625
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.13982407748699188,
+  0.17743808031082153,
+  0.2573566734790802
+ ],
+ "model_version": "f12be4ab8b"
+}

@@ -1,0 +1,179 @@
+== scripts/u6/f601_solutions.py
+A1 | A solution: an even mix
+A2 | Solute spreads through the solvent
+A3 | Two parts: binary solution
+B1 | Water solvent: aqueous solution
+B2 | Water: the universal solvent
+C1 | Solute less · solvent more
+C2 | Sugar solute · water solvent
+D1 | A soft drink: water solvent
+D2 | Sugar, CO₂, flavours: solutes
+E1 | Pure or solution? Boil dry
+E2 | Solution leaves a crust
+F  | -
+== scripts/u6/f602_saturated.py
+A1 | A little sugar dissolves
+A2 | Some more still dissolves
+A3 | Now some stays on the bottom
+A4 | No more fits: saturated
+B1 | Room for more: unsaturated
+B2 | More dissolves
+C1 | Heat: the rest dissolves
+C2 | Too much held: supersaturated
+D1 | Drop in one crystal
+D2 | Dissolves: unsaturated · stays: saturated
+D3 | It grows: supersaturated
+E  | -
+== scripts/u6/f603_gasliquid.py
+A1 | Gas, liquid or solid
+A2 | 3 × 3 = 9 types
+B1 | Gas in gas: air
+B2 | Liquid in gas: fog
+B3 | Solid in gas: smoke
+C1 | Gas in liquid: fizzy drink
+C2 | Liquid in liquid: alcohol, water
+C3 | Solid in liquid: sea water
+D  | -
+== scripts/u6/f604_solid.py
+A1 | Gas in solid: H₂ in palladium
+B1 | Liquid in solid: amalgam
+C1 | Solid in solid: brass
+D1 | Brass: copper + zinc
+D2 | Sterling silver: 92.5% silver
+D3 | Bronze: copper + tin
+E1 | Air: a gas solution
+E2 | Drinks, vinegar, medicines
+E3 | Gold mixed with copper
+F  | -
+== scripts/u6/f605_concentration.py
+A1 | More solute: more concentrated
+A2 | Few: dilute · many: concentrated
+B1 | Add more solvent
+B2 | Spread out: more dilute
+C1 | 5 g and 8 g sugar
+C2 | 8 g is more concentrated
+D1 | Known exactly: standard solution
+D2 | Percentage or molarity
+E  | -
+== scripts/u6/f606_percentage.py
+A1 | 10 out of 100 = 10%
+B1 | 10 g sugar + 90 g water
+B2 | 10 g in 100 g: 10% m/m
+C1 | 10 g salt to 100 cm³
+C2 | 10% NaCl (m/v)
+D1 | 10 cm³ alcohol to 100 g
+D2 | 10% (v/m)
+E1 | 10 cm³ alcohol to 100 cm³
+E2 | 10% alcohol (v/v)
+F  | -
+== scripts/u6/f607_molarity.py
+A1 | Moles in 1 dm³: molarity
+A2 | 1 mole in 1 dm³ = 1 M
+B1 | 1 dm³ = 1 litre
+B2 | = 1000 cm³
+C1 | 7.50 mol in 1.50 dm³
+C2 | 1 dm³ holds 5.0 mol
+C3 | 7.50 ÷ 1.50 = 5.0 M
+D1 | 40 g NaOH in 1 dm³: 1 M
+D2 | 20 g: 0.5 M
+D3 | 80 g: 2 M
+E1 | Mass ÷ molar mass = moles
+F  | -
+== scripts/u6/f608_problems.py
+A1 | 5.85 g NaCl in 500 cm³
+A2 | 5.85 ÷ 58.5 = 0.1 mol
+A3 | 500 cm³ = 0.5 dm³
+A4 | 0.1 ÷ 0.5 = 0.2 M
+B1 | 7.50 g CH₃OH in 50.0 cm³
+B2 | 7.50 ÷ 32.0 = 0.2344 mol
+B3 | 50.0 cm³ = 0.0500 dm³
+B4 | 0.2344 ÷ 0.0500 = 4.69 M
+C1 | 0.750 g CaCl₂ in 11.6 cm³
+C2 | 0.00676 mol in 0.0116 dm³
+C3 | ≈ 0.582 M
+D  | -
+== scripts/u6/f609_prepare.py
+A1 | Weigh 124.8 g
+A2 | Dissolve, pour into the flask
+A3 | Rinse in, add water
+A4 | Stopper and shake
+A5 | Fill to the mark
+A6 | Turn it over 10 times
+A7 | 0.5000 mol in 1 dm³
+B1 | 20 g to 250 mL: 2 M
+B2 | 5.85 g to 1000 mL: 0.1 M
+C  | -
+== scripts/u6/f610_dilution.py
+A1 | Add water to stock
+A2 | Same particles, more liquid
+A3 | M₁V₁ = M₂V₂
+B1 | 30 cm³ of 2.5 M → 280
+B2 | 9 times the volume
+B3 | 9 times weaker: 0.267 M
+C1 | 85 cm³ of 3.5 M → 0.41 M
+C2 | Final volume: 725.60 cm³
+C3 | Add 640.60 cm³ water
+D  | -
+== scripts/u6/f611_solubility.py
+A1 | Grams in 100 g solvent
+A2 | NaNO₃ lots · AgCl hardly
+B1 | Solvent and solute
+B2 | Pressure and temperature
+C1 | Salt: water yes, benzene no
+C2 | Different solute, different amount
+D1 | Like dissolves like
+D2 | Benzene and water stay apart
+D3 | Grease dissolves in petrol
+E1 | Water pulls ions out
+E2 | Wrapped in water: hydration
+E3 | Benzene can't pull
+F  | -
+== scripts/u6/f612_liquids.py
+A1 | Two layers: immiscible
+A2 | Mix in any amount: miscible
+B1 | Ethanol's –OH end is polar
+B2 | Hydrogen bonds join them
+C1 | More pressure: more gas dissolves
+C2 | Open the soda: CO₂ escapes
+D1 | Salt and vinegar dissolve
+D2 | Iodine: spirit yes, water no
+E1 | 500 + 500: less than a litre
+E2 | Ions fit between water molecules
+F  | -
+== scripts/u6/f613_temperature.py
+A1 | Warm drink: gas escapes
+B1 | Hotter: less gas dissolves
+B2 | Helium stays low
+C1 | Most solids: more when hot
+D1 | Rises: KNO₃
+D2 | Falls: Ce₂(SO₄)₃
+D3 | Hardly changes: NaCl
+D4 | Na₂SO₄ peaks at 32.4 °C
+E  | -
+== scripts/u6/f614_colloids.py
+A1 | Solution: particles too tiny
+A2 | Colloid: a bit bigger
+A3 | Suspension: you can see them
+B1 | Salt solution: beam unseen
+B2 | Colloid: beam lights up
+C1 | Passes the filter, never settles
+D1 | Fog, milk, paints
+E1 | In liquid: sol, emulsion, foam
+E2 | In gas: aerosols
+E3 | In solid: gel, cheese
+F1 | Water dissolves in NH₃
+F2 | C₆H₁₂ in benzene · AgCl in NH₃
+F3 | CH₃OH is polar
+== scripts/u6/f615_suspensions.py
+A1 | Big particles: suspension
+A2 | They settle: sedimentation
+A3 | Pour off the clear top
+B1 | The filter keeps them
+C1 | Medicines: shake before use
+D1 | Salt water, milk, flour water
+D2 | Uniform? Only the solution
+D3 | Settles? Only the suspension
+D4 | Filters? Only the suspension
+D5 | Beam lights up? The colloid
+D6 | See particles? Only the suspension
+E  | -

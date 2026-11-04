@@ -1,0 +1,155 @@
+{
+ "id": "816",
+ "title": "Halogens",
+ "pages": "241–242",
+ "glb": "models/816.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1875,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "816 Cam Group"
+  },
+  {
+   "frame": 301,
+   "camera": "816 Cam Salt"
+  },
+  {
+   "frame": 481,
+   "camera": "816 Cam Gain"
+  },
+  {
+   "frame": 781,
+   "camera": "816 Cam Split"
+  },
+  {
+   "frame": 1021,
+   "camera": "816 Cam Jars"
+  },
+  {
+   "frame": 1441,
+   "camera": "816 Cam Radius"
+  },
+  {
+   "frame": 1651,
+   "camera": "816 Cam EN"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Group VII",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Gain one",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "Fig 8.5",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Down the group",
+   "frame": 1441,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Halogens",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/816.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "816 Cam Group": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam Salt": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam Gain": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam Split": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam Jars": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam Radius": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "816 Cam EN": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "816 Cam Group": [
+   0.0,
+   0.0
+  ],
+  "816 Cam Salt": [
+   0.0,
+   0.0
+  ],
+  "816 Cam Gain": [
+   0.0,
+   0.0
+  ],
+  "816 Cam Split": [
+   0.0,
+   0.0
+  ],
+  "816 Cam Jars": [
+   0.0,
+   0.0
+  ],
+  "816 Cam Radius": [
+   0.0,
+   0.0
+  ],
+  "816 Cam EN": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "20a9576170"
+}

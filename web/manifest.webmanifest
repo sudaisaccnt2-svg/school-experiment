@@ -1,0 +1,29 @@
+{
+ "name": "Chemistry IX in 3D · Asawera",
+ "short_name": "Chem 3D",
+ "description": "Interactive 3D / AR explainers for Grade IX Chemistry: Unit 2 Structure of an Atom, Unit 3 Periodic Table.",
+ "start_url": "./",
+ "scope": "./",
+ "display": "fullscreen",
+ "orientation": "landscape",
+ "background_color": "#07080b",
+ "theme_color": "#07080b",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

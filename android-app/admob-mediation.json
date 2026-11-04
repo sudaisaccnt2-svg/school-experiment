@@ -1,0 +1,35 @@
+{
+  "owner": "sudaisaccnt3@gmail.com",
+  "publisherId": "pub-7035355195474246",
+  "appId": "ca-app-pub-7035355195474246~4152516857",
+  "country": "PK",
+  "groups": [
+    {
+      "id": "4315360138",
+      "name": "Asawera Android Home Bidding PK",
+      "format": "banner",
+      "adUnitId": "ca-app-pub-7035355195474246/9484734584",
+      "status": "paused"
+    },
+    {
+      "id": "2729811021",
+      "name": "Asawera Android Lesson Bidding PK",
+      "format": "interstitial",
+      "adUnitId": "ca-app-pub-7035355195474246/9093852340",
+      "status": "paused"
+    }
+  ],
+  "googleAuthorizedBuyersObserved": 407,
+  "googleNetworkConfiguredForBidding": true,
+  "additionalPartnershipsSubmitted": 0,
+  "paidServing": false,
+  "savedAndVerifiedAtUTC": "2026-10-14T01:54:05.103524+00:00",
+  "waitingFor": [
+    "Google account verification",
+    "Supported store listing and app approval",
+    "Additional partner agreements and inventory approval"
+  ],
+  "paymentDetailsSubmitted": true,
+  "accountVerificationPending": true,
+  "lastReadinessCheckedAtUTC": "2026-10-14T04:17:30.797347+00:00"
+}

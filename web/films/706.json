@@ -1,0 +1,134 @@
+{
+ "id": "706",
+ "title": "Oxidizing & Reducing Agents",
+ "pages": "188–189",
+ "glb": "models/706.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2235,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "706 Cam Oxidizer"
+  },
+  {
+   "frame": 421,
+   "camera": "706 Cam CuO"
+  },
+  {
+   "frame": 961,
+   "camera": "706 Cam Tin"
+  },
+  {
+   "frame": 1441,
+   "camera": "706 Cam Reducer"
+  },
+  {
+   "frame": 1801,
+   "camera": "706 Cam H2S"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Oxidizing agent",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Example 7.4",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Example 7.5",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "Reducing agent",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "H₂S",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Oxidizing & Reducing Agents",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/706.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "706 Cam Oxidizer": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "706 Cam CuO": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "706 Cam Tin": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "706 Cam Reducer": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "706 Cam H2S": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "706 Cam Oxidizer": [
+   0.0,
+   0.0
+  ],
+  "706 Cam CuO": [
+   0.0,
+   0.0
+  ],
+  "706 Cam Tin": [
+   0.0,
+   0.0
+  ],
+  "706 Cam Reducer": [
+   0.0,
+   0.0
+  ],
+  "706 Cam H2S": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "06ed5542d6"
+}

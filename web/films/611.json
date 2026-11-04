@@ -1,0 +1,160 @@
+{
+ "id": "611",
+ "title": "Solubility & Like Dissolves Like",
+ "pages": "166–168",
+ "glb": "models/611.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2625,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "611 Cam Solubility"
+  },
+  {
+   "frame": 421,
+   "camera": "611 Cam Factors"
+  },
+  {
+   "frame": 721,
+   "camera": "611 Cam Solvent"
+  },
+  {
+   "frame": 1021,
+   "camera": "611 Cam Solute"
+  },
+  {
+   "frame": 1381,
+   "camera": "611 Cam Like"
+  },
+  {
+   "frame": 1861,
+   "camera": "611 Cam Hydration"
+  },
+  {
+   "frame": 2401,
+   "camera": "611 Cam Benzene"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Solubility",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Factors",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Solvent and solute",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Like dissolves like",
+   "frame": 1381,
+   "zone": 0
+  },
+  {
+   "name": "Hydration",
+   "frame": 1861,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Solubility & Like Dissolves Like",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/611.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "611 Cam Solubility": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Factors": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Solvent": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Solute": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Like": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Hydration": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "611 Cam Benzene": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "611 Cam Solubility": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Factors": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Solvent": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Solute": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Like": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Hydration": [
+   0.0,
+   0.0
+  ],
+  "611 Cam Benzene": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8532349fb5"
+}

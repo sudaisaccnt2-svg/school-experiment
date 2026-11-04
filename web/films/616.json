@@ -1,0 +1,422 @@
+{
+ "id": "616",
+ "title": "Key Points",
+ "pages": "177–178",
+ "glb": "models/616.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2850,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "616 Cam KP 0"
+  },
+  {
+   "frame": 136,
+   "camera": "616 Cam KP 1"
+  },
+  {
+   "frame": 271,
+   "camera": "616 Cam KP 2"
+  },
+  {
+   "frame": 406,
+   "camera": "616 Cam KP 3"
+  },
+  {
+   "frame": 541,
+   "camera": "616 Cam KP 4"
+  },
+  {
+   "frame": 676,
+   "camera": "616 Cam KP 5"
+  },
+  {
+   "frame": 811,
+   "camera": "616 Cam KP 6"
+  },
+  {
+   "frame": 946,
+   "camera": "616 Cam KP 7"
+  },
+  {
+   "frame": 1081,
+   "camera": "616 Cam KP 8"
+  },
+  {
+   "frame": 1216,
+   "camera": "616 Cam KP 9"
+  },
+  {
+   "frame": 1351,
+   "camera": "616 Cam KP 10"
+  },
+  {
+   "frame": 1486,
+   "camera": "616 Cam KP 11"
+  },
+  {
+   "frame": 1621,
+   "camera": "616 Cam KP 12"
+  },
+  {
+   "frame": 1756,
+   "camera": "616 Cam KP 13"
+  },
+  {
+   "frame": 1891,
+   "camera": "616 Cam KP 14"
+  },
+  {
+   "frame": 2026,
+   "camera": "616 Cam KP 15"
+  },
+  {
+   "frame": 2161,
+   "camera": "616 Cam KP 16"
+  },
+  {
+   "frame": 2296,
+   "camera": "616 Cam KP 17"
+  },
+  {
+   "frame": 2431,
+   "camera": "616 Cam KP 18"
+  },
+  {
+   "frame": 2566,
+   "camera": "616 Cam KP 19"
+  },
+  {
+   "frame": 2701,
+   "camera": "616 Cam KP 20"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Solution",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Aqueous solution",
+   "frame": 136,
+   "zone": 0
+  },
+  {
+   "name": "Solute",
+   "frame": 271,
+   "zone": 0
+  },
+  {
+   "name": "Solvent",
+   "frame": 406,
+   "zone": 0
+  },
+  {
+   "name": "Saturated",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Unsaturated",
+   "frame": 676,
+   "zone": 0
+  },
+  {
+   "name": "Supersaturated",
+   "frame": 811,
+   "zone": 0
+  },
+  {
+   "name": "Nine types",
+   "frame": 946,
+   "zone": 0
+  },
+  {
+   "name": "Concentration",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Dilute",
+   "frame": 1216,
+   "zone": 0
+  },
+  {
+   "name": "Concentrated",
+   "frame": 1351,
+   "zone": 0
+  },
+  {
+   "name": "Percentage",
+   "frame": 1486,
+   "zone": 0
+  },
+  {
+   "name": "Universal solvent",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Molarity",
+   "frame": 1756,
+   "zone": 0
+  },
+  {
+   "name": "Solubility",
+   "frame": 1891,
+   "zone": 0
+  },
+  {
+   "name": "Immiscible",
+   "frame": 2026,
+   "zone": 0
+  },
+  {
+   "name": "Completely miscible",
+   "frame": 2161,
+   "zone": 0
+  },
+  {
+   "name": "Colloids",
+   "frame": 2296,
+   "zone": 0
+  },
+  {
+   "name": "Tyndall effect",
+   "frame": 2431,
+   "zone": 0
+  },
+  {
+   "name": "Suspension",
+   "frame": 2566,
+   "zone": 0
+  },
+  {
+   "name": "Sedimentation",
+   "frame": 2701,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/616.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "616 Cam KP 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 11": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 12": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 13": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 14": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 15": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 16": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 17": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 18": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 19": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "616 Cam KP 20": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "616 Cam KP 0": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 1": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 2": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 3": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 4": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 5": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 6": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 7": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 8": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 9": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 10": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 11": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 12": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 13": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 14": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 15": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 16": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 17": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 18": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 19": [
+   0.0,
+   0.0
+  ],
+  "616 Cam KP 20": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "c9071edf39"
+}

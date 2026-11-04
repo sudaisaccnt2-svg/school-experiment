@@ -1,0 +1,134 @@
+{
+ "id": "709",
+ "title": "Electrolytic Cell",
+ "pages": "193–195",
+ "glb": "models/709.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1995,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "709 Cam Wide"
+  },
+  {
+   "frame": 421,
+   "camera": "709 Cam Parts"
+  },
+  {
+   "frame": 781,
+   "camera": "709 Cam Anode"
+  },
+  {
+   "frame": 1111,
+   "camera": "709 Cam Cathode"
+  },
+  {
+   "frame": 1441,
+   "camera": "709 Cam Pump"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Electrolysis",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Construction",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "At the anode",
+   "frame": 781,
+   "zone": 0
+  },
+  {
+   "name": "At the cathode",
+   "frame": 1111,
+   "zone": 0
+  },
+  {
+   "name": "Electron pump",
+   "frame": 1441,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Electrolytic Cell",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/709.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "709 Cam Wide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "709 Cam Parts": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "709 Cam Anode": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "709 Cam Cathode": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "709 Cam Pump": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "709 Cam Wide": [
+   0.0,
+   0.0
+  ],
+  "709 Cam Parts": [
+   0.0,
+   0.0
+  ],
+  "709 Cam Anode": [
+   0.0,
+   0.0
+  ],
+  "709 Cam Cathode": [
+   0.0,
+   0.0
+  ],
+  "709 Cam Pump": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "66bafd5ae5"
+}

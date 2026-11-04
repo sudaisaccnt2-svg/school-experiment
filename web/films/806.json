@@ -1,0 +1,147 @@
+{
+ "id": "806",
+ "title": "Ionization Energy",
+ "pages": "226–228",
+ "glb": "models/806.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2175,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "806 Cam Pull"
+  },
+  {
+   "frame": 361,
+   "camera": "806 Cam Size"
+  },
+  {
+   "frame": 601,
+   "camera": "806 Cam IA"
+  },
+  {
+   "frame": 901,
+   "camera": "806 Cam IIA"
+  },
+  {
+   "frame": 1201,
+   "camera": "806 Cam Mg"
+  },
+  {
+   "frame": 1741,
+   "camera": "806 Cam Compare"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Ionization energy",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Down group IA",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Group IIA",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Second electron",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "IA vs IIA",
+   "frame": 1741,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Ionization Energy",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/806.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "806 Cam Pull": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "806 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "806 Cam IA": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "806 Cam IIA": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "806 Cam Mg": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "806 Cam Compare": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "806 Cam Pull": [
+   0.0,
+   0.0
+  ],
+  "806 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "806 Cam IA": [
+   0.0,
+   0.0
+  ],
+  "806 Cam IIA": [
+   0.0,
+   0.0
+  ],
+  "806 Cam Mg": [
+   0.0,
+   0.0
+  ],
+  "806 Cam Compare": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "5a855e1351"
+}

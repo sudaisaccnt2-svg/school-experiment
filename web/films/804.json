@@ -1,0 +1,160 @@
+{
+ "id": "804",
+ "title": "Alkali Metals React",
+ "pages": "224–225",
+ "glb": "models/804.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2295,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "804 Cam Li"
+  },
+  {
+   "frame": 181,
+   "camera": "804 Cam Na"
+  },
+  {
+   "frame": 361,
+   "camera": "804 Cam K"
+  },
+  {
+   "frame": 541,
+   "camera": "804 Cam Water"
+  },
+  {
+   "frame": 1261,
+   "camera": "804 Cam Chlorine"
+  },
+  {
+   "frame": 1621,
+   "camera": "804 Cam Order"
+  },
+  {
+   "frame": 1981,
+   "camera": "804 Cam Kerosene"
+  }
+ ],
+ "acts": [
+  {
+   "name": "In air",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "In water",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "In chlorine",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Order",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Kerosene",
+   "frame": 1981,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Alkali Metals React",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/804.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "804 Cam Li": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam Na": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam K": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam Chlorine": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam Order": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "804 Cam Kerosene": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "804 Cam Li": [
+   0.0,
+   0.0
+  ],
+  "804 Cam Na": [
+   0.0,
+   0.0
+  ],
+  "804 Cam K": [
+   0.0,
+   0.0
+  ],
+  "804 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "804 Cam Chlorine": [
+   0.0,
+   0.0
+  ],
+  "804 Cam Order": [
+   0.0,
+   0.0
+  ],
+  "804 Cam Kerosene": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "75e7e5dec9"
+}

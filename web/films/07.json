@@ -1,0 +1,134 @@
+{
+ "id": "07",
+ "title": "Configurations of the First 18 Elements",
+ "pages": "51–52",
+ "glb": "models/07.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2880,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "07 Cam Build"
+  },
+  {
+   "frame": 1441,
+   "camera": "07 Cam Table"
+  },
+  {
+   "frame": 1681,
+   "camera": "07 Cam Q1"
+  },
+  {
+   "frame": 1981,
+   "camera": "07 Cam Q2"
+  },
+  {
+   "frame": 2341,
+   "camera": "07 Cam Q3"
+  }
+ ],
+ "acts": [
+  {
+   "name": "H to Ar",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Table 2.4",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "Test Yourself 1",
+   "frame": 1681,
+   "zone": 0
+  },
+  {
+   "name": "Test Yourself 2",
+   "frame": 1981,
+   "zone": 0
+  },
+  {
+   "name": "Test Yourself 3",
+   "frame": 2341,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Configurations of the First 18 Elements",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/07.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "07 Cam Build": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "07 Cam Table": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "07 Cam Q1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "07 Cam Q2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "07 Cam Q3": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "07 Cam Build": [
+   0.0,
+   0.0
+  ],
+  "07 Cam Table": [
+   0.0,
+   0.0
+  ],
+  "07 Cam Q1": [
+   0.0,
+   0.0
+  ],
+  "07 Cam Q2": [
+   0.0,
+   0.0
+  ],
+  "07 Cam Q3": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "d1c5735163"
+}

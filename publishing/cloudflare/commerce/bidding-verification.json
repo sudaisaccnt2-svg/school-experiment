@@ -1,0 +1,17 @@
+{
+  "version": "5300af60fa6b",
+  "realAdRequests": 0,
+  "localFixtureChecks": [
+    "home",
+    "lesson",
+    "pro",
+    "outside-pk",
+    "placement-off",
+    "deny",
+    "new-provider",
+    "child",
+    "empty",
+    "sdk-failure",
+    "offline"
+  ]
+}

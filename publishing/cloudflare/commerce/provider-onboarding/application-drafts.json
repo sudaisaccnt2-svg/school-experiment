@@ -1,0 +1,270 @@
+{
+  "preparedAtUTC": "2026-10-14T08:27:35.731Z",
+  "applications": [
+    {
+      "provider": "PubMatic",
+      "providerCode": "pubmatic",
+      "officialWebsite": "https://pubmatic.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "publisherId": null,
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ]
+    },
+    {
+      "provider": "Magnite",
+      "providerCode": "rubicon",
+      "officialWebsite": "https://www.magnite.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "accountId": null,
+        "siteId": null,
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ]
+    },
+    {
+      "provider": "Index Exchange",
+      "providerCode": "ix",
+      "officialWebsite": "https://www.indexexchange.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ],
+      "onboardingSource": "https://kb.indexexchange.com/publishers/faq_publishers.htm"
+    },
+    {
+      "provider": "OpenX",
+      "providerCode": "openx",
+      "officialWebsite": "https://www.openx.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "delDomain": null,
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ]
+    },
+    {
+      "provider": "Sovrn",
+      "providerCode": "sovrn",
+      "officialWebsite": "https://www.sovrn.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ],
+      "eligibility": "Not eligible under the current child-restricted setting; more than 100,000 observed monthly web visits are also required",
+      "source": "https://knowledge.sovrn.com/kb/what-is-required-for-sovrn-to-approve-my-property"
+    },
+    {
+      "provider": "Microsoft / Xandr",
+      "providerCode": "appnexus",
+      "officialWebsite": "https://about.ads.microsoft.com/",
+      "status": "Draft only; not submitted or approved",
+      "actualConnectionFields": {
+        "homeId": null,
+        "lessonId": null
+      },
+      "inventory": {
+        "businessBrand": "Asawera Chemistry",
+        "ownerEmail": "sudaisaccnt3@gmail.com",
+        "paymentCountry": "Pakistan",
+        "website": "https://asawera-chemistry-51y.pages.dev/",
+        "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+        "adsTxtURL": "https://asawera-chemistry-51y.pages.dev/ads.txt",
+        "androidPackage": "com.asawera.chemistry",
+        "googlePublisherId": "pub-7035355195474246",
+        "formats": [
+          "Home display banner",
+          "Lesson-break display / interstitial"
+        ],
+        "schoolInventory": true,
+        "audienceSetting": "Existing child-restricted configuration retained",
+        "actualMonthlyVisits": null,
+        "actualMonthlyAdImpressions": null,
+        "growthGoalUsers": 50000,
+        "growthGoalIsNotReportedTraffic": true,
+        "legalPayeeName": null,
+        "legalAddress": null,
+        "bankDetails": null
+      },
+      "missingBeforeSubmission": [
+        "Legal publisher onboarding information",
+        "Actual traffic evidence",
+        "Inventory and restricted-audience eligibility review",
+        "Provider agreement and owned placement IDs"
+      ]
+    }
+  ],
+  "submittedApplications": 0,
+  "approvedAdditionalPartners": 0,
+  "nativeMediation": {
+    "groups": [
+      {
+        "id": "4315360138",
+        "name": "Asawera Android Home Bidding PK",
+        "format": "banner",
+        "adUnitId": "ca-app-pub-7035355195474246/9484734584",
+        "status": "paused"
+      },
+      {
+        "id": "2729811021",
+        "name": "Asawera Android Lesson Bidding PK",
+        "format": "interstitial",
+        "adUnitId": "ca-app-pub-7035355195474246/9093852340",
+        "status": "paused"
+      }
+    ],
+    "googleNetworkConfiguredForBidding": true,
+    "googleAuthorizedBuyersObserved": 407,
+    "additionalPartnershipsSubmitted": 0,
+    "paidServing": false
+  }
+}

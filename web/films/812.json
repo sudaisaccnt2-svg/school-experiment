@@ -1,0 +1,145 @@
+{
+ "id": "812",
+ "title": "Uses of Mg & Ca",
+ "pages": "235",
+ "glb": "models/812.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1695,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "812 Cam U0"
+  },
+  {
+   "frame": 241,
+   "camera": "812 Cam U1"
+  },
+  {
+   "frame": 481,
+   "camera": "812 Cam U2"
+  },
+  {
+   "frame": 721,
+   "camera": "812 Cam U3"
+  },
+  {
+   "frame": 961,
+   "camera": "812 Cam U4"
+  },
+  {
+   "frame": 1201,
+   "camera": "812 Cam U5"
+  },
+  {
+   "frame": 1441,
+   "camera": "812 Cam U6"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Uses of magnesium",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Uses of calcium",
+   "frame": 1201,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Uses of Mg & Ca",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/812.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "812 Cam U0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "812 Cam U6": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "812 Cam U0": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U1": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U2": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U3": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U4": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U5": [
+   0.0,
+   0.0
+  ],
+  "812 Cam U6": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "ab052e6cbe"
+}

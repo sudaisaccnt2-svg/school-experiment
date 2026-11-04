@@ -1,0 +1,163 @@
+== scripts/u5/f501_gases.py
+A1 | Matter has mass, takes space
+A2 | Solid: molecules only shake
+A3 | Heat it: liquid, molecules slide
+A4 | More heat: gas flies apart
+A5 | Solid ↔ liquid ↔ gas
+B  | Also plasma: lightning, the Sun
+C1 | Gas: far apart, very fast
+C2 | No fixed volume: fills all
+D1 | No fixed shape
+E  | -
+== scripts/u5/f502_diffusion.py
+A1 | Perfume crowded in one corner
+A2 | Crowded to less crowded: diffusion
+A3 | Evenly mixed: flow stops
+B  | Graham: lighter gas is faster
+C1 | One by one through a hole: effusion
+C2 | Onion smell escapes the bag
+D1 | Bromine jar on air jar
+D2 | The brown spreads down
+E1 | Why does a balloon sink?
+E2 | Gas effuses out: it shrinks
+F  | -
+== scripts/u5/f503_pressure.py
+A1 | Every hit is a push
+A2 | Push on each area: pressure
+A3 | P = F / A, in pascal
+B1 | Air holds up 760 mm mercury
+B2 | 1 atm = 760 mm Hg = 760 torr
+B3 | 1 atm = 101.325 kPa
+C1 | Empty space: easy to squeeze
+C2 | Push harder: smaller volume
+D  | Gases flow through pipes
+E1 | Density = mass ÷ volume
+E2 | Gas: very low density
+F  | -
+== scripts/u5/f504_boyle.py
+A1 | Boyle: gas, dial, same temperature
+A2 | Double pressure: half volume
+A3 | Four times: a quarter
+A4 | Pressure up, volume down
+B1 | The points make a curve
+B2 | P × V never changes
+C1 | PV = Kb
+C2 | P₁V₁ = P₂V₂
+C3 | Less pressure, more volume
+D1 | 530 dm³ at 800 → 400?
+D2 | Half pressure: 1060 dm³
+E1 | 70.4 cm³ at 3 atm → 1.20?
+E2 | Less pressure: 176 cm³
+F  | -
+== scripts/u5/f505_charles.py
+A1 | Charles: piston, same pressure
+A2 | Heat: molecules push harder
+A3 | Hotter: bigger volume
+A4 | Cooler: smaller volume
+B1 | K = °C + 273
+B2 | Gas laws use kelvin
+C1 | Volume vs kelvin: straight line
+C2 | V / T = Kc
+C3 | V₁/T₁ = V₂/T₂
+D  | Temperature up, volume up
+E1 | 3 dm³ at 300 K → 400 K?
+E2 | 3 × 400 ÷ 300 = 4 dm³
+F1 | Balloon on a heated flask
+F2 | The balloon grows
+G  | -
+== scripts/u5/f506_evaporation.py
+A1 | Liquid: close, still sliding
+A2 | Fixed volume, takes the shape
+B1 | Fastest ones break free
+B2 | Evaporation: no boiling needed
+B3 | Fast ones leave: it cools
+C  | More surface: faster
+D  | Warmer: faster
+E1 | Alcohol beats water
+E2 | Water holds on tighter
+F  | -
+== scripts/u5/f507_vapour.py
+A1 | Molecules escape in a closed jar
+A2 | Some come back: condensation
+A3 | Leaving = returning: equilibrium
+A4 | The dial stops: vapour pressure
+B  | Amount doesn't matter
+C1 | Each liquid is different
+C2 | Strong forces: low pressure
+D  | Small molecules escape easier
+E  | Hotter: higher vapour pressure
+F  | -
+== scripts/u5/f508_boiling.py
+A1 | Heat: vapour pressure rises
+A2 | Equals air pressure: it boils
+A3 | That temperature: boiling point
+A4 | Boiling: temperature stays the same
+B1 | Ether, ethanol, water curves
+B2 | Each boils at 760 mm Hg
+C1 | On a hill: boils lower
+C2 | Vacuum distillation uses this
+C3 | Pressure cooker: boils higher
+D1 | Cool it: molecules slow
+D2 | Liquid and solid together: freezing
+E1 | Torricelli: air holds 760 mm
+E2 | Bent into a J: manometer
+F1 | Each bar: where it's liquid
+F2 | Water 0 → 100 °C
+G  | -
+== scripts/u5/f509_liquidprops.py
+A1 | A drop of ink in water
+A2 | The ink starts spreading
+A3 | Evenly spread, but slower
+B  | Warmer liquids flow easier
+C1 | Liquids are much denser
+C2 | Water 1.00 is heaviest here
+D  | Oil floats on water
+E  | Bromine vapour fills the jar
+F  | -
+== scripts/u5/f510_solids.py
+A1 | Solid: packed tight, vibrating
+A2 | Fixed shape, fixed volume
+B1 | Heat: they shake harder
+B2 | They break free: melting point
+B3 | Melting: temperature stays the same
+C  | Rigid: keeps its shape
+D  | Solids are the densest
+E1 | Mass, shape, volume
+E2 | Squeeze, flow, rigidity
+E3 | Diffusion, spacing, forces
+F  | -
+== scripts/u5/f511_crystal.py
+A1 | Amorphous: jumbled particles
+A2 | Glass, wax, plastic, rubber
+A3 | They soften slowly
+B1 | Crystalline: a regular pattern
+B2 | Flat faces, fixed angles
+B3 | One sharp melting point
+C1 | Crystalline or amorphous?
+C2 | Salt crystalline · glass amorphous
+D1 | Salt pulls water out
+D2 | No water: no bacteria
+E  | -
+== scripts/u5/f512_allotropy.py
+A1 | One element, many forms: allotropes
+A2 | Diamond, graphite: all carbon
+B1 | Oxygen O₂: 2 atoms
+B2 | Ozone O₃: 3 atoms
+C1 | Sulphur: same rings, two packings
+C2 | They swap at 95.5 °C
+D1 | Grey ↔ white tin: 13.2 °C
+D2 | KNO₃ swaps at 128.5 °C
+E1 | Look different, react the same
+F  | -
+== scripts/u5/f513_carbon.py
+A  | Carbon's allotropes
+B1 | Diamond: 4 bonds each
+B2 | Locked tight: very hard
+B3 | No free electrons: no current
+C1 | Graphite: 3 bonds, flat sheets
+C2 | Sheets slide: soft, slippery
+C3 | Free electrons: conducts
+D1 | Buckyball: a hollow cage
+D2 | Shaped like a football
+D3 | Lubricants, semiconductors
+E  | -

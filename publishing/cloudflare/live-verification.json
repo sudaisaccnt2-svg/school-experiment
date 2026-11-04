@@ -1,0 +1,17 @@
+{
+  "url": "https://asawera-chemistry-51y.pages.dev/",
+  "releaseVersion": "5c36b8ce9e17",
+  "verifiedAtUTC": "2026-10-15T07:16:54Z",
+  "checks": [
+    "Published bytes match: sw.js",
+    "Published bytes match: offline.js",
+    "Published bytes match: app.js",
+    "Published bytes match: films.json",
+    "Published bytes match: manifest.webmanifest",
+    "Home opens; small app installed on actual Cloudflare origin",
+    "Published 3D film renders and native AR data is available as a local USDZ blob",
+    "Fresh offline page reopens saved film, AR, home and game menu",
+    "Nested code lesson opens through actual Pages HTML redirect"
+  ],
+  "nativeARCameraVerified": false
+}

@@ -1,0 +1,134 @@
+{
+ "id": "413",
+ "title": "Properties of Ionic, Covalent & Metallic",
+ "pages": "113–116",
+ "glb": "models/413.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2895,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "413 Cam Ladder"
+  },
+  {
+   "frame": 361,
+   "camera": "413 Cam Ionic"
+  },
+  {
+   "frame": 1081,
+   "camera": "413 Cam Covalent"
+  },
+  {
+   "frame": 1621,
+   "camera": "413 Cam Metal"
+  },
+  {
+   "frame": 2521,
+   "camera": "413 Cam Uses"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Strength ladder",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Ionic compounds",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Covalent compounds",
+   "frame": 1081,
+   "zone": 0
+  },
+  {
+   "name": "Metals",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Activity 4.4",
+   "frame": 2521,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Properties of Ionic, Covalent & Metallic",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/413.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "413 Cam Ladder": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "413 Cam Ionic": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "413 Cam Covalent": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "413 Cam Metal": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "413 Cam Uses": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "413 Cam Ladder": [
+   0.0,
+   0.0
+  ],
+  "413 Cam Ionic": [
+   0.0,
+   0.0
+  ],
+  "413 Cam Covalent": [
+   0.0,
+   0.0
+  ],
+  "413 Cam Metal": [
+   0.0,
+   0.0
+  ],
+  "413 Cam Uses": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "3c77c755bf"
+}

@@ -1,0 +1,66 @@
+{
+  "previewURL": "https://commerce-setup.asawera-chemistry.pages.dev",
+  "deploymentURL": "https://c5d89b78.asawera-chemistry.pages.dev",
+  "version": "6eff6fbe6f1a",
+  "databaseReady": true,
+  "ownerPageProtected": true,
+  "adminAPIsProtected": true,
+  "ownerAuthenticationConnected": false,
+  "studentAuthenticationConnected": false,
+  "adsActive": false,
+  "purchasesActive": false,
+  "productionUnchanged": false,
+  "productionStatus": {
+    "unchangedFromOriginal": false,
+    "serviceWorkerHash": "c504e1f6fc1effd5cb797466751254f93359e6088f6b56f7d62036381f201373",
+    "privatePageRedirectsToOwnerSignIn": true,
+    "privatePageStatus": 200,
+    "privatePageURL": "https://asawera-chemistry.pages.dev/owner-sign-in",
+    "healthStatus": 200,
+    "sessionStatus": 200,
+    "health": {
+      "ok": true,
+      "accountsReady": false,
+      "ownerAccessReady": false,
+      "databaseReady": true
+    },
+    "session": {
+      "user": null,
+      "membership": {
+        "pro": false,
+        "owner": false,
+        "proUntil": null
+      },
+      "config": {
+        "adsProvider": "adsense",
+        "gamNetworkCode": "",
+        "gamHomeUnit": "",
+        "gamLessonUnit": "",
+        "openBiddingReady": false,
+        "adsOnHome": true,
+        "adsOnLessonEnd": true,
+        "adsSellers": "",
+        "monthlyPaisa": null,
+        "yearlyPaisa": null,
+        "manualPayments": false,
+        "paymentInstructions": "",
+        "adsEnabled": false,
+        "adsApproved": false,
+        "publisherId": "",
+        "adSlot": "",
+        "website": {
+          "siteTitle": "Asawera Science",
+          "contactEmail": "",
+          "announcement": "",
+          "registrationsOpen": false
+        },
+        "accountsReady": false,
+        "ownerAccessReady": false,
+        "codesReady": true,
+        "adsLocationEligible": true
+      }
+    }
+  },
+  "privatePageInOfflineCatalog": false,
+  "javascriptErrors": []
+}

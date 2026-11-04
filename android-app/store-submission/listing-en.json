@@ -1,0 +1,18 @@
+{
+  "appName": "Asawera Chemistry",
+  "shortDescription": "Explore chemistry in 3D with offline lessons, practice games and native AR.",
+  "fullDescription": "Explore chemistry in a portable 3D lab.\n\nAsawera Chemistry includes 110 lessons, interactive 3D models and practice games. The lesson library is bundled with the app so you can keep studying without Wi-Fi after installation.\n\nLEARN IN 3D\nExplore atoms, particles, reactions and other chemistry topics through the existing lesson animations and interactive scenes. Search the library or browse its chapters.\n\nNATIVE CAMERA AR\nOn an ARCore-supported Android phone, place the included models on a table or floor using the camera. Google Play Services for AR and the device's AR setup must be installed first and can require an initial internet connection. Native camera AR depends on device support; the ordinary 3D lessons work independently.\n\nPRACTICE OFFLINE\nUse the bundled practice games and revisit lessons at your own pace. Downloaded lesson content stays on your phone.\n\nOPTIONAL STUDENT ACCOUNTS\nCreate a student username and password when connected. Save the recovery code shown during signup so you can recover your account without email. Account deletion is available through the account screen and the website.\n\nAD-FREE PRO\nOptional Pro removes advertising when advertising is enabled. Google Play subscription prices, billing periods and renewal terms are shown in the app and at Google Play checkout. Manage or cancel Google Play subscriptions in Google Play. Account management and purchases require an internet connection.\n\nRequires Android 8 or newer and a supported 64-bit ARM device. Camera AR additionally requires an ARCore-supported phone. Camera access is used for AR; camera images are not uploaded by Asawera.\n",
+  "category": "EDUCATION",
+  "supportEmail": "sudaisaccnt3@gmail.com",
+  "website": "https://asawera-chemistry-51y.pages.dev/",
+  "privacyURL": "https://asawera-chemistry-51y.pages.dev/privacy",
+  "deletionURL": "https://asawera-chemistry-51y.pages.dev/delete-account",
+  "packageName": "com.asawera.chemistry",
+  "version": "1.0.1",
+  "versionCode": 2,
+  "containsAds": true,
+  "adsCurrentlyServing": false,
+  "inAppPurchasesImplemented": true,
+  "inAppPurchasesConnected": false,
+  "submissionStatus": "Prepared locally; developer registration, product setup, testing and Google review remain pending"
+}

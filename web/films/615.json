@@ -1,0 +1,116 @@
+{
+ "id": "615",
+ "title": "Suspensions & Comparison",
+ "pages": "175–176",
+ "glb": "models/615.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2295,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "615 Cam Mud"
+  },
+  {
+   "frame": 481,
+   "camera": "615 Cam Filter"
+  },
+  {
+   "frame": 841,
+   "camera": "615 Cam Medicine"
+  },
+  {
+   "frame": 1141,
+   "camera": "615 Cam Compare"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Sedimentation",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Filtration",
+   "frame": 481,
+   "zone": 0
+  },
+  {
+   "name": "Shake well",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Table 6.2",
+   "frame": 1141,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Suspensions & Comparison",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/615.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "615 Cam Mud": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "615 Cam Filter": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "615 Cam Medicine": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "615 Cam Compare": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "615 Cam Mud": [
+   0.0,
+   0.0
+  ],
+  "615 Cam Filter": [
+   0.0,
+   0.0
+  ],
+  "615 Cam Medicine": [
+   0.0,
+   0.0
+  ],
+  "615 Cam Compare": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "e2c15503b3"
+}

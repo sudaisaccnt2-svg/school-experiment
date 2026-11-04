@@ -1,0 +1,110 @@
+{
+ "id": "609",
+ "title": "Making a Molar Solution",
+ "pages": "164",
+ "glb": "models/609.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "609 Cam Activity"
+  },
+  {
+   "frame": 1921,
+   "camera": "609 Cam Skill"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Weigh",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Dissolve",
+   "frame": 271,
+   "zone": 0
+  },
+  {
+   "name": "Rinse",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Shake",
+   "frame": 811,
+   "zone": 0
+  },
+  {
+   "name": "Fill to the mark",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "Invert",
+   "frame": 1291,
+   "zone": 0
+  },
+  {
+   "name": "Result",
+   "frame": 1591,
+   "zone": 0
+  },
+  {
+   "name": "Skill Development",
+   "frame": 1921,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Making a Molar Solution",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/609.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "609 Cam Activity": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "609 Cam Skill": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "609 Cam Activity": [
+   0.0,
+   0.0
+  ],
+  "609 Cam Skill": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "2825cd6576"
+}

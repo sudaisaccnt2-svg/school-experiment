@@ -1,0 +1,354 @@
+{
+ "id": "719",
+ "title": "Exercise: Multiple Choice",
+ "pages": "215–216",
+ "glb": "models/719.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 4890,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "719 Cam 0"
+  },
+  {
+   "frame": 379,
+   "camera": "719 Cam 0 Model"
+  },
+  {
+   "frame": 571,
+   "camera": "719 Cam 1"
+  },
+  {
+   "frame": 859,
+   "camera": "719 Cam 1 Model"
+  },
+  {
+   "frame": 1051,
+   "camera": "719 Cam 2"
+  },
+  {
+   "frame": 1339,
+   "camera": "719 Cam 2 Model"
+  },
+  {
+   "frame": 1531,
+   "camera": "719 Cam 3"
+  },
+  {
+   "frame": 1819,
+   "camera": "719 Cam 3 Model"
+  },
+  {
+   "frame": 2011,
+   "camera": "719 Cam 4"
+  },
+  {
+   "frame": 2299,
+   "camera": "719 Cam 4 Model"
+  },
+  {
+   "frame": 2491,
+   "camera": "719 Cam 5"
+  },
+  {
+   "frame": 2779,
+   "camera": "719 Cam 5 Model"
+  },
+  {
+   "frame": 2971,
+   "camera": "719 Cam 6"
+  },
+  {
+   "frame": 3259,
+   "camera": "719 Cam 6 Model"
+  },
+  {
+   "frame": 3451,
+   "camera": "719 Cam 7"
+  },
+  {
+   "frame": 3739,
+   "camera": "719 Cam 7 Model"
+  },
+  {
+   "frame": 3931,
+   "camera": "719 Cam 8"
+  },
+  {
+   "frame": 4219,
+   "camera": "719 Cam 8 Model"
+  },
+  {
+   "frame": 4411,
+   "camera": "719 Cam 9"
+  },
+  {
+   "frame": 4699,
+   "camera": "719 Cam 9 Model"
+  }
+ ],
+ "acts": [
+  {
+   "name": "MCQ i",
+   "frame": 91,
+   "zone": 0
+  },
+  {
+   "name": "MCQ ii",
+   "frame": 571,
+   "zone": 0
+  },
+  {
+   "name": "MCQ iii",
+   "frame": 1051,
+   "zone": 0
+  },
+  {
+   "name": "MCQ iv",
+   "frame": 1531,
+   "zone": 0
+  },
+  {
+   "name": "MCQ v",
+   "frame": 2011,
+   "zone": 0
+  },
+  {
+   "name": "MCQ vi",
+   "frame": 2491,
+   "zone": 0
+  },
+  {
+   "name": "MCQ vii",
+   "frame": 2971,
+   "zone": 0
+  },
+  {
+   "name": "MCQ viii",
+   "frame": 3451,
+   "zone": 0
+  },
+  {
+   "name": "MCQ ix",
+   "frame": 3931,
+   "zone": 0
+  },
+  {
+   "name": "MCQ x",
+   "frame": 4411,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Exercise: Multiple Choice",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/719.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "719 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 0 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 1 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 2 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 3 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 4 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 5 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 6 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 7 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 8 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "719 Cam 9 Model": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "719 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 7": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 8": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 9": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 0 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 1 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 2 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 3 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 4 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 5 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 6 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 7 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 8 Model": [
+   0.0,
+   0.0
+  ],
+  "719 Cam 9 Model": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "ca7b11bc47"
+}

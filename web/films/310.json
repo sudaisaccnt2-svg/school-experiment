@@ -1,0 +1,134 @@
+{
+ "id": "310",
+ "title": "Shielding Effect",
+ "pages": "82–83",
+ "glb": "models/310.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2280,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "310 Cam Li"
+  },
+  {
+   "frame": 361,
+   "camera": "310 Cam Fig37"
+  },
+  {
+   "frame": 901,
+   "camera": "310 Cam Remove"
+  },
+  {
+   "frame": 1321,
+   "camera": "310 Cam Period"
+  },
+  {
+   "frame": 1741,
+   "camera": "310 Cam Sum"
+  }
+ ],
+ "acts": [
+  {
+   "name": "The curtain",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Fig 3.7",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "Easier to remove",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Across a period",
+   "frame": 1321,
+   "zone": 0
+  },
+  {
+   "name": "Summary",
+   "frame": 1741,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Shielding Effect",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/310.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "310 Cam Li": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "310 Cam Fig37": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "310 Cam Remove": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "310 Cam Period": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "310 Cam Sum": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "310 Cam Li": [
+   0.0,
+   0.0
+  ],
+  "310 Cam Fig37": [
+   0.0,
+   0.0
+  ],
+  "310 Cam Remove": [
+   0.0,
+   0.0
+  ],
+  "310 Cam Period": [
+   0.0,
+   0.0
+  ],
+  "310 Cam Sum": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "f2de31ec22"
+}

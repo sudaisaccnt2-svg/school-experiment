@@ -1,0 +1,134 @@
+{
+ "id": "412",
+ "title": "Forces Between Molecules",
+ "pages": "110–113",
+ "glb": "models/412.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "412 Cam Bars"
+  },
+  {
+   "frame": 421,
+   "camera": "412 Cam Dipole"
+  },
+  {
+   "frame": 961,
+   "camera": "412 Cam Water"
+  },
+  {
+   "frame": 1501,
+   "camera": "412 Cam Which"
+  },
+  {
+   "frame": 2101,
+   "camera": "412 Cam Glue"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Inside vs between",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Dipole-dipole",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Hydrogen bonds",
+   "frame": 961,
+   "zone": 0
+  },
+  {
+   "name": "Which ones?",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "Glue",
+   "frame": 2101,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Forces Between Molecules",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/412.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "412 Cam Bars": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "412 Cam Dipole": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "412 Cam Water": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "412 Cam Which": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "412 Cam Glue": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "412 Cam Bars": [
+   0.0,
+   0.0
+  ],
+  "412 Cam Dipole": [
+   0.0,
+   0.0
+  ],
+  "412 Cam Water": [
+   0.0,
+   0.0
+  ],
+  "412 Cam Which": [
+   0.0,
+   0.0
+  ],
+  "412 Cam Glue": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "31938df92c"
+}

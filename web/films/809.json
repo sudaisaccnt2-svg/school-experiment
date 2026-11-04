@@ -1,0 +1,127 @@
+{
+ "id": "809",
+ "title": "Uses of Sodium",
+ "pages": "231",
+ "glb": "models/809.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1455,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "809 Cam U0"
+  },
+  {
+   "frame": 241,
+   "camera": "809 Cam U1"
+  },
+  {
+   "frame": 481,
+   "camera": "809 Cam U2"
+  },
+  {
+   "frame": 721,
+   "camera": "809 Cam U3"
+  },
+  {
+   "frame": 961,
+   "camera": "809 Cam U4"
+  },
+  {
+   "frame": 1201,
+   "camera": "809 Cam U5"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Uses of sodium",
+   "frame": 1,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Uses of Sodium",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/809.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "809 Cam U0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "809 Cam U1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "809 Cam U2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "809 Cam U3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "809 Cam U4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "809 Cam U5": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "809 Cam U0": [
+   0.0,
+   0.0
+  ],
+  "809 Cam U1": [
+   0.0,
+   0.0
+  ],
+  "809 Cam U2": [
+   0.0,
+   0.0
+  ],
+  "809 Cam U3": [
+   0.0,
+   0.0
+  ],
+  "809 Cam U4": [
+   0.0,
+   0.0
+  ],
+  "809 Cam U5": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "1ddb51182f"
+}

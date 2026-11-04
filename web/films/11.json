@@ -1,0 +1,260 @@
+{
+ "id": "11",
+ "title": "Key Points",
+ "pages": "59",
+ "glb": "models/11.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2670,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "11 Cam 0"
+  },
+  {
+   "frame": 181,
+   "camera": "11 Cam 1"
+  },
+  {
+   "frame": 376,
+   "camera": "11 Cam 2"
+  },
+  {
+   "frame": 571,
+   "camera": "11 Cam 3"
+  },
+  {
+   "frame": 841,
+   "camera": "11 Cam 4"
+  },
+  {
+   "frame": 1066,
+   "camera": "11 Cam 5"
+  },
+  {
+   "frame": 1276,
+   "camera": "11 Cam 6"
+  },
+  {
+   "frame": 1546,
+   "camera": "11 Cam 7"
+  },
+  {
+   "frame": 1741,
+   "camera": "11 Cam 8"
+  },
+  {
+   "frame": 1966,
+   "camera": "11 Cam 9"
+  },
+  {
+   "frame": 2236,
+   "camera": "11 Cam 10"
+  },
+  {
+   "frame": 2431,
+   "camera": "11 Cam 11"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Greeks",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Dalton",
+   "frame": 181,
+   "zone": 0
+  },
+  {
+   "name": "Particles",
+   "frame": 376,
+   "zone": 0
+  },
+  {
+   "name": "Rutherford",
+   "frame": 571,
+   "zone": 0
+  },
+  {
+   "name": "Bohr",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Configuration",
+   "frame": 1066,
+   "zone": 0
+  },
+  {
+   "name": "Energy levels",
+   "frame": 1276,
+   "zone": 0
+  },
+  {
+   "name": "K L M N",
+   "frame": 1546,
+   "zone": 0
+  },
+  {
+   "name": "2n²",
+   "frame": 1741,
+   "zone": 0
+  },
+  {
+   "name": "Sub-shells",
+   "frame": 1966,
+   "zone": 0
+  },
+  {
+   "name": "Isotopes",
+   "frame": 2236,
+   "zone": 0
+  },
+  {
+   "name": "Uses",
+   "frame": 2431,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Key Points",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/11.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "11 Cam 0": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 1": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 5": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 6": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 7": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 8": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 9": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 10": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "11 Cam 11": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "11 Cam 0": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 1": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 2": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 3": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 4": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 5": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 6": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 7": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 8": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 9": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 10": [
+   0.0,
+   0.0
+  ],
+  "11 Cam 11": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "39228d813f"
+}

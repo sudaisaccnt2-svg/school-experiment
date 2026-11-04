@@ -1,0 +1,147 @@
+{
+ "id": "805",
+ "title": "Alkaline Earth Metals",
+ "pages": "225–226",
+ "glb": "models/805.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1935,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "805 Cam Group"
+  },
+  {
+   "frame": 241,
+   "camera": "805 Cam Ion"
+  },
+  {
+   "frame": 541,
+   "camera": "805 Cam Rocks"
+  },
+  {
+   "frame": 1021,
+   "camera": "805 Cam Leaf"
+  },
+  {
+   "frame": 1321,
+   "camera": "805 Cam Bone"
+  },
+  {
+   "frame": 1621,
+   "camera": "805 Cam Radium"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Group IIA",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Two electrons",
+   "frame": 241,
+   "zone": 0
+  },
+  {
+   "name": "Sulphates",
+   "frame": 541,
+   "zone": 0
+  },
+  {
+   "name": "Living things",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Radium",
+   "frame": 1621,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Alkaline Earth Metals",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/805.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "805 Cam Group": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "805 Cam Ion": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "805 Cam Rocks": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "805 Cam Leaf": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "805 Cam Bone": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "805 Cam Radium": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "805 Cam Group": [
+   0.0,
+   0.0
+  ],
+  "805 Cam Ion": [
+   0.0,
+   0.0
+  ],
+  "805 Cam Rocks": [
+   0.0,
+   0.0
+  ],
+  "805 Cam Leaf": [
+   0.0,
+   0.0
+  ],
+  "805 Cam Bone": [
+   0.0,
+   0.0
+  ],
+  "805 Cam Radium": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "1c393424dc"
+}

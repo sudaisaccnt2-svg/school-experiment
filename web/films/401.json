@@ -1,0 +1,152 @@
+{
+ "id": "401",
+ "title": "Why Atoms Bond: Octet & Duplet",
+ "pages": "92–93",
+ "glb": "models/401.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2475,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "401 Cam Hill"
+  },
+  {
+   "frame": 421,
+   "camera": "401 Cam H2"
+  },
+  {
+   "frame": 901,
+   "camera": "401 Cam Noble"
+  },
+  {
+   "frame": 1441,
+   "camera": "401 Cam Octet"
+  },
+  {
+   "frame": 1861,
+   "camera": "401 Cam Duplet"
+  },
+  {
+   "frame": 2161,
+   "camera": "401 Cam Ways"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Downhill",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "H + H",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Noble gases",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Octet",
+   "frame": 1441,
+   "zone": 0
+  },
+  {
+   "name": "Duplet",
+   "frame": 1861,
+   "zone": 0
+  },
+  {
+   "name": "Lose, gain, share",
+   "frame": 2161,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Why Atoms Bond: Octet & Duplet",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/401.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "401 Cam Hill": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "401 Cam H2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "401 Cam Noble": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "401 Cam Octet": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "401 Cam Duplet": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "401 Cam Ways": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "401 Cam Hill": [
+   0.0,
+   0.0
+  ],
+  "401 Cam H2": [
+   0.0,
+   0.0
+  ],
+  "401 Cam Noble": [
+   0.0,
+   0.0
+  ],
+  "401 Cam Octet": [
+   0.0,
+   0.0
+  ],
+  "401 Cam Duplet": [
+   0.0,
+   0.0
+  ],
+  "401 Cam Ways": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "baaf450b94"
+}

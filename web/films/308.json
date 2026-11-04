@@ -1,0 +1,196 @@
+{
+ "id": "308",
+ "title": "Ionization Energy",
+ "pages": "76–79",
+ "glb": "models/308.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 4110,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "308 Cam Pull"
+  },
+  {
+   "frame": 361,
+   "camera": "308 Cam NaMg"
+  },
+  {
+   "frame": 1261,
+   "camera": "308 Cam Na2"
+  },
+  {
+   "frame": 1621,
+   "camera": "308 Cam Size"
+  },
+  {
+   "frame": 1801,
+   "camera": "308 Cam Charge"
+  },
+  {
+   "frame": 1981,
+   "camera": "308 Cam Full"
+  },
+  {
+   "frame": 2101,
+   "camera": "308 Cam City"
+  },
+  {
+   "frame": 2761,
+   "camera": "308 Cam Sets"
+  },
+  {
+   "frame": 3661,
+   "camera": "308 Cam Reactive"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Pull one off",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Na and Mg",
+   "frame": 361,
+   "zone": 0
+  },
+  {
+   "name": "2nd electron",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "Factors",
+   "frame": 1621,
+   "zone": 0
+  },
+  {
+   "name": "Table 3.3",
+   "frame": 2101,
+   "zone": 0
+  },
+  {
+   "name": "Example 3.2",
+   "frame": 2761,
+   "zone": 0
+  },
+  {
+   "name": "Group I vs II",
+   "frame": 3661,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Ionization Energy",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/308.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "308 Cam Pull": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam NaMg": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Na2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Size": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Charge": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Full": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam City": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Sets": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "308 Cam Reactive": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "308 Cam Pull": [
+   0.0,
+   0.0
+  ],
+  "308 Cam NaMg": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Na2": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Size": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Charge": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Full": [
+   0.0,
+   0.0
+  ],
+  "308 Cam City": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Sets": [
+   0.0,
+   0.0
+  ],
+  "308 Cam Reactive": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "627c472fcc"
+}

@@ -1,0 +1,165 @@
+{
+ "id": "811",
+ "title": "Magnesium & Calcium React",
+ "pages": "233–234",
+ "glb": "models/811.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2115,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "811 Cam H"
+  },
+  {
+   "frame": 241,
+   "camera": "811 Cam Mg Burn"
+  },
+  {
+   "frame": 481,
+   "camera": "811 Cam Ca Burn"
+  },
+  {
+   "frame": 721,
+   "camera": "811 Cam Basic"
+  },
+  {
+   "frame": 1021,
+   "camera": "811 Cam N"
+  },
+  {
+   "frame": 1261,
+   "camera": "811 Cam Acid"
+  },
+  {
+   "frame": 1681,
+   "camera": "811 Cam Halogen"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Hydrogen",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Burning",
+   "frame": 241,
+   "zone": 0
+  },
+  {
+   "name": "Basic oxides",
+   "frame": 721,
+   "zone": 0
+  },
+  {
+   "name": "Nitrogen",
+   "frame": 1021,
+   "zone": 0
+  },
+  {
+   "name": "Acids",
+   "frame": 1261,
+   "zone": 0
+  },
+  {
+   "name": "Halogens",
+   "frame": 1681,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Magnesium & Calcium React",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/811.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "811 Cam H": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam Mg Burn": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam Ca Burn": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam Basic": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam N": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam Acid": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "811 Cam Halogen": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "811 Cam H": [
+   0.0,
+   0.0
+  ],
+  "811 Cam Mg Burn": [
+   0.0,
+   0.0
+  ],
+  "811 Cam Ca Burn": [
+   0.0,
+   0.0
+  ],
+  "811 Cam Basic": [
+   0.0,
+   0.0
+  ],
+  "811 Cam N": [
+   0.0,
+   0.0
+  ],
+  "811 Cam Acid": [
+   0.0,
+   0.0
+  ],
+  "811 Cam Halogen": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "b1c8c4d7ff"
+}

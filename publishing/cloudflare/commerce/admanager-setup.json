@@ -1,0 +1,89 @@
+{
+  "site": "https://asawera-chemistry-51y.pages.dev/",
+  "websiteIntegration": "implemented",
+  "liveAdvertising": false,
+  "googleNetworkCode": null,
+  "approvedPartners": [],
+  "auction": "Google Ad Manager unified auction with approved Open Bidding demand",
+  "unitsToCreateInGoogle": [
+    {
+      "suggestedName": "asawera_home",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          320,
+          100
+        ],
+        [
+          300,
+          250
+        ]
+      ],
+      "placement": "home"
+    },
+    {
+      "suggestedName": "asawera_lesson_end",
+      "sizes": [
+        [
+          728,
+          90
+        ],
+        [
+          468,
+          60
+        ],
+        [
+          320,
+          100
+        ]
+      ],
+      "placement": "supported lesson end cards"
+    }
+  ],
+  "priceFloors": {
+    "whereConfigured": "Google Ad Manager Pricing rules",
+    "initialChoice": "provider defaults",
+    "customFloor": null
+  },
+  "requestControls": {
+    "initialLoadDisabled": true,
+    "requestOnlyWhenVisible": true,
+    "maximumRequestsPerPage": 1,
+    "automaticRefresh": false,
+    "nonPersonalized": true,
+    "eligibleVisitorCountries": [
+      "PK"
+    ],
+    "proLoadsAdSDK": false,
+    "offlineLoadsAdSDK": false
+  },
+  "ageTreatment": {
+    "currentDefault": "child",
+    "childRequestsSentToOpenBiddingPartners": false,
+    "changeOnlyToReflectRealAudience": true
+  },
+  "ownerMustCompleteInProviderAccount": [
+    "website approval",
+    "Ad Exchange access for Open Bidding",
+    "Open Bidding terms and partner onboarding",
+    "display ad units and yield group",
+    "authorised seller IDs for ads.txt",
+    "payout verification"
+  ],
+  "accountCredentialsStoredInWebsite": false,
+  "revenueGuarantee": false,
+  "additionalWebsiteAuction": "Prebid 11.41.0: approved connected providers compete with net USD banner bids",
+  "supportedPrebidPartners": [
+    "PubMatic",
+    "Magnite",
+    "Index Exchange",
+    "OpenX",
+    "Sovrn",
+    "Microsoft/Xandr"
+  ],
+  "providerAccountsConnected": false,
+  "googleAccountStatus": "sudaisaccnt3@gmail.com has no AdSense account; signup form prepared, adult eligibility and payment country confirmation pending"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "710",
+ "title": "Refining Copper",
+ "pages": "195–196",
+ "glb": "models/710.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 1875,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "710 Cam Wide"
+  },
+  {
+   "frame": 421,
+   "camera": "710 Cam Work"
+  },
+  {
+   "frame": 1201,
+   "camera": "710 Cam Sludge"
+  },
+  {
+   "frame": 1561,
+   "camera": "710 Cam End"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Refining",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Copper moves",
+   "frame": 421,
+   "zone": 0
+  },
+  {
+   "name": "Anode sludge",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "99.99 %",
+   "frame": 1561,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Refining Copper",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/710.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "710 Cam Wide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "710 Cam Work": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "710 Cam Sludge": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "710 Cam End": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "710 Cam Wide": [
+   0.0,
+   0.0
+  ],
+  "710 Cam Work": [
+   0.0,
+   0.0
+  ],
+  "710 Cam Sludge": [
+   0.0,
+   0.0
+  ],
+  "710 Cam End": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "fb95d74857"
+}

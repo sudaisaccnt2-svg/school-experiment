@@ -1,0 +1,170 @@
+{
+ "id": "411",
+ "title": "Shapes of Molecules",
+ "pages": "109–110",
+ "glb": "models/411.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2175,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "411 Cam CO2"
+  },
+  {
+   "frame": 301,
+   "camera": "411 Cam SO2"
+  },
+  {
+   "frame": 601,
+   "camera": "411 Cam BCl3"
+  },
+  {
+   "frame": 901,
+   "camera": "411 Cam H2O"
+  },
+  {
+   "frame": 1201,
+   "camera": "411 Cam CH4"
+  },
+  {
+   "frame": 1501,
+   "camera": "411 Cam NH3"
+  },
+  {
+   "frame": 1801,
+   "camera": "411 Cam All"
+  }
+ ],
+ "acts": [
+  {
+   "name": "CO₂",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "SO₂",
+   "frame": 301,
+   "zone": 0
+  },
+  {
+   "name": "BCl₃",
+   "frame": 601,
+   "zone": 0
+  },
+  {
+   "name": "H₂O",
+   "frame": 901,
+   "zone": 0
+  },
+  {
+   "name": "CH₄",
+   "frame": 1201,
+   "zone": 0
+  },
+  {
+   "name": "NH₃",
+   "frame": 1501,
+   "zone": 0
+  },
+  {
+   "name": "All six",
+   "frame": 1801,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Shapes of Molecules",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/411.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "411 Cam CO2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam SO2": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam BCl3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam H2O": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam CH4": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam NH3": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "411 Cam All": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "411 Cam CO2": [
+   0.0,
+   0.0
+  ],
+  "411 Cam SO2": [
+   0.0,
+   0.0
+  ],
+  "411 Cam BCl3": [
+   0.0,
+   0.0
+  ],
+  "411 Cam H2O": [
+   0.0,
+   0.0
+  ],
+  "411 Cam CH4": [
+   0.0,
+   0.0
+  ],
+  "411 Cam NH3": [
+   0.0,
+   0.0
+  ],
+  "411 Cam All": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "8916d4adcf"
+}

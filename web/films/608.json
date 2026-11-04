@@ -1,0 +1,98 @@
+{
+ "id": "608",
+ "title": "Molarity Problems",
+ "pages": "163",
+ "glb": "models/608.glb",
+ "fps": 30,
+ "frame_start": 1,
+ "frame_end": 2415,
+ "cuts": [
+  {
+   "frame": 1,
+   "camera": "608 Cam NaCl"
+  },
+  {
+   "frame": 841,
+   "camera": "608 Cam Methanol"
+  },
+  {
+   "frame": 1681,
+   "camera": "608 Cam CaCl2"
+  }
+ ],
+ "acts": [
+  {
+   "name": "Example 6.2",
+   "frame": 1,
+   "zone": 0
+  },
+  {
+   "name": "Example 6.3",
+   "frame": 841,
+   "zone": 0
+  },
+  {
+   "name": "Practice 6.1",
+   "frame": 1681,
+   "zone": 0
+  }
+ ],
+ "zones": [
+  {
+   "name": "Molarity Problems",
+   "center": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "orbit_distance": 24,
+   "vr_anchor": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "min_height": -6,
+   "ar": "ar/608.usdz"
+  }
+ ],
+ "camera_dof": {},
+ "camera_subject": {
+  "608 Cam NaCl": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "608 Cam Methanol": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "608 Cam CaCl2": [
+   0.0,
+   0.0,
+   -0.0
+  ]
+ },
+ "camera_shift": {
+  "608 Cam NaCl": [
+   0.0,
+   0.0
+  ],
+  "608 Cam Methanol": [
+   0.0,
+   0.0
+  ],
+  "608 Cam CaCl2": [
+   0.0,
+   0.0
+  ]
+ },
+ "env_rotation": 3.4906585216522217,
+ "env_strength": 2.9499998092651367,
+ "background_color": [
+  0.0044999998062849045,
+  0.005499999970197678,
+  0.009499999694526196
+ ],
+ "model_version": "9311c558dd"
+}
