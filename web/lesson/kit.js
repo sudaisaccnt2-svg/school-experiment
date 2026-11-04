@@ -1844,3 +1844,26 @@ export function pencil(len = 0.24) {
   const eraser = solid(new THREE.CylinderGeometry(0.0088, 0.0088, 0.012, 12), M.matte(0xe08a9a, 0.7)); eraser.position.y = len + 0.033;
   grp.add(body, wood, lead, band, eraser); return grp;
 }
+
+// ---------------------------------------------------------------- 409 set pieces: a comb, a wool cloth, a burette
+/** a plastic comb (centre at the origin, teeth pointing −y, length along x) */
+export function comb(len = 0.16, color = 0x2b2f3a) {
+  const grp = new THREE.Group(), m = M.gloss(color), spine = solid(new THREE.BoxGeometry(len, 0.022, 0.008), m); spine.position.y = 0.011; grp.add(spine);
+  const n = 24, tooth = new THREE.BoxGeometry(0.0035, 0.03, 0.006);
+  for (let i = 0; i < n; i++) { const t = new THREE.Mesh(tooth, m); t.position.set(-len / 2 + 0.004 + i * (len - 0.008) / (n - 1), -0.0151, 0); t.castShadow = true; grp.add(t); }
+  return grp;
+}
+/** a folded wool cloth lying on the table (bottom at y 0) */
+export function woolCloth(w = 0.16, d = 0.12, color = 0xb3433a) {
+  const g = new THREE.BoxGeometry(w, 0.02, d, 12, 1, 10), p = g.attributes.position;
+  for (let i = 0; i < p.count; i++) { const x = p.getX(i), z = p.getZ(i); if (p.getY(i) > 0) p.setY(i, p.getY(i) + 0.004 * Math.sin(x * 60) * Math.cos(z * 50)); }
+  g.translate(0, 0.01, 0); g.computeVertexNormals(); return solid(g, new THREE.MeshStandardMaterial({ color, roughness: 0.95 }));
+}
+/** a burette (a long glass tube with a tap near the bottom), its tip at the origin; userData.tip */
+export function burette(len = 0.5) {
+  const grp = new THREE.Group(), tube = new THREE.Mesh(new THREE.CylinderGeometry(0.014, 0.014, len, 20, 1, true), M.glass()); tube.position.y = 0.06 + len / 2; tube.renderOrder = 5;
+  const water = new THREE.Mesh(new THREE.CylinderGeometry(0.0105, 0.0105, len * 0.8, 16), M.liquid(0x5bb0f0, 0.6)); water.position.y = 0.06 + len * 0.4; water.renderOrder = 4;
+  const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.004, 0.009, 0.06, 12, 1, true), M.glass()); neck.position.y = 0.03; neck.renderOrder = 5;
+  const tap = solid(new THREE.BoxGeometry(0.05, 0.008, 0.008), M.gloss(0x3a6fb4)); tap.position.y = 0.05;
+  grp.add(tube, water, neck, tap); grp.userData.tip = new THREE.Vector3(0, 0, 0); return grp;
+}
