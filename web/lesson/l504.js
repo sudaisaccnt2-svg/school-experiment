@@ -104,7 +104,7 @@ export default {
       const rig = add(U5.boyleRig(), RGX, 0, 0), nb = add(K.notebook(0.62, 0.44), NBX, 0, 0.02), pen = add(K.pencil(0.24));
       const write = U5.penWriter(nb, pen, PAGE, V(PNX, 0.01, 0.12), nb.position);
       const G = rig.userData.gauge.clone().add(V(RGX, 0, 0)), Cy = V(RGX - 0.02, 0.62, 0.1), Gl = V(G.x + 0.14, G.y + 0.12, 0.1), Cl = V(RGX - 0.25, 0.62, 0.1);
-      const ls = [['a gas shut in a cylinder', '#9fc4ff', RGX - 0.05, 0.75, 0.1], ['a pressure gauge', '#ffffff', G.x + 0.05, G.y + 0.15, 0.1], ['thermometer: same temperature', '#ffb0a0', RGX - 0.22, 0.5, 0.1], ['a notebook and a pencil', '#ffffff', NBX, 0.16, 0.25]]
+      const ls = [['a gas shut in a cylinder', '#9fc4ff', RGX - 0.05, 0.75, 0.1], ['a pressure gauge', '#ffffff', G.x + 0.05, G.y + 0.15, 0.1], ['thermometer: same temperature', '#ffb0a0', RGX + 0.02, 0.45, 0.12], ['a notebook and a pencil', '#ffffff', NBX, 0.16, 0.25]]
         .map(([s, c, x, y, z]) => tag(s, 0.045, c, x, y, z));
       const pair = (a, b, g, t0, t1) => ({ l: [grp(tag(a, 0.05, '#ffffff', Gl.x, Gl.y, Gl.z), g), grp(tag(b, 0.05, '#9fc4ff', Cl.x, Cl.y, Cl.z), g)], t0, t1 });
       const R1 = [pair('P = 1 atm', 'V = 8 dm³', 'r1', S1 + 0.2, S1 + 2.3), pair('P = 2 atm', 'V = 4 dm³', 'r2', S1 + 4.6, S1 + 7.0), pair('P = 4 atm', 'V = 2 dm³', 'r3', S2 + 2.2, S2 + 4.6),
