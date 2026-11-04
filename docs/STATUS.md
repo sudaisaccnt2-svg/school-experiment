@@ -78,7 +78,15 @@ may come later). Style rules for films: see "v2 style" in docs/STORYBOARD.md.
       (shapelab.js). Shared 3D kit: mol3d.js (molecules, dot-and-cross atoms, ions, EN ruler)
 - [x] Export 401–415 + build_pwa + test_offline
 - [x] Project skill .claude/skills/asawera-chapter/SKILL.md (taste + pipeline; every session appends to its log)
-- [ ] Waiting for the user's look at Unit 4
+- [x] 2026-11-04 SKILL rebuild: all 15 lessons are now CODE lessons (web/lesson/l401–l415.js, shared u4kit.js; app.js
+      CODE_LESSONS). Each has its beat sheet in the header; zcheck 0 flicker risks, text_check 0 moments with 2 texts.
+      Audit of the old films: docs/AUDIT_U4_U6.md. Coverage: docs/COVERAGE_U4.md.
+- [x] Games: 🔍 Explore first + arcade in Bond Builder, Bond Sorter, Shape Lab; new 💡 Bond Reasons (why4.js: Key
+      Points, facts, Short Q v ix x, Long Q i–v incl. Lewis counts).
+- [ ] Baked tables: done 401–412 + 413 hook/melt/cond; 413 (2 more) + 414 queued (CPU Cycles, ~10 min each)
+- [ ] Not pushed: GitHub refused (Claude GitHub App not installed); branch chapter-4-6-skill-rebuild is local only
+- [ ] Not published to the live site from this cloud session
+- [ ] Waiting for the user's look at Unit 4 (code lessons)
 
 ## Unit 5 Physical States of Matter (pp. 122–151) (2026-10-09)
 - [x] Films 501–515 built (scripts/u5, u5lib.py: gas boxes, piston rig, gauge, thermometer, flame, dish/jar

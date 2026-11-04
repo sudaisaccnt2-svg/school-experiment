@@ -566,3 +566,4 @@ where the SCREEN answers it. Check the logic, not just the look:
   other lessons up to it (807–816 first: never reviewed by the user).
 - 2026-10-15 Chapter 7 student review: a correct coverage list is not enough. Establish particle sources and signs,
   count atoms/electrons, show the calculation, and inspect the complete playback plus phone layouts before reporting a pass.
+- 2026-11-04 "Check chapters 4–6 against skill.md … why did you not fix it?": an audit alone is not the job; fix it. Unit 4 rebuilt as code lessons (u4kit.js) + games. Gotchas: a label's grow/pop must keep its own scale (setScalar(1) made signs huge); a lesson header may only name a game that really holds those items.
