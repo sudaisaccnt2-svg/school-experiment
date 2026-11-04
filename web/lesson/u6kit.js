@@ -40,3 +40,31 @@ export function brassKey(s = 1) {
 }
 /** a glass stirring rod (bottom at y 0) */
 export function stirRod(len = 0.3) { const m = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, len, 12), K.M.glass()); m.position.y = len / 2; m.renderOrder = 5; const g = new THREE.Group(); g.add(m); return g; }
+
+/** a digital kitchen/lab scale (bottom at y 0, pan top at y ≈ 0.05): userData.set(text) shows the reading */
+export function digitalScale() {
+  const g = new THREE.Group(), body = K.solid(new THREE.BoxGeometry(0.22, 0.035, 0.2), K.M.gloss(0xe9e7e2)); body.position.y = 0.0175; g.add(body);
+  const pan = K.solid(new THREE.CylinderGeometry(0.085, 0.085, 0.01, 40), K.M.metal(0xc8ccd2, 0.25)); pan.position.y = 0.035 + 0.004 + 0.005; g.add(pan);
+  const c = document.createElement('canvas'); c.width = 256; c.height = 96; const x = c.getContext('2d'), tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const scr = new THREE.Mesh(new THREE.PlaneGeometry(0.11, 0.04), new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); scr.position.set(0, 0.0175, 0.1 + 0.002); g.add(scr);
+  let last = null; g.userData.set = (s) => { if (s === last) return; last = s; x.fillStyle = '#1b2a1f'; x.fillRect(0, 0, 256, 96); x.fillStyle = '#9dff9d'; x.font = '700 64px monospace'; x.textAlign = 'right'; x.textBaseline = 'middle'; x.fillText(s, 240, 50); tex.needsUpdate = true; };
+  g.userData.set('0.0 g'); g.userData.top = 0.049; return g;
+}
+/** a thin falling stream of liquid from a to b (world points); set(a, b, k) k = 0 hides it */
+export function stream(color = 0x3d9ee6) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.004, 1, 10, 1, true), new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: 0.6, roughness: 0.05, depthWrite: false }));
+  m.renderOrder = 4; m.userData.set = (a, b, k) => { m.visible = k > 0.01; if (!m.visible) return; const d = b.clone().sub(a); m.position.copy(a).lerp(b, 0.5); m.scale.set(k, d.length(), k); m.quaternion.setFromUnitVectors(V(0, 1, 0), d.normalize()); };
+  return m;
+}
+/** a volumetric flask (bottom at y 0) with a white mark ring on the neck; liquid set by setLevel(y) (top height) */
+export function volFlask(r = 0.075, color = 0x3d9ee6) {
+  const g = new THREE.Group(), n = 0.016, nb = r * 1.7, top = nb + 0.17;
+  const prof = [[0, 0], [r * 0.7, 0], [r, r * 0.6], [r, r * 1.1], [n + 0.003, nb], [n + 0.003, top], [n - 0.002, top], [n - 0.002, nb + 0.003], [r - 0.004, r * 1.1], [r - 0.004, r * 0.6], [r * 0.7 - 0.003, 0.006], [0, 0.006]].map(([x, y]) => new THREE.Vector2(x, y));
+  const glass = new THREE.Mesh(new THREE.LatheGeometry(prof, 40), K.M.glass()); glass.renderOrder = 5; g.add(glass);
+  const mark = new THREE.Mesh(new THREE.TorusGeometry(n + 0.0045, 0.0012, 4, 30), new THREE.MeshBasicMaterial({ color: 0xffffff })); mark.rotation.x = Math.PI / 2; mark.position.y = nb + 0.1; g.add(mark);
+  const lm = new THREE.MeshPhysicalMaterial({ color, transparent: true, opacity: 0.5, roughness: 0.05, depthWrite: false });
+  const bulb = new THREE.Mesh(new THREE.SphereGeometry(r - 0.007, 32, 20), lm); bulb.scale.y = 0.95; bulb.position.y = r * 0.82; bulb.renderOrder = 4; g.add(bulb);
+  const neck = new THREE.Mesh(new THREE.CylinderGeometry(n - 0.004, n - 0.004, 1, 16).translate(0, 0.5, 0), lm); neck.position.y = nb - 0.01; neck.renderOrder = 4; g.add(neck);
+  g.userData.setLevel = (k) => { bulb.visible = k > 0.01; bulb.scale.set(1, 0.95 * Math.min(1, k * 1.6), 1); bulb.position.y = r * 0.82 - (r * 0.82) * (1 - Math.min(1, k * 1.6)) * 0.9; neck.visible = k > 0.62; neck.scale.y = Math.max(1e-3, (k - 0.62) / 0.38 * 0.11); };
+  g.userData.mat = lm; g.userData.mark = nb + 0.1; g.userData.setLevel(0); return g;
+}
