@@ -1753,3 +1753,33 @@ export function energyBar(h = 1.2, r = 0.07) {
   grp.userData.set = (k) => { colG.scale.y = Math.max(1e-4, k * (h - 0.01)); };
   grp.userData.set(1); grp.userData.top = (k) => k * h; return grp;
 }
+
+// ---------------------------------------------------------------- 405 set pieces: glue (Society, Technology and Science box)
+/** a white ceramic plate broken into two halves (each half is a group; bottom at y 0); userData.halves = [left, right] */
+export function brokenPlate(r = 0.2, h = 0.022) {
+  const grp = new THREE.Group(), mat = new THREE.MeshPhysicalMaterial({ color: 0xf4f1ea, roughness: 0.3, clearcoat: 0.8, clearcoatRoughness: 0.2 });
+  const rimM = new THREE.MeshPhysicalMaterial({ color: 0x3a6fb4, roughness: 0.35, clearcoat: 0.6 });
+  const crack = [[0, 1], [0.05, 0.62], [-0.04, 0.3], [0.03, 0], [-0.05, -0.35], [0.02, -0.7], [0, -1]];   // the jagged break (fractions of r)
+  const halves = [-1, 1].map((side) => {
+    const sh = new THREE.Shape(); sh.moveTo(crack[0][0] * r, crack[0][1] * r);
+    crack.slice(1).forEach(([x, y]) => sh.lineTo(x * r, y * r));
+    sh.absarc(0, 0, r, -Math.PI / 2, Math.PI / 2, side < 0);        // the round side of this half
+    const geo = new THREE.ExtrudeGeometry(sh, { depth: h, bevelEnabled: true, bevelSize: 0.003, bevelThickness: 0.003, bevelSegments: 2, curveSegments: 32 }).rotateX(-Math.PI / 2);
+    const g = new THREE.Group(), body = solid(geo, mat); body.position.y = 0.003; g.add(body);
+    const rim = solid(new THREE.TorusGeometry(r * 0.84, 0.004, 6, 40, Math.PI), rimM, { outline: false }); rim.rotation.set(-Math.PI / 2, 0, side < 0 ? Math.PI / 2 : -Math.PI / 2); rim.position.y = h + 0.008;
+    g.add(rim); grp.add(g); return g;
+  });
+  grp.userData.halves = halves; return grp;
+}
+/** a tube of glue lying on its side with a white cap (centre at the origin, nozzle along +x); userData.squeeze(k) */
+export function glueTube(len = 0.2) {
+  const grp = new THREE.Group(), body = solid(new THREE.CylinderGeometry(0.026, 0.03, len, 24).rotateZ(-Math.PI / 2), M.gloss(0xe8b43a));
+  const band = solid(new THREE.CylinderGeometry(0.031, 0.031, len * 0.3, 24, 1, true).rotateZ(-Math.PI / 2), M.gloss(0xc0392b), { outline: false });
+  const nozzle = solid(new THREE.ConeGeometry(0.012, 0.05, 16).rotateZ(-Math.PI / 2), M.matte(0xf2f2f2, 0.5)); nozzle.position.x = len / 2 + 0.025;
+  const end = solid(new THREE.BoxGeometry(0.008, 0.05, 0.04), M.metal(0xb9bec6, 0.35)); end.position.x = -len / 2 - 0.004;
+  grp.add(body, band, nozzle, end);
+  grp.userData.squeeze = (k) => { body.scale.set(1, 1 - 0.18 * k, 1 - 0.18 * k); band.scale.set(1, 1 - 0.18 * k, 1 - 0.18 * k); };
+  grp.userData.tip = new THREE.Vector3(len / 2 + 0.05, 0, 0); return grp;
+}
+// Chapter 4 atoms that the kit did not have yet (carbon dark grey, boron salmon, aluminium light grey)
+Object.assign(ATOM, { C: [0x4a4f58, 0.077], B: [0xe6b09c, 0.085], Al: [0xc5cbd3, 0.12] });

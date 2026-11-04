@@ -78,6 +78,44 @@ export function lessonKit({ scene, cam, R }, id, { dark = () => false, AY = 1.9 
       return e;
     };
   };
+  /** n shared pairs between atoms A (centre Ap) and B (centre Bp), both from fatom(): set(us, ul) moves n outer electrons
+   *  of each into the overlap (us 0..1: one from A beside one from B, pairs stacked across the bond) and spreads the
+   *  others round the far side as lone pairs (ul 0..1). Returns { set, shared: [A's, B's] } */
+  kit.sharer = (A, Ap, B, Bp, n, { sep = 0.11, gap = 0.05, lone = true } = {}) => {
+    const outer = (X) => X.es.filter((e) => e.s === X.rings.length - 1);
+    const ang = Math.atan2(Bp.y - Ap.y, Bp.x - Ap.x), d = (a, b) => Math.abs(Math.atan2(Math.sin(a - b), Math.cos(a - b)));
+    const pick = (X, dir) => [...outer(X)].sort((p, q) => d(p.a0, dir) - d(q.a0, dir));
+    const oA = pick(A, ang), oB = pick(B, ang + Math.PI), sA = oA.slice(0, n), sB = oB.slice(0, n);
+    const along = Bp.clone().sub(Ap).normalize(), perp = V(-along.y, along.x, 0), mid = Ap.clone().lerp(Bp, 0.5);
+    const lensA = sA.map((_, i) => mid.clone().addScaledVector(perp, (i - (n - 1) / 2) * sep).addScaledVector(along, -gap / 2).sub(Ap));
+    const lensB = sB.map((_, i) => mid.clone().addScaledVector(perp, (i - (n - 1) / 2) * sep).addScaledVector(along, gap / 2).sub(Bp));
+    const lonePlaces = (X, rest, dir) => {                              // pairs spread evenly round the far side
+      const k = rest.length, R = rest[0]?.R ?? 0, np = Math.ceil(k / 2), step = (2 * Math.PI - 1.8) / Math.max(np, 1);
+      return rest.map((_, i) => { const j = Math.floor(i / 2), c = dir + Math.PI + (j - (np - 1) / 2) * step, solo = k % 2 && j === np - 1; return X.pt(R, c + (solo ? 0 : i % 2 ? 0.16 : -0.16)); });
+    };
+    const rA = oA.slice(n), rB = oB.slice(n), LA = lonePlaces(A, rA, ang), LB = lonePlaces(B, rB, ang + Math.PI);
+    const set = (us, ul = us) => {
+      sA.forEach((e, i) => { e.to = lensA[i]; e.u = us; }); sB.forEach((e, i) => { e.to = lensB[i]; e.u = us; });
+      if (lone) { rA.forEach((e, i) => { e.to = LA[i]; e.u = ul; }); rB.forEach((e, i) => { e.to = LB[i]; e.u = ul; }); }
+    };
+    return { set, shared: [sA, sB], lone: [rA, rB] };
+  };
+  /** a ball-and-stick molecule: atoms [[element, x, y, z]], bonds [[i, j, order]] (order 2/3 = parallel sticks) */
+  kit.ballMol = (atoms, bonds, { r = { H: 0.12, C: 0.2, N: 0.2, O: 0.2, Cl: 0.25, F: 0.18, S: 0.24, B: 0.2 } } = {}) => {
+    const g = new THREE.Group(), stickM = M.gloss(0xd8dde4), P = atoms.map(([, x, y, z]) => V(x, y, z ?? 0));
+    atoms.forEach(([el], i) => {
+      const rr = r[el] ?? 0.2, b = new THREE.Group(); b.add(K.solid(new THREE.SphereGeometry(rr, 32, 20), M.gloss(K.ATOM[el][0])));
+      const l = K.label(el, rr * 1.1, el === 'H' ? '#1b2030' : '#ffffff', 800); l.position.z = rr + 0.005; l.renderOrder = 22; b.add(l); b.position.copy(P[i]); g.add(b);
+    });
+    bonds.forEach(([i, j, o = 1]) => {
+      const a = P[i], b = P[j], along = b.clone().sub(a), len = along.length(), side = V(-along.y, along.x, 0).normalize();
+      for (let k = 0; k < o; k++) {
+        const off = (k - (o - 1) / 2) * 0.065, m = K.solid(new THREE.CylinderGeometry(o > 1 ? 0.022 : 0.03, o > 1 ? 0.022 : 0.03, len, 14), stickM, { outline: false });
+        m.position.copy(a).lerp(b, 0.5).addScaledVector(side, off); m.quaternion.setFromUnitVectors(V(0, 1, 0), along.clone().normalize()); g.add(m);
+      }
+    });
+    return g;
+  };
   kit.finish = () => {
     return (t, dt) => { for (const b of beats) b(t, dt); };
   };
